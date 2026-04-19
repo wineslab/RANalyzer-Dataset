@@ -1,0 +1,1690 @@
+[ENB_APP]   nfapi (0) running mode: MONOLITHIC
+[0m[GNB_APP]   Getting GNBSParams
+[0m[OPT]   OPT disabled
+[0m[HW]   Version: Branch: HEAD Abrev. Hash: d47eb53 Date: Mon Aug 5 16:46:43 2024 +0000
+[0m[NR_PHY]   RC.gNB = 0x55ca92fdc4f0
+[0m[NR_PHY]   PRB blacklist 
+[0m[NR_PHY]   Copying 0 blacklisted PRB to L1 context
+[0m[PHY]   L1_RX_THREAD_CORE -1 (15)
+[0m[PHY]   TX_AMP = 519 (-36 dBFS)
+[0m[PHY]   l1_north_init_gNB() RC.nb_nr_L1_inst:1
+[0m[PHY]   Installing callbacks for IF_Module - UL_indication
+[0m[MAC]   Allocating shared L1/L2 interface structure for instance 0 @ 0x55ca92fe4900
+[0m[PHY]   l1_north_init_gNB() RC.gNB[0] installing callbacks
+[0m[PHY]   create_gNB_tasks() Task ready initialize structures
+[0m[PHY]   No prs_config configuration found..!!
+[0m[GNB_APP]   pdsch_AntennaPorts N1 1 N2 1 XP 1 pusch_AntennaPorts 1
+[0m[GNB_APP]   minTXRXTIME 6
+[0m[GNB_APP]   SIB1 TDA 1
+[0m[GNB_APP]   CSI-RS 0, SRS 0, 256 QAM may be on, delta_MCS off, maxMIMO_Layers -1, HARQ feedback enabled
+[0m[GNB_APP]   sr_ProhibitTimer 0, sr_TransMax 64, sr_ProhibitTimer_v1700 0, t300 400, t301 400, t310 2000, n310 10, t311 3000, n311 1, t319 400
+[0m[RRC]   Read in ServingCellConfigCommon (PhysCellId 0, ABSFREQSSB 641280, DLBand 78, ABSFREQPOINTA 640008, DLBW 162,RACH_TargetReceivedPower -96
+[0m[RRC]   absoluteFrequencySSB 641280 corresponds to 3619200000 Hz
+[0m[MAC]   [MAIN] Init function start:nb_nr_macrlc_inst=1
+[0m[UTIL]   threadCreate() for MAC_STATS: creating thread with affinity ffffffff, priority 2
+[0m[PHY]   Installing callbacks for IF_Module - UL_indication
+[0m[NR_MAC]   Configuring common parameters from NR ServingCellConfig
+[0m[NR_MAC]   DL_Bandwidth:60
+[0m[NR_MAC]   DL_Bandwidth:60
+[0m[NR_MAC]   ssb_OffsetPointA 86, ssb_SubcarrierOffset 0
+[0m[NR_MAC]   Set RX antenna number to 1, Set TX antenna number to 1 (num ssb 1: 80000000,0)
+[0m[NR_MAC]   Setting TDD configuration period to 6
+[0m[PHY]   DL frequency 3629280000 Hz, UL frequency 3629280000 Hz: band 48, uldl offset 0 Hz
+[0m[32m[PHY]   Configuring MIB for instance 0, : (Nid_cell 0,DL freq 3629280000, UL freq 3629280000)
+[0m[PHY]   Initializing frame parms for mu 1, N_RB 162, Ncp 0
+[0m[PHY]   Init: N_RB_DL 162, first_carrier_offset 1076, nb_prefix_samples 144,nb_prefix_samples0 176, ofdm_symbol_size 2048
+[0m[PHY]   Doing symbol rotation calculation for TX/RX, f0 3629280000.000000 Hz, Nsymb 28
+[0m[PHY]   Doing symbol rotation calculation for TX/RX, f0 3629280000.000000 Hz, Nsymb 28
+[0m[PHY]   gNB 0 configured
+[0m[NR_MAC]   PUSCH Target 300, PUCCH Target 200, PUCCH Failure 10, PUSCH Failure 1000
+[0m[NR_RRC]   SIB1 freq: offsetToPointA 86
+[0m[GNB_APP]   F1AP: gNB idx 0 gNB_DU_id 3585, gNB_DU_name gNB-OAI, TAC 1 MCC/MNC/length 1/1/2 cellID 12345678
+[0m[GNB_APP]   ngran_DU: Configuring Cell 0 for TDD
+[0mCMDLINE: "/root/radio_code/openairinterface5g/cmake_targets/ran_build/build/nr-softmodem" "-O" "/root/radio_code/openshift-oai-configurations/./config/config-x410-162prb-cbrs-running.conf" "--sa" "--usrp-tx-thread-config" "1" 
+[LIBCONFIG] Path for include directive set to: /root/radio_code/openshift-oai-configurations/./config
+[CONFIG] function config_libconfig_init returned 0
+[CONFIG] config module libconfig loaded
+[CONFIG] debug flags: 0x00000000
+log init done
+Reading in command-line options
+[CONFIG] parallel_conf is set to 0
+[CONFIG] worker_conf is set to 1
+Configuration: nb_rrc_inst 1, nb_nr_L1_inst 1, nb_ru 1
+configuring for RAU/RRU
+Initializing northbound interface for L1
+DL frequency 3629280000: band 48, UL frequency 3629280000
+<MeasurementTimingConfiguration>
+    <criticalExtensions>
+        <c1>
+            <measTimingConf>
+                <measTiming>
+                    <MeasTiming>
+                        <frequencyAndTiming>
+                            <carrierFreq>641280</carrierFreq>
+                            <ssbSubcarrierSpacing><kHz30/></ssbSubcarrierSpacing>
+                            <ssb-MeasurementTimingConfiguration>
+                                <periodicityAndOffset>
+                                    <sf20>0</sf20>
+                                </periodicityAndOffset>
+                                <duration><sf1/></duration>
+                            </ssb-MeasurementTimingConfiguration>
+                        </frequencyAndTiming>
+                    </MeasTiming>
+                </measTiming>
+            </measTimingConf>
+        </c1>
+    </criticalExtensions>
+</MeasurementTimingConfiguration>
+[PHY]   create_gNB_tasks() RC.nb_nr_L1_inst:1
+[0m[PHY]   l1_north_init_gNB() RC.nb_nr_L1_inst:1
+[0m[PHY]   Installing callbacks for IF_Module - UL_indication
+[0m[PHY]   l1_north_init_gNB() RC.gNB[0] installing callbacks
+[0m[GNB_APP]   Allocating gNB_RRC_INST for 1 instances
+[0m[GNB_APP]   SDAP layer is disabled
+[0m[GNB_APP]   Data Radio Bearer count 1
+[0m[NR_RRC]   do_SIB23_NR, size 9 
+ [0m[GNB_APP]   default drx 0
+[0m[GNB_APP]   [gNB 0] gNB_app_register for instance 0
+[0m[UTIL]   threadCreate() for TASK_SCTP: creating thread with affinity ffffffff, priority 50
+[0m[ITTI]   Created Posix thread TASK_SCTP
+[0m[X2AP]   X2AP is disabled.
+[0m[UTIL]   threadCreate() for TASK_NGAP: creating thread with affinity ffffffff, priority 50
+[0m[ITTI]   Created Posix thread TASK_NGAP
+[0m[UTIL]   threadCreate() for TASK_GNB_APP: creating thread with affinity ffffffff, priority 50
+[0m[NGAP]   Registered new gNB[0] and macro gNB id 3585
+[0m[NGAP]   [gNB 0] check the amf registration state
+[0m[ITTI]   Created Posix thread TASK_GNB_APP
+[0m[UTIL]   threadCreate() for TASK_RRC_GNB: creating thread with affinity ffffffff, priority 50
+[0m[ITTI]   Created Posix thread TASK_RRC_GNB
+[0m[NR_RRC]   Entering main loop of NR_RRC message task
+[0m[NR_RRC]   Received F1 Setup Request from gNB_DU 3585 (gNB-OAI) on assoc_id -1
+[0m[GTPU]   Configuring GTPu
+[0m[GTPU]   SA mode 
+[0m[GTPU]   Configuring GTPu address : 10.130.3.246, port : 2152
+[0m[GTPU]   Initializing UDP for local address 10.130.3.246 with port 2152
+[0m[RRC]   Accepting DU 3585 (gNB-OAI), sending F1 Setup Response
+[0m[RRC]   DU uses RRC version 17.3.0
+[0m[MAC]   received F1 Setup Response from CU (null)
+[0m[MAC]   CU uses RRC version 17.3.0
+[0m[MAC]   Clearing the DU's UE states before, if any.
+[0m[GTPU]   Created gtpu instance id: 98
+[0m[UTIL]   threadCreate() for TASK_GTPV1_U: creating thread with affinity ffffffff, priority 50
+[0m[NR_RRC]   Accepting new CU-UP ID 3585 name gNB-OAI (assoc_id -1)
+[0m[NGAP]   3585 -> 0000e010
+[0m[GNB_APP]   [gNB 0] Received NGAP_REGISTER_GNB_CNF: associated AMF 1
+[0m[ITTI]   Created Posix thread TASK_GTPV1_U
+[0m[PHY]   Initializing gNB 0
+[0m[PHY]   Initializing gNB 0
+[0m[PHY]   Registering with MAC interface module (before 0x55ca92fe4900)
+[0m[PHY]   Installing callbacks for IF_Module - UL_indication
+[0m[PHY]   Registering with MAC interface module (after 0x55ca92fe4900)
+[0m[PHY]   Setting indication lists
+[0m[PHY]   [nr-gnb.c] gNB structure allocated
+[0m[PHY]   RU GPIO control set as 'generic'
+[0m[PHY]   Setting clock source to internal
+[0m[PHY]   Setting time source to internal
+[0m[PHY]   number of L1 instances 1, number of RU 1, number of CPU cores 32
+[0m[PHY]   Copying frame parms from gNB in RC to gNB 0 in ru 0 and frame_parms in ru
+[0m[PHY]   Initialized RU proc 0 (,synch_to_ext_device),
+[0m[PHY]   RU Thread pool size 2
+[0m[PHY]   RU thread-pool core string -1,-1
+[0m[UTIL]   threadCreate() for Tpool0_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool1_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for ru_thread: creating thread with affinity ffffffff, priority 97
+[0m[PHY]   Starting RU 0 (,synch_to_ext_device) on cpu 24
+[0m[PHY]   Waiting for RUs to be configured ... RC.ru_mask:01
+[0m[PHY]   Initializing frame parms for mu 1, N_RB 162, Ncp 0
+[0m[PHY]   Init: N_RB_DL 162, first_carrier_offset 1076, nb_prefix_samples 144,nb_prefix_samples0 176, ofdm_symbol_size 2048
+[0m[PHY]   fp->scs=30000
+[0m[PHY]   fp->ofdm_symbol_size=2048
+[0m[PHY]   fp->nb_prefix_samples0=176
+[0m[PHY]   fp->nb_prefix_samples=144
+[0m[PHY]   fp->slots_per_subframe=2
+[0m[PHY]   fp->samples_per_subframe_wCP=57344
+[0m[PHY]   fp->samples_per_frame_wCP=573440
+[0m[PHY]   fp->samples_per_subframe=61440
+[0m[PHY]   fp->samples_per_frame=614400
+[0m[PHY]   fp->dl_CarrierFreq=3629280000
+[0m[PHY]   fp->ul_CarrierFreq=3629280000
+[0m[PHY]   fp->Nid_cell=0
+[0m[PHY]   fp->first_carrier_offset=1076
+[0m[PHY]   fp->ssb_start_subcarrier=0
+[0m[PHY]   fp->Ncp=0
+[0m[PHY]   fp->N_RB_DL=162
+[0m[PHY]   fp->numerology_index=1
+[0m[PHY]   fp->nr_band=48
+[0m[PHY]   fp->ofdm_offset_divisor=8
+[0m[PHY]   fp->threequarter_fs=0
+[0m[PHY]   fp->sl_CarrierFreq=0
+[0m[PHY]   fp->N_RB_SL=0
+[0m[PHY]   Initializing RU signal buffers (if_south local RF) nb_tx 1, nb_rx 1
+[0m[PHY]   [INIT] common.txdata[0] = 0x7f6f5c44f040 (2458880 bytes,sf_extension 320)
+[0m[PHY]   [INIT] common.txdata[0] = 0x7f6f5c44f540 
+[0m[PHY]   nb_tx 1
+[0m[PHY]   rxdata_7_5kHz[0] 0x7f6f5c105040 for RU 0
+[0m[PHY]   [INIT] common.txdata_BF= 0x7f6f44000ac0 (8 bytes)
+[0m[PHY]   txdataF_BF[0] 0x7f6f5c0cc040 for RU 0
+[0m[PHY]   rxdataF[0] 0x7f6f5c05b040 for RU 0
+[0m[PHY]   [INIT] nr_phy_init_RU() ru->num_gNB:1 
+[0m[PHY]   Setting RF config for N_RB 162, NB_RX 1, NB_TX 1
+[0m[PHY]   tune_offset 0 Hz, sample_rate 61440000 Hz
+[0m[PHY]   Channel 0: setting tx_gain offset 0, tx_freq 3629280000 Hz
+[0m[PHY]   Channel 0: setting rx_gain offset 75, rx_freq 3629280000 Hz
+[0m[HW]   openair0_cfg[0].sdr_addrs == 'addr=192.168.40.24'
+[0m[HW]   openair0_cfg[0].clock_source == '0' (internal = 0, external = 1)
+[0m[HW]   UHD version 4.3.0.HEAD-0-g1f8fd345 (4.3.0)
+[0m[HW]   Checking for USRP with args addr=192.168.40.24
+[0m[HW]   Found USRP x4xx
+[0m[93m[HW]   Can't set kernel parameters for X4x0
+[0m[HW]   Setting clock source to internal
+[0m[HW]   Setting time source to internal
+[0mNRRRC 0: Southbound Transport local_mac
+START MAIN THREADS
+RC.nb_nr_L1_inst:1
+Initializing gNB threads wait_for_sync:0
+wait_gNBs()
+Waiting for gNB L1 instances to all get configured ... sleeping 50ms (nb_nr_sL1_inst 1)
+gNB L1 are configured
+About to Init RU threads RC.nb_RU:1
+Initializing RU threads
+configuring RU from file
+Set RU mask to 1
+Creating RC.ru[0]:0x55ca930344f0
+Setting function for RU 0 to gNodeB_3GPP
+[RU 0] Setting nr_flag 0, nr_band 78, nr_scs_for_raster 1
+[RU 0] Setting half-slot parallelization to 1
+configuring ru_id 0 (start_rf 0x55ca8eb9be00)
+wait RUs
+shlib_path liboai_device.so
+[LOADER] library liboai_device.so successfully loaded
+Found USRP x400
+[HW]   device_init() sample_rate:61440000
+[0m[HW]   cal 0: freq 3500000000.000000, offset 0.000000, diff 129280000.000000
+[0m[HW]   cal 1: freq 2660000000.000000, offset 0.000000, diff 969280000.000000
+[0m[HW]   cal 2: freq 2300000000.000000, offset 0.000000, diff 1329280000.000000
+[0m[HW]   cal 3: freq 1880000000.000000, offset 0.000000, diff 1749280000.000000
+[0m[HW]   cal 4: freq 816000000.000000, offset 0.000000, diff 2813280000.000000
+[0m[1;31m[HW]   RX Gain too high, lower by 15.000000 dB
+[0m[HW]   RX Gain 0 75.000000 (0.000000) => 75.000000 (max 60.000000)
+[0m[HW]   USRP TX_GAIN:60.00 gain_range:60.00 tx_gain:0.00
+[0m[HW]   Actual master clock: 245.760000MHz...
+[0m[HW]   Actual clock source internal...
+[0m[HW]   Actual time source internal...
+[0m[HW]   setting rx channel 0
+[0m[HW]   RF board max packet size 1992, size for 100µs jitter 6144 
+[0m[HW]   rx_max_num_samps 1992
+[0m[HW]   RX Channel 0
+[0m[HW]     Actual RX sample rate: 61.440000MSps...
+[0m[HW]     Actual RX frequency: 3.629280GHz...
+[0m[HW]     Actual RX gain: 60.000000...
+[0m[HW]     Actual RX bandwidth: 400.000000M...
+[0m[HW]     Actual RX antenna: RX1...
+[0m[HW]   TX Channel 0
+[0m[HW]     Actual TX sample rate: 61.440000MSps...
+[0m[HW]     Actual TX frequency: 3.629280GHz...
+[0m[HW]     Actual TX gain: 60.000000...
+[0m[HW]     Actual TX bandwidth: 400.000000M...
+[0m[HW]     Actual TX antenna: TX/RX0...
+[0m[HW]     Actual TX packet size: 1992
+[0mUsing Device: Single USRP:
+  Device: X400-Series Device
+  Mboard 0: x410
+  RX Channel: 0
+    RX DSP: 0
+    RX Dboard: A
+    RX Subdev: 0
+  RX Channel: 1
+    RX DSP: 1
+    RX Dboard: A
+    RX Subdev: 1
+  RX Channel: 2
+    RX DSP: 2
+    RX Dboard: B
+    RX Subdev: 0
+  RX Channel: 3
+    RX DSP: 3
+    RX Dboard: B
+    RX Subdev: 1
+  TX Channel: 0
+    TX DSP: 0
+    TX Dboard: A
+    TX Subdev: 0
+  TX Channel: 1
+    TX DSP: 1
+    TX Dboard: A
+    TX Subdev: 1
+  TX Channel: 2
+    TX DSP: 2
+    TX Dboard: B
+    TX Subdev: 0
+  TX Channel: 3
+    TX DSP: 3
+    TX Dboard: B
+    TX Subdev: 1
+
+[HW]   Device timestamp: 0.041734...
+[0m[HW]   [RAU] has loaded USRP X400 device.
+[0m[PHY]   RU 0 Setting N_TA_offset to 800 samples (factor 2.000000, UL Freq 3600120, N_RB 162, mu 1)
+[0m[PHY]   Signaling main thread that RU 0 is ready, sl_ahead 6
+[0m[PHY]   RUs configured
+[0m[PHY]   init_eNB_afterRU() RC.nb_nr_inst:1
+[0m[PHY]   RC.nb_nr_CC[inst:0]:0x7f6f659f4010
+[0m[PHY]   [gNB 0] phy_init_nr_gNB() About to wait for gNB to be configured
+[0m[PHY]   Initialise nr transport
+[0m[PHY]   Mapping RX ports from 1 RUs to gNB 0
+[0m[PHY]   gNB->num_RU:1
+[0m[PHY]   Attaching RU 0 antenna 0 to gNB antenna 0
+[0m[UTIL]   threadCreate() for Tpool0_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool1_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool2_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool3_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool4_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool5_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool6_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool7_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for L1_rx_thread: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for L1_tx_thread: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for L1_stats: creating thread with affinity ffffffff, priority 1
+[0msetup_RU_buffers: frame_parms = 0x7f6f5cea9010
+waiting for sync (ru_thread,-1/0x55ca8f7830a8,0x55ca90014920,0x55ca900148e0)
+RC.ru_mask:00
+ALL RUs READY!
+RC.nb_RU:1
+ALL RUs ready - init gNBs
+Not NFAPI mode - call init_eNB_afterRU()
+shlib_path libdfts.so
+[LOADER] library libdfts.so successfully loaded
+shlib_path libldpc.so
+[LOADER] library libldpc.so successfully loaded
+shlib_path libldpc.so
+[LOADER] library libldpc.so has been loaded previously, reloading function pointers
+[LOADER] library libldpc.so successfully loaded
+waiting for sync (L1_stats_thread,-1/0x55ca8f7830a8,0x55ca90014920,0x55ca900148e0)
+ALL RUs ready - ALL gNBs ready
+Sending sync to all threads
+Entering ITTI signals handler
+TYPE <CTRL-C> TO TERMINATE
+got sync (L1_stats_thread)
+got sync (ru_thread)
+[HW]   current pps at 0.000000, starting streaming at 1.000000
+[0m[PHY]   RU 0 rf device ready
+[0m[PHY]   RU 0 RF started opp_enabled 0
+[0m[UTIL]   threadCreate() for trx_usrp_write_thread: creating thread with affinity ffffffff, priority 97
+[0m[PHY]   tx write thread ready
+[0m[32m[PHY]   Command line parameters for OAI UE: -C 3629280000 -r 162 --numerology 1 --ssb 516 
+[0m[NR_MAC]   Frame.Slot 128.0
+
+[0m[NR_MAC]   Frame.Slot 256.0
+
+[0m[NR_MAC]   Frame.Slot 384.0
+
+[0m[NR_MAC]   Frame.Slot 512.0
+
+[0m[NR_MAC]   Frame.Slot 640.0
+
+[0m[NR_MAC]   Frame.Slot 768.0
+
+[0m[NR_MAC]   Frame.Slot 896.0
+
+[0m[NR_MAC]   Frame.Slot 0.0
+
+[0m[NR_MAC]   Frame.Slot 128.0
+
+[0m[NR_MAC]   Frame.Slot 256.0
+
+[0m[NR_MAC]   Frame.Slot 384.0
+
+[0m[NR_MAC]   Frame.Slot 512.0
+
+[0m[NR_PHY]   [RAPROC] 623.19 Initiating RA procedure with preamble 11, energy 52.7 dB (I0 205, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   623.19 UE RA-RNTI 010b TC-RNTI d36d: Activating RA process index 0
+[0m[32m[NR_MAC]   UE d36d: 624.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 11
+[0m[NR_MAC]   UE d36d: Msg3 scheduled at 624.17 (624.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0xd36d
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0xd36d received correctly, adding UE MAC Context RNTI 0xd36d
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 54125
+[0m[RLC]   Added srb 1 to UE 54125
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0xd36d (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0xd36d (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI d36d, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 54125 (rnti: d36d, random ue id a00ba1efa1000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI d36d
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI d36d, adding CU UE ID 1
+[0m[NR_MAC]   UE d36d Generate msg4: feedback at  625.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0xd36d) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NGAP]   [gNB 0] Build NGAP_NAS_FIRST_REQ adding in s_TMSI: GUAMI amf_set_id 1 amf_region_id 2 ue d36d
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 4288) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[93m[NGAP]   could not find NGAP_ProtocolIE_ID_id_UEAggregateMaximumBitRate
+[0m[NR_RRC]   [gNB 0][UE 1] Selected security algorithms (0x7f6f5800442c): ciphering 0, integrity 2 (algorithms changed)
+[0m[NR_RRC]   [gNB 0][UE d36d] Saved security key 1BE2977EC322C0867AE72EDB6DC0C9F77FE62D6A508A5109F45BC71D4C0E9D71
+[0m[NR_RRC]   UE 1 Logical Channel DL-DCCH, Generate SecurityModeCommand (bytes 3)
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] received securityModeComplete on UL-DCCH 1 from UE
+[0m[NR_RRC]   UE 1: Logical Channel DL-DCCH, Generate NR UECapabilityEnquiry (bytes 8, xid 3)
+[0m[NR_RRC]   UE 1: received UE capabilities (xid 3)
+[0m[NR_RRC]   Send message to ngap: NGAP_UE_CAPABILITIES_IND
+[0m[NR_RRC]   Send message to sctp: NGAP_InitialContextSetupResponse
+[0m[NR_MAC]   Frame.Slot 640.0
+UE RNTI d36d CU-UE-ID 1 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -88 (1 meas)
+UE d36d: dlsch_rounds 8/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.10000 MCS (0) 9
+UE d36d: ulsch_rounds 43/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.09000 MCS (0) 9 (Qm 2  dB) NPRB 5  SNR 29.0 dB
+UE d36d: MAC:    TX            861 RX           5069 bytes
+UE d36d: LCID 1: TX             99 RX           1319 bytes
+
+[0m[NR_MAC]   Frame.Slot 768.0
+UE RNTI d36d CU-UE-ID 1 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -88 (16 meas)
+UE d36d: dlsch_rounds 10/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.08100 MCS (0) 9
+UE d36d: ulsch_rounds 427/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.02288 MCS (0) 17 (Qm 6  dB) NPRB 5  SNR 28.0 dB
+UE d36d: MAC:    TX           1107 RX          37837 bytes
+UE d36d: LCID 1: TX            142 RX           1322 bytes
+
+[0m[NR_MAC]   Frame.Slot 896.0
+UE RNTI d36d CU-UE-ID 1 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -88 (16 meas)
+UE d36d: dlsch_rounds 11/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.07290 MCS (0) 9
+UE d36d: ulsch_rounds 811/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00646 MCS (0) 28 (Qm 6  dB) NPRB 5  SNR 30.0 dB
+UE d36d: MAC:    TX           1230 RX          70605 bytes
+UE d36d: LCID 1: TX            142 RX           1322 bytes
+
+[0m[NR_MAC]   Frame.Slot 0.0
+UE RNTI d36d CU-UE-ID 1 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -88 (16 meas)
+UE d36d: dlsch_rounds 12/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.06561 MCS (0) 9
+UE d36d: ulsch_rounds 1195/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00164 MCS (0) 28 (Qm 6  dB) NPRB 5  SNR 29.5 dB
+UE d36d: MAC:    TX           1353 RX         103373 bytes
+UE d36d: LCID 1: TX            142 RX           1322 bytes
+
+[0m[NR_MAC]   Frame.Slot 128.0
+UE RNTI d36d CU-UE-ID 1 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -88 (16 meas)
+UE d36d: dlsch_rounds 14/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.05314 MCS (0) 9
+UE d36d: ulsch_rounds 1579/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00042 MCS (0) 28 (Qm 6  dB) NPRB 5  SNR 29.5 dB
+UE d36d: MAC:    TX           1599 RX         136141 bytes
+UE d36d: LCID 1: TX            142 RX           1322 bytes
+
+[0m[NR_MAC]   Frame.Slot 256.0
+UE RNTI d36d CU-UE-ID 1 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -88 (16 meas)
+UE d36d: dlsch_rounds 15/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.04783 MCS (0) 9
+UE d36d: ulsch_rounds 1963/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00011 MCS (0) 28 (Qm 6  dB) NPRB 5  SNR 30.5 dB
+UE d36d: MAC:    TX           1722 RX         168909 bytes
+UE d36d: LCID 1: TX            142 RX           1322 bytes
+
+[0m[NR_MAC]   Frame.Slot 384.0
+UE RNTI d36d CU-UE-ID 1 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -88 (16 meas)
+UE d36d: dlsch_rounds 16/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.04305 MCS (0) 9
+UE d36d: ulsch_rounds 2347/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00003 MCS (0) 28 (Qm 6  dB) NPRB 5  SNR 28.0 dB
+UE d36d: MAC:    TX           1845 RX         201677 bytes
+UE d36d: LCID 1: TX            142 RX           1322 bytes
+
+[0m[NR_MAC]   Frame.Slot 512.0
+UE RNTI d36d CU-UE-ID 1 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -88 (16 meas)
+UE d36d: dlsch_rounds 18/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.03487 MCS (0) 9
+UE d36d: ulsch_rounds 2731/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00001 MCS (0) 28 (Qm 6  dB) NPRB 5  SNR 29.0 dB
+UE d36d: MAC:    TX           2091 RX         234445 bytes
+UE d36d: LCID 1: TX            142 RX           1322 bytes
+
+[0m[NR_PHY]   [RAPROC] 625.19 Initiating RA procedure with preamble 56, energy 51.0 dB (I0 205, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   625.19 UE RA-RNTI 010b TC-RNTI bff0: Activating RA process index 0
+[0m[32m[NR_MAC]   UE bff0: 626.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 56
+[0m[NR_MAC]   UE bff0: Msg3 scheduled at 626.17 (626.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0xbff0
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0xbff0 received correctly, adding UE MAC Context RNTI 0xbff0
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 49136
+[0m[RLC]   Added srb 1 to UE 49136
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0xbff0 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0xbff0 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI bff0, payload_size 6
+[0m[NR_RRC]   Received UE 5G-S-TMSI-Part1 278770260476
+[0m[NR_RRC]   Created new UE context: CU UE ID 2 DU UE ID 49136 (rnti: bff0, random ue id 40e80099fc)
+[0m[RRC]   activate SRB 1 of UE 2
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI bff0
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI bff0, adding CU UE ID 2
+[0m[NR_MAC]   UE bff0 Generate msg4: feedback at  627.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0xbff0) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[RRC]   s_tmsi part2 0 (00 00)
+[0m[NR_RRC]   5g_s_TMSI: 0x40E80099FC, amf_set_id: 0x1 (1), amf_pointer: 0x0 (0), 5g TMSI: 0xE80099FC 
+[0m[32m[NR_RRC]   UE 2 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 2] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 2: Chose AMF 'a5gblu-amf' (assoc_id 4288) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[NGAP]   could not find NGAP_ProtocolIE_ID_id_UEAggregateMaximumBitRate
+[0m[NR_RRC]   [gNB 0][UE 2] Selected security algorithms (0x7f6f58006f9c): ciphering 0, integrity 2 (algorithms changed)
+[0m[NR_RRC]   [gNB 0][UE bff0] Saved security key 000647CC7DC336628CD45F5158538F2B326C6241CA047272F89419B831FC0AA6
+[0m[NR_RRC]   UE 2 Logical Channel DL-DCCH, Generate SecurityModeCommand (bytes 3)
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 2] received securityModeComplete on UL-DCCH 1 from UE
+[0m[NR_RRC]   UE 2: Logical Channel DL-DCCH, Generate NR UECapabilityEnquiry (bytes 8, xid 1)
+[0m[NR_RRC]   UE 2: received UE capabilities (xid 1)
+[0m[NR_RRC]   Send message to ngap: NGAP_UE_CAPABILITIES_IND
+[0m[NR_RRC]   Send message to sctp: NGAP_InitialContextSetupResponse
+[0m[NR_MAC]   Frame.Slot 640.0
+UE RNTI d36d CU-UE-ID 1 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -86 (16 meas)
+UE d36d: dlsch_rounds 22/2/2/2, dlsch_errors 2, pucch0_DTX 7, BLER 0.02824 MCS (0) 9
+UE d36d: ulsch_rounds 3052/32/32/30, ulsch_errors 28, ulsch_DTX 123, BLER 0.22273 MCS (0) 27 (Qm 6  dB) NPRB 5  SNR 28.5 dB
+UE d36d: MAC:    TX           2583 RX         259277 bytes
+UE d36d: LCID 1: TX            175 RX           1322 bytes
+UE RNTI bff0 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -88 (1 meas)
+UE bff0: dlsch_rounds 8/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.10000 MCS (0) 9
+UE bff0: ulsch_rounds 37/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.09000 MCS (0) 9 (Qm 2  dB) NPRB 5  SNR 32.0 dB
+UE bff0: MAC:    TX            782 RX           4541 bytes
+UE bff0: LCID 1: TX             64 RX           1340 bytes
+
+[0m[93m[RLC]   Remove UE 54125
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI d36d 
+[0m[NR_MAC]   Remove NR rnti 0xd36d
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xd36d in Msg3/PUSCH
+[0m[NGAP]   PDUSESSIONSetup initiating message
+[0m[NR_RRC]   UE 2: received PDU session setup request
+[0m[NR_RRC]   Adding pdusession 1, total nb of sessions 1
+[0m[NR_RRC]   UE 2: configure DRB ID 1 for PDU session ID 1
+[0m[32m[RRC]   selecting CU-UP ID 3585 based on exact NSSAI match (1:0x000000)
+[0m[RRC]   UE 2 associating to CU-UP assoc_id -1 out of 1 CU-UPs
+[0m[GTPU]   [98] Created tunnel for UE ID 2, teid for incoming: b195315b, teid for outgoing 1fe to remote IPv4: 10.128.0.157, IPv6 ::
+[0m[PDCP]   added drb 1 to UE ID 2
+[0m[SDAP]   Default DRB for the created SDAP entity: 1 
+[0m[RRC]   activate SRB 2 of UE 2
+[0m[RLC]   Added srb 2 to UE 49136
+[0m[RLC]   Added drb 1 to UE 49136
+[0m[RLC]   Added DRB to UE 49136
+[0m[RRC]   UE 2 trigger UE context setup request with 1 DRBs
+[0m[E1AP]   UE 2: updating PDU session ID 1 (1 bearers)
+[0m[NR_RRC]   UE 2: Generate RRCReconfiguration (bytes 324, xid 3)
+[0m[RRC]   UE 2: PDU session ID 1 modified 1 bearers
+[0m[NR_RRC]   UE 2: Receive RRC Reconfiguration Complete message (xid 3)
+[0m[NR_RRC]   msg index 0, pdu_sessions index 0, status 2, xid 3): nb_of_pdusessions 1,  pdusession_id 1, teid: 2979344731 
+ [0m[NR_RRC]   NGAP_PDUSESSION_SETUP_RESP: sending the message
+[0m[NR_MAC]   Frame.Slot 768.0
+UE RNTI bff0 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -88 (15 meas)
+UE bff0: dlsch_rounds 15/1/1/1, dlsch_errors 1, pucch0_DTX 2, BLER 0.10100 MCS (1) 9
+UE bff0: ulsch_rounds 420/1/0/0, ulsch_errors 0, ulsch_DTX 1, BLER 0.02666 MCS (1) 15 (Qm 6  dB) NPRB 5  SNR 29.5 dB
+UE bff0: MAC:    TX           2573 RX          60233 bytes
+UE bff0: LCID 1: TX            742 RX           1397 bytes
+UE bff0: LCID 2: TX              0 RX              0 bytes
+UE bff0: LCID 4: TX              0 RX              0 bytes
+
+[0m[NR_MAC]   Frame.Slot 896.0
+UE RNTI bff0 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -88 (16 meas)
+UE bff0: dlsch_rounds 20/1/1/1, dlsch_errors 1, pucch0_DTX 2, BLER 0.07363 MCS (1) 9
+UE bff0: ulsch_rounds 807/1/0/0, ulsch_errors 0, ulsch_DTX 1, BLER 0.00678 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.0 dB
+UE bff0: MAC:    TX           3525 RX         119763 bytes
+UE bff0: LCID 1: TX            745 RX           1419 bytes
+UE bff0: LCID 2: TX              0 RX              0 bytes
+UE bff0: LCID 4: TX              9 RX            379 bytes
+
+[0m[NR_MAC]   Frame.Slot 0.0
+UE RNTI bff0 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -88 (16 meas)
+UE bff0: dlsch_rounds 27/1/1/1, dlsch_errors 1, pucch0_DTX 2, BLER 0.04348 MCS (1) 9
+UE bff0: ulsch_rounds 1194/1/0/0, ulsch_errors 0, ulsch_DTX 1, BLER 0.00172 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.5 dB
+UE bff0: MAC:    TX           4911 RX         179293 bytes
+UE bff0: LCID 1: TX            748 RX           1441 bytes
+UE bff0: LCID 2: TX              0 RX              0 bytes
+UE bff0: LCID 4: TX             24 RX           1238 bytes
+
+[0m[NR_PHY]   [RAPROC] 113.19 Initiating RA procedure with preamble 32, energy 48.0 dB (I0 225, thres 120), delay 2 start symbol 0 freq index 0
+[0m[NR_MAC]   113.19 UE RA-RNTI 010b TC-RNTI ba85: Activating RA process index 0
+[0m[32m[NR_MAC]   UE ba85: 114.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 32
+[0m[NR_MAC]   UE ba85: Msg3 scheduled at 114.17 (114.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    11510: RA RNTI ba85 CC_id 0 Scheduling retransmission of Msg3 in (115,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_PHY]   [RAPROC] 115.19 Initiating RA procedure with preamble 33, energy 52.7 dB (I0 248, thres 120), delay 2 start symbol 0 freq index 0
+[0m[NR_MAC]   115.19 UE RA-RNTI 010b TC-RNTI ba19: Activating RA process index 1
+[0m[32m[NR_MAC]   UE ba19: 116.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 33
+[0m[NR_MAC]   UE ba19: Msg3 scheduled at 116.17 (116.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    11610: RA RNTI ba85 CC_id 0 Scheduling retransmission of Msg3 in (116,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    11710: RA RNTI ba85 CC_id 0 Scheduling retransmission of Msg3 in (117,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    11710: RA RNTI ba19 CC_id 0 Scheduling retransmission of Msg3 in (117,17)
+[0m[1;31m[NR_MAC]   UE ba19 cannot find free CCE!
+[0m[NR_MAC]    11711: RA RNTI ba19 CC_id 0 Scheduling retransmission of Msg3 in (117,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xba85 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 117.19 Initiating RA procedure with preamble 41, energy 54.0 dB (I0 266, thres 120), delay 8 start symbol 0 freq index 0
+[0m[NR_MAC]   117.19 UE RA-RNTI 010b TC-RNTI 580f: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 580f: 118.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 41
+[0m[NR_MAC]   UE 580f: Msg3 scheduled at 118.17 (118.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    11810: RA RNTI ba19 CC_id 0 Scheduling retransmission of Msg3 in (118,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    11910: RA RNTI 580f CC_id 0 Scheduling retransmission of Msg3 in (119,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    11910: RA RNTI ba19 CC_id 0 Scheduling retransmission of Msg3 in (119,17)
+[0m[1;31m[NR_MAC]   UE ba19 cannot find free CCE!
+[0m[NR_MAC]    11911: RA RNTI ba19 CC_id 0 Scheduling retransmission of Msg3 in (119,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xba19 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 119.19 Initiating RA procedure with preamble 10, energy 54.9 dB (I0 282, thres 120), delay 10 start symbol 0 freq index 0
+[0m[NR_MAC]   119.19 UE RA-RNTI 010b TC-RNTI b8b7: Activating RA process index 1
+[0m[32m[NR_MAC]   UE b8b7: 120.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 10
+[0m[NR_MAC]   UE b8b7: Msg3 scheduled at 120.17 (120.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    12010: RA RNTI 580f CC_id 0 Scheduling retransmission of Msg3 in (120,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    12110: RA RNTI 580f CC_id 0 Scheduling retransmission of Msg3 in (121,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    12110: RA RNTI b8b7 CC_id 0 Scheduling retransmission of Msg3 in (121,17)
+[0m[1;31m[NR_MAC]   UE b8b7 cannot find free CCE!
+[0m[NR_MAC]    12111: RA RNTI b8b7 CC_id 0 Scheduling retransmission of Msg3 in (121,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x580f in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 121.19 Initiating RA procedure with preamble 59, energy 54.9 dB (I0 295, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   121.19 UE RA-RNTI 010b TC-RNTI d715: Activating RA process index 0
+[0m[32m[NR_MAC]   UE d715: 122.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 59
+[0m[NR_MAC]   UE d715: Msg3 scheduled at 122.17 (122.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    12210: RA RNTI b8b7 CC_id 0 Scheduling retransmission of Msg3 in (122,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    12310: RA RNTI d715 CC_id 0 Scheduling retransmission of Msg3 in (123,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    12310: RA RNTI b8b7 CC_id 0 Scheduling retransmission of Msg3 in (123,17)
+[0m[1;31m[NR_MAC]   UE b8b7 cannot find free CCE!
+[0m[NR_MAC]    12311: RA RNTI b8b7 CC_id 0 Scheduling retransmission of Msg3 in (123,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xb8b7 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 123.19 Initiating RA procedure with preamble 19, energy 55.7 dB (I0 303, thres 120), delay 8 start symbol 0 freq index 0
+[0m[NR_MAC]   123.19 UE RA-RNTI 010b TC-RNTI 3bfa: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 3bfa: 124.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 19
+[0m[NR_MAC]   UE 3bfa: Msg3 scheduled at 124.17 (124.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    12410: RA RNTI d715 CC_id 0 Scheduling retransmission of Msg3 in (124,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    12510: RA RNTI d715 CC_id 0 Scheduling retransmission of Msg3 in (125,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    12510: RA RNTI 3bfa CC_id 0 Scheduling retransmission of Msg3 in (125,17)
+[0m[1;31m[NR_MAC]   UE 3bfa cannot find free CCE!
+[0m[NR_MAC]    12511: RA RNTI 3bfa CC_id 0 Scheduling retransmission of Msg3 in (125,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xd715 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 125.19 Initiating RA procedure with preamble 8, energy 55.7 dB (I0 310, thres 120), delay 9 start symbol 0 freq index 0
+[0m[NR_MAC]   125.19 UE RA-RNTI 010b TC-RNTI 92e2: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 92e2: 126.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 8
+[0m[NR_MAC]   UE 92e2: Msg3 scheduled at 126.17 (126.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    12610: RA RNTI 3bfa CC_id 0 Scheduling retransmission of Msg3 in (126,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    12710: RA RNTI 92e2 CC_id 0 Scheduling retransmission of Msg3 in (127,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    12710: RA RNTI 3bfa CC_id 0 Scheduling retransmission of Msg3 in (127,17)
+[0m[1;31m[NR_MAC]   UE 3bfa cannot find free CCE!
+[0m[NR_MAC]    12711: RA RNTI 3bfa CC_id 0 Scheduling retransmission of Msg3 in (127,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Frame.Slot 128.0
+UE RNTI bff0 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -88 (16 meas)
+UE bff0: dlsch_rounds 39/1/1/1, dlsch_errors 1, pucch0_DTX 2, BLER 0.03169 MCS (1) 9
+UE bff0: ulsch_rounds 1581/1/0/0, ulsch_errors 0, ulsch_DTX 1, BLER 0.00044 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.0 dB
+UE bff0: MAC:    TX           7245 RX         238777 bytes
+UE bff0: LCID 1: TX            751 RX           1463 bytes
+UE bff0: LCID 2: TX              0 RX              0 bytes
+UE bff0: LCID 4: TX            658 RX           2205 bytes
+
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x3bfa in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 127.19 Initiating RA procedure with preamble 43, energy 55.7 dB (I0 312, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   127.19 UE RA-RNTI 010b TC-RNTI cb33: Activating RA process index 1
+[0m[32m[NR_MAC]   UE cb33: 128.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 43
+[0m[NR_MAC]   UE cb33: Msg3 scheduled at 128.17 (128.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    12810: RA RNTI 92e2 CC_id 0 Scheduling retransmission of Msg3 in (128,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    12910: RA RNTI 92e2 CC_id 0 Scheduling retransmission of Msg3 in (129,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    12910: RA RNTI cb33 CC_id 0 Scheduling retransmission of Msg3 in (129,17)
+[0m[1;31m[NR_MAC]   UE cb33 cannot find free CCE!
+[0m[NR_MAC]    12911: RA RNTI cb33 CC_id 0 Scheduling retransmission of Msg3 in (129,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x92e2 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 129.19 Initiating RA procedure with preamble 12, energy 56.4 dB (I0 313, thres 120), delay 5 start symbol 0 freq index 0
+[0m[NR_MAC]   129.19 UE RA-RNTI 010b TC-RNTI a69f: Activating RA process index 0
+[0m[32m[NR_MAC]   UE a69f: 130.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 12
+[0m[NR_MAC]   UE a69f: Msg3 scheduled at 130.17 (130.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    13010: RA RNTI cb33 CC_id 0 Scheduling retransmission of Msg3 in (130,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    13110: RA RNTI a69f CC_id 0 Scheduling retransmission of Msg3 in (131,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    13110: RA RNTI cb33 CC_id 0 Scheduling retransmission of Msg3 in (131,17)
+[0m[1;31m[NR_MAC]   UE cb33 cannot find free CCE!
+[0m[NR_MAC]    13111: RA RNTI cb33 CC_id 0 Scheduling retransmission of Msg3 in (131,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xcb33 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 131.19 Initiating RA procedure with preamble 21, energy 55.7 dB (I0 318, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   131.19 UE RA-RNTI 010b TC-RNTI a55c: Activating RA process index 1
+[0m[32m[NR_MAC]   UE a55c: 132.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 21
+[0m[NR_MAC]   UE a55c: Msg3 scheduled at 132.17 (132.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    13210: RA RNTI a69f CC_id 0 Scheduling retransmission of Msg3 in (132,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    13310: RA RNTI a69f CC_id 0 Scheduling retransmission of Msg3 in (133,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    13310: RA RNTI a55c CC_id 0 Scheduling retransmission of Msg3 in (133,17)
+[0m[1;31m[NR_MAC]   UE a55c cannot find free CCE!
+[0m[NR_MAC]    13311: RA RNTI a55c CC_id 0 Scheduling retransmission of Msg3 in (133,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xa69f in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 133.19 Initiating RA procedure with preamble 56, energy 55.7 dB (I0 321, thres 120), delay 9 start symbol 0 freq index 0
+[0m[NR_MAC]   133.19 UE RA-RNTI 010b TC-RNTI f223: Activating RA process index 0
+[0m[32m[NR_MAC]   UE f223: 134.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 56
+[0m[NR_MAC]   UE f223: Msg3 scheduled at 134.17 (134.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    13410: RA RNTI a55c CC_id 0 Scheduling retransmission of Msg3 in (134,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    13510: RA RNTI f223 CC_id 0 Scheduling retransmission of Msg3 in (135,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    13510: RA RNTI a55c CC_id 0 Scheduling retransmission of Msg3 in (135,17)
+[0m[1;31m[NR_MAC]   UE a55c cannot find free CCE!
+[0m[NR_MAC]    13511: RA RNTI a55c CC_id 0 Scheduling retransmission of Msg3 in (135,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xa55c in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 135.19 Initiating RA procedure with preamble 1, energy 55.7 dB (I0 320, thres 120), delay 12 start symbol 0 freq index 0
+[0m[NR_MAC]   135.19 UE RA-RNTI 010b TC-RNTI a069: Activating RA process index 1
+[0m[32m[NR_MAC]   UE a069: 136.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 1
+[0m[NR_MAC]   UE a069: Msg3 scheduled at 136.17 (136.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    13610: RA RNTI f223 CC_id 0 Scheduling retransmission of Msg3 in (136,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    13710: RA RNTI f223 CC_id 0 Scheduling retransmission of Msg3 in (137,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    13710: RA RNTI a069 CC_id 0 Scheduling retransmission of Msg3 in (137,17)
+[0m[1;31m[NR_MAC]   UE a069 cannot find free CCE!
+[0m[NR_MAC]    13711: RA RNTI a069 CC_id 0 Scheduling retransmission of Msg3 in (137,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xf223 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 137.19 Initiating RA procedure with preamble 58, energy 55.7 dB (I0 318, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   137.19 UE RA-RNTI 010b TC-RNTI 3670: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 3670: 138.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 58
+[0m[NR_MAC]   UE 3670: Msg3 scheduled at 138.17 (138.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    13810: RA RNTI a069 CC_id 0 Scheduling retransmission of Msg3 in (138,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    13910: RA RNTI 3670 CC_id 0 Scheduling retransmission of Msg3 in (139,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    13910: RA RNTI a069 CC_id 0 Scheduling retransmission of Msg3 in (139,17)
+[0m[1;31m[NR_MAC]   UE a069 cannot find free CCE!
+[0m[NR_MAC]    13911: RA RNTI a069 CC_id 0 Scheduling retransmission of Msg3 in (139,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xa069 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 139.19 Initiating RA procedure with preamble 34, energy 56.4 dB (I0 317, thres 120), delay 2 start symbol 0 freq index 0
+[0m[NR_MAC]   139.19 UE RA-RNTI 010b TC-RNTI 98c1: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 98c1: 140.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 34
+[0m[NR_MAC]   UE 98c1: Msg3 scheduled at 140.17 (140.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    14010: RA RNTI 3670 CC_id 0 Scheduling retransmission of Msg3 in (140,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    14110: RA RNTI 3670 CC_id 0 Scheduling retransmission of Msg3 in (141,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    14110: RA RNTI 98c1 CC_id 0 Scheduling retransmission of Msg3 in (141,17)
+[0m[1;31m[NR_MAC]   UE 98c1 cannot find free CCE!
+[0m[NR_MAC]    14111: RA RNTI 98c1 CC_id 0 Scheduling retransmission of Msg3 in (141,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x3670 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 141.19 Initiating RA procedure with preamble 36, energy 55.7 dB (I0 320, thres 120), delay 5 start symbol 0 freq index 0
+[0m[NR_MAC]   141.19 UE RA-RNTI 010b TC-RNTI bad6: Activating RA process index 0
+[0m[32m[NR_MAC]   UE bad6: 142.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 36
+[0m[NR_MAC]   UE bad6: Msg3 scheduled at 142.17 (142.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    14210: RA RNTI 98c1 CC_id 0 Scheduling retransmission of Msg3 in (142,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    14310: RA RNTI bad6 CC_id 0 Scheduling retransmission of Msg3 in (143,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    14310: RA RNTI 98c1 CC_id 0 Scheduling retransmission of Msg3 in (143,17)
+[0m[1;31m[NR_MAC]   UE 98c1 cannot find free CCE!
+[0m[NR_MAC]    14311: RA RNTI 98c1 CC_id 0 Scheduling retransmission of Msg3 in (143,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x98c1 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 143.19 Initiating RA procedure with preamble 21, energy 55.7 dB (I0 316, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   143.19 UE RA-RNTI 010b TC-RNTI 1886: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 1886: 144.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 21
+[0m[NR_MAC]   UE 1886: Msg3 scheduled at 144.17 (144.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    14410: RA RNTI bad6 CC_id 0 Scheduling retransmission of Msg3 in (144,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    14510: RA RNTI bad6 CC_id 0 Scheduling retransmission of Msg3 in (145,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    14510: RA RNTI 1886 CC_id 0 Scheduling retransmission of Msg3 in (145,17)
+[0m[1;31m[NR_MAC]   UE 1886 cannot find free CCE!
+[0m[NR_MAC]    14511: RA RNTI 1886 CC_id 0 Scheduling retransmission of Msg3 in (145,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xbad6 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 145.19 Initiating RA procedure with preamble 27, energy 55.7 dB (I0 317, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   145.19 UE RA-RNTI 010b TC-RNTI 25b0: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 25b0: 146.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 27
+[0m[NR_MAC]   UE 25b0: Msg3 scheduled at 146.17 (146.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    14610: RA RNTI 1886 CC_id 0 Scheduling retransmission of Msg3 in (146,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    14710: RA RNTI 25b0 CC_id 0 Scheduling retransmission of Msg3 in (147,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    14710: RA RNTI 1886 CC_id 0 Scheduling retransmission of Msg3 in (147,17)
+[0m[1;31m[NR_MAC]   UE 1886 cannot find free CCE!
+[0m[NR_MAC]    14711: RA RNTI 1886 CC_id 0 Scheduling retransmission of Msg3 in (147,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x1886 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 147.19 Initiating RA procedure with preamble 9, energy 55.7 dB (I0 319, thres 120), delay 10 start symbol 0 freq index 0
+[0m[NR_MAC]   147.19 UE RA-RNTI 010b TC-RNTI fa48: Activating RA process index 1
+[0m[32m[NR_MAC]   UE fa48: 148.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 9
+[0m[NR_MAC]   UE fa48: Msg3 scheduled at 148.17 (148.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    14810: RA RNTI 25b0 CC_id 0 Scheduling retransmission of Msg3 in (148,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    14910: RA RNTI 25b0 CC_id 0 Scheduling retransmission of Msg3 in (149,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    14910: RA RNTI fa48 CC_id 0 Scheduling retransmission of Msg3 in (149,17)
+[0m[1;31m[NR_MAC]   UE fa48 cannot find free CCE!
+[0m[NR_MAC]    14911: RA RNTI fa48 CC_id 0 Scheduling retransmission of Msg3 in (149,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x25b0 in Msg3/PUSCH
+[0m[NR_MAC]    15010: RA RNTI fa48 CC_id 0 Scheduling retransmission of Msg3 in (150,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    15110: RA RNTI fa48 CC_id 0 Scheduling retransmission of Msg3 in (151,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xfa48 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 187.19 Initiating RA procedure with preamble 42, energy 48.0 dB (I0 226, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   187.19 UE RA-RNTI 010b TC-RNTI fdc8: Activating RA process index 0
+[0m[32m[NR_MAC]   UE fdc8: 188.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 42
+[0m[NR_MAC]   UE fdc8: Msg3 scheduled at 188.17 (188.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    18910: RA RNTI fdc8 CC_id 0 Scheduling retransmission of Msg3 in (189,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_PHY]   [RAPROC] 189.19 Initiating RA procedure with preamble 12, energy 52.7 dB (I0 251, thres 120), delay 4 start symbol 0 freq index 0
+[0m[NR_MAC]   189.19 UE RA-RNTI 010b TC-RNTI 40f7: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 40f7: 190.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 12
+[0m[NR_MAC]   UE 40f7: Msg3 scheduled at 190.17 (190.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    19010: RA RNTI fdc8 CC_id 0 Scheduling retransmission of Msg3 in (190,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    19110: RA RNTI fdc8 CC_id 0 Scheduling retransmission of Msg3 in (191,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    19110: RA RNTI 40f7 CC_id 0 Scheduling retransmission of Msg3 in (191,17)
+[0m[1;31m[NR_MAC]   UE 40f7 cannot find free CCE!
+[0m[NR_MAC]    19111: RA RNTI 40f7 CC_id 0 Scheduling retransmission of Msg3 in (191,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xfdc8 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 191.19 Initiating RA procedure with preamble 45, energy 54.0 dB (I0 268, thres 120), delay 24 start symbol 0 freq index 0
+[0m[NR_MAC]   191.19 UE RA-RNTI 010b TC-RNTI dab0: Activating RA process index 0
+[0m[32m[NR_MAC]   UE dab0: 192.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 45
+[0m[NR_MAC]   UE dab0: Msg3 scheduled at 192.17 (192.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    19210: RA RNTI 40f7 CC_id 0 Scheduling retransmission of Msg3 in (192,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    19310: RA RNTI dab0 CC_id 0 Scheduling retransmission of Msg3 in (193,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    19310: RA RNTI 40f7 CC_id 0 Scheduling retransmission of Msg3 in (193,17)
+[0m[1;31m[NR_MAC]   UE 40f7 cannot find free CCE!
+[0m[NR_MAC]    19311: RA RNTI 40f7 CC_id 0 Scheduling retransmission of Msg3 in (193,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x40f7 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 193.19 Initiating RA procedure with preamble 30, energy 54.9 dB (I0 283, thres 120), delay 11 start symbol 0 freq index 0
+[0m[NR_MAC]   193.19 UE RA-RNTI 010b TC-RNTI b274: Activating RA process index 1
+[0m[32m[NR_MAC]   UE b274: 194.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 30
+[0m[NR_MAC]   UE b274: Msg3 scheduled at 194.17 (194.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    19410: RA RNTI dab0 CC_id 0 Scheduling retransmission of Msg3 in (194,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    19510: RA RNTI dab0 CC_id 0 Scheduling retransmission of Msg3 in (195,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    19510: RA RNTI b274 CC_id 0 Scheduling retransmission of Msg3 in (195,17)
+[0m[1;31m[NR_MAC]   UE b274 cannot find free CCE!
+[0m[NR_MAC]    19511: RA RNTI b274 CC_id 0 Scheduling retransmission of Msg3 in (195,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xdab0 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 195.19 Initiating RA procedure with preamble 50, energy 55.7 dB (I0 292, thres 120), delay 20 start symbol 0 freq index 0
+[0m[NR_MAC]   195.19 UE RA-RNTI 010b TC-RNTI bdef: Activating RA process index 0
+[0m[32m[NR_MAC]   UE bdef: 196.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 50
+[0m[NR_MAC]   UE bdef: Msg3 scheduled at 196.17 (196.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    19610: RA RNTI b274 CC_id 0 Scheduling retransmission of Msg3 in (196,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    19710: RA RNTI bdef CC_id 0 Scheduling retransmission of Msg3 in (197,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    19710: RA RNTI b274 CC_id 0 Scheduling retransmission of Msg3 in (197,17)
+[0m[1;31m[NR_MAC]   UE b274 cannot find free CCE!
+[0m[NR_MAC]    19711: RA RNTI b274 CC_id 0 Scheduling retransmission of Msg3 in (197,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xb274 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 197.19 Initiating RA procedure with preamble 58, energy 54.9 dB (I0 300, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   197.19 UE RA-RNTI 010b TC-RNTI e29e: Activating RA process index 1
+[0m[32m[NR_MAC]   UE e29e: 198.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 58
+[0m[NR_MAC]   UE e29e: Msg3 scheduled at 198.17 (198.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    19810: RA RNTI bdef CC_id 0 Scheduling retransmission of Msg3 in (198,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    19910: RA RNTI bdef CC_id 0 Scheduling retransmission of Msg3 in (199,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    19910: RA RNTI e29e CC_id 0 Scheduling retransmission of Msg3 in (199,17)
+[0m[1;31m[NR_MAC]   UE e29e cannot find free CCE!
+[0m[NR_MAC]    19911: RA RNTI e29e CC_id 0 Scheduling retransmission of Msg3 in (199,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xbdef in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 199.19 Initiating RA procedure with preamble 37, energy 55.7 dB (I0 306, thres 120), delay 5 start symbol 0 freq index 0
+[0m[NR_MAC]   199.19 UE RA-RNTI 010b TC-RNTI ddb7: Activating RA process index 0
+[0m[32m[NR_MAC]   UE ddb7: 200.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 37
+[0m[NR_MAC]   UE ddb7: Msg3 scheduled at 200.17 (200.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    20010: RA RNTI e29e CC_id 0 Scheduling retransmission of Msg3 in (200,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    20110: RA RNTI ddb7 CC_id 0 Scheduling retransmission of Msg3 in (201,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    20110: RA RNTI e29e CC_id 0 Scheduling retransmission of Msg3 in (201,17)
+[0m[1;31m[NR_MAC]   UE e29e cannot find free CCE!
+[0m[NR_MAC]    20111: RA RNTI e29e CC_id 0 Scheduling retransmission of Msg3 in (201,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xe29e in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 201.19 Initiating RA procedure with preamble 20, energy 55.7 dB (I0 310, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   201.19 UE RA-RNTI 010b TC-RNTI 8109: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 8109: 202.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 20
+[0m[NR_MAC]   UE 8109: Msg3 scheduled at 202.17 (202.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    20210: RA RNTI ddb7 CC_id 0 Scheduling retransmission of Msg3 in (202,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    20310: RA RNTI ddb7 CC_id 0 Scheduling retransmission of Msg3 in (203,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    20310: RA RNTI 8109 CC_id 0 Scheduling retransmission of Msg3 in (203,17)
+[0m[1;31m[NR_MAC]   UE 8109 cannot find free CCE!
+[0m[NR_MAC]    20311: RA RNTI 8109 CC_id 0 Scheduling retransmission of Msg3 in (203,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xddb7 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 203.19 Initiating RA procedure with preamble 16, energy 55.7 dB (I0 314, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   203.19 UE RA-RNTI 010b TC-RNTI 4ee9: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 4ee9: 204.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 16
+[0m[NR_MAC]   UE 4ee9: Msg3 scheduled at 204.17 (204.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    20410: RA RNTI 8109 CC_id 0 Scheduling retransmission of Msg3 in (204,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    20510: RA RNTI 4ee9 CC_id 0 Scheduling retransmission of Msg3 in (205,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    20510: RA RNTI 8109 CC_id 0 Scheduling retransmission of Msg3 in (205,17)
+[0m[1;31m[NR_MAC]   UE 8109 cannot find free CCE!
+[0m[NR_MAC]    20511: RA RNTI 8109 CC_id 0 Scheduling retransmission of Msg3 in (205,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x8109 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 205.19 Initiating RA procedure with preamble 58, energy 55.7 dB (I0 316, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   205.19 UE RA-RNTI 010b TC-RNTI 20c9: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 20c9: 206.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 58
+[0m[NR_MAC]   UE 20c9: Msg3 scheduled at 206.17 (206.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    20610: RA RNTI 4ee9 CC_id 0 Scheduling retransmission of Msg3 in (206,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    20710: RA RNTI 4ee9 CC_id 0 Scheduling retransmission of Msg3 in (207,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    20710: RA RNTI 20c9 CC_id 0 Scheduling retransmission of Msg3 in (207,17)
+[0m[1;31m[NR_MAC]   UE 20c9 cannot find free CCE!
+[0m[NR_MAC]    20711: RA RNTI 20c9 CC_id 0 Scheduling retransmission of Msg3 in (207,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x4ee9 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 207.19 Initiating RA procedure with preamble 30, energy 55.7 dB (I0 319, thres 120), delay 10 start symbol 0 freq index 0
+[0m[NR_MAC]   207.19 UE RA-RNTI 010b TC-RNTI 1b68: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 1b68: 208.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 30
+[0m[NR_MAC]   UE 1b68: Msg3 scheduled at 208.17 (208.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    20810: RA RNTI 20c9 CC_id 0 Scheduling retransmission of Msg3 in (208,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    20910: RA RNTI 1b68 CC_id 0 Scheduling retransmission of Msg3 in (209,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    20910: RA RNTI 20c9 CC_id 0 Scheduling retransmission of Msg3 in (209,17)
+[0m[1;31m[NR_MAC]   UE 20c9 cannot find free CCE!
+[0m[NR_MAC]    20911: RA RNTI 20c9 CC_id 0 Scheduling retransmission of Msg3 in (209,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x20c9 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 209.19 Initiating RA procedure with preamble 39, energy 55.7 dB (I0 318, thres 120), delay 5 start symbol 0 freq index 0
+[0m[NR_MAC]   209.19 UE RA-RNTI 010b TC-RNTI ef62: Activating RA process index 1
+[0m[32m[NR_MAC]   UE ef62: 210.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 39
+[0m[NR_MAC]   UE ef62: Msg3 scheduled at 210.17 (210.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    21010: RA RNTI 1b68 CC_id 0 Scheduling retransmission of Msg3 in (210,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    21110: RA RNTI 1b68 CC_id 0 Scheduling retransmission of Msg3 in (211,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    21110: RA RNTI ef62 CC_id 0 Scheduling retransmission of Msg3 in (211,17)
+[0m[1;31m[NR_MAC]   UE ef62 cannot find free CCE!
+[0m[NR_MAC]    21111: RA RNTI ef62 CC_id 0 Scheduling retransmission of Msg3 in (211,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x1b68 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 211.19 Initiating RA procedure with preamble 24, energy 55.7 dB (I0 319, thres 120), delay 8 start symbol 0 freq index 0
+[0m[NR_MAC]   211.19 UE RA-RNTI 010b TC-RNTI 7bf9: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 7bf9: 212.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 24
+[0m[NR_MAC]   UE 7bf9: Msg3 scheduled at 212.17 (212.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    21210: RA RNTI ef62 CC_id 0 Scheduling retransmission of Msg3 in (212,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    21310: RA RNTI 7bf9 CC_id 0 Scheduling retransmission of Msg3 in (213,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    21310: RA RNTI ef62 CC_id 0 Scheduling retransmission of Msg3 in (213,17)
+[0m[1;31m[NR_MAC]   UE ef62 cannot find free CCE!
+[0m[NR_MAC]    21311: RA RNTI ef62 CC_id 0 Scheduling retransmission of Msg3 in (213,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xef62 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 213.19 Initiating RA procedure with preamble 43, energy 55.7 dB (I0 320, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   213.19 UE RA-RNTI 010b TC-RNTI 58b5: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 58b5: 214.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 43
+[0m[NR_MAC]   UE 58b5: Msg3 scheduled at 214.17 (214.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    21410: RA RNTI 7bf9 CC_id 0 Scheduling retransmission of Msg3 in (214,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    21510: RA RNTI 7bf9 CC_id 0 Scheduling retransmission of Msg3 in (215,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    21510: RA RNTI 58b5 CC_id 0 Scheduling retransmission of Msg3 in (215,17)
+[0m[1;31m[NR_MAC]   UE 58b5 cannot find free CCE!
+[0m[NR_MAC]    21511: RA RNTI 58b5 CC_id 0 Scheduling retransmission of Msg3 in (215,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x7bf9 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 215.19 Initiating RA procedure with preamble 44, energy 55.7 dB (I0 319, thres 120), delay 23 start symbol 0 freq index 0
+[0m[NR_MAC]   215.19 UE RA-RNTI 010b TC-RNTI 224b: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 224b: 216.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 44
+[0m[NR_MAC]   UE 224b: Msg3 scheduled at 216.17 (216.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    21610: RA RNTI 58b5 CC_id 0 Scheduling retransmission of Msg3 in (216,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    21710: RA RNTI 224b CC_id 0 Scheduling retransmission of Msg3 in (217,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    21710: RA RNTI 58b5 CC_id 0 Scheduling retransmission of Msg3 in (217,17)
+[0m[1;31m[NR_MAC]   UE 58b5 cannot find free CCE!
+[0m[NR_MAC]    21711: RA RNTI 58b5 CC_id 0 Scheduling retransmission of Msg3 in (217,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x58b5 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 217.19 Initiating RA procedure with preamble 14, energy 55.7 dB (I0 320, thres 120), delay 5 start symbol 0 freq index 0
+[0m[NR_MAC]   217.19 UE RA-RNTI 010b TC-RNTI 929e: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 929e: 218.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 14
+[0m[NR_MAC]   UE 929e: Msg3 scheduled at 218.17 (218.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    21810: RA RNTI 224b CC_id 0 Scheduling retransmission of Msg3 in (218,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    21910: RA RNTI 224b CC_id 0 Scheduling retransmission of Msg3 in (219,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    21910: RA RNTI 929e CC_id 0 Scheduling retransmission of Msg3 in (219,17)
+[0m[1;31m[NR_MAC]   UE 929e cannot find free CCE!
+[0m[NR_MAC]    21911: RA RNTI 929e CC_id 0 Scheduling retransmission of Msg3 in (219,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x224b in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 219.19 Initiating RA procedure with preamble 56, energy 55.7 dB (I0 320, thres 120), delay 10 start symbol 0 freq index 0
+[0m[NR_MAC]   219.19 UE RA-RNTI 010b TC-RNTI ed85: Activating RA process index 0
+[0m[32m[NR_MAC]   UE ed85: 220.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 56
+[0m[NR_MAC]   UE ed85: Msg3 scheduled at 220.17 (220.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    22010: RA RNTI 929e CC_id 0 Scheduling retransmission of Msg3 in (220,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    22110: RA RNTI ed85 CC_id 0 Scheduling retransmission of Msg3 in (221,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    22110: RA RNTI 929e CC_id 0 Scheduling retransmission of Msg3 in (221,17)
+[0m[1;31m[NR_MAC]   UE 929e cannot find free CCE!
+[0m[NR_MAC]    22111: RA RNTI 929e CC_id 0 Scheduling retransmission of Msg3 in (221,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x929e in Msg3/PUSCH
+[0m[NR_MAC]    22210: RA RNTI ed85 CC_id 0 Scheduling retransmission of Msg3 in (222,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    22310: RA RNTI ed85 CC_id 0 Scheduling retransmission of Msg3 in (223,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xed85 in Msg3/PUSCH
+[0m[NR_MAC]   Frame.Slot 256.0
+UE RNTI bff0 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -88 (16 meas)
+UE bff0: dlsch_rounds 230/1/1/1, dlsch_errors 1, pucch0_DTX 2, BLER 0.00895 MCS (1) 21
+UE bff0: ulsch_rounds 1981/2/0/0, ulsch_errors 0, ulsch_DTX 1, BLER 0.00099 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.0 dB
+UE bff0: MAC:    TX        1554122 RX         299046 bytes
+UE bff0: LCID 1: TX            757 RX           1507 bytes
+UE bff0: LCID 2: TX              0 RX              0 bytes
+UE bff0: LCID 4: TX        1539788 RX           2985 bytes
+
+[0m[NR_PHY]   [RAPROC] 257.19 Initiating RA procedure with preamble 44, energy 48.0 dB (I0 225, thres 120), delay 24 start symbol 0 freq index 0
+[0m[NR_MAC]   257.19 UE RA-RNTI 010b TC-RNTI abd1: Activating RA process index 0
+[0m[32m[NR_MAC]   UE abd1: 258.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 44
+[0m[NR_MAC]   UE abd1: Msg3 scheduled at 258.17 (258.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    25910: RA RNTI abd1 CC_id 0 Scheduling retransmission of Msg3 in (259,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_PHY]   [RAPROC] 259.19 Initiating RA procedure with preamble 18, energy 51.0 dB (I0 247, thres 120), delay 9 start symbol 0 freq index 0
+[0m[NR_MAC]   259.19 UE RA-RNTI 010b TC-RNTI 7c43: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 7c43: 260.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 18
+[0m[NR_MAC]   UE 7c43: Msg3 scheduled at 260.17 (260.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    26010: RA RNTI abd1 CC_id 0 Scheduling retransmission of Msg3 in (260,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    26110: RA RNTI abd1 CC_id 0 Scheduling retransmission of Msg3 in (261,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    26110: RA RNTI 7c43 CC_id 0 Scheduling retransmission of Msg3 in (261,17)
+[0m[1;31m[NR_MAC]   UE 7c43 cannot find free CCE!
+[0m[NR_MAC]    26111: RA RNTI 7c43 CC_id 0 Scheduling retransmission of Msg3 in (261,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xabd1 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 261.19 Initiating RA procedure with preamble 28, energy 54.0 dB (I0 267, thres 120), delay 14 start symbol 0 freq index 0
+[0m[NR_MAC]   261.19 UE RA-RNTI 010b TC-RNTI 3af2: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 3af2: 262.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 28
+[0m[NR_MAC]   UE 3af2: Msg3 scheduled at 262.17 (262.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    26210: RA RNTI 7c43 CC_id 0 Scheduling retransmission of Msg3 in (262,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    26310: RA RNTI 3af2 CC_id 0 Scheduling retransmission of Msg3 in (263,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    26310: RA RNTI 7c43 CC_id 0 Scheduling retransmission of Msg3 in (263,17)
+[0m[1;31m[NR_MAC]   UE 7c43 cannot find free CCE!
+[0m[NR_MAC]    26311: RA RNTI 7c43 CC_id 0 Scheduling retransmission of Msg3 in (263,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x7c43 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 263.19 Initiating RA procedure with preamble 0, energy 54.9 dB (I0 284, thres 120), delay 12 start symbol 0 freq index 0
+[0m[NR_MAC]   263.19 UE RA-RNTI 010b TC-RNTI 90ae: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 90ae: 264.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 0
+[0m[NR_MAC]   UE 90ae: Msg3 scheduled at 264.17 (264.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    26410: RA RNTI 3af2 CC_id 0 Scheduling retransmission of Msg3 in (264,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    26510: RA RNTI 3af2 CC_id 0 Scheduling retransmission of Msg3 in (265,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    26510: RA RNTI 90ae CC_id 0 Scheduling retransmission of Msg3 in (265,17)
+[0m[1;31m[NR_MAC]   UE 90ae cannot find free CCE!
+[0m[NR_MAC]    26511: RA RNTI 90ae CC_id 0 Scheduling retransmission of Msg3 in (265,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x3af2 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 265.19 Initiating RA procedure with preamble 56, energy 54.9 dB (I0 294, thres 120), delay 10 start symbol 0 freq index 0
+[0m[NR_MAC]   265.19 UE RA-RNTI 010b TC-RNTI b795: Activating RA process index 0
+[0m[32m[NR_MAC]   UE b795: 266.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 56
+[0m[NR_MAC]   UE b795: Msg3 scheduled at 266.17 (266.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    26610: RA RNTI 90ae CC_id 0 Scheduling retransmission of Msg3 in (266,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    26710: RA RNTI b795 CC_id 0 Scheduling retransmission of Msg3 in (267,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    26710: RA RNTI 90ae CC_id 0 Scheduling retransmission of Msg3 in (267,17)
+[0m[1;31m[NR_MAC]   UE 90ae cannot find free CCE!
+[0m[NR_MAC]    26711: RA RNTI 90ae CC_id 0 Scheduling retransmission of Msg3 in (267,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x90ae in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 267.19 Initiating RA procedure with preamble 3, energy 54.9 dB (I0 303, thres 120), delay 12 start symbol 0 freq index 0
+[0m[NR_MAC]   267.19 UE RA-RNTI 010b TC-RNTI 11b1: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 11b1: 268.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 3
+[0m[NR_MAC]   UE 11b1: Msg3 scheduled at 268.17 (268.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    26810: RA RNTI b795 CC_id 0 Scheduling retransmission of Msg3 in (268,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    26910: RA RNTI b795 CC_id 0 Scheduling retransmission of Msg3 in (269,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    26910: RA RNTI 11b1 CC_id 0 Scheduling retransmission of Msg3 in (269,17)
+[0m[1;31m[NR_MAC]   UE 11b1 cannot find free CCE!
+[0m[NR_MAC]    26911: RA RNTI 11b1 CC_id 0 Scheduling retransmission of Msg3 in (269,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xb795 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 269.19 Initiating RA procedure with preamble 14, energy 55.7 dB (I0 306, thres 120), delay 5 start symbol 0 freq index 0
+[0m[NR_MAC]   269.19 UE RA-RNTI 010b TC-RNTI 283d: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 283d: 270.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 14
+[0m[NR_MAC]   UE 283d: Msg3 scheduled at 270.17 (270.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    27010: RA RNTI 11b1 CC_id 0 Scheduling retransmission of Msg3 in (270,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    27110: RA RNTI 283d CC_id 0 Scheduling retransmission of Msg3 in (271,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    27110: RA RNTI 11b1 CC_id 0 Scheduling retransmission of Msg3 in (271,17)
+[0m[1;31m[NR_MAC]   UE 11b1 cannot find free CCE!
+[0m[NR_MAC]    27111: RA RNTI 11b1 CC_id 0 Scheduling retransmission of Msg3 in (271,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x11b1 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 271.19 Initiating RA procedure with preamble 29, energy 55.7 dB (I0 311, thres 120), delay 12 start symbol 0 freq index 0
+[0m[NR_MAC]   271.19 UE RA-RNTI 010b TC-RNTI 8d8f: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 8d8f: 272.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 29
+[0m[NR_MAC]   UE 8d8f: Msg3 scheduled at 272.17 (272.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    27210: RA RNTI 283d CC_id 0 Scheduling retransmission of Msg3 in (272,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    27310: RA RNTI 283d CC_id 0 Scheduling retransmission of Msg3 in (273,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    27310: RA RNTI 8d8f CC_id 0 Scheduling retransmission of Msg3 in (273,17)
+[0m[1;31m[NR_MAC]   UE 8d8f cannot find free CCE!
+[0m[NR_MAC]    27311: RA RNTI 8d8f CC_id 0 Scheduling retransmission of Msg3 in (273,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x283d in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 273.19 Initiating RA procedure with preamble 23, energy 55.7 dB (I0 313, thres 120), delay 4 start symbol 0 freq index 0
+[0m[NR_MAC]   273.19 UE RA-RNTI 010b TC-RNTI 15bc: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 15bc: 274.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 23
+[0m[NR_MAC]   UE 15bc: Msg3 scheduled at 274.17 (274.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    27410: RA RNTI 8d8f CC_id 0 Scheduling retransmission of Msg3 in (274,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    27510: RA RNTI 15bc CC_id 0 Scheduling retransmission of Msg3 in (275,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    27510: RA RNTI 8d8f CC_id 0 Scheduling retransmission of Msg3 in (275,17)
+[0m[1;31m[NR_MAC]   UE 8d8f cannot find free CCE!
+[0m[NR_MAC]    27511: RA RNTI 8d8f CC_id 0 Scheduling retransmission of Msg3 in (275,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x8d8f in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 275.19 Initiating RA procedure with preamble 12, energy 55.7 dB (I0 317, thres 120), delay 5 start symbol 0 freq index 0
+[0m[NR_MAC]   275.19 UE RA-RNTI 010b TC-RNTI b7fa: Activating RA process index 1
+[0m[32m[NR_MAC]   UE b7fa: 276.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 12
+[0m[NR_MAC]   UE b7fa: Msg3 scheduled at 276.17 (276.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    27610: RA RNTI 15bc CC_id 0 Scheduling retransmission of Msg3 in (276,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    27710: RA RNTI 15bc CC_id 0 Scheduling retransmission of Msg3 in (277,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    27710: RA RNTI b7fa CC_id 0 Scheduling retransmission of Msg3 in (277,17)
+[0m[1;31m[NR_MAC]   UE b7fa cannot find free CCE!
+[0m[NR_MAC]    27711: RA RNTI b7fa CC_id 0 Scheduling retransmission of Msg3 in (277,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x15bc in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 277.19 Initiating RA procedure with preamble 47, energy 56.4 dB (I0 319, thres 120), delay 24 start symbol 0 freq index 0
+[0m[NR_MAC]   277.19 UE RA-RNTI 010b TC-RNTI 0aff: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 0aff: 278.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 47
+[0m[NR_MAC]   UE 0aff: Msg3 scheduled at 278.17 (278.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    27810: RA RNTI b7fa CC_id 0 Scheduling retransmission of Msg3 in (278,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    27910: RA RNTI 0aff CC_id 0 Scheduling retransmission of Msg3 in (279,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    27910: RA RNTI b7fa CC_id 0 Scheduling retransmission of Msg3 in (279,17)
+[0m[1;31m[NR_MAC]   UE b7fa cannot find free CCE!
+[0m[NR_MAC]    27911: RA RNTI b7fa CC_id 0 Scheduling retransmission of Msg3 in (279,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xb7fa in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 279.19 Initiating RA procedure with preamble 42, energy 55.7 dB (I0 320, thres 120), delay 8 start symbol 0 freq index 0
+[0m[NR_MAC]   279.19 UE RA-RNTI 010b TC-RNTI feea: Activating RA process index 1
+[0m[32m[NR_MAC]   UE feea: 280.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 42
+[0m[NR_MAC]   UE feea: Msg3 scheduled at 280.17 (280.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    28010: RA RNTI 0aff CC_id 0 Scheduling retransmission of Msg3 in (280,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    28110: RA RNTI 0aff CC_id 0 Scheduling retransmission of Msg3 in (281,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    28110: RA RNTI feea CC_id 0 Scheduling retransmission of Msg3 in (281,17)
+[0m[1;31m[NR_MAC]   UE feea cannot find free CCE!
+[0m[NR_MAC]    28111: RA RNTI feea CC_id 0 Scheduling retransmission of Msg3 in (281,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x0aff in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 281.19 Initiating RA procedure with preamble 29, energy 55.7 dB (I0 318, thres 120), delay 11 start symbol 0 freq index 0
+[0m[NR_MAC]   281.19 UE RA-RNTI 010b TC-RNTI 7464: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 7464: 282.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 29
+[0m[NR_MAC]   UE 7464: Msg3 scheduled at 282.17 (282.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    28210: RA RNTI feea CC_id 0 Scheduling retransmission of Msg3 in (282,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    28310: RA RNTI 7464 CC_id 0 Scheduling retransmission of Msg3 in (283,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    28310: RA RNTI feea CC_id 0 Scheduling retransmission of Msg3 in (283,17)
+[0m[1;31m[NR_MAC]   UE feea cannot find free CCE!
+[0m[NR_MAC]    28311: RA RNTI feea CC_id 0 Scheduling retransmission of Msg3 in (283,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xfeea in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 283.19 Initiating RA procedure with preamble 50, energy 55.7 dB (I0 318, thres 120), delay 21 start symbol 0 freq index 0
+[0m[NR_MAC]   283.19 UE RA-RNTI 010b TC-RNTI 65d3: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 65d3: 284.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 50
+[0m[NR_MAC]   UE 65d3: Msg3 scheduled at 284.17 (284.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    28410: RA RNTI 7464 CC_id 0 Scheduling retransmission of Msg3 in (284,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    28510: RA RNTI 7464 CC_id 0 Scheduling retransmission of Msg3 in (285,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    28510: RA RNTI 65d3 CC_id 0 Scheduling retransmission of Msg3 in (285,17)
+[0m[1;31m[NR_MAC]   UE 65d3 cannot find free CCE!
+[0m[NR_MAC]    28511: RA RNTI 65d3 CC_id 0 Scheduling retransmission of Msg3 in (285,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x7464 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 285.19 Initiating RA procedure with preamble 16, energy 55.7 dB (I0 318, thres 120), delay 9 start symbol 0 freq index 0
+[0m[NR_MAC]   285.19 UE RA-RNTI 010b TC-RNTI 17ed: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 17ed: 286.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 16
+[0m[NR_MAC]   UE 17ed: Msg3 scheduled at 286.17 (286.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    28610: RA RNTI 65d3 CC_id 0 Scheduling retransmission of Msg3 in (286,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    28710: RA RNTI 17ed CC_id 0 Scheduling retransmission of Msg3 in (287,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    28710: RA RNTI 65d3 CC_id 0 Scheduling retransmission of Msg3 in (287,17)
+[0m[1;31m[NR_MAC]   UE 65d3 cannot find free CCE!
+[0m[NR_MAC]    28711: RA RNTI 65d3 CC_id 0 Scheduling retransmission of Msg3 in (287,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x65d3 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 287.19 Initiating RA procedure with preamble 5, energy 56.4 dB (I0 320, thres 120), delay 5 start symbol 0 freq index 0
+[0m[NR_MAC]   287.19 UE RA-RNTI 010b TC-RNTI 9d87: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 9d87: 288.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 5
+[0m[NR_MAC]   UE 9d87: Msg3 scheduled at 288.17 (288.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    28810: RA RNTI 17ed CC_id 0 Scheduling retransmission of Msg3 in (288,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    28910: RA RNTI 17ed CC_id 0 Scheduling retransmission of Msg3 in (289,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    28910: RA RNTI 9d87 CC_id 0 Scheduling retransmission of Msg3 in (289,17)
+[0m[1;31m[NR_MAC]   UE 9d87 cannot find free CCE!
+[0m[NR_MAC]    28911: RA RNTI 9d87 CC_id 0 Scheduling retransmission of Msg3 in (289,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x17ed in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 289.19 Initiating RA procedure with preamble 49, energy 55.7 dB (I0 323, thres 120), delay 20 start symbol 0 freq index 0
+[0m[NR_MAC]   289.19 UE RA-RNTI 010b TC-RNTI 1173: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 1173: 290.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 49
+[0m[NR_MAC]   UE 1173: Msg3 scheduled at 290.17 (290.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    29010: RA RNTI 9d87 CC_id 0 Scheduling retransmission of Msg3 in (290,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    29110: RA RNTI 1173 CC_id 0 Scheduling retransmission of Msg3 in (291,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    29110: RA RNTI 9d87 CC_id 0 Scheduling retransmission of Msg3 in (291,17)
+[0m[1;31m[NR_MAC]   UE 9d87 cannot find free CCE!
+[0m[NR_MAC]    29111: RA RNTI 9d87 CC_id 0 Scheduling retransmission of Msg3 in (291,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x9d87 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 291.19 Initiating RA procedure with preamble 30, energy 55.7 dB (I0 322, thres 120), delay 12 start symbol 0 freq index 0
+[0m[NR_MAC]   291.19 UE RA-RNTI 010b TC-RNTI f316: Activating RA process index 1
+[0m[32m[NR_MAC]   UE f316: 292.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 30
+[0m[NR_MAC]   UE f316: Msg3 scheduled at 292.17 (292.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    29210: RA RNTI 1173 CC_id 0 Scheduling retransmission of Msg3 in (292,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    29310: RA RNTI 1173 CC_id 0 Scheduling retransmission of Msg3 in (293,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    29310: RA RNTI f316 CC_id 0 Scheduling retransmission of Msg3 in (293,17)
+[0m[1;31m[NR_MAC]   UE f316 cannot find free CCE!
+[0m[NR_MAC]    29311: RA RNTI f316 CC_id 0 Scheduling retransmission of Msg3 in (293,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x1173 in Msg3/PUSCH
+[0m[NR_MAC]    29410: RA RNTI f316 CC_id 0 Scheduling retransmission of Msg3 in (294,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    29510: RA RNTI f316 CC_id 0 Scheduling retransmission of Msg3 in (295,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xf316 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 369.19 Initiating RA procedure with preamble 37, energy 48.0 dB (I0 226, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   369.19 UE RA-RNTI 010b TC-RNTI 2ab0: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 2ab0: 370.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 37
+[0m[NR_MAC]   UE 2ab0: Msg3 scheduled at 370.17 (370.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    37110: RA RNTI 2ab0 CC_id 0 Scheduling retransmission of Msg3 in (371,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_PHY]   [RAPROC] 371.19 Initiating RA procedure with preamble 41, energy 51.0 dB (I0 250, thres 120), delay 8 start symbol 0 freq index 0
+[0m[NR_MAC]   371.19 UE RA-RNTI 010b TC-RNTI a2a3: Activating RA process index 1
+[0m[32m[NR_MAC]   UE a2a3: 372.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 41
+[0m[NR_MAC]   UE a2a3: Msg3 scheduled at 372.17 (372.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    37210: RA RNTI 2ab0 CC_id 0 Scheduling retransmission of Msg3 in (372,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    37310: RA RNTI 2ab0 CC_id 0 Scheduling retransmission of Msg3 in (373,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    37310: RA RNTI a2a3 CC_id 0 Scheduling retransmission of Msg3 in (373,17)
+[0m[1;31m[NR_MAC]   UE a2a3 cannot find free CCE!
+[0m[NR_MAC]    37311: RA RNTI a2a3 CC_id 0 Scheduling retransmission of Msg3 in (373,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x2ab0 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 373.19 Initiating RA procedure with preamble 47, energy 54.0 dB (I0 268, thres 120), delay 25 start symbol 0 freq index 0
+[0m[NR_MAC]   373.19 UE RA-RNTI 010b TC-RNTI 16f2: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 16f2: 374.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 47
+[0m[NR_MAC]   UE 16f2: Msg3 scheduled at 374.17 (374.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    37410: RA RNTI a2a3 CC_id 0 Scheduling retransmission of Msg3 in (374,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    37510: RA RNTI 16f2 CC_id 0 Scheduling retransmission of Msg3 in (375,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    37510: RA RNTI a2a3 CC_id 0 Scheduling retransmission of Msg3 in (375,17)
+[0m[1;31m[NR_MAC]   UE a2a3 cannot find free CCE!
+[0m[NR_MAC]    37511: RA RNTI a2a3 CC_id 0 Scheduling retransmission of Msg3 in (375,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xa2a3 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 375.19 Initiating RA procedure with preamble 23, energy 54.9 dB (I0 284, thres 120), delay 4 start symbol 0 freq index 0
+[0m[NR_MAC]   375.19 UE RA-RNTI 010b TC-RNTI 36b1: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 36b1: 376.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 23
+[0m[NR_MAC]   UE 36b1: Msg3 scheduled at 376.17 (376.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    37610: RA RNTI 16f2 CC_id 0 Scheduling retransmission of Msg3 in (376,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    37710: RA RNTI 16f2 CC_id 0 Scheduling retransmission of Msg3 in (377,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    37710: RA RNTI 36b1 CC_id 0 Scheduling retransmission of Msg3 in (377,17)
+[0m[1;31m[NR_MAC]   UE 36b1 cannot find free CCE!
+[0m[NR_MAC]    37711: RA RNTI 36b1 CC_id 0 Scheduling retransmission of Msg3 in (377,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x16f2 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 377.19 Initiating RA procedure with preamble 57, energy 54.9 dB (I0 294, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   377.19 UE RA-RNTI 010b TC-RNTI 65a1: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 65a1: 378.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 57
+[0m[NR_MAC]   UE 65a1: Msg3 scheduled at 378.17 (378.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    37810: RA RNTI 36b1 CC_id 0 Scheduling retransmission of Msg3 in (378,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    37910: RA RNTI 65a1 CC_id 0 Scheduling retransmission of Msg3 in (379,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    37910: RA RNTI 36b1 CC_id 0 Scheduling retransmission of Msg3 in (379,17)
+[0m[1;31m[NR_MAC]   UE 36b1 cannot find free CCE!
+[0m[NR_MAC]    37911: RA RNTI 36b1 CC_id 0 Scheduling retransmission of Msg3 in (379,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x36b1 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 379.19 Initiating RA procedure with preamble 14, energy 55.7 dB (I0 301, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   379.19 UE RA-RNTI 010b TC-RNTI 87fe: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 87fe: 380.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 14
+[0m[NR_MAC]   UE 87fe: Msg3 scheduled at 380.17 (380.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    38010: RA RNTI 65a1 CC_id 0 Scheduling retransmission of Msg3 in (380,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    38110: RA RNTI 65a1 CC_id 0 Scheduling retransmission of Msg3 in (381,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    38110: RA RNTI 87fe CC_id 0 Scheduling retransmission of Msg3 in (381,17)
+[0m[1;31m[NR_MAC]   UE 87fe cannot find free CCE!
+[0m[NR_MAC]    38111: RA RNTI 87fe CC_id 0 Scheduling retransmission of Msg3 in (381,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x65a1 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 381.19 Initiating RA procedure with preamble 45, energy 55.7 dB (I0 306, thres 120), delay 25 start symbol 0 freq index 0
+[0m[NR_MAC]   381.19 UE RA-RNTI 010b TC-RNTI 07ee: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 07ee: 382.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 45
+[0m[NR_MAC]   UE 07ee: Msg3 scheduled at 382.17 (382.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    38210: RA RNTI 87fe CC_id 0 Scheduling retransmission of Msg3 in (382,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    38310: RA RNTI 07ee CC_id 0 Scheduling retransmission of Msg3 in (383,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    38310: RA RNTI 87fe CC_id 0 Scheduling retransmission of Msg3 in (383,17)
+[0m[1;31m[NR_MAC]   UE 87fe cannot find free CCE!
+[0m[NR_MAC]    38311: RA RNTI 87fe CC_id 0 Scheduling retransmission of Msg3 in (383,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Frame.Slot 384.0
+UE RNTI bff0 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -88 (16 meas)
+UE bff0: dlsch_rounds 358/26/1/1, dlsch_errors 1, pucch0_DTX 2, BLER 0.16197 MCS (1) 21
+UE bff0: ulsch_rounds 2377/2/0/0, ulsch_errors 0, ulsch_DTX 1, BLER 0.00028 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.5 dB
+UE bff0: MAC:    TX        3224939 RX         358990 bytes
+UE bff0: LCID 1: TX            760 RX           1529 bytes
+UE bff0: LCID 2: TX              0 RX              0 bytes
+UE bff0: LCID 4: TX        3204277 RX           3057 bytes
+
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x87fe in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 383.19 Initiating RA procedure with preamble 30, energy 55.7 dB (I0 308, thres 120), delay 12 start symbol 0 freq index 0
+[0m[NR_MAC]   383.19 UE RA-RNTI 010b TC-RNTI 9225: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 9225: 384.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 30
+[0m[NR_MAC]   UE 9225: Msg3 scheduled at 384.17 (384.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    38410: RA RNTI 07ee CC_id 0 Scheduling retransmission of Msg3 in (384,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    38510: RA RNTI 07ee CC_id 0 Scheduling retransmission of Msg3 in (385,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    38510: RA RNTI 9225 CC_id 0 Scheduling retransmission of Msg3 in (385,17)
+[0m[1;31m[NR_MAC]   UE 9225 cannot find free CCE!
+[0m[NR_MAC]    38511: RA RNTI 9225 CC_id 0 Scheduling retransmission of Msg3 in (385,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x07ee in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 385.19 Initiating RA procedure with preamble 45, energy 56.4 dB (I0 313, thres 120), delay 25 start symbol 0 freq index 0
+[0m[NR_MAC]   385.19 UE RA-RNTI 010b TC-RNTI 46c1: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 46c1: 386.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 45
+[0m[NR_MAC]   UE 46c1: Msg3 scheduled at 386.17 (386.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    38610: RA RNTI 9225 CC_id 0 Scheduling retransmission of Msg3 in (386,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    38710: RA RNTI 46c1 CC_id 0 Scheduling retransmission of Msg3 in (387,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    38710: RA RNTI 9225 CC_id 0 Scheduling retransmission of Msg3 in (387,17)
+[0m[1;31m[NR_MAC]   UE 9225 cannot find free CCE!
+[0m[NR_MAC]    38711: RA RNTI 9225 CC_id 0 Scheduling retransmission of Msg3 in (387,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x9225 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 387.19 Initiating RA procedure with preamble 39, energy 55.7 dB (I0 315, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   387.19 UE RA-RNTI 010b TC-RNTI 8bc6: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 8bc6: 388.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 39
+[0m[NR_MAC]   UE 8bc6: Msg3 scheduled at 388.17 (388.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    38810: RA RNTI 46c1 CC_id 0 Scheduling retransmission of Msg3 in (388,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    38910: RA RNTI 46c1 CC_id 0 Scheduling retransmission of Msg3 in (389,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    38910: RA RNTI 8bc6 CC_id 0 Scheduling retransmission of Msg3 in (389,17)
+[0m[1;31m[NR_MAC]   UE 8bc6 cannot find free CCE!
+[0m[NR_MAC]    38911: RA RNTI 8bc6 CC_id 0 Scheduling retransmission of Msg3 in (389,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x46c1 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 389.19 Initiating RA procedure with preamble 31, energy 55.7 dB (I0 314, thres 120), delay 11 start symbol 0 freq index 0
+[0m[NR_MAC]   389.19 UE RA-RNTI 010b TC-RNTI e2b2: Activating RA process index 0
+[0m[32m[NR_MAC]   UE e2b2: 390.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 31
+[0m[NR_MAC]   UE e2b2: Msg3 scheduled at 390.17 (390.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    39010: RA RNTI 8bc6 CC_id 0 Scheduling retransmission of Msg3 in (390,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    39110: RA RNTI e2b2 CC_id 0 Scheduling retransmission of Msg3 in (391,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    39110: RA RNTI 8bc6 CC_id 0 Scheduling retransmission of Msg3 in (391,17)
+[0m[1;31m[NR_MAC]   UE 8bc6 cannot find free CCE!
+[0m[NR_MAC]    39111: RA RNTI 8bc6 CC_id 0 Scheduling retransmission of Msg3 in (391,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x8bc6 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 391.19 Initiating RA procedure with preamble 44, energy 55.7 dB (I0 314, thres 120), delay 24 start symbol 0 freq index 0
+[0m[NR_MAC]   391.19 UE RA-RNTI 010b TC-RNTI 124b: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 124b: 392.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 44
+[0m[NR_MAC]   UE 124b: Msg3 scheduled at 392.17 (392.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    39210: RA RNTI e2b2 CC_id 0 Scheduling retransmission of Msg3 in (392,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    39310: RA RNTI e2b2 CC_id 0 Scheduling retransmission of Msg3 in (393,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    39310: RA RNTI 124b CC_id 0 Scheduling retransmission of Msg3 in (393,17)
+[0m[1;31m[NR_MAC]   UE 124b cannot find free CCE!
+[0m[NR_MAC]    39311: RA RNTI 124b CC_id 0 Scheduling retransmission of Msg3 in (393,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xe2b2 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 393.19 Initiating RA procedure with preamble 53, energy 55.7 dB (I0 315, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   393.19 UE RA-RNTI 010b TC-RNTI 1fe8: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 1fe8: 394.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 53
+[0m[NR_MAC]   UE 1fe8: Msg3 scheduled at 394.17 (394.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    39410: RA RNTI 124b CC_id 0 Scheduling retransmission of Msg3 in (394,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    39510: RA RNTI 1fe8 CC_id 0 Scheduling retransmission of Msg3 in (395,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    39510: RA RNTI 124b CC_id 0 Scheduling retransmission of Msg3 in (395,17)
+[0m[1;31m[NR_MAC]   UE 124b cannot find free CCE!
+[0m[NR_MAC]    39511: RA RNTI 124b CC_id 0 Scheduling retransmission of Msg3 in (395,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x124b in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 395.19 Initiating RA procedure with preamble 46, energy 56.4 dB (I0 314, thres 120), delay 26 start symbol 0 freq index 0
+[0m[NR_MAC]   395.19 UE RA-RNTI 010b TC-RNTI 54b5: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 54b5: 396.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 46
+[0m[NR_MAC]   UE 54b5: Msg3 scheduled at 396.17 (396.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    39610: RA RNTI 1fe8 CC_id 0 Scheduling retransmission of Msg3 in (396,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    39710: RA RNTI 1fe8 CC_id 0 Scheduling retransmission of Msg3 in (397,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    39710: RA RNTI 54b5 CC_id 0 Scheduling retransmission of Msg3 in (397,17)
+[0m[1;31m[NR_MAC]   UE 54b5 cannot find free CCE!
+[0m[NR_MAC]    39711: RA RNTI 54b5 CC_id 0 Scheduling retransmission of Msg3 in (397,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x1fe8 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 397.19 Initiating RA procedure with preamble 12, energy 56.4 dB (I0 318, thres 120), delay 5 start symbol 0 freq index 0
+[0m[NR_MAC]   397.19 UE RA-RNTI 010b TC-RNTI 9895: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 9895: 398.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 12
+[0m[NR_MAC]   UE 9895: Msg3 scheduled at 398.17 (398.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    39810: RA RNTI 54b5 CC_id 0 Scheduling retransmission of Msg3 in (398,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    39910: RA RNTI 9895 CC_id 0 Scheduling retransmission of Msg3 in (399,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    39910: RA RNTI 54b5 CC_id 0 Scheduling retransmission of Msg3 in (399,17)
+[0m[1;31m[NR_MAC]   UE 54b5 cannot find free CCE!
+[0m[NR_MAC]    39911: RA RNTI 54b5 CC_id 0 Scheduling retransmission of Msg3 in (399,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x54b5 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 399.19 Initiating RA procedure with preamble 59, energy 55.7 dB (I0 318, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   399.19 UE RA-RNTI 010b TC-RNTI dea8: Activating RA process index 1
+[0m[32m[NR_MAC]   UE dea8: 400.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 59
+[0m[NR_MAC]   UE dea8: Msg3 scheduled at 400.17 (400.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    40010: RA RNTI 9895 CC_id 0 Scheduling retransmission of Msg3 in (400,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    40110: RA RNTI 9895 CC_id 0 Scheduling retransmission of Msg3 in (401,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    40110: RA RNTI dea8 CC_id 0 Scheduling retransmission of Msg3 in (401,17)
+[0m[1;31m[NR_MAC]   UE dea8 cannot find free CCE!
+[0m[NR_MAC]    40111: RA RNTI dea8 CC_id 0 Scheduling retransmission of Msg3 in (401,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x9895 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 401.19 Initiating RA procedure with preamble 43, energy 55.7 dB (I0 318, thres 120), delay 8 start symbol 0 freq index 0
+[0m[NR_MAC]   401.19 UE RA-RNTI 010b TC-RNTI 4cdd: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 4cdd: 402.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 43
+[0m[NR_MAC]   UE 4cdd: Msg3 scheduled at 402.17 (402.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    40210: RA RNTI dea8 CC_id 0 Scheduling retransmission of Msg3 in (402,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    40310: RA RNTI 4cdd CC_id 0 Scheduling retransmission of Msg3 in (403,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    40310: RA RNTI dea8 CC_id 0 Scheduling retransmission of Msg3 in (403,17)
+[0m[1;31m[NR_MAC]   UE dea8 cannot find free CCE!
+[0m[NR_MAC]    40311: RA RNTI dea8 CC_id 0 Scheduling retransmission of Msg3 in (403,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xdea8 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 403.19 Initiating RA procedure with preamble 0, energy 55.7 dB (I0 320, thres 120), delay 12 start symbol 0 freq index 0
+[0m[NR_MAC]   403.19 UE RA-RNTI 010b TC-RNTI 241a: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 241a: 404.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 0
+[0m[NR_MAC]   UE 241a: Msg3 scheduled at 404.17 (404.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    40410: RA RNTI 4cdd CC_id 0 Scheduling retransmission of Msg3 in (404,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    40510: RA RNTI 4cdd CC_id 0 Scheduling retransmission of Msg3 in (405,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    40510: RA RNTI 241a CC_id 0 Scheduling retransmission of Msg3 in (405,17)
+[0m[1;31m[NR_MAC]   UE 241a cannot find free CCE!
+[0m[NR_MAC]    40511: RA RNTI 241a CC_id 0 Scheduling retransmission of Msg3 in (405,18)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x4cdd in Msg3/PUSCH
+[0m[NR_MAC]    40610: RA RNTI 241a CC_id 0 Scheduling retransmission of Msg3 in (406,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]    40710: RA RNTI 241a CC_id 0 Scheduling retransmission of Msg3 in (407,17)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x241a in Msg3/PUSCH
+[0m[NR_MAC]   Frame.Slot 512.0
+UE RNTI bff0 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -88 (16 meas)
+UE bff0: dlsch_rounds 500/26/1/1, dlsch_errors 1, pucch0_DTX 2, BLER 0.04117 MCS (1) 23
+UE bff0: ulsch_rounds 2772/2/0/0, ulsch_errors 0, ulsch_DTX 1, BLER 0.00007 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.0 dB
+UE bff0: MAC:    TX        4899172 RX         418842 bytes
+UE bff0: LCID 1: TX            763 RX           1551 bytes
+UE bff0: LCID 2: TX              0 RX              0 bytes
+UE bff0: LCID 4: TX        4870288 RX           3120 bytes
+
+[0m[NR_PHY]   [RAPROC] 517.19 Initiating RA procedure with preamble 38, energy 48.0 dB (I0 227, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   517.19 UE RA-RNTI 010b TC-RNTI a828: Activating RA process index 0
+[0m[32m[NR_MAC]   UE a828: 518.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 38
+[0m[NR_MAC]   UE a828: Msg3 scheduled at 518.17 (518.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0xa828
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0xa828 received correctly, adding UE MAC Context RNTI 0xa828
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 43048
+[0m[RLC]   Added srb 1 to UE 43048
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0xa828 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0xa828 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI a828, payload_size 6
+[0m[NR_RRC]   Received UE 5G-S-TMSI-Part1 278099133762
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 43048 (rnti: a828, random ue id 40c0000542)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI a828
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI a828, adding CU UE ID 1
+[0m[NR_MAC]   UE a828 Generate msg4: feedback at  519.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0xa828) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[RRC]   s_tmsi part2 0 (00 00)
+[0m[NR_RRC]   5g_s_TMSI: 0x40C0000542, amf_set_id: 0x1 (1), amf_pointer: 0x0 (0), 5g TMSI: 0xC0000542 
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 4288) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 43048
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI a828 
+[0m[NR_RRC]   Removed UE context
+[0m[NR_MAC]   Remove NR rnti 0xa828
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xa828 in Msg3/PUSCH
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xa828 in Msg3/PUSCH
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xa828 in Msg3/PUSCH
+[0m[NR_MAC]   Frame.Slot 640.0
+UE RNTI bff0 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -88 (16 meas)
+UE bff0: dlsch_rounds 616/41/1/1, dlsch_errors 1, pucch0_DTX 2, BLER 0.07743 MCS (1) 25
+UE bff0: ulsch_rounds 3168/2/0/0, ulsch_errors 0, ulsch_DTX 1, BLER 0.00002 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.0 dB
+UE bff0: MAC:    TX        6453778 RX         478832 bytes
+UE bff0: LCID 1: TX            766 RX           1573 bytes
+UE bff0: LCID 2: TX              0 RX              0 bytes
+UE bff0: LCID 4: TX        6417645 RX           3271 bytes
+
+[0m[NR_MAC]   Frame.Slot 768.0
+UE RNTI bff0 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -88 (16 meas)
+UE bff0: dlsch_rounds 737/53/1/1, dlsch_errors 1, pucch0_DTX 2, BLER 0.09805 MCS (1) 25
+UE bff0: ulsch_rounds 3565/2/0/0, ulsch_errors 0, ulsch_DTX 1, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.5 dB
+UE bff0: MAC:    TX        8114822 RX         538822 bytes
+UE bff0: LCID 1: TX            772 RX           1617 bytes
+UE bff0: LCID 2: TX              0 RX              0 bytes
+UE bff0: LCID 4: TX        8071706 RX           3349 bytes
+
+[0m[NR_MAC]   Frame.Slot 896.0
+UE RNTI bff0 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -88 (16 meas)
+UE bff0: dlsch_rounds 861/67/1/1, dlsch_errors 1, pucch0_DTX 2, BLER 0.12570 MCS (1) 25
+UE bff0: ulsch_rounds 3960/2/0/0, ulsch_errors 0, ulsch_DTX 1, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 28.5 dB
+UE bff0: MAC:    TX        9786825 RX         598720 bytes
+UE bff0: LCID 1: TX            775 RX           1639 bytes
+UE bff0: LCID 2: TX              0 RX              0 bytes
+UE bff0: LCID 4: TX        9736190 RX           3418 bytes
+
+[0m[NR_MAC]   Frame.Slot 0.0
+UE RNTI bff0 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -88 (16 meas)
+UE bff0: dlsch_rounds 978/80/1/1, dlsch_errors 1, pucch0_DTX 2, BLER 0.11664 MCS (1) 26
+UE bff0: ulsch_rounds 4357/2/0/0, ulsch_errors 0, ulsch_DTX 1, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 28.0 dB
+UE bff0: MAC:    TX       11459730 RX         658664 bytes
+UE bff0: LCID 1: TX            778 RX           1661 bytes
+UE bff0: LCID 2: TX              0 RX              0 bytes
+UE bff0: LCID 4: TX       11402081 RX           3487 bytes
+
+[0m

@@ -1,0 +1,2385 @@
+[ENB_APP]   nfapi (0) running mode: MONOLITHIC
+[0m[GNB_APP]   Getting GNBSParams
+[0m[OPT]   OPT disabled
+[0m[HW]   Version: Branch: HEAD Abrev. Hash: 707aab3 Date: Tue Jun 25 10:02:24 2024 +0000
+[0m[NR_PHY]   RC.gNB = 0x55bdf8ee24f0
+[0m[NR_PHY]   PRB blacklist 
+[0m[NR_PHY]   Copying 0 blacklisted PRB to L1 context
+[0m[PHY]   L1_RX_THREAD_CORE -1 (15)
+[0m[PHY]   TX_AMP = 519 (-36 dBFS)
+[0m[PHY]   l1_north_init_gNB() RC.nb_nr_L1_inst:1
+[0m[PHY]   Installing callbacks for IF_Module - UL_indication
+[0m[MAC]   Allocating shared L1/L2 interface structure for instance 0 @ 0x55bdf8eea5a0
+[0m[PHY]   l1_north_init_gNB() RC.gNB[0] installing callbacks
+[0m[PHY]   create_gNB_tasks() Task ready initialize structures
+[0m[PHY]   No prs_config configuration found..!!
+[0m[GNB_APP]   pdsch_AntennaPorts N1 1 N2 1 XP 1 pusch_AntennaPorts 1
+[0m[GNB_APP]   minTXRXTIME 6
+[0m[GNB_APP]   SIB1 TDA 1
+[0m[GNB_APP]   CSI-RS 0, SRS 0, 256 QAM may be on, delta_MCS off, maxMIMO_Layers -1
+[0m[GNB_APP]   sr_ProhibitTimer 0, sr_TransMax 64, sr_ProhibitTimer_v1700 0, t300 400, t301 400, t310 2000, n310 10, t311 3000, n311 1, t319 400
+[0m[RRC]   Read in ServingCellConfigCommon (PhysCellId 0, ABSFREQSSB 641280, DLBand 78, ABSFREQPOINTA 640008, DLBW 162,RACH_TargetReceivedPower -96
+[0m[NR_MAC]   NR band duplex spacing is 0 KHz (nr_bandtable[40].band = 78)
+[0m[RRC]   absoluteFrequencySSB 641280 corresponds to 3619200000 Hz
+[0m[NR_MAC]   NR band duplex spacing is 0 KHz (nr_bandtable[40].band = 78)
+[0m[NR_MAC]   NR band 78, duplex mode TDD, duplex spacing = 0 KHz
+[0m[NR_MAC]   NR band duplex spacing is 0 KHz (nr_bandtable[40].band = 78)
+[0m[NR_MAC]   NR band 78, duplex mode TDD, duplex spacing = 0 KHz
+[0m[MAC]   [MAIN] Init function start:nb_nr_macrlc_inst=1
+[0m[UTIL]   threadCreate() for MAC_STATS: creating thread with affinity ffffffff, priority 2
+[0m[PHY]   Installing callbacks for IF_Module - UL_indication
+[0m[NR_MAC]   Configuring common parameters from NR ServingCellConfig
+[0m[NR_MAC]   DL_Bandwidth:60
+[0m[NR_MAC]   NR band duplex spacing is 0 KHz (nr_bandtable[40].band = 78)
+[0m[NR_MAC]   DL_Bandwidth:60
+[0m[NR_MAC]   NR band duplex spacing is 0 KHz (nr_bandtable[40].band = 78)
+[0m[NR_MAC]   NR band duplex spacing is 0 KHz (nr_bandtable[40].band = 78)
+[0m[NR_MAC]   NR band 78, duplex mode TDD, duplex spacing = 0 KHz
+[0m[NR_MAC]   ssb_OffsetPointA 86, ssb_SubcarrierOffset 0
+[0m[NR_MAC]   Set RX antenna number to 1, Set TX antenna number to 1 (num ssb 1: 80000000,0)
+[0m[NR_MAC]   Setting TDD configuration period to 6
+[0m[PHY]   DL frequency 3629280000 Hz, UL frequency 3629280000 Hz: band 48, uldl offset 0 Hz
+[0m[32m[PHY]   Configuring MIB for instance 0, : (Nid_cell 0,DL freq 3629280000, UL freq 3629280000)
+[0m[PHY]   Initializing frame parms for mu 1, N_RB 162, Ncp 0
+[0m[PHY]   Init: N_RB_DL 162, first_carrier_offset 1076, nb_prefix_samples 144,nb_prefix_samples0 176, ofdm_symbol_size 2048
+[0m[PHY]   Doing symbol rotation calculation for TX/RX, f0 3629280000.000000 Hz, Nsymb 28
+[0m[PHY]   Doing symbol rotation calculation for TX/RX, f0 3629280000.000000 Hz, Nsymb 28
+[0m[PHY]   gNB 0 configured
+[0m[NR_MAC]   PUSCH Target 300, PUCCH Target 200, PUCCH Failure 10, PUSCH Failure 1000
+[0m[NR_RRC]   SIB1 freq: offsetToPointA 86
+[0m[NR_MAC]   NR band duplex spacing is 0 KHz (nr_bandtable[40].band = 78)
+[0m[NR_MAC]   NR band 78, duplex mode TDD, duplex spacing = 0 KHz
+[0m[GNB_APP]   F1AP: gNB idx 0 gNB_DU_id 3585, gNB_DU_name gNB-OAI, TAC 1 MCC/MNC/length 1/1/2 cellID 12345678
+[0m[GNB_APP]   ngran_DU: Configuring Cell 0 for TDD
+[0mCMDLINE: "/root/radio_code/openairinterface5g/cmake_targets/ran_build/build/nr-softmodem" "-O" "/root/radio_code/openshift-oai-configurations/./config/config-x410-162prb-cbrs-running.conf" "--sa" "--usrp-tx-thread-config" "1" 
+[LIBCONFIG] Path for include directive set to: /root/radio_code/openshift-oai-configurations/./config
+[CONFIG] function config_libconfig_init returned 0
+[CONFIG] config module libconfig loaded
+[CONFIG] debug flags: 0x00000000
+log init done
+Reading in command-line options
+[CONFIG] parallel_conf is set to 0
+[CONFIG] worker_conf is set to 1
+Configuration: nb_rrc_inst 1, nb_nr_L1_inst 1, nb_ru 1
+configuring for RAU/RRU
+Initializing northbound interface for L1
+DL frequency 3629280000: band 48, UL frequency 3629280000
+<MeasurementTimingConfiguration>
+    <criticalExtensions>
+        <c1>
+            <measTimingConf>
+                <measTiming>
+                    <MeasTiming>
+                        <frequencyAndTiming>
+                            <carrierFreq>641280</carrierFreq>
+                            <ssbSubcarrierSpacing><kHz30/></ssbSubcarrierSpacing>
+                            <ssb-MeasurementTimingConfiguration>
+                                <periodicityAndOffset>
+                                    <sf20>0</sf20>
+                                </periodicityAndOffset>
+                                <duration><sf1/></duration>
+                            </ssb-MeasurementTimingConfiguration>
+                        </frequencyAndTiming>
+                    </MeasTiming>
+                </measTiming>
+            </measTimingConf>
+        </c1>
+    </criticalExtensions>
+</MeasurementTimingConfiguration>
+[PHY]   create_gNB_tasks() RC.nb_nr_L1_inst:1
+[0m[PHY]   l1_north_init_gNB() RC.nb_nr_L1_inst:1
+[0m[PHY]   Installing callbacks for IF_Module - UL_indication
+[0m[PHY]   l1_north_init_gNB() RC.gNB[0] installing callbacks
+[0m[GNB_APP]   Allocating gNB_RRC_INST for 1 instances
+[0m[GNB_APP]   SDAP layer is disabled
+[0m[GNB_APP]   Data Radio Bearer count 1
+[0m[NR_RRC]   do_SIB23_NR, size 9 
+ [0m[PDCP]   pdcp init,usegtp 
+[0m[GNB_APP]   default drx 0
+[0m[GNB_APP]   [gNB 0] gNB_app_register for instance 0
+[0m[UTIL]   threadCreate() for TASK_SCTP: creating thread with affinity ffffffff, priority 50
+[0m[ITTI]   Created Posix thread TASK_SCTP
+[0m[X2AP]   X2AP is disabled.
+[0m[UTIL]   threadCreate() for TASK_NGAP: creating thread with affinity ffffffff, priority 50
+[0m[ITTI]   Created Posix thread TASK_NGAP
+[0m[UTIL]   threadCreate() for TASK_GNB_APP: creating thread with affinity ffffffff, priority 50
+[0m[NGAP]   Registered new gNB[0] and macro gNB id 3585
+[0m[NGAP]   [gNB 0] check the amf registration state
+[0m[ITTI]   Created Posix thread TASK_GNB_APP
+[0m[UTIL]   threadCreate() for TASK_RRC_GNB: creating thread with affinity ffffffff, priority 50
+[0m[NGAP]   3585 -> 0000e010
+[0m[ITTI]   Created Posix thread TASK_RRC_GNB
+[0m[NR_RRC]   Entering main loop of NR_RRC message task
+[0m[NR_RRC]   Received F1 Setup Request from gNB_DU 3585 (gNB-OAI) on assoc_id -1
+[0m[GTPU]   Configuring GTPu
+[0m[GTPU]   SA mode 
+[0m[GTPU]   Configuring GTPu address : 10.130.3.234, port : 2152
+[0m[GTPU]   Initializing UDP for local address 10.130.3.234 with port 2152
+[0m[RRC]   Accepting DU 3585 (gNB-OAI), sending F1 Setup Response
+[0m[RRC]   DU uses RRC version 17.3.0
+[0m[MAC]   received F1 Setup Response from CU (null)
+[0m[MAC]   CU uses RRC version 17.3.0
+[0m[GTPU]   Created gtpu instance id: 99
+[0m[UTIL]   threadCreate() for TASK_GTPV1_U: creating thread with affinity ffffffff, priority 50
+[0m[NR_RRC]   Accepting new CU-UP ID 3585 name gNB-OAI (assoc_id -1)
+[0m[GNB_APP]   [gNB 0] Received NGAP_REGISTER_GNB_CNF: associated AMF 1
+[0m[ITTI]   Created Posix thread TASK_GTPV1_U
+[0m[PHY]   Initializing gNB 0 single_thread_flag:1
+[0m[PHY]   Initializing gNB 0
+[0m[PHY]   Registering with MAC interface module (before 0x55bdf8eea5a0)
+[0m[PHY]   Installing callbacks for IF_Module - UL_indication
+[0m[PHY]   Registering with MAC interface module (after 0x55bdf8eea5a0)
+[0m[PHY]   Setting indication lists
+[0m[PHY]   [nr-gnb.c] gNB structure allocated
+[0m[PHY]   RU GPIO control set as 'generic'
+[0m[PHY]   Setting clock source to internal
+[0m[PHY]   Setting time source to internal
+[0m[PHY]   number of L1 instances 1, number of RU 1, number of CPU cores 32
+[0m[PHY]   Copying frame parms from gNB in RC to gNB 0 in ru 0 and frame_parms in ru
+[0m[PHY]   Initialized RU proc 0 (,synch_to_ext_device),
+[0m[PHY]   RU Thread pool size 2
+[0m[PHY]   RU thread-pool core string -1,-1
+[0m[UTIL]   threadCreate() for Tpool0_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool1_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for ru_thread: creating thread with affinity ffffffff, priority 97
+[0m[PHY]   Starting RU 0 (,synch_to_ext_device) on cpu 9
+[0m[PHY]   Waiting for RUs to be configured ... RC.ru_mask:01
+[0m[PHY]   Initializing frame parms for mu 1, N_RB 162, Ncp 0
+[0m[PHY]   Init: N_RB_DL 162, first_carrier_offset 1076, nb_prefix_samples 144,nb_prefix_samples0 176, ofdm_symbol_size 2048
+[0m[PHY]   fp->scs=30000
+[0m[PHY]   fp->ofdm_symbol_size=2048
+[0m[PHY]   fp->nb_prefix_samples0=176
+[0m[PHY]   fp->nb_prefix_samples=144
+[0m[PHY]   fp->slots_per_subframe=2
+[0m[PHY]   fp->samples_per_subframe_wCP=57344
+[0m[PHY]   fp->samples_per_frame_wCP=573440
+[0m[PHY]   fp->samples_per_subframe=61440
+[0m[PHY]   fp->samples_per_frame=614400
+[0m[PHY]   fp->dl_CarrierFreq=3629280000
+[0m[PHY]   fp->ul_CarrierFreq=3629280000
+[0m[PHY]   fp->Nid_cell=0
+[0m[PHY]   fp->first_carrier_offset=1076
+[0m[PHY]   fp->ssb_start_subcarrier=0
+[0m[PHY]   fp->Ncp=0
+[0m[PHY]   fp->N_RB_DL=162
+[0m[PHY]   fp->numerology_index=1
+[0m[PHY]   fp->nr_band=48
+[0m[PHY]   fp->ofdm_offset_divisor=8
+[0m[PHY]   fp->threequarter_fs=0
+[0m[PHY]   fp->sl_CarrierFreq=0
+[0m[PHY]   fp->N_RB_SL=0
+[0m[PHY]   Initializing RU signal buffers (if_south local RF) nb_tx 1, nb_rx 1
+[0m[PHY]   [INIT] common.txdata[0] = 0x7f4c0017c040 (2458880 bytes,sf_extension 320)
+[0m[PHY]   [INIT] common.txdata[0] = 0x7f4c0017c540 
+[0m[PHY]   nb_tx 1
+[0m[PHY]   rxdata_7_5kHz[0] 0x7f4c0008b040 for RU 0
+[0m[PHY]   [INIT] common.txdata_BF= 0x7f4be8000ac0 (8 bytes)
+[0m[PHY]   txdataF_BF[0] 0x7f4c00052040 for RU 0
+[0m[PHY]   rxdataF[0] 0x7f4bf82fe040 for RU 0
+[0m[PHY]   [INIT] nr_phy_init_RU() ru->num_gNB:1 
+[0m[PHY]   Setting RF config for N_RB 162, NB_RX 1, NB_TX 1
+[0m[PHY]   tune_offset 0 Hz, sample_rate 61440000 Hz
+[0m[PHY]   Channel 0: setting tx_gain offset 0, tx_freq 3629280000 Hz
+[0m[PHY]   Channel 0: setting rx_gain offset 75, rx_freq 3629280000 Hz
+[0m[HW]   openair0_cfg[0].sdr_addrs == 'addr=192.168.40.24'
+[0m[HW]   openair0_cfg[0].clock_source == '0' (internal = 0, external = 1)
+[0m[HW]   UHD version 4.3.0.HEAD-0-g1f8fd345 (4.3.0)
+[0m[HW]   Checking for USRP with args addr=192.168.40.24
+[0m[HW]   Found USRP x4xx
+[0m[93m[HW]   Can't set kernel parameters for X4x0
+[0m[HW]   Setting clock source to internal
+[0m[HW]   Setting time source to internal
+[0mNRRRC 0: Southbound Transport local_mac
+START MAIN THREADS
+RC.nb_nr_L1_inst:1
+Initializing gNB threads single_thread_flag:1 wait_for_sync:0
+wait_gNBs()
+Waiting for gNB L1 instances to all get configured ... sleeping 50ms (nb_nr_sL1_inst 1)
+gNB L1 are configured
+About to Init RU threads RC.nb_RU:1
+Initializing RU threads
+configuring RU from file
+Set RU mask to 1
+Creating RC.ru[0]:0x55bdf8f38990
+Setting function for RU 0 to gNodeB_3GPP
+[RU 0] Setting nr_flag 0, nr_band 78, nr_scs_for_raster 1
+[RU 0] Setting half-slot parallelization to 1
+configuring ru_id 0 (start_rf 0x55bdf4191ec0)
+wait RUs
+shlib_path liboai_device.so
+[LOADER] library liboai_device.so successfully loaded
+Found USRP x400
+[HW]   device_init() sample_rate:61440000
+[0m[HW]   cal 0: freq 3500000000.000000, offset 0.000000, diff 129280000.000000
+[0m[HW]   cal 1: freq 2660000000.000000, offset 0.000000, diff 969280000.000000
+[0m[HW]   cal 2: freq 2300000000.000000, offset 0.000000, diff 1329280000.000000
+[0m[HW]   cal 3: freq 1880000000.000000, offset 0.000000, diff 1749280000.000000
+[0m[HW]   cal 4: freq 816000000.000000, offset 0.000000, diff 2813280000.000000
+[0m[1;31m[HW]   RX Gain too high, lower by 15.000000 dB
+[0m[HW]   RX Gain 0 75.000000 (0.000000) => 75.000000 (max 60.000000)
+[0m[HW]   USRP TX_GAIN:60.00 gain_range:60.00 tx_gain:0.00
+[0m[HW]   Actual master clock: 245.760000MHz...
+[0m[HW]   Actual clock source internal...
+[0m[HW]   Actual time source internal...
+[0m[HW]   setting rx channel 0
+[0m[HW]   RF board max packet size 1992, size for 100µs jitter 6144 
+[0m[HW]   rx_max_num_samps 1992
+[0m[HW]   RX Channel 0
+[0m[HW]     Actual RX sample rate: 61.440000MSps...
+[0m[HW]     Actual RX frequency: 3.629280GHz...
+[0m[HW]     Actual RX gain: 60.000000...
+[0m[HW]     Actual RX bandwidth: 400.000000M...
+[0m[HW]     Actual RX antenna: RX1...
+[0m[HW]   TX Channel 0
+[0m[HW]     Actual TX sample rate: 61.440000MSps...
+[0m[HW]     Actual TX frequency: 3.629280GHz...
+[0m[HW]     Actual TX gain: 60.000000...
+[0m[HW]     Actual TX bandwidth: 400.000000M...
+[0m[HW]     Actual TX antenna: TX/RX0...
+[0m[HW]     Actual TX packet size: 1992
+[0mUsing Device: Single USRP:
+  Device: X400-Series Device
+  Mboard 0: x410
+  RX Channel: 0
+    RX DSP: 0
+    RX Dboard: A
+    RX Subdev: 0
+  RX Channel: 1
+    RX DSP: 1
+    RX Dboard: A
+    RX Subdev: 1
+  RX Channel: 2
+    RX DSP: 2
+    RX Dboard: B
+    RX Subdev: 0
+  RX Channel: 3
+    RX DSP: 3
+    RX Dboard: B
+    RX Subdev: 1
+  TX Channel: 0
+    TX DSP: 0
+    TX Dboard: A
+    TX Subdev: 0
+  TX Channel: 1
+    TX DSP: 1
+    TX Dboard: A
+    TX Subdev: 1
+  TX Channel: 2
+    TX DSP: 2
+    TX Dboard: B
+    TX Subdev: 0
+  TX Channel: 3
+    TX DSP: 3
+    TX Dboard: B
+    TX Subdev: 1
+
+[HW]   Device timestamp: 0.042580...
+[0m[HW]   [RAU] has loaded USRP X400 device.
+[0m[PHY]   RU 0 Setting N_TA_offset to 800 samples (factor 2.000000, UL Freq 3600120, N_RB 162, mu 1)
+[0m[PHY]   Signaling main thread that RU 0 is ready, sl_ahead 6
+[0m[PHY]   RUs configured
+[0m[PHY]   init_eNB_afterRU() RC.nb_nr_inst:1
+[0m[PHY]   RC.nb_nr_CC[inst:0]:0x7f4c02ef6010
+[0m[PHY]   [gNB 0] phy_init_nr_gNB() About to wait for gNB to be configured
+[0m[PHY]   Initialise nr transport
+[0m[PHY]   Mapping RX ports from 1 RUs to gNB 0
+[0m[PHY]   gNB->num_RU:1
+[0m[PHY]   Attaching RU 0 antenna 0 to gNB antenna 0
+[0m[UTIL]   threadCreate() for Tpool0_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool1_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool2_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool3_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool4_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool5_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool6_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool7_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for L1_rx_thread: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for L1_tx_thread: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for L1_stats: creating thread with affinity ffffffff, priority 1
+[0msetup_RU_buffers: frame_parms = 0x7f4c003d5010
+waiting for sync (ru_thread,-1/0x55bdf4d780ac,0x55bdf56098c0,0x55bdf5609880)
+RC.ru_mask:00
+ALL RUs READY!
+RC.nb_RU:1
+ALL RUs ready - init gNBs
+Not NFAPI mode - call init_eNB_afterRU()
+shlib_path libdfts.so
+[LOADER] library libdfts.so successfully loaded
+shlib_path libldpc.so
+[LOADER] library libldpc.so successfully loaded
+waiting for sync (L1_stats_thread,-1/0x55bdf4d780ac,0x55bdf56098c0,0x55bdf5609880)
+ALL RUs ready - ALL gNBs ready
+Sending sync to all threads
+Entering ITTI signals handler
+TYPE <CTRL-C> TO TERMINATE
+got sync (ru_thread)
+got sync (L1_stats_thread)
+[HW]   current pps at 0.000000, starting streaming at 1.000000
+[0m[PHY]   RU 0 rf device ready
+[0m[PHY]   RU 0 RF started opp_enabled 0
+[0m[UTIL]   threadCreate() for trx_usrp_write_thread: creating thread with affinity ffffffff, priority 97
+[0m[PHY]   tx write thread ready
+[0m[32m[PHY]   Command line parameters for the UE: -C 3629280000 -r 162 --numerology 1 --ssb 516
+[0m[NR_MAC]   Frame.Slot 128.0
+
+[0m[NR_MAC]   Frame.Slot 256.0
+
+[0m[NR_MAC]   Frame.Slot 384.0
+
+[0m[NR_MAC]   Frame.Slot 512.0
+
+[0m[NR_MAC]   Frame.Slot 640.0
+
+[0m[NR_MAC]   Frame.Slot 768.0
+
+[0m[NR_MAC]   Frame.Slot 896.0
+
+[0m[NR_MAC]   Frame.Slot 0.0
+
+[0m[NR_MAC]   Frame.Slot 128.0
+
+[0m[NR_MAC]   Frame.Slot 256.0
+
+[0m[NR_MAC]   Frame.Slot 384.0
+
+[0m[NR_MAC]   Frame.Slot 512.0
+
+[0m[NR_PHY]   [RAPROC] 605.19 Initiating RA procedure with preamble 45, energy 54.9 dB (I0 205, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   605.19 UE RA-RNTI 010b TC-RNTI 9fc0: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 9fc0: 606.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 45
+[0m[NR_MAC]   UE 9fc0: Msg3 scheduled at 606.17 (606.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x9fc0
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x9fc0 received correctly, adding UE MAC Context RNTI 0x9fc0
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 40896
+[0m[RLC]   Added srb 1 to UE 40896
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x9fc0 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x9fc0 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 9fc0, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 40896 (rnti: 9fc0, random ue id 6631036158000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 9fc0
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 9fc0, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  607. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 9fc0 Generate msg4: feedback at  607.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x9fc0) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NGAP]   [gNB 0] Build NGAP_NAS_FIRST_REQ adding in s_TMSI: GUAMI amf_set_id 0 amf_region_id 2 ue 9fc0
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[93m[NGAP]   could not find NGAP_ProtocolIE_ID_id_UEAggregateMaximumBitRate
+[0m[NR_RRC]   [gNB 0][UE 1] Selected security algorithms (0x7f4bf400442c): ciphering 0, integrity 2 (algorithms changed)
+[0m[NR_RRC]   [gNB 0][UE 9fc0] Saved security key 2ED32D064B601F86BBEAA580139D35D9E6340AAAB7AEB9AADA17D3D8642C8E9D
+[0m[NR_RRC]   UE 1 Logical Channel DL-DCCH, Generate SecurityModeCommand (bytes 3)
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] received securityModeComplete on UL-DCCH 1 from UE
+[0m[NR_RRC]   UE 1: Logical Channel DL-DCCH, Generate NR UECapabilityEnquiry (bytes 8, xid 3)
+[0m[NR_RRC]   UE 1: received UE capabilities (xid 3)
+[0m[NR_RRC]   Send message to ngap: NGAP_UE_CAPABILITIES_IND
+[0m[NR_RRC]   Send message to sctp: NGAP_InitialContextSetupResponse
+[0m[NR_MAC]   Frame.Slot 640.0
+UE RNTI 9fc0 CU-UE-ID 1 in-sync PH 46 dB PCMAX 21 dBm, average RSRP -91 (3 meas)
+UE 9fc0: dlsch_rounds 9/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.09000 MCS (0) 9
+UE 9fc0: ulsch_rounds 97/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.07290 MCS (0) 9 (Qm 2  dB) NPRB 5  SNR 28.0 dB
+UE 9fc0: MAC:    TX            933 RX           9100 bytes
+UE 9fc0: LCID 1: TX            142 RX           1318 bytes
+
+[0m[NR_MAC]   Frame.Slot 768.0
+UE RNTI 9fc0 CU-UE-ID 1 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -91 (16 meas)
+UE 9fc0: dlsch_rounds 10/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.08100 MCS (0) 9
+UE 9fc0: ulsch_rounds 481/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.02059 MCS (0) 18 (Qm 6  dB) NPRB 5  SNR 32.0 dB
+UE 9fc0: MAC:    TX           1056 RX          41868 bytes
+UE 9fc0: LCID 1: TX            142 RX           1318 bytes
+
+[0m[NR_MAC]   Frame.Slot 896.0
+UE RNTI 9fc0 CU-UE-ID 1 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -91 (16 meas)
+UE 9fc0: dlsch_rounds 11/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.07290 MCS (0) 9
+UE 9fc0: ulsch_rounds 865/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00523 MCS (0) 28 (Qm 6  dB) NPRB 5  SNR 31.0 dB
+UE 9fc0: MAC:    TX           1179 RX          74636 bytes
+UE 9fc0: LCID 1: TX            142 RX           1318 bytes
+
+[0m[NR_MAC]   Frame.Slot 0.0
+UE RNTI 9fc0 CU-UE-ID 1 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -91 (16 meas)
+UE 9fc0: dlsch_rounds 13/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.05905 MCS (0) 9
+UE 9fc0: ulsch_rounds 1249/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00133 MCS (0) 28 (Qm 6  dB) NPRB 5  SNR 31.5 dB
+UE 9fc0: MAC:    TX           1425 RX         107404 bytes
+UE 9fc0: LCID 1: TX            142 RX           1318 bytes
+
+[0m[NR_MAC]   Frame.Slot 128.0
+UE RNTI 9fc0 CU-UE-ID 1 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -91 (16 meas)
+UE 9fc0: dlsch_rounds 14/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.05314 MCS (0) 9
+UE 9fc0: ulsch_rounds 1633/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00034 MCS (0) 28 (Qm 6  dB) NPRB 5  SNR 30.5 dB
+UE 9fc0: MAC:    TX           1548 RX         140172 bytes
+UE 9fc0: LCID 1: TX            142 RX           1318 bytes
+
+[0m[NR_MAC]   Frame.Slot 256.0
+UE RNTI 9fc0 CU-UE-ID 1 in-sync PH 46 dB PCMAX 21 dBm, average RSRP -91 (16 meas)
+UE 9fc0: dlsch_rounds 15/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.04783 MCS (0) 9
+UE 9fc0: ulsch_rounds 2017/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00009 MCS (0) 28 (Qm 6  dB) NPRB 5  SNR 29.5 dB
+UE 9fc0: MAC:    TX           1671 RX         172940 bytes
+UE 9fc0: LCID 1: TX            142 RX           1318 bytes
+
+[0m[NR_PHY]   [RAPROC] 335.19 Initiating RA procedure with preamble 34, energy 55.7 dB (I0 228, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   335.19 UE RA-RNTI 010b TC-RNTI 0645: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 0645: 336.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 34
+[0m[NR_MAC]   UE 0645: Msg3 scheduled at 336.17 (336.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x0645
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x0645 received correctly, adding UE MAC Context RNTI 0x0645
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 1605
+[0m[RLC]   Added srb 1 to UE 1605
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x0645 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x0645 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 0645, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 2 DU UE ID 1605 (rnti: 0645, random ue id bafada0eb5000000)
+[0m[RRC]   activate SRB 1 of UE 2
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 0645
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 0645, adding CU UE ID 2
+[0m[93m[NR_MAC]   DL  337. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 0645 Generate msg4: feedback at  337.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x0645) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 2 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 2] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 2: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 2] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 1605
+[0m[NR_MAC]   Remove NR rnti 0x0645
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 2/RNTI 0645 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x0645 in Msg3/PUSCH
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x0645 in Msg3/PUSCH
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x0645 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 369.19 Initiating RA procedure with preamble 12, energy 55.7 dB (I0 225, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   369.19 UE RA-RNTI 010b TC-RNTI 5bfc: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 5bfc: 370.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 12
+[0m[NR_MAC]   UE 5bfc: Msg3 scheduled at 370.17 (370.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x5bfc
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x5bfc received correctly, adding UE MAC Context RNTI 0x5bfc
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 23548
+[0m[RLC]   Added srb 1 to UE 23548
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x5bfc (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x5bfc (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 5bfc, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 2 DU UE ID 23548 (rnti: 5bfc, random ue id 84e7b16ee9000000)
+[0m[RRC]   activate SRB 1 of UE 2
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 5bfc
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 5bfc, adding CU UE ID 2
+[0m[93m[NR_MAC]   DL  371. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 5bfc Generate msg4: feedback at  371.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x5bfc) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 2 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 2] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 2: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 2] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[NR_MAC]   Frame.Slot 384.0
+UE RNTI 9fc0 CU-UE-ID 1 in-sync PH 46 dB PCMAX 21 dBm, average RSRP -91 (16 meas)
+UE 9fc0: dlsch_rounds 17/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.03874 MCS (0) 9
+UE 9fc0: ulsch_rounds 2401/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00002 MCS (0) 28 (Qm 6  dB) NPRB 5  SNR 30.0 dB
+UE 9fc0: MAC:    TX           1917 RX         205708 bytes
+UE 9fc0: LCID 1: TX            142 RX           1318 bytes
+UE RNTI 5bfc CU-UE-ID 2 in-sync PH 29 dB PCMAX 21 dBm, average RSRP -141 (1 meas)
+UE 5bfc: dlsch_rounds 3/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.10000 MCS (0) 9
+UE 5bfc: ulsch_rounds 18/8/8/8, ulsch_errors 7, ulsch_DTX 31, BLER 0.14000 MCS (0) 9 (Qm 2  dB) NPRB 5  SNR 31.0 dB
+UE 5bfc: MAC:    TX            246 RX            560 bytes
+UE 5bfc: LCID 1: TX             29 RX             42 bytes
+
+[0m[93m[RLC]   Remove UE 23548
+[0m[NR_MAC]   Remove NR rnti 0x5bfc
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 2/RNTI 5bfc 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 5bfc in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x5bfc in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 403.19 Initiating RA procedure with preamble 57, energy 55.7 dB (I0 228, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   403.19 UE RA-RNTI 010b TC-RNTI fac4: Activating RA process index 0
+[0m[32m[NR_MAC]   UE fac4: 404.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 57
+[0m[NR_MAC]   UE fac4: Msg3 scheduled at 404.17 (404.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0xfac4
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0xfac4 received correctly, adding UE MAC Context RNTI 0xfac4
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 64196
+[0m[RLC]   Added srb 1 to UE 64196
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0xfac4 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0xfac4 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI fac4, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 2 DU UE ID 64196 (rnti: fac4, random ue id cccb7d6298000000)
+[0m[RRC]   activate SRB 1 of UE 2
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI fac4
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI fac4, adding CU UE ID 2
+[0m[93m[NR_MAC]   DL  405. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  405. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE fac4 Generate msg4: feedback at  405.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0xfac4) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 2 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 2] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 2: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 2] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 64196
+[0m[NR_MAC]   Remove NR rnti 0xfac4
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 2/RNTI fac4 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI fac4 in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xfac4 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 439.19 Initiating RA procedure with preamble 29, energy 55.7 dB (I0 229, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   439.19 UE RA-RNTI 010b TC-RNTI c201: Activating RA process index 0
+[0m[32m[NR_MAC]   UE c201: 440.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 29
+[0m[NR_MAC]   UE c201: Msg3 scheduled at 440.17 (440.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0xc201
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0xc201 received correctly, adding UE MAC Context RNTI 0xc201
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 49665
+[0m[RLC]   Added srb 1 to UE 49665
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0xc201 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0xc201 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI c201, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 2 DU UE ID 49665 (rnti: c201, random ue id 8e901d84d4000000)
+[0m[RRC]   activate SRB 1 of UE 2
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI c201
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI c201, adding CU UE ID 2
+[0m[93m[NR_MAC]   DL  441. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  441. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  441. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE c201 Generate msg4: feedback at  441.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0xc201) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 2 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 2] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 2: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 2] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 49665
+[0m[NR_MAC]   Remove NR rnti 0xc201
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 2/RNTI c201 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI c201 in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xc201 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 475.19 Initiating RA procedure with preamble 23, energy 55.7 dB (I0 232, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   475.19 UE RA-RNTI 010b TC-RNTI e9af: Activating RA process index 0
+[0m[32m[NR_MAC]   UE e9af: 476.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 23
+[0m[NR_MAC]   UE e9af: Msg3 scheduled at 476.17 (476.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0xe9af
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0xe9af received correctly, adding UE MAC Context RNTI 0xe9af
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 59823
+[0m[RLC]   Added srb 1 to UE 59823
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0xe9af (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0xe9af (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI e9af, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 2 DU UE ID 59823 (rnti: e9af, random ue id e60b3dd58e000000)
+[0m[RRC]   activate SRB 1 of UE 2
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI e9af
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI e9af, adding CU UE ID 2
+[0m[93m[NR_MAC]   DL  477. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  477. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE e9af Generate msg4: feedback at  477.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0xe9af) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 2 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 2] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 2: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 2] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[1;31m[NR_MAC]   UE e9af: reported RSRP index 122 invalid
+[0m[1;31m[NR_MAC]   UE e9af: reported RSRP index 122 invalid
+[0m[93m[RLC]   Remove UE 59823
+[0m[NR_MAC]   Remove NR rnti 0xe9af
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 2/RNTI e9af 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI e9af in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xe9af in Msg3/PUSCH
+[0m[NR_MAC]   Frame.Slot 512.0
+UE RNTI 9fc0 CU-UE-ID 1 in-sync PH 46 dB PCMAX 21 dBm, average RSRP -91 (16 meas)
+UE 9fc0: dlsch_rounds 18/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.03487 MCS (0) 9
+UE 9fc0: ulsch_rounds 2785/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00001 MCS (0) 28 (Qm 6  dB) NPRB 5  SNR 29.0 dB
+UE 9fc0: MAC:    TX           2040 RX         238476 bytes
+UE 9fc0: LCID 1: TX            142 RX           1318 bytes
+
+[0m[NR_PHY]   [RAPROC] 511.19 Initiating RA procedure with preamble 18, energy 55.7 dB (I0 231, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   511.19 UE RA-RNTI 010b TC-RNTI 6a6d: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 6a6d: 512.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 18
+[0m[NR_MAC]   UE 6a6d: Msg3 scheduled at 512.17 (512.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x6a6d
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x6a6d received correctly, adding UE MAC Context RNTI 0x6a6d
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 27245
+[0m[RLC]   Added srb 1 to UE 27245
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x6a6d (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x6a6d (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 6a6d, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 2 DU UE ID 27245 (rnti: 6a6d, random ue id 665ce82a23000000)
+[0m[RRC]   activate SRB 1 of UE 2
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 6a6d
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 6a6d, adding CU UE ID 2
+[0m[93m[NR_MAC]   DL  513. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  513. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  513. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 6a6d Generate msg4: feedback at  513.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x6a6d) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 2 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 2] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 2: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 2] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 27245
+[0m[NR_MAC]   Remove NR rnti 0x6a6d
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 2/RNTI 6a6d 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 6a6d in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x6a6d in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 545.19 Initiating RA procedure with preamble 49, energy 55.7 dB (I0 227, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   545.19 UE RA-RNTI 010b TC-RNTI b9f4: Activating RA process index 0
+[0m[32m[NR_MAC]   UE b9f4: 546.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 49
+[0m[NR_MAC]   UE b9f4: Msg3 scheduled at 546.17 (546.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0xb9f4
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0xb9f4 received correctly, adding UE MAC Context RNTI 0xb9f4
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 47604
+[0m[RLC]   Added srb 1 to UE 47604
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0xb9f4 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0xb9f4 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI b9f4, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 2 DU UE ID 47604 (rnti: b9f4, random ue id bacbcb5070000000)
+[0m[RRC]   activate SRB 1 of UE 2
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI b9f4
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI b9f4, adding CU UE ID 2
+[0m[93m[NR_MAC]   DL  547. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  547. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  547. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE b9f4 Generate msg4: feedback at  547.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0xb9f4) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 2 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 2] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 2: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 2] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 47604
+[0m[NR_MAC]   Remove NR rnti 0xb9f4
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 2/RNTI b9f4 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI b9f4 in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xb9f4 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 581.19 Initiating RA procedure with preamble 3, energy 54.9 dB (I0 228, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   581.19 UE RA-RNTI 010b TC-RNTI 76fc: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 76fc: 582.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 3
+[0m[NR_MAC]   UE 76fc: Msg3 scheduled at 582.17 (582.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x76fc
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x76fc received correctly, adding UE MAC Context RNTI 0x76fc
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 30460
+[0m[RLC]   Added srb 1 to UE 30460
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x76fc (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x76fc (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 76fc, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 2 DU UE ID 30460 (rnti: 76fc, random ue id dc1ed6cf07000000)
+[0m[RRC]   activate SRB 1 of UE 2
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 76fc
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 76fc, adding CU UE ID 2
+[0m[93m[NR_MAC]   DL  583. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  583. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  583. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 76fc Generate msg4: feedback at  583.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x76fc) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 2 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 2] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 2: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 2] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 30460
+[0m[NR_MAC]   Remove NR rnti 0x76fc
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 2/RNTI 76fc 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 76fc in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x76fc in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 607.19 Initiating RA procedure with preamble 52, energy 54.9 dB (I0 204, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   607.19 UE RA-RNTI 010b TC-RNTI fe23: Activating RA process index 0
+[0m[32m[NR_MAC]   UE fe23: 608.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 52
+[0m[NR_MAC]   UE fe23: Msg3 scheduled at 608.17 (608.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0xfe23
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0xfe23 received correctly, adding UE MAC Context RNTI 0xfe23
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 65059
+[0m[RLC]   Added srb 1 to UE 65059
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0xfe23 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0xfe23 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI fe23, payload_size 6
+[0m[NR_RRC]   Received UE 5G-S-TMSI-Part1 278736699277
+[0m[NR_RRC]   Created new UE context: CU UE ID 2 DU UE ID 65059 (rnti: fe23, random ue id 40e6007f8d)
+[0m[RRC]   activate SRB 1 of UE 2
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI fe23
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI fe23, adding CU UE ID 2
+[0m[93m[NR_MAC]   DL  609. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  609. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE fe23 Generate msg4: feedback at  609.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0xfe23) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[RRC]   s_tmsi part2 0 (00 00)
+[0m[NR_RRC]   5g_s_TMSI: 0x40E6007F8D, amf_set_id: 0x1 (1), amf_pointer: 0x0 (0), 5g TMSI: 0xE6007F8D 
+[0m[32m[NR_RRC]   UE 2 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 2] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 2: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[NGAP]   could not find NGAP_ProtocolIE_ID_id_UEAggregateMaximumBitRate
+[0m[NR_RRC]   [gNB 0][UE 2] Selected security algorithms (0x7f4bf4009bac): ciphering 0, integrity 2 (algorithms changed)
+[0m[NR_RRC]   [gNB 0][UE fe23] Saved security key EA29569622EA9622C7317E7B345604E4E365A45B095A8565C895D43CA4451666
+[0m[NR_RRC]   UE 2 Logical Channel DL-DCCH, Generate SecurityModeCommand (bytes 3)
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 2] received securityModeComplete on UL-DCCH 1 from UE
+[0m[NR_PHY]   [RAPROC] 617.19 Initiating RA procedure with preamble 37, energy 55.7 dB (I0 211, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   617.19 UE RA-RNTI 010b TC-RNTI 07a6: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 07a6: 618.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 37
+[0m[NR_MAC]   UE 07a6: Msg3 scheduled at 618.17 (618.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_RRC]   UE 2: Logical Channel DL-DCCH, Generate NR UECapabilityEnquiry (bytes 8, xid 1)
+[0m[NR_MAC]   Adding new UE context with RNTI 0x07a6
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x07a6 received correctly, adding UE MAC Context RNTI 0x07a6
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 1958
+[0m[RLC]   Added srb 1 to UE 1958
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x07a6 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x07a6 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 07a6, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 3 DU UE ID 1958 (rnti: 07a6, random ue id deba6a7181000000)
+[0m[RRC]   activate SRB 1 of UE 3
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 07a6
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 07a6, adding CU UE ID 3
+[0m[93m[NR_MAC]   DL  619. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 07a6 Generate msg4: feedback at  619.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x07a6) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[NR_RRC]   UE 2: received UE capabilities (xid 1)
+[0m[NR_RRC]   Send message to ngap: NGAP_UE_CAPABILITIES_IND
+[0m[NR_RRC]   Send message to sctp: NGAP_InitialContextSetupResponse
+[0m[32m[NR_RRC]   UE 3 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 3] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 3: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[93m[RLC]   Remove UE 40896
+[0m[NR_MAC]   Remove NR rnti 0x9fc0
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 9fc0 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x9fc0 in Msg3/PUSCH
+[0m[NR_MAC]   Frame.Slot 640.0
+UE RNTI fe23 CU-UE-ID 2 in-sync PH 46 dB PCMAX 21 dBm, average RSRP -91 (3 meas)
+UE fe23: dlsch_rounds 8/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.10000 MCS (0) 9
+UE fe23: ulsch_rounds 91/2/0/0, ulsch_errors 0, ulsch_DTX 2, BLER 0.08423 MCS (0) 9 (Qm 2  dB) NPRB 5  SNR 29.0 dB
+UE fe23: MAC:    TX            782 RX           9149 bytes
+UE fe23: LCID 1: TX             64 RX           1340 bytes
+UE RNTI 07a6 CU-UE-ID 3 in-sync PH 31 dB PCMAX 21 dBm, average RSRP -96 (2 meas)
+UE 07a6: dlsch_rounds 2/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.10000 MCS (0) 9
+UE 07a6: ulsch_rounds 58/1/0/0, ulsch_errors 0, ulsch_DTX 1, BLER 0.09000 MCS (0) 9 (Qm 2  dB) NPRB 5  SNR 28.5 dB
+UE 07a6: MAC:    TX            123 RX           4656 bytes
+UE 07a6: LCID 1: TX              3 RX             39 bytes
+
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 3] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[NGAP]   PDUSESSIONSetup initiating message
+[0m[NR_RRC]   [gNB 0] gNB_ue_ngap_id 2 
+[0m[NR_RRC]   Adding pdusession 1, total nb of sessions 1
+[0m[NR_RRC]   UE 2: configure DRB ID 1 for PDU session ID 1
+[0m[32m[RRC]   selecting CU-UP ID 3585 based on exact NSSAI match (1:0x000000)
+[0m[RRC]   UE 2 associating to CU-UP assoc_id -1 out of 1 CU-UPs
+[0m[GTPU]   [99] Created tunnel for UE ID 2, teid for incoming: 7bed4bc6, teid for outgoing 1ea to remote IPv4: 10.128.0.97, IPv6 ::
+[0m[PDCP]   added drb 1 to UE ID 2
+[0m[SDAP]   Default DRB for the created SDAP entity: 1 
+[0m[RRC]   activate SRB 2 of UE 2
+[0m[RLC]   Added srb 2 to UE 65059
+[0m[RLC]   Added drb 1 to UE 65059
+[0m[RLC]   Added DRB to UE 65059
+[0m[RRC]   UE 2 trigger UE context setup request with 1 DRBs
+[0m[E1AP]   UE 2: updating PDU session ID 1 (1 bearers)
+[0m[NR_RRC]   UE 2: Generate RRCReconfiguration (bytes 324, xid 2)
+[0m[RRC]   UE 2: PDU session ID 1 modified 1 bearers
+[0m[NR_RRC]   UE 2: Receive RRC Reconfiguration Complete message (xid 2)
+[0m[NR_RRC]   msg index 0, pdu_sessions index 0, status 2, xid 2): nb_of_pdusessions 1,  pdusession_id 1, teid: 2079148998 
+ [0m[NR_RRC]   NGAP_PDUSESSION_SETUP_RESP: sending the message
+[0m[1;31m[NR_MAC]   UE 07a6: reported RSRP index 1 invalid
+[0m[1;31m[NR_MAC]   UE 07a6: reported RSRP index 1 invalid
+[0m[93m[RLC]   Remove UE 1958
+[0m[NR_MAC]   Remove NR rnti 0x07a6
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 3/RNTI 07a6 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x07a6 in Msg3/PUSCH
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x07a6 in Msg3/PUSCH
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x07a6 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 671.19 Initiating RA procedure with preamble 21, energy 55.7 dB (I0 225, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   671.19 UE RA-RNTI 010b TC-RNTI 0632: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 0632: 672.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 21
+[0m[NR_MAC]   UE 0632: Msg3 scheduled at 672.17 (672.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x0632
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x0632 received correctly, adding UE MAC Context RNTI 0x0632
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 1586
+[0m[RLC]   Added srb 1 to UE 1586
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x0632 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x0632 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 0632, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 1586 (rnti: 0632, random ue id ce7e2b34fd000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 0632
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 0632, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  673. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  673. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 0632 Generate msg4: feedback at  673.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x0632) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 1586
+[0m[NR_MAC]   Remove NR rnti 0x0632
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 0632 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 0632 in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x0632 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 715.19 Initiating RA procedure with preamble 46, energy 55.7 dB (I0 222, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   715.19 UE RA-RNTI 010b TC-RNTI 90cd: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 90cd: 716.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 46
+[0m[NR_MAC]   UE 90cd: Msg3 scheduled at 716.17 (716.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x90cd
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x90cd received correctly, adding UE MAC Context RNTI 0x90cd
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 37069
+[0m[RLC]   Added srb 1 to UE 37069
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x90cd (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x90cd (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 90cd, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 37069 (rnti: 90cd, random ue id aaece2c098000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 90cd
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 90cd, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  717. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  717. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  717. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 90cd Generate msg4: feedback at  717.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x90cd) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 37069
+[0m[NR_MAC]   Remove NR rnti 0x90cd
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 90cd 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 90cd in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x90cd in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 751.19 Initiating RA procedure with preamble 53, energy 55.7 dB (I0 222, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   751.19 UE RA-RNTI 010b TC-RNTI 4add: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 4add: 752.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 53
+[0m[NR_MAC]   UE 4add: Msg3 scheduled at 752.17 (752.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x4add
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x4add received correctly, adding UE MAC Context RNTI 0x4add
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 19165
+[0m[RLC]   Added srb 1 to UE 19165
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x4add (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x4add (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 4add, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 19165 (rnti: 4add, random ue id 96bebc8a53000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 4add
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 4add, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  753. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  753. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 4add Generate msg4: feedback at  753.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x4add) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 19165
+[0m[NR_MAC]   Remove NR rnti 0x4add
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 4add 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 4add in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x4add in Msg3/PUSCH
+[0m[NR_MAC]   Frame.Slot 768.0
+UE RNTI fe23 CU-UE-ID 2 in-sync PH 46 dB PCMAX 21 dBm, average RSRP -91 (16 meas)
+UE fe23: dlsch_rounds 13/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.08100 MCS (1) 9
+UE fe23: ulsch_rounds 473/5/0/0, ulsch_errors 0, ulsch_DTX 3, BLER 0.02824 MCS (1) 16 (Qm 6  dB) NPRB 5  SNR 29.5 dB
+UE fe23: MAC:    TX           2007 RX          67521 bytes
+UE fe23: LCID 1: TX            405 RX           1397 bytes
+UE fe23: LCID 2: TX              0 RX              0 bytes
+UE fe23: LCID 4: TX              0 RX              0 bytes
+
+[0m[NR_PHY]   [RAPROC] 787.19 Initiating RA procedure with preamble 48, energy 55.7 dB (I0 220, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   787.19 UE RA-RNTI 010b TC-RNTI 2f8a: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 2f8a: 788.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 48
+[0m[NR_MAC]   UE 2f8a: Msg3 scheduled at 788.17 (788.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x2f8a
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x2f8a received correctly, adding UE MAC Context RNTI 0x2f8a
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 12170
+[0m[RLC]   Added srb 1 to UE 12170
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x2f8a (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x2f8a (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 2f8a, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 12170 (rnti: 2f8a, random ue id 9c697b7183000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 2f8a
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 2f8a, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  789. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  789. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  789. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 2f8a Generate msg4: feedback at  789.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x2f8a) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 12170
+[0m[NR_MAC]   Remove NR rnti 0x2f8a
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 2f8a 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 2f8a in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x2f8a in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 823.19 Initiating RA procedure with preamble 7, energy 55.7 dB (I0 224, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   823.19 UE RA-RNTI 010b TC-RNTI 1c86: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 1c86: 824.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 7
+[0m[NR_MAC]   UE 1c86: Msg3 scheduled at 824.17 (824.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x1c86
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x1c86 received correctly, adding UE MAC Context RNTI 0x1c86
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 7302
+[0m[RLC]   Added srb 1 to UE 7302
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x1c86 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x1c86 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 1c86, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 7302 (rnti: 1c86, random ue id 161162b447000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 1c86
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 1c86, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  825. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  825. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  825. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 1c86 Generate msg4: feedback at  825.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x1c86) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 7302
+[0m[NR_MAC]   Remove NR rnti 0x1c86
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 1c86 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 1c86 in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x1c86 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 859.19 Initiating RA procedure with preamble 31, energy 55.7 dB (I0 221, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   859.19 UE RA-RNTI 010b TC-RNTI 81ee: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 81ee: 860.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 31
+[0m[NR_MAC]   UE 81ee: Msg3 scheduled at 860.17 (860.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x81ee
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x81ee received correctly, adding UE MAC Context RNTI 0x81ee
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 33262
+[0m[RLC]   Added srb 1 to UE 33262
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x81ee (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x81ee (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 81ee, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 33262 (rnti: 81ee, random ue id ce6262bbbf000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 81ee
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 81ee, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  861. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  861. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  861. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 81ee Generate msg4: feedback at  861.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x81ee) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 33262
+[0m[NR_MAC]   Remove NR rnti 0x81ee
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 81ee 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 81ee in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x81ee in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 893.19 Initiating RA procedure with preamble 47, energy 55.7 dB (I0 218, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   893.19 UE RA-RNTI 010b TC-RNTI 2792: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 2792: 894.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 47
+[0m[NR_MAC]   UE 2792: Msg3 scheduled at 894.17 (894.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x2792
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x2792 received correctly, adding UE MAC Context RNTI 0x2792
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 10130
+[0m[RLC]   Added srb 1 to UE 10130
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x2792 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x2792 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 2792, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 10130 (rnti: 2792, random ue id 10b5d776b3000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 2792
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 2792, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  895. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  895. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  895. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 2792 Generate msg4: feedback at  895.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[NR_MAC]   Frame.Slot 896.0
+UE RNTI fe23 CU-UE-ID 2 in-sync PH 46 dB PCMAX 21 dBm, average RSRP -91 (16 meas)
+UE fe23: dlsch_rounds 18/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.05314 MCS (1) 9
+UE fe23: ulsch_rounds 859/6/0/0, ulsch_errors 0, ulsch_DTX 3, BLER 0.00895 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.5 dB
+UE fe23: MAC:    TX           2959 RX         127005 bytes
+UE fe23: LCID 1: TX            408 RX           1419 bytes
+UE fe23: LCID 2: TX              0 RX              0 bytes
+UE fe23: LCID 4: TX              9 RX            374 bytes
+UE RNTI 2792 CU-UE-ID 1 in-sync PH 0 dB PCMAX 0 dBm, average RSRP 0 (0 meas)
+UE 2792: dlsch_rounds 1/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.00000 MCS (0) 0
+UE 2792: ulsch_rounds 0/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2  dB) NPRB 0  SNR 39.0 dB
+UE 2792: MAC:    TX              0 RX              0 bytes
+UE 2792: LCID 1: TX              0 RX              0 bytes
+
+[0m[32m[NR_MAC]   (UE RNTI 0x2792) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 10130
+[0m[NR_MAC]   Remove NR rnti 0x2792
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 2792 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 2792 in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x2792 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 929.19 Initiating RA procedure with preamble 9, energy 55.7 dB (I0 220, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   929.19 UE RA-RNTI 010b TC-RNTI d6e3: Activating RA process index 0
+[0m[32m[NR_MAC]   UE d6e3: 930.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 9
+[0m[NR_MAC]   UE d6e3: Msg3 scheduled at 930.17 (930.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0xd6e3
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0xd6e3 received correctly, adding UE MAC Context RNTI 0xd6e3
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 55011
+[0m[RLC]   Added srb 1 to UE 55011
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0xd6e3 (state WAIT_Msg3)
+[0m[NR_RRC]   Decoding CCCH: RNTI d6e3, payload_size 6
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0xd6e3 (ignore this warning for RA)
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 55011 (rnti: d6e3, random ue id f4e63d06fe000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI d6e3
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI d6e3, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  931. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  931. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE d6e3 Generate msg4: feedback at  931.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0xd6e3) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[1;31m[NR_MAC]   UE d6e3: reported RSRP index 127 invalid
+[0m[1;31m[NR_MAC]   UE d6e3: reported RSRP index 127 invalid
+[0m[93m[RLC]   Remove UE 55011
+[0m[NR_MAC]   Remove NR rnti 0xd6e3
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI d6e3 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI d6e3 in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xd6e3 in Msg3/PUSCH
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_2_3_4(): unknown RNTI d6e3 in PUCCH UCI
+[0m[NR_PHY]   [RAPROC] 965.19 Initiating RA procedure with preamble 36, energy 55.7 dB (I0 221, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   965.19 UE RA-RNTI 010b TC-RNTI f4b5: Activating RA process index 0
+[0m[32m[NR_MAC]   UE f4b5: 966.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 36
+[0m[NR_MAC]   UE f4b5: Msg3 scheduled at 966.17 (966.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0xf4b5
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0xf4b5 received correctly, adding UE MAC Context RNTI 0xf4b5
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 62645
+[0m[RLC]   Added srb 1 to UE 62645
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0xf4b5 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0xf4b5 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI f4b5, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 62645 (rnti: f4b5, random ue id 80b1f9857f000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI f4b5
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI f4b5, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  967. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  967. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  967. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE f4b5 Generate msg4: feedback at  967.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0xf4b5) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 62645
+[0m[NR_MAC]   Remove NR rnti 0xf4b5
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI f4b5 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI f4b5 in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xf4b5 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 1001.19 Initiating RA procedure with preamble 30, energy 55.7 dB (I0 224, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   1001.19 UE RA-RNTI 010b TC-RNTI 2c3c: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 2c3c: 1002.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 30
+[0m[NR_MAC]   UE 2c3c: Msg3 scheduled at 1002.17 (1002.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x2c3c
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x2c3c received correctly, adding UE MAC Context RNTI 0x2c3c
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 11324
+[0m[RLC]   Added srb 1 to UE 11324
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x2c3c (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x2c3c (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 2c3c, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 11324 (rnti: 2c3c, random ue id 6eb894d8ab000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 2c3c
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 2c3c, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL 1003. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL 1003. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 2c3c Generate msg4: feedback at 1003.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x2c3c) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[1;31m[NR_MAC]   UE 2c3c: reported RSRP index 9 invalid
+[0m[1;31m[NR_MAC]   UE 2c3c: reported RSRP index 9 invalid
+[0m[93m[RLC]   Remove UE 11324
+[0m[NR_MAC]   Remove NR rnti 0x2c3c
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 2c3c 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 2c3c in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x2c3c in Msg3/PUSCH
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_2_3_4(): unknown RNTI 2c3c in PUCCH UCI
+[0m[NR_MAC]   Frame.Slot 0.0
+UE RNTI fe23 CU-UE-ID 2 in-sync PH 46 dB PCMAX 21 dBm, average RSRP -91 (16 meas)
+UE fe23: dlsch_rounds 25/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.03138 MCS (1) 9
+UE fe23: ulsch_rounds 1247/7/0/0, ulsch_errors 0, ulsch_DTX 3, BLER 0.00399 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 31.0 dB
+UE fe23: MAC:    TX           4345 RX         186676 bytes
+UE fe23: LCID 1: TX            411 RX           1441 bytes
+UE fe23: LCID 2: TX              0 RX              0 bytes
+UE fe23: LCID 4: TX             24 RX           1301 bytes
+
+[0m[NR_PHY]   [RAPROC] 13.19 Initiating RA procedure with preamble 40, energy 55.7 dB (I0 222, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   13.19 UE RA-RNTI 010b TC-RNTI 80c6: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 80c6: 14.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 40
+[0m[NR_MAC]   UE 80c6: Msg3 scheduled at 14.17 (14.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x80c6
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x80c6 received correctly, adding UE MAC Context RNTI 0x80c6
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 32966
+[0m[RLC]   Added srb 1 to UE 32966
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x80c6 (state WAIT_Msg3)
+[0m[NR_RRC]   Decoding CCCH: RNTI 80c6, payload_size 6
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x80c6 (ignore this warning for RA)
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 32966 (rnti: 80c6, random ue id ac477c1d41000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 80c6
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 80c6, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL   15. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   15. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   15. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 80c6 Generate msg4: feedback at   15.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x80c6) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[1;31m[NR_MAC]   UE 80c6: reported RSRP index 123 invalid
+[0m[1;31m[NR_MAC]   UE 80c6: reported RSRP index 123 invalid
+[0m[93m[RLC]   Remove UE 32966
+[0m[NR_MAC]   Remove NR rnti 0x80c6
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 80c6 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 80c6 in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x80c6 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 49.19 Initiating RA procedure with preamble 52, energy 55.7 dB (I0 222, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   49.19 UE RA-RNTI 010b TC-RNTI 8a51: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 8a51: 50.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 52
+[0m[NR_MAC]   UE 8a51: Msg3 scheduled at 50.17 (50.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x8a51
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x8a51 received correctly, adding UE MAC Context RNTI 0x8a51
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 35409
+[0m[RLC]   Added srb 1 to UE 35409
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x8a51 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x8a51 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 8a51, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 35409 (rnti: 8a51, random ue id 781a5500ca000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 8a51
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 8a51, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL   51. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   51. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   51. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 8a51 Generate msg4: feedback at   51.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x8a51) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 35409
+[0m[NR_MAC]   Remove NR rnti 0x8a51
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 8a51 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 8a51 in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x8a51 in Msg3/PUSCH
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_2_3_4(): unknown RNTI 8a51 in PUCCH UCI
+[0m[NR_PHY]   [RAPROC] 85.19 Initiating RA procedure with preamble 51, energy 55.7 dB (I0 225, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   85.19 UE RA-RNTI 010b TC-RNTI 91e8: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 91e8: 86.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 51
+[0m[NR_MAC]   UE 91e8: Msg3 scheduled at 86.17 (86.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x91e8
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x91e8 received correctly, adding UE MAC Context RNTI 0x91e8
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 37352
+[0m[RLC]   Added srb 1 to UE 37352
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x91e8 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x91e8 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 91e8, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 37352 (rnti: 91e8, random ue id e6cc3ad49d000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 91e8
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 91e8, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL   87. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   87. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   87. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 91e8 Generate msg4: feedback at   87.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x91e8) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 37352
+[0m[NR_MAC]   Remove NR rnti 0x91e8
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 91e8 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 91e8 in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x91e8 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 121.19 Initiating RA procedure with preamble 58, energy 55.7 dB (I0 219, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   121.19 UE RA-RNTI 010b TC-RNTI 5d50: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 5d50: 122.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 58
+[0m[NR_MAC]   UE 5d50: Msg3 scheduled at 122.17 (122.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x5d50
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x5d50 received correctly, adding UE MAC Context RNTI 0x5d50
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 23888
+[0m[RLC]   Added srb 1 to UE 23888
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x5d50 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x5d50 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 5d50, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 23888 (rnti: 5d50, random ue id 26873088a6000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 5d50
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 5d50, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  123. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  123. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  123. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 5d50 Generate msg4: feedback at  123.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x5d50) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[NR_MAC]   Frame.Slot 128.0
+UE RNTI fe23 CU-UE-ID 2 in-sync PH 46 dB PCMAX 21 dBm, average RSRP -91 (16 meas)
+UE fe23: dlsch_rounds 46/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.01853 MCS (1) 10
+UE fe23: ulsch_rounds 1637/7/0/0, ulsch_errors 0, ulsch_DTX 3, BLER 0.00101 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 28.5 dB
+UE fe23: MAC:    TX           9985 RX         246344 bytes
+UE fe23: LCID 1: TX            414 RX           1463 bytes
+UE fe23: LCID 2: TX              0 RX              0 bytes
+UE fe23: LCID 4: TX           2461 RX           2666 bytes
+UE RNTI 5d50 CU-UE-ID 1 in-sync PH 29 dB PCMAX 21 dBm, average RSRP 0 (0 meas)
+UE 5d50: dlsch_rounds 3/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.10000 MCS (0) 9
+UE 5d50: ulsch_rounds 10/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.10000 MCS (0) 9 (Qm 2  dB) NPRB 5  SNR 30.5 dB
+UE 5d50: MAC:    TX            246 RX            560 bytes
+UE 5d50: LCID 1: TX             29 RX             39 bytes
+
+[0m[93m[NR_MAC]   DL  129.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  129.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  130. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  130. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  130.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  130.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[RLC]   Remove UE 23888
+[0m[NR_MAC]   Remove NR rnti 0x5d50
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 5d50 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 5d50 in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x5d50 in Msg3/PUSCH
+[0m[93m[NR_MAC]   DL  139.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  139.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  140. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  140. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  149.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  149.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  150. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  150. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_PHY]   [RAPROC] 157.19 Initiating RA procedure with preamble 53, energy 55.7 dB (I0 222, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   157.19 UE RA-RNTI 010b TC-RNTI 0fb1: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 0fb1: 158.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 53
+[0m[NR_MAC]   UE 0fb1: Msg3 scheduled at 158.17 (158.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x0fb1
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x0fb1 received correctly, adding UE MAC Context RNTI 0x0fb1
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 4017
+[0m[RLC]   Added srb 1 to UE 4017
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x0fb1 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x0fb1 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 0fb1, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 4017 (rnti: 0fb1, random ue id dcd22770f2000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 0fb1
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 0fb1, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  159. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  159. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  159. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 0fb1 Generate msg4: feedback at  159.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[93m[NR_MAC]   DL  159.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  159.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  160. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  160. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[32m[NR_MAC]   (UE RNTI 0x0fb1) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[NR_MAC]   DL  169.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  169.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[RLC]   Remove UE 4017
+[0m[NR_MAC]   Remove NR rnti 0x0fb1
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 0fb1 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 0fb1 in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x0fb1 in Msg3/PUSCH
+[0m[93m[NR_MAC]   DL  179.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  179.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  189.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  189.13, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_PHY]   [RAPROC] 193.19 Initiating RA procedure with preamble 41, energy 55.7 dB (I0 222, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   193.19 UE RA-RNTI 010b TC-RNTI 46ad: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 46ad: 194.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 41
+[0m[NR_MAC]   UE 46ad: Msg3 scheduled at 194.17 (194.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x46ad
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x46ad received correctly, adding UE MAC Context RNTI 0x46ad
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 18093
+[0m[RLC]   Added srb 1 to UE 18093
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x46ad (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x46ad (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 46ad, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 18093 (rnti: 46ad, random ue id 70bc572c64000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 46ad
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 46ad, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  195. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  195. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  195. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 46ad Generate msg4: feedback at  195.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x46ad) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[NR_MAC]   DL  199.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[RLC]   Remove UE 18093
+[0m[NR_MAC]   Remove NR rnti 0x46ad
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 46ad 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 46ad in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x46ad in Msg3/PUSCH
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_2_3_4(): unknown RNTI 46ad in PUCCH UCI
+[0m[NR_PHY]   [RAPROC] 229.19 Initiating RA procedure with preamble 51, energy 55.7 dB (I0 225, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   229.19 UE RA-RNTI 010b TC-RNTI 339a: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 339a: 230.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 51
+[0m[NR_MAC]   UE 339a: Msg3 scheduled at 230.17 (230.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x339a
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x339a received correctly, adding UE MAC Context RNTI 0x339a
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 13210
+[0m[RLC]   Added srb 1 to UE 13210
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x339a (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x339a (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 339a, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 13210 (rnti: 339a, random ue id ac86a6984e000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 339a
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 339a, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  231. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  231. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  231. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 339a Generate msg4: feedback at  231.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x339a) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[1;31m[NR_MAC]   UE 339a: reported RSRP index 8 invalid
+[0m[1;31m[NR_MAC]   UE 339a: reported RSRP index 8 invalid
+[0m[93m[RLC]   Remove UE 13210
+[0m[NR_MAC]   Remove NR rnti 0x339a
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 339a 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 339a in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x339a in Msg3/PUSCH
+[0m[NR_MAC]   Frame.Slot 256.0
+UE RNTI fe23 CU-UE-ID 2 in-sync PH 46 dB PCMAX 21 dBm, average RSRP -91 (16 meas)
+UE fe23: dlsch_rounds 227/1/0/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.01342 MCS (1) 22
+UE fe23: ulsch_rounds 2033/7/0/0, ulsch_errors 0, ulsch_DTX 3, BLER 0.00029 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.0 dB
+UE fe23: MAC:    TX        1681727 RX         306288 bytes
+UE fe23: LCID 1: TX            420 RX           1507 bytes
+UE fe23: LCID 2: TX              0 RX              0 bytes
+UE fe23: LCID 4: TX        1667208 RX           2820 bytes
+
+[0m[NR_PHY]   [RAPROC] 265.19 Initiating RA procedure with preamble 4, energy 55.7 dB (I0 221, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   265.19 UE RA-RNTI 010b TC-RNTI 859b: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 859b: 266.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 4
+[0m[NR_MAC]   UE 859b: Msg3 scheduled at 266.17 (266.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x859b
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x859b received correctly, adding UE MAC Context RNTI 0x859b
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 34203
+[0m[RLC]   Added srb 1 to UE 34203
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x859b (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x859b (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 859b, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 34203 (rnti: 859b, random ue id 8658d3db9e000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 859b
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 859b, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  267. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  267. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  267. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 859b Generate msg4: feedback at  267.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x859b) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 34203
+[0m[NR_MAC]   Remove NR rnti 0x859b
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 859b 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 859b in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x859b in Msg3/PUSCH
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_2_3_4(): unknown RNTI 859b in PUCCH UCI
+[0m[NR_PHY]   [RAPROC] 301.19 Initiating RA procedure with preamble 11, energy 55.7 dB (I0 222, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   301.19 UE RA-RNTI 010b TC-RNTI 22ad: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 22ad: 302.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 11
+[0m[NR_MAC]   UE 22ad: Msg3 scheduled at 302.17 (302.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x22ad
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x22ad received correctly, adding UE MAC Context RNTI 0x22ad
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 8877
+[0m[RLC]   Added srb 1 to UE 8877
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x22ad (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x22ad (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 22ad, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 8877 (rnti: 22ad, random ue id dcc970eef3000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 22ad
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 22ad, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  303. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  303. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  303. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 22ad Generate msg4: feedback at  303.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x22ad) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 8877
+[0m[NR_MAC]   Remove NR rnti 0x22ad
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 22ad 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 22ad in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x22ad in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 337.19 Initiating RA procedure with preamble 8, energy 55.7 dB (I0 222, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   337.19 UE RA-RNTI 010b TC-RNTI 32e1: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 32e1: 338.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 8
+[0m[NR_MAC]   UE 32e1: Msg3 scheduled at 338.17 (338.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x32e1
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x32e1 received correctly, adding UE MAC Context RNTI 0x32e1
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 13025
+[0m[RLC]   Added srb 1 to UE 13025
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x32e1 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x32e1 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 32e1, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 13025 (rnti: 32e1, random ue id 74e4282d9a000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 32e1
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 32e1, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  339. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  339. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  339. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 32e1 Generate msg4: feedback at  339.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x32e1) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 13025
+[0m[NR_MAC]   Remove NR rnti 0x32e1
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 32e1 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 32e1 in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x32e1 in Msg3/PUSCH
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_2_3_4(): unknown RNTI 32e1 in PUCCH UCI
+[0m[NR_PHY]   [RAPROC] 373.19 Initiating RA procedure with preamble 0, energy 55.7 dB (I0 222, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   373.19 UE RA-RNTI 010b TC-RNTI d64a: Activating RA process index 0
+[0m[32m[NR_MAC]   UE d64a: 374.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 0
+[0m[NR_MAC]   UE d64a: Msg3 scheduled at 374.17 (374.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0xd64a
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0xd64a received correctly, adding UE MAC Context RNTI 0xd64a
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 54858
+[0m[RLC]   Added srb 1 to UE 54858
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0xd64a (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0xd64a (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI d64a, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 54858 (rnti: d64a, random ue id 8625519f11000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI d64a
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI d64a, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  375. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  375. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  375. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE d64a Generate msg4: feedback at  375.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0xd64a) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[NR_MAC]   Frame.Slot 384.0
+UE RNTI fe23 CU-UE-ID 2 in-sync PH 46 dB PCMAX 21 dBm, average RSRP -91 (16 meas)
+UE fe23: dlsch_rounds 335/17/0/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.10567 MCS (1) 23
+UE fe23: ulsch_rounds 2426/8/0/0, ulsch_errors 0, ulsch_DTX 3, BLER 0.00112 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.5 dB
+UE fe23: MAC:    TX        3354136 RX         366189 bytes
+UE fe23: LCID 1: TX            423 RX           1529 bytes
+UE fe23: LCID 2: TX              0 RX              0 bytes
+UE fe23: LCID 4: TX        3333077 RX           3260 bytes
+UE RNTI d64a CU-UE-ID 1 in-sync PH 29 dB PCMAX 21 dBm, average RSRP 0 (0 meas)
+UE d64a: dlsch_rounds 3/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.10000 MCS (0) 9
+UE d64a: ulsch_rounds 14/4/4/4, ulsch_errors 4, ulsch_DTX 16, BLER 0.10000 MCS (0) 9 (Qm 2  dB) NPRB 5  SNR 30.0 dB
+UE d64a: MAC:    TX            246 RX            560 bytes
+UE d64a: LCID 1: TX             29 RX             42 bytes
+
+[0m[93m[RLC]   Remove UE 54858
+[0m[NR_MAC]   Remove NR rnti 0xd64a
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI d64a 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI d64a in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xd64a in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 409.19 Initiating RA procedure with preamble 7, energy 55.7 dB (I0 224, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   409.19 UE RA-RNTI 010b TC-RNTI 1874: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 1874: 410.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 7
+[0m[NR_MAC]   UE 1874: Msg3 scheduled at 410.17 (410.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x1874
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x1874 received correctly, adding UE MAC Context RNTI 0x1874
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 6260
+[0m[RLC]   Added srb 1 to UE 6260
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x1874 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x1874 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 1874, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 6260 (rnti: 1874, random ue id 58893dbd44000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 1874
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 1874, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  411. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  411. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  411. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 1874 Generate msg4: feedback at  411.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x1874) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 6260
+[0m[NR_MAC]   Remove NR rnti 0x1874
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 1874 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 1874 in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x1874 in Msg3/PUSCH
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_2_3_4(): unknown RNTI 1874 in PUCCH UCI
+[0m[NR_PHY]   [RAPROC] 445.19 Initiating RA procedure with preamble 57, energy 55.7 dB (I0 223, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   445.19 UE RA-RNTI 010b TC-RNTI e269: Activating RA process index 0
+[0m[32m[NR_MAC]   UE e269: 446.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 57
+[0m[NR_MAC]   UE e269: Msg3 scheduled at 446.17 (446.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0xe269
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0xe269 received correctly, adding UE MAC Context RNTI 0xe269
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 57961
+[0m[RLC]   Added srb 1 to UE 57961
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0xe269 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0xe269 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI e269, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 57961 (rnti: e269, random ue id affa77ee6000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI e269
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI e269, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  447. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  447. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  447. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE e269 Generate msg4: feedback at  447.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0xe269) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 57961
+[0m[NR_MAC]   Remove NR rnti 0xe269
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI e269 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI e269 in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xe269 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 479.19 Initiating RA procedure with preamble 47, energy 55.7 dB (I0 221, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   479.19 UE RA-RNTI 010b TC-RNTI a208: Activating RA process index 0
+[0m[32m[NR_MAC]   UE a208: 480.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 47
+[0m[NR_MAC]   UE a208: Msg3 scheduled at 480.17 (480.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0xa208
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0xa208 received correctly, adding UE MAC Context RNTI 0xa208
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 41480
+[0m[RLC]   Added srb 1 to UE 41480
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0xa208 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0xa208 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI a208, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 41480 (rnti: a208, random ue id cea18e412b000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI a208
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI a208, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  481. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  481. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  481. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE a208 Generate msg4: feedback at  481.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0xa208) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 41480
+[0m[NR_MAC]   Remove NR rnti 0xa208
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI a208 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI a208 in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xa208 in Msg3/PUSCH
+[0m[NR_MAC]   Frame.Slot 512.0
+UE RNTI fe23 CU-UE-ID 2 in-sync PH 46 dB PCMAX 21 dBm, average RSRP -91 (16 meas)
+UE fe23: dlsch_rounds 445/30/0/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.17963 MCS (1) 24
+UE fe23: ulsch_rounds 2819/8/0/0, ulsch_errors 0, ulsch_DTX 3, BLER 0.00028 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.5 dB
+UE fe23: MAC:    TX        5025789 RX         425949 bytes
+UE fe23: LCID 1: TX            426 RX           1551 bytes
+UE fe23: LCID 2: TX              0 RX              0 bytes
+UE fe23: LCID 4: TX        4997486 RX           3335 bytes
+
+[0m[NR_PHY]   [RAPROC] 515.19 Initiating RA procedure with preamble 52, energy 55.7 dB (I0 223, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   515.19 UE RA-RNTI 010b TC-RNTI 433d: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 433d: 516.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 52
+[0m[NR_MAC]   UE 433d: Msg3 scheduled at 516.17 (516.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x433d
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x433d received correctly, adding UE MAC Context RNTI 0x433d
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 17213
+[0m[RLC]   Added srb 1 to UE 17213
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x433d (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x433d (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 433d, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 17213 (rnti: 433d, random ue id 387e614bcf000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 433d
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 433d, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  517. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  517. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  517. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 433d Generate msg4: feedback at  517.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x433d) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[1;31m[NR_MAC]   UE 433d: reported RSRP index 120 invalid
+[0m[1;31m[NR_MAC]   UE 433d: reported RSRP index 120 invalid
+[0m[93m[RLC]   Remove UE 17213
+[0m[NR_MAC]   Remove NR rnti 0x433d
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 433d 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 433d in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x433d in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 549.19 Initiating RA procedure with preamble 44, energy 55.7 dB (I0 221, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   549.19 UE RA-RNTI 010b TC-RNTI b582: Activating RA process index 0
+[0m[32m[NR_MAC]   UE b582: 550.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 44
+[0m[NR_MAC]   UE b582: Msg3 scheduled at 550.17 (550.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0xb582
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0xb582 received correctly, adding UE MAC Context RNTI 0xb582
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 46466
+[0m[RLC]   Added srb 1 to UE 46466
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0xb582 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0xb582 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI b582, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 46466 (rnti: b582, random ue id 4c2da7e6cd000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI b582
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI b582, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  551. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  551. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  551. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE b582 Generate msg4: feedback at  551.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0xb582) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[1;31m[NR_MAC]   UE b582: reported RSRP index 120 invalid
+[0m[1;31m[NR_MAC]   UE b582: reported RSRP index 120 invalid
+[0m[93m[RLC]   Remove UE 46466
+[0m[NR_MAC]   Remove NR rnti 0xb582
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI b582 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI b582 in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xb582 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 585.19 Initiating RA procedure with preamble 16, energy 55.7 dB (I0 222, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   585.19 UE RA-RNTI 010b TC-RNTI 4de5: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 4de5: 586.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 16
+[0m[NR_MAC]   UE 4de5: Msg3 scheduled at 586.17 (586.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x4de5
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x4de5 received correctly, adding UE MAC Context RNTI 0x4de5
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 19941
+[0m[RLC]   Added srb 1 to UE 19941
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x4de5 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x4de5 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 4de5, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 19941 (rnti: 4de5, random ue id 68e5e51aee000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 4de5
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 4de5, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  587. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  587. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  587. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 4de5 Generate msg4: feedback at  587.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x4de5) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[1;31m[NR_MAC]   UE 4de5: reported RSRP index 124 invalid
+[0m[1;31m[NR_MAC]   UE 4de5: reported RSRP index 124 invalid
+[0m[93m[RLC]   Remove UE 19941
+[0m[NR_MAC]   Remove NR rnti 0x4de5
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 4de5 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 4de5 in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x4de5 in Msg3/PUSCH
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_2_3_4(): unknown RNTI 4de5 in PUCCH UCI
+[0m[NR_PHY]   [RAPROC] 621.19 Initiating RA procedure with preamble 14, energy 55.7 dB (I0 223, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   621.19 UE RA-RNTI 010b TC-RNTI fe1f: Activating RA process index 0
+[0m[32m[NR_MAC]   UE fe1f: 622.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 14
+[0m[NR_MAC]   UE fe1f: Msg3 scheduled at 622.17 (622.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0xfe1f
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0xfe1f received correctly, adding UE MAC Context RNTI 0xfe1f
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 65055
+[0m[RLC]   Added srb 1 to UE 65055
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0xfe1f (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0xfe1f (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI fe1f, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 65055 (rnti: fe1f, random ue id 60196d21e2000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI fe1f
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI fe1f, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  623. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  623. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE fe1f Generate msg4: feedback at  623.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0xfe1f) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 65055
+[0m[NR_MAC]   Remove NR rnti 0xfe1f
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI fe1f 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI fe1f in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xfe1f in Msg3/PUSCH
+[0minitializing tx write thread
+end of tx write thread
+trx_usrp_write_thread started on cpu 9
+sleep...
+sleep...
+sleep...
+sleep...
+sleep...
+sleep...
+sleep...
+sleep...
+sleep...
+[NR_MAC]   Frame.Slot 640.0
+UE RNTI fe23 CU-UE-ID 2 in-sync PH 46 dB PCMAX 21 dBm, average RSRP -91 (16 meas)
+UE fe23: dlsch_rounds 559/33/0/0, dlsch_errors 0, pucch0_DTX 4, BLER 0.04566 MCS (1) 24
+UE fe23: ulsch_rounds 3213/8/0/0, ulsch_errors 0, ulsch_DTX 4, BLER 0.00007 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.0 dB
+UE fe23: MAC:    TX        6699758 RX         485801 bytes
+UE fe23: LCID 1: TX            429 RX           1573 bytes
+UE fe23: LCID 2: TX              0 RX              0 bytes
+UE fe23: LCID 4: TX        6661933 RX           3486 bytes
+
+[0m[NR_PHY]   [RAPROC] 657.19 Initiating RA procedure with preamble 3, energy 55.7 dB (I0 220, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   657.19 UE RA-RNTI 010b TC-RNTI 696a: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 696a: 658.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 3
+[0m[NR_MAC]   UE 696a: Msg3 scheduled at 658.17 (658.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x696a
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x696a received correctly, adding UE MAC Context RNTI 0x696a
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 26986
+[0m[RLC]   Added srb 1 to UE 26986
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x696a (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x696a (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 696a, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 26986 (rnti: 696a, random ue id 805cbed47d000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 696a
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 696a, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  659. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  659. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  659. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 696a Generate msg4: feedback at  659.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x696a) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 26986
+[0m[NR_MAC]   Remove NR rnti 0x696a
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 696a 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 696a in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x696a in Msg3/PUSCH
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_2_3_4(): unknown RNTI 696a in PUCCH UCI
+[0m[NR_PHY]   [RAPROC] 693.19 Initiating RA procedure with preamble 32, energy 55.7 dB (I0 222, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   693.19 UE RA-RNTI 010b TC-RNTI 4326: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 4326: 694.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 32
+[0m[NR_MAC]   UE 4326: Msg3 scheduled at 694.17 (694.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x4326
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x4326 received correctly, adding UE MAC Context RNTI 0x4326
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 17190
+[0m[RLC]   Added srb 1 to UE 17190
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x4326 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x4326 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 4326, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 17190 (rnti: 4326, random ue id f020f58e59000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 4326
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 4326, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  695. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  695. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  695. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 4326 Generate msg4: feedback at  695.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x4326) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 17190
+[0m[NR_MAC]   Remove NR rnti 0x4326
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 4326 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 4326 in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x4326 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 729.19 Initiating RA procedure with preamble 13, energy 55.7 dB (I0 225, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   729.19 UE RA-RNTI 010b TC-RNTI 842d: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 842d: 730.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 13
+[0m[NR_MAC]   UE 842d: Msg3 scheduled at 730.17 (730.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x842d
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x842d received correctly, adding UE MAC Context RNTI 0x842d
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 33837
+[0m[RLC]   Added srb 1 to UE 33837
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x842d (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x842d (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 842d, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 33837 (rnti: 842d, random ue id d6b5042845000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 842d
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 842d, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  731. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  731. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  731. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 842d Generate msg4: feedback at  731.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x842d) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 33837
+[0m[NR_MAC]   Remove NR rnti 0x842d
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 842d 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 842d in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x842d in Msg3/PUSCH
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_2_3_4(): unknown RNTI 842d in PUCCH UCI
+[0m[NR_PHY]   [RAPROC] 765.19 Initiating RA procedure with preamble 41, energy 55.7 dB (I0 223, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   765.19 UE RA-RNTI 010b TC-RNTI a4a6: Activating RA process index 0
+[0m[32m[NR_MAC]   UE a4a6: 766.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 41
+[0m[NR_MAC]   UE a4a6: Msg3 scheduled at 766.17 (766.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0xa4a6
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0xa4a6 received correctly, adding UE MAC Context RNTI 0xa4a6
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 42150
+[0m[RLC]   Added srb 1 to UE 42150
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0xa4a6 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0xa4a6 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI a4a6, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 42150 (rnti: a4a6, random ue id e4bb31194f000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI a4a6
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI a4a6, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  767. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  767. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  767. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE a4a6 Generate msg4: feedback at  767.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[NR_MAC]   Frame.Slot 768.0
+UE RNTI fe23 CU-UE-ID 2 in-sync PH 46 dB PCMAX 21 dBm, average RSRP -91 (16 meas)
+UE fe23: dlsch_rounds 665/43/13/0, dlsch_errors 0, pucch0_DTX 9, BLER 0.06101 MCS (1) 22
+UE fe23: ulsch_rounds 3605/10/0/0, ulsch_errors 0, ulsch_DTX 5, BLER 0.00201 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.5 dB
+UE fe23: MAC:    TX        8243294 RX         545607 bytes
+UE fe23: LCID 1: TX            435 RX           1617 bytes
+UE fe23: LCID 2: TX              0 RX              0 bytes
+UE fe23: LCID 4: TX        8198864 RX           3561 bytes
+UE RNTI a4a6 CU-UE-ID 1 in-sync PH 0 dB PCMAX 0 dBm, average RSRP 0 (0 meas)
+UE a4a6: dlsch_rounds 1/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.00000 MCS (0) 0
+UE a4a6: ulsch_rounds 0/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2  dB) NPRB 0  SNR 38.0 dB
+UE a4a6: MAC:    TX              0 RX              0 bytes
+UE a4a6: LCID 1: TX              0 RX              0 bytes
+
+[0m[32m[NR_MAC]   (UE RNTI 0xa4a6) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 42150
+[0m[NR_MAC]   Remove NR rnti 0xa4a6
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI a4a6 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI a4a6 in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xa4a6 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 801.19 Initiating RA procedure with preamble 33, energy 55.7 dB (I0 224, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   801.19 UE RA-RNTI 010b TC-RNTI 883f: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 883f: 802.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 33
+[0m[NR_MAC]   UE 883f: Msg3 scheduled at 802.17 (802.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x883f
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x883f received correctly, adding UE MAC Context RNTI 0x883f
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 34879
+[0m[RLC]   Added srb 1 to UE 34879
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x883f (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x883f (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 883f, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 34879 (rnti: 883f, random ue id a4ab35c5cf000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 883f
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 883f, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  803. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  803. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  803. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 883f Generate msg4: feedback at  803.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x883f) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[1;31m[NR_MAC]   UE 883f: reported RSRP index 114 invalid
+[0m[1;31m[NR_MAC]   UE 883f: reported RSRP index 114 invalid
+[0m[93m[RLC]   Remove UE 34879
+[0m[NR_MAC]   Remove NR rnti 0x883f
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 883f 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 883f in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x883f in Msg3/PUSCH
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_2_3_4(): unknown RNTI 883f in PUCCH UCI
+[0m[NR_PHY]   [RAPROC] 837.19 Initiating RA procedure with preamble 31, energy 55.7 dB (I0 222, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   837.19 UE RA-RNTI 010b TC-RNTI 2c98: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 2c98: 838.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 31
+[0m[NR_MAC]   UE 2c98: Msg3 scheduled at 838.17 (838.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x2c98
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x2c98 received correctly, adding UE MAC Context RNTI 0x2c98
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 11416
+[0m[RLC]   Added srb 1 to UE 11416
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x2c98 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x2c98 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 2c98, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 11416 (rnti: 2c98, random ue id 186c7be4be000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 2c98
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 2c98, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  839. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  839. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  839. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 2c98 Generate msg4: feedback at  839.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x2c98) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[1;31m[NR_MAC]   UE 2c98: reported RSRP index 119 invalid
+[0m[1;31m[NR_MAC]   UE 2c98: reported RSRP index 119 invalid
+[0m[93m[RLC]   Remove UE 11416
+[0m[NR_MAC]   Remove NR rnti 0x2c98
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 2c98 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 2c98 in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x2c98 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 873.19 Initiating RA procedure with preamble 55, energy 55.7 dB (I0 224, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   873.19 UE RA-RNTI 010b TC-RNTI 3ce6: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 3ce6: 874.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 55
+[0m[NR_MAC]   UE 3ce6: Msg3 scheduled at 874.17 (874.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x3ce6
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x3ce6 received correctly, adding UE MAC Context RNTI 0x3ce6
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 15590
+[0m[RLC]   Added srb 1 to UE 15590
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x3ce6 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x3ce6 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 3ce6, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 15590 (rnti: 3ce6, random ue id d26e8ae70c000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 3ce6
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 3ce6, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  875. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  875. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  875. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 3ce6 Generate msg4: feedback at  875.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x3ce6) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 15590
+[0m[NR_MAC]   Remove NR rnti 0x3ce6
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 3ce6 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 3ce6 in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x3ce6 in Msg3/PUSCH
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_2_3_4(): unknown RNTI 3ce6 in PUCCH UCI
+[0m[NR_MAC]   Frame.Slot 896.0
+UE RNTI fe23 CU-UE-ID 2 in-sync PH 46 dB PCMAX 21 dBm, average RSRP -91 (16 meas)
+UE fe23: dlsch_rounds 775/62/13/0, dlsch_errors 0, pucch0_DTX 9, BLER 0.15291 MCS (1) 20
+UE fe23: ulsch_rounds 4000/10/0/0, ulsch_errors 0, ulsch_DTX 5, BLER 0.00057 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 31.5 dB
+UE fe23: MAC:    TX        9916138 RX         605505 bytes
+UE fe23: LCID 1: TX            438 RX           1639 bytes
+UE fe23: LCID 2: TX              0 RX              0 bytes
+UE fe23: LCID 4: TX        9864735 RX           3633 bytes
+
+[0m[NR_PHY]   [RAPROC] 909.19 Initiating RA procedure with preamble 30, energy 55.7 dB (I0 225, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   909.19 UE RA-RNTI 010b TC-RNTI 2014: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 2014: 910.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 30
+[0m[NR_MAC]   UE 2014: Msg3 scheduled at 910.17 (910.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x2014
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x2014 received correctly, adding UE MAC Context RNTI 0x2014
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 8212
+[0m[RLC]   Added srb 1 to UE 8212
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x2014 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x2014 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 2014, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 8212 (rnti: 2014, random ue id 4c0ba8a878000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 2014
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 2014, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  911. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  911. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  911. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 2014 Generate msg4: feedback at  911.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x2014) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[1;31m[NR_MAC]   UE 2014: reported RSRP index 7 invalid
+[0m[1;31m[NR_MAC]   UE 2014: reported RSRP index 7 invalid
+[0m[93m[RLC]   Remove UE 8212
+[0m[NR_MAC]   Remove NR rnti 0x2014
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 2014 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 2014 in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x2014 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 945.19 Initiating RA procedure with preamble 42, energy 55.7 dB (I0 222, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   945.19 UE RA-RNTI 010b TC-RNTI 38c4: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 38c4: 946.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 42
+[0m[NR_MAC]   UE 38c4: Msg3 scheduled at 946.17 (946.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x38c4
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x38c4 received correctly, adding UE MAC Context RNTI 0x38c4
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 14532
+[0m[RLC]   Added srb 1 to UE 14532
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x38c4 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x38c4 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 38c4, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 14532 (rnti: 38c4, random ue id 84a5a2746a000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 38c4
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 38c4, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  947. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  947. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  947. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 38c4 Generate msg4: feedback at  947.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x38c4) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 14532
+[0m[NR_MAC]   Remove NR rnti 0x38c4
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 38c4 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 38c4 in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x38c4 in Msg3/PUSCH
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_2_3_4(): unknown RNTI 38c4 in PUCCH UCI
+[0m[NR_PHY]   [RAPROC] 981.19 Initiating RA procedure with preamble 8, energy 55.7 dB (I0 220, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   981.19 UE RA-RNTI 010b TC-RNTI 8b1e: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 8b1e: 982.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 8
+[0m[NR_MAC]   UE 8b1e: Msg3 scheduled at 982.17 (982.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x8b1e
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x8b1e received correctly, adding UE MAC Context RNTI 0x8b1e
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 35614
+[0m[RLC]   Added srb 1 to UE 35614
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x8b1e (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x8b1e (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 8b1e, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 35614 (rnti: 8b1e, random ue id 3aedecd388000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 8b1e
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 8b1e, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  983. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  983. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  983. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 8b1e Generate msg4: feedback at  983.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x8b1e) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 35614
+[0m[NR_MAC]   Remove NR rnti 0x8b1e
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 8b1e 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 8b1e in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x8b1e in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 1017.19 Initiating RA procedure with preamble 34, energy 55.7 dB (I0 223, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   1017.19 UE RA-RNTI 010b TC-RNTI d6ed: Activating RA process index 0
+[0m[32m[NR_MAC]   UE d6ed: 1018.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 34
+[0m[NR_MAC]   UE d6ed: Msg3 scheduled at 1018.17 (1018.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0xd6ed
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0xd6ed received correctly, adding UE MAC Context RNTI 0xd6ed
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 55021
+[0m[RLC]   Added srb 1 to UE 55021
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0xd6ed (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0xd6ed (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI d6ed, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 55021 (rnti: d6ed, random ue id b8b5f38400000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI d6ed
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI d6ed, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL 1019. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL 1019. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL 1019. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE d6ed Generate msg4: feedback at 1019.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0xd6ed) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[NR_MAC]   Frame.Slot 0.0
+UE RNTI fe23 CU-UE-ID 2 in-sync PH 46 dB PCMAX 21 dBm, average RSRP -91 (16 meas)
+UE fe23: dlsch_rounds 900/62/13/0, dlsch_errors 0, pucch0_DTX 9, BLER 0.03887 MCS (1) 23
+UE fe23: ulsch_rounds 4394/10/0/0, ulsch_errors 0, ulsch_DTX 5, BLER 0.00014 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.5 dB
+UE fe23: MAC:    TX       11586975 RX         665357 bytes
+UE fe23: LCID 1: TX            441 RX           1661 bytes
+UE fe23: LCID 2: TX              0 RX              0 bytes
+UE fe23: LCID 4: TX       11529249 RX           3708 bytes
+UE RNTI d6ed CU-UE-ID 1 in-sync PH 29 dB PCMAX 21 dBm, average RSRP 0 (0 meas)
+UE d6ed: dlsch_rounds 3/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.10000 MCS (0) 9
+UE d6ed: ulsch_rounds 11/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.10000 MCS (0) 9 (Qm 2  dB) NPRB 5  SNR 29.0 dB
+UE d6ed: MAC:    TX            246 RX            560 bytes
+UE d6ed: LCID 1: TX             29 RX             42 bytes
+
+[0m[93m[NR_MAC]   DL    5. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[RLC]   Remove UE 55021
+[0m[NR_MAC]   Remove NR rnti 0xd6ed
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI d6ed 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI d6ed in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xd6ed in Msg3/PUSCH
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_2_3_4(): unknown RNTI d6ed in PUCCH UCI
+[0m[NR_PHY]   [RAPROC] 29.19 Initiating RA procedure with preamble 32, energy 55.7 dB (I0 220, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   29.19 UE RA-RNTI 010b TC-RNTI bd30: Activating RA process index 0
+[0m[32m[NR_MAC]   UE bd30: 30.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 32
+[0m[NR_MAC]   UE bd30: Msg3 scheduled at 30.17 (30.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0xbd30
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0xbd30 received correctly, adding UE MAC Context RNTI 0xbd30
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 48432
+[0m[RLC]   Added srb 1 to UE 48432
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0xbd30 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0xbd30 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI bd30, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 48432 (rnti: bd30, random ue id 7acfb4e1b6000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI bd30
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI bd30, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL   31. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   31. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE bd30 Generate msg4: feedback at   31.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0xbd30) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[RLC]   Remove UE 48432
+[0m[NR_MAC]   Remove NR rnti 0xbd30
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI bd30 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI bd30 in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xbd30 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 65.19 Initiating RA procedure with preamble 16, energy 55.7 dB (I0 222, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   65.19 UE RA-RNTI 010b TC-RNTI 2c9d: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 2c9d: 66.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 16
+[0m[NR_MAC]   UE 2c9d: Msg3 scheduled at 66.17 (66.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x2c9d
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x2c9d received correctly, adding UE MAC Context RNTI 0x2c9d
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 11421
+[0m[RLC]   Added srb 1 to UE 11421
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x2c9d (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x2c9d (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 2c9d, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 11421 (rnti: 2c9d, random ue id 2818c7605d000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 2c9d
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 2c9d, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL   67. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   67. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   67. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 2c9d Generate msg4: feedback at   67.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x2c9d) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[1;31m[NR_MAC]   UE 2c9d: reported RSRP index 122 invalid
+[0m[1;31m[NR_MAC]   UE 2c9d: reported RSRP index 122 invalid
+[0m[93m[RLC]   Remove UE 11421
+[0m[NR_MAC]   Remove NR rnti 0x2c9d
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 2c9d 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 2c9d in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x2c9d in Msg3/PUSCH
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_2_3_4(): unknown RNTI 2c9d in PUCCH UCI
+[0m[NR_PHY]   [RAPROC] 101.19 Initiating RA procedure with preamble 34, energy 55.7 dB (I0 223, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   101.19 UE RA-RNTI 010b TC-RNTI 796a: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 796a: 102.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 34
+[0m[NR_MAC]   UE 796a: Msg3 scheduled at 102.17 (102.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x796a
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x796a received correctly, adding UE MAC Context RNTI 0x796a
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 31082
+[0m[RLC]   Added srb 1 to UE 31082
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x796a (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x796a (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 796a, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 31082 (rnti: 796a, random ue id 9edac9e978000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 796a
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 796a, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  103. 5, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  103. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  103. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 796a Generate msg4: feedback at  103.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x796a) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 70) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[1;31m[NR_MAC]   UE 796a: reported RSRP index 123 invalid
+[0m[1;31m[NR_MAC]   UE 796a: reported RSRP index 123 invalid
+[0m

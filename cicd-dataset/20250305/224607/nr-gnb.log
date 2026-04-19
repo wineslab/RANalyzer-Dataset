@@ -1,0 +1,842 @@
+[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)
+[0m[OPT]   OPT disabled
+[0m[HW]   Version: Branch: HEAD Abrev. Hash: 5d1c0aa Date: Tue Nov 19 08:31:11 2024 +0000
+[0m[GNB_APP]   Initialized RAN Context: RC.nb_nr_inst = 1, RC.nb_nr_macrlc_inst = 1, RC.nb_nr_L1_inst = 1, RC.nb_RU = 1, RC.nb_nr_CC[0] = 1
+[0m[NR_PHY]   Initializing gNB RAN context: RC.nb_nr_L1_inst = 1 
+[0m[NR_PHY]   Registered with MAC interface module (0x5595e839c330)
+[0m[NR_PHY]   Initializing NR L1: RC.nb_nr_L1_inst = 1
+[0m[NR_PHY]   L1_RX_THREAD_CORE -1 (15)
+[0m[NR_PHY]   TX_AMP = 519 (-36 dBFS)
+[0m[PHY]   No prs_config configuration found..!!
+[0m[GNB_APP]   pdsch_AntennaPorts N1 1 N2 1 XP 1 pusch_AntennaPorts 1
+[0m[GNB_APP]   minTXRXTIME 6
+[0m[GNB_APP]   SIB1 TDA 1
+[0m[GNB_APP]   CSI-RS 0, SRS 0, 256 QAM may be on, delta_MCS off, maxMIMO_Layers -1, HARQ feedback enabled, num DLHARQ:16, num ULHARQ:16
+[0m[GNB_APP]   sr_ProhibitTimer 0, sr_TransMax 64, sr_ProhibitTimer_v1700 0, t300 400, t301 400, t310 2000, n310 10, t311 3000, n311 1, t319 400
+[0m[RRC]   Read in ServingCellConfigCommon (PhysCellId 0, ABSFREQSSB 641280, DLBand 78, ABSFREQPOINTA 640008, DLBW 162,RACH_TargetReceivedPower -96
+[0m[RRC]   absoluteFrequencySSB 641280 corresponds to 3619200000 Hz
+[0m[UTIL]   threadCreate() for MAC_STATS: creating thread with affinity ffffffff, priority 2
+[0m[NR_MAC]   PUSCH Target 300, PUCCH Target 200, PUCCH Failure 10, PUSCH Failure 1000
+[0m[NR_PHY]   Copying 0 blacklisted PRB to L1 context
+[0m[NR_MAC]   Set TX antenna number to 1, Set RX antenna number to 1 (num ssb 1: 80000000,0)
+[0m[PHY]   DL frequency 3629280000 Hz, UL frequency 3629280000 Hz: band 48, uldl offset 0 Hz
+[0m[PHY]   Initializing frame parms for mu 1, N_RB 162, Ncp 0
+[0m[PHY]   Init: N_RB_DL 162, first_carrier_offset 1076, nb_prefix_samples 144,nb_prefix_samples0 176, ofdm_symbol_size 2048
+[0m[NR_RRC]   SIB1 freq: offsetToPointA 86
+[0m[GNB_APP]   F1AP: gNB idx 0 gNB_DU_id 3585, gNB_DU_name gNB-OAI, TAC 1 MCC/MNC/length 1/1/2 cellID 12345678
+[0m[GNB_APP]   ngran_DU: Configuring Cell 0 for TDD
+[0m[GNB_APP]   SDAP layer is disabled
+[0m[GNB_APP]   Data Radio Bearer count 1
+[0m[NR_RRC]   do_SIB23_NR, size 9
+[0m[UTIL]   threadCreate() for TASK_SCTP: creating thread with affinity ffffffff, priority 50
+[0m[X2AP]   X2AP is disabled.
+[0m[UTIL]   threadCreate() for TASK_NGAP: creating thread with affinity ffffffff, priority 50
+[0m[UTIL]   threadCreate() for TASK_GNB_APP: creating thread with affinity ffffffff, priority 50
+[0m[NGAP]   Registered new gNB[0] and macro gNB id 3585
+[0m[NGAP]   [gNB 0] check the amf registration state
+[0m[UTIL]   threadCreate() for TASK_RRC_GNB: creating thread with affinity ffffffff, priority 50
+[0m[NR_RRC]   Entering main loop of NR_RRC message task
+[0m[NR_RRC]   Received F1 Setup Request from gNB_DU 3585 (gNB-OAI) on assoc_id -1
+[0m[GTPU]   Configuring GTPu
+[0m[GTPU]   SA mode 
+[0m[GTPU]   Configuring GTPu address : 10.129.2.81, port : 2152
+[0m[GTPU]   Initializing UDP for local address 10.129.2.81 with port 2152
+[0m[RRC]   Accepting DU 3585 (gNB-OAI), sending F1 Setup Response
+[0m[RRC]   DU uses RRC version 17.3.0
+[0m[MAC]   received F1 Setup Response from CU (null)
+[0m[MAC]   CU uses RRC version 17.3.0
+[0m[MAC]   Clearing the DU's UE states before, if any.
+[0m[GTPU]   Created gtpu instance id: 95
+[0m[UTIL]   threadCreate() for TASK_GTPV1_U: creating thread with affinity ffffffff, priority 50
+[0m[NR_RRC]   Accepting new CU-UP ID 3585 name gNB-OAI (assoc_id -1)
+[0m[32m[NGAP]   Send NGSetupRequest to AMF
+[0m[NGAP]   3585 -> 0000e010
+[0m[32m[NGAP]   Received NGSetupResponse from AMF
+[0m[GNB_APP]   [gNB 0] Received NGAP_REGISTER_GNB_CNF: associated AMF 1
+[0m[PHY]   number of L1 instances 1, number of RU 1, number of CPU cores 32
+[0m[PHY]   Initialized RU proc 0 (,synch_to_ext_device),
+[0m[PHY]   RU thread-pool core string -1,-1 (size 2)
+[0m[UTIL]   threadCreate() for Tpool0_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool1_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for ru_thread: creating thread with affinity ffffffff, priority 97
+[0m[PHY]   Starting RU 0 (,synch_to_ext_device) on cpu 8
+[0m[PHY]   Initializing frame parms for mu 1, N_RB 162, Ncp 0
+[0m[PHY]   Init: N_RB_DL 162, first_carrier_offset 1076, nb_prefix_samples 144,nb_prefix_samples0 176, ofdm_symbol_size 2048
+[0m[PHY]   fp->scs=30000
+[0m[PHY]   fp->ofdm_symbol_size=2048
+[0m[PHY]   fp->nb_prefix_samples0=176
+[0m[PHY]   fp->nb_prefix_samples=144
+[0m[PHY]   fp->slots_per_subframe=2
+[0m[PHY]   fp->samples_per_subframe_wCP=57344
+[0m[PHY]   fp->samples_per_frame_wCP=573440
+[0m[PHY]   fp->samples_per_subframe=61440
+[0m[PHY]   fp->samples_per_frame=614400
+[0m[PHY]   fp->dl_CarrierFreq=3629280000
+[0m[PHY]   fp->ul_CarrierFreq=3629280000
+[0m[PHY]   fp->Nid_cell=0
+[0m[PHY]   fp->first_carrier_offset=1076
+[0m[PHY]   fp->ssb_start_subcarrier=0
+[0m[PHY]   fp->Ncp=0
+[0m[PHY]   fp->N_RB_DL=162
+[0m[PHY]   fp->numerology_index=1
+[0m[PHY]   fp->nr_band=48
+[0m[PHY]   fp->ofdm_offset_divisor=8
+[0m[PHY]   fp->threequarter_fs=0
+[0m[PHY]   fp->sl_CarrierFreq=0
+[0m[PHY]   fp->N_RB_SL=0
+[0m[PHY]   Setting RF config for N_RB 162, NB_RX 1, NB_TX 1
+[0m[PHY]   tune_offset 0 Hz, sample_rate 61440000 Hz
+[0m[PHY]   Channel 0: setting tx_gain offset 0, tx_freq 3629280000 Hz
+[0m[PHY]   Channel 0: setting rx_gain offset 75, rx_freq 3629280000 Hz
+[0m[HW]   openair0_cfg[0].sdr_addrs == 'addr=192.168.40.30'
+[0m[HW]   openair0_cfg[0].clock_source == '0' (internal = 0, external = 1)
+[0m[HW]   UHD version 4.3.0.HEAD-0-g1f8fd345 (4.3.0)
+[0m[HW]   Checking for USRP with args addr=192.168.40.30
+[0m[HW]   Found USRP x4xx
+[0m[93m[HW]   Can't set kernel parameters for X4x0
+[0m[HW]   Setting clock source to internal
+[0m[HW]   Setting time source to internal
+[0mCMDLINE: "/root/radio_code/openairinterface5g/cmake_targets/ran_build/build/nr-softmodem" "-O" "/root/radio_code/automated-tests/src/oai_usrp/./config/config-x410-162prb-cbrs-running.conf" "--sa" "--usrp-tx-thread-config" "1" 
+[CONFIG] function config_libconfig_init returned 0
+DL frequency 3629280000: band 48, UL frequency 3629280000
+Found USRP x400
+[HW]   device_init() sample_rate:61440000
+[0m[HW]   cal 0: freq 3500000000.000000, offset 0.000000, diff 129280000.000000
+[0m[HW]   cal 1: freq 2660000000.000000, offset 0.000000, diff 969280000.000000
+[0m[HW]   cal 2: freq 2300000000.000000, offset 0.000000, diff 1329280000.000000
+[0m[HW]   cal 3: freq 1880000000.000000, offset 0.000000, diff 1749280000.000000
+[0m[HW]   cal 4: freq 816000000.000000, offset 0.000000, diff 2813280000.000000
+[0m[1;31m[HW]   RX Gain too high, lower by 15.000000 dB
+[0m[HW]   RX Gain 0 75.000000 (0.000000) => 75.000000 (max 60.000000)
+[0m[HW]   USRP TX_GAIN:60.00 gain_range:60.00 tx_gain:0.00
+[0m[HW]   Actual master clock: 245.760000MHz...
+[0m[HW]   Actual clock source internal...
+[0m[HW]   Actual time source internal...
+[0m[HW]   setting rx channel 0
+[0m[HW]   RF board max packet size 1992, size for 100µs jitter 6144 
+[0m[HW]   rx_max_num_samps 1992
+[0m[HW]   RX Channel 0
+[0m[HW]     Actual RX sample rate: 61.440000MSps...
+[0m[HW]     Actual RX frequency: 3.629280GHz...
+[0m[HW]     Actual RX gain: 60.000000...
+[0m[HW]     Actual RX bandwidth: 400.000000M...
+[0m[HW]     Actual RX antenna: RX1...
+[0m[HW]   TX Channel 0
+[0m[HW]     Actual TX sample rate: 61.440000MSps...
+[0m[HW]     Actual TX frequency: 3.629280GHz...
+[0m[HW]     Actual TX gain: 60.000000...
+[0m[HW]     Actual TX bandwidth: 400.000000M...
+[0m[HW]     Actual TX antenna: TX/RX0...
+[0m[HW]     Actual TX packet size: 1992
+[0mUsing Device: Single USRP:
+  Device: X400-Series Device
+  Mboard 0: x410
+  RX Channel: 0
+    RX DSP: 0
+    RX Dboard: A
+    RX Subdev: 0
+  RX Channel: 1
+    RX DSP: 1
+    RX Dboard: A
+    RX Subdev: 1
+  RX Channel: 2
+    RX DSP: 2
+    RX Dboard: B
+    RX Subdev: 0
+  RX Channel: 3
+    RX DSP: 3
+    RX Dboard: B
+    RX Subdev: 1
+  TX Channel: 0
+    TX DSP: 0
+    TX Dboard: A
+    TX Subdev: 0
+  TX Channel: 1
+    TX DSP: 1
+    TX Dboard: A
+    TX Subdev: 1
+  TX Channel: 2
+    TX DSP: 2
+    TX Dboard: B
+    TX Subdev: 0
+  TX Channel: 3
+    TX DSP: 3
+    TX Dboard: B
+    TX Subdev: 1
+
+[HW]   Device timestamp: 0.042358...
+[0m[HW]   [RAU] has loaded USRP X400 device.
+[0m[PHY]   RU 0 Setting N_TA_offset to 800 samples (UL Freq 3600120, N_RB 162, mu 1)
+[0m[PHY]   Signaling main thread that RU 0 is ready, sl_ahead 6
+[0m[PHY]   L1 configured without analog beamforming
+[0m[PHY]   Attaching RU 0 antenna 0 to gNB antenna 0
+[0m[UTIL]   threadCreate() for Tpool0_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool1_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool2_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool3_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool4_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool5_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool6_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool7_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for L1_rx_thread: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for L1_tx_thread: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for L1_stats: creating thread with affinity ffffffff, priority 1
+[0m[PHY]   got sync (L1_stats_thread)
+[0mTYPE <CTRL-C> TO TERMINATE
+[PHY]   got sync (ru_thread)
+[0m[HW]   current pps at 0.000000, starting streaming at 1.000000
+[0m[PHY]   RU 0 rf device ready
+[0m[PHY]   RU 0 RF started cpu_meas_enabled 0
+[0m[UTIL]   threadCreate() for trx_usrp_write_thread: creating thread with affinity ffffffff, priority 97
+[0m[PHY]   tx write thread ready
+[0m[32m[PHY]   Command line parameters for OAI UE: -C 3629280000 -r 162 --numerology 1 --ssb 516 
+[0m[NR_MAC]   Frame.Slot 128.0
+
+[0m[NR_MAC]   Frame.Slot 256.0
+
+[0m[NR_MAC]   Frame.Slot 384.0
+
+[0m[NR_MAC]   Frame.Slot 512.0
+
+[0m[NR_MAC]   Frame.Slot 640.0
+
+[0m[NR_MAC]   Frame.Slot 768.0
+
+[0m[NR_MAC]   Frame.Slot 896.0
+
+[0m[NR_MAC]   Frame.Slot 0.0
+
+[0m[NR_MAC]   Frame.Slot 128.0
+
+[0m[NR_MAC]   Frame.Slot 256.0
+
+[0m[NR_MAC]   Frame.Slot 384.0
+
+[0m[NR_MAC]   Frame.Slot 512.0
+
+[0m[NR_MAC]   Frame.Slot 640.0
+
+[0m[32m[NR_PHY]   [RAPROC] 701.19 Initiating RA procedure with preamble 4, energy 54.0 dB (I0 223, thres 120), delay 6 start symbol 0 freq index 0
+[0m[32m[NR_MAC]   701.19 UE RA-RNTI 010b TC-RNTI c419: Activating RA process index 0
+[0m[32m[NR_MAC]   UE c419: 702.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 4
+[0m[NR_MAC]   UE c419: Msg3 scheduled at 702.17 (702.7 TDA 3)
+[0m[32m[NR_MAC]   702.7 Send RAR to RA-RNTI 010b
+[0m[NR_MAC]   Adding new UE context with RNTI 0xc419
+[0m[32m[NR_MAC]    702.17 PUSCH with TC_RNTI 0xc419 received correctly
+[0m[1;31m[NR_MAC]   MAC sdu len impossible (20)
+[0m[MAC]   [RAPROC] Received SDU for CCCH length 6 for UE c419
+[0m[RLC]   Activated srb0 for UE 50201
+[0m[RLC]   Added srb 1 to UE 50201
+[0m[NR_MAC]   Activating scheduling Msg4 for TC_RNTI 0xc419 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0xc419 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI c419, payload_size 6
+[0m[32m[NR_RRC]   [--] (cellID 0, UE ID 1 RNTI c419) Create UE context: CU UE ID 1 DU UE ID 50201 (rnti: c419, random ue id c06046d84e000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[32m[NR_RRC]   [DL] (cellID bc614e, UE ID 1 RNTI c419) Send RRC Setup
+[0m[NR_MAC]   UE c419 Generate msg4: feedback at  703.17, payload 153 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]    704. 4 UE c419: Received Ack of Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   [UL] (cellID bc614e, UE ID 1 RNTI c419) Received RRCSetupComplete (RRC_CONNECTED reached)
+[0m[NGAP]   Build NGAP_NAS_FIRST_REQ adding in s_TMSI: GUAMI amf_set_id 1 amf_region_id 2 ue c419
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 2171) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[93m[NGAP]   could not find NGAP_ProtocolIE_ID_id_UEAggregateMaximumBitRate
+[0m[32m[NR_RRC]   [--] (cellID bc614e, UE ID 1 RNTI c419) Selected security algorithms: ciphering 0, integrity 2
+[0m[NR_RRC]   [UE c419] Saved security key DD
+[0m[NR_RRC]   UE 1 Logical Channel DL-DCCH, Generate SecurityModeCommand (bytes 3)
+[0m[32m[NR_RRC]   [UL] (cellID bc614e, UE ID 1 RNTI c419) Received Security Mode Complete
+[0m[NR_RRC]   UE 1: Logical Channel DL-DCCH, Generate NR UECapabilityEnquiry (bytes 8, xid 3)
+[0m[32m[NR_RRC]   [UL] (cellID bc614e, UE ID 1 RNTI c419) Received UE capabilities
+[0m[NR_RRC]   Send message to ngap: NGAP_UE_CAPABILITIES_IND
+[0m[32m[NR_RRC]   [DL] (cellID bc614e, UE ID 1 RNTI c419) Send DL Information Transfer [58 bytes]
+[0m[NR_RRC]   Send message to sctp: NGAP_InitialContextSetupResponse
+[0m[32m[NR_RRC]   [UL] (cellID bc614e, UE ID 1 RNTI c419) Received RRC UL Information Transfer [13 bytes]
+[0m[32m[NR_RRC]   [DL] (cellID bc614e, UE ID 1 RNTI c419) Send DL Information Transfer [32 bytes]
+[0m[NR_MAC]   Frame.Slot 768.0
+UE RNTI c419 CU-UE-ID 1 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (7 meas)
+UE c419: dlsch_rounds 9/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.09000 MCS (0) 9
+UE c419: ulsch_rounds 191/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.05314 MCS (0) 9 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 31.5 dB
+UE c419: MAC:    TX            953 RX          17060 bytes
+UE c419: LCID 1: TX            151 RX           1277 bytes
+
+[0m[NR_MAC]   Frame.Slot 896.0
+UE RNTI c419 CU-UE-ID 1 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE c419: dlsch_rounds 10/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.08100 MCS (0) 9
+UE c419: ulsch_rounds 575/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.01501 MCS (0) 21 (Qm 6 deltaMCS 0 dB) NPRB 5  SNR 32.0 dB
+UE c419: MAC:    TX           1076 RX          49828 bytes
+UE c419: LCID 1: TX            151 RX           1277 bytes
+
+[0m[NR_MAC]   Frame.Slot 0.0
+UE RNTI c419 CU-UE-ID 1 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE c419: dlsch_rounds 12/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.06561 MCS (0) 9
+UE c419: ulsch_rounds 959/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00382 MCS (0) 28 (Qm 6 deltaMCS 0 dB) NPRB 5  SNR 31.5 dB
+UE c419: MAC:    TX           1322 RX          82596 bytes
+UE c419: LCID 1: TX            151 RX           1277 bytes
+
+[0m[NR_MAC]   Frame.Slot 128.0
+UE RNTI c419 CU-UE-ID 1 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE c419: dlsch_rounds 13/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.05905 MCS (0) 9
+UE c419: ulsch_rounds 1343/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00097 MCS (0) 28 (Qm 6 deltaMCS 0 dB) NPRB 5  SNR 31.0 dB
+UE c419: MAC:    TX           1445 RX         115364 bytes
+UE c419: LCID 1: TX            151 RX           1277 bytes
+
+[0m[NR_MAC]   Frame.Slot 256.0
+UE RNTI c419 CU-UE-ID 1 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE c419: dlsch_rounds 14/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.05314 MCS (0) 9
+UE c419: ulsch_rounds 1727/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00025 MCS (0) 28 (Qm 6 deltaMCS 0 dB) NPRB 5  SNR 32.0 dB
+UE c419: MAC:    TX           1568 RX         148132 bytes
+UE c419: LCID 1: TX            151 RX           1277 bytes
+
+[0m[NR_MAC]   Frame.Slot 384.0
+UE RNTI c419 CU-UE-ID 1 in-sync PH 50 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE c419: dlsch_rounds 16/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.04305 MCS (0) 9
+UE c419: ulsch_rounds 2111/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00006 MCS (0) 28 (Qm 6 deltaMCS 0 dB) NPRB 5  SNR 30.0 dB
+UE c419: MAC:    TX           1814 RX         180900 bytes
+UE c419: LCID 1: TX            151 RX           1277 bytes
+
+[0m[NR_MAC]   Frame.Slot 512.0
+UE RNTI c419 CU-UE-ID 1 in-sync PH 50 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE c419: dlsch_rounds 17/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.03874 MCS (0) 9
+UE c419: ulsch_rounds 2495/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00002 MCS (0) 28 (Qm 6 deltaMCS 0 dB) NPRB 5  SNR 31.5 dB
+UE c419: MAC:    TX           1937 RX         213668 bytes
+UE c419: LCID 1: TX            151 RX           1277 bytes
+
+[0m[NR_MAC]   Frame.Slot 640.0
+UE RNTI c419 CU-UE-ID 1 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE c419: dlsch_rounds 18/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.03487 MCS (0) 9
+UE c419: ulsch_rounds 2879/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 28 (Qm 6 deltaMCS 0 dB) NPRB 5  SNR 31.5 dB
+UE c419: MAC:    TX           2060 RX         246436 bytes
+UE c419: LCID 1: TX            151 RX           1277 bytes
+
+[0m[32m[NR_PHY]   [RAPROC] 703.19 Initiating RA procedure with preamble 58, energy 52.7 dB (I0 224, thres 120), delay 7 start symbol 0 freq index 0
+[0m[32m[NR_MAC]   703.19 UE RA-RNTI 010b TC-RNTI d640: Activating RA process index 0
+[0m[32m[NR_MAC]   UE d640: 704.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 58
+[0m[NR_MAC]   UE d640: Msg3 scheduled at 704.17 (704.7 TDA 3)
+[0m[32m[NR_MAC]   704.7 Send RAR to RA-RNTI 010b
+[0m[NR_MAC]   Adding new UE context with RNTI 0xd640
+[0m[32m[NR_MAC]    704.17 PUSCH with TC_RNTI 0xd640 received correctly
+[0m[1;31m[NR_MAC]   MAC sdu len impossible (8)
+[0m[MAC]   [RAPROC] Received SDU for CCCH length 6 for UE d640
+[0m[RLC]   Activated srb0 for UE 54848
+[0m[RLC]   Added srb 1 to UE 54848
+[0m[NR_MAC]   Activating scheduling Msg4 for TC_RNTI 0xd640 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0xd640 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI d640, payload_size 6
+[0m[NR_RRC]   Received UE 5G-S-TMSI-Part1 278317284289
+[0m[32m[NR_RRC]   [--] (cellID 0, UE ID 2 RNTI d640) Create UE context: CU UE ID 2 DU UE ID 54848 (rnti: d640, random ue id 40cd00bbc1)
+[0m[RRC]   activate SRB 1 of UE 2
+[0m[32m[NR_RRC]   [DL] (cellID bc614e, UE ID 2 RNTI d640) Send RRC Setup
+[0m[NR_MAC]   UE d640 Generate msg4: feedback at  705.17, payload 153 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]    706. 4 UE d640: Received Ack of Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   [UL] (cellID bc614e, UE ID 2 RNTI d640) Received RRCSetupComplete (RRC_CONNECTED reached)
+[0m[RRC]   s_tmsi part2 0 (00 00)
+[0m[NR_RRC]   5g_s_TMSI: 0x40CD00BBC1, amf_set_id: 0x1 (1), amf_pointer: 0x0 (0), 5g TMSI: 0xCD00BBC1 
+[0m[NGAP]   UE 2: Chose AMF 'a5gblu-amf' (assoc_id 2171) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[32m[NR_RRC]   [DL] (cellID bc614e, UE ID 1 RNTI c419) Send RRC Release
+[0m[93m[NGAP]   could not find NGAP_ProtocolIE_ID_id_UEAggregateMaximumBitRate
+[0m[32m[NR_RRC]   [--] (cellID bc614e, UE ID 2 RNTI d640) Selected security algorithms: ciphering 0, integrity 2
+[0m[NR_RRC]   [UE d640] Saved security key EE
+[0m[NR_RRC]   UE 2 Logical Channel DL-DCCH, Generate SecurityModeCommand (bytes 3)
+[0m[32m[NR_RRC]   [UL] (cellID bc614e, UE ID 2 RNTI d640) Received Security Mode Complete
+[0m[NR_RRC]   UE 2: Logical Channel DL-DCCH, Generate NR UECapabilityEnquiry (bytes 8, xid 1)
+[0m[32m[NR_RRC]   [UL] (cellID bc614e, UE ID 2 RNTI d640) Received UE capabilities
+[0m[NR_RRC]   Send message to ngap: NGAP_UE_CAPABILITIES_IND
+[0m[32m[NR_RRC]   [DL] (cellID bc614e, UE ID 2 RNTI d640) Send DL Information Transfer [14 bytes]
+[0m[NR_RRC]   Send message to sctp: NGAP_InitialContextSetupResponse
+[0m[32m[NR_RRC]   [UL] (cellID bc614e, UE ID 2 RNTI d640) Received RRC UL Information Transfer [88 bytes]
+[0m[93m[RLC]   Remove UE 50201
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI c419 
+[0m[NR_MAC]   Remove NR rnti 0xc419
+[0m[32m[NR_RRC]   [--] (cellID bc614e, UE ID 1 RNTI c419) Remove UE context
+[0m[NGAP]   PDUSESSIONSetup initiating message
+[0m[NR_RRC]   UE 2: received PDU session setup request
+[0m[NR_RRC]   Adding pdusession 1, total nb of sessions 1
+[0m[NR_RRC]   UE 2: configure DRB ID 1 for PDU session ID 1
+[0m[32m[NR_RRC]   [--] (cellID bc614e, UE ID 2 RNTI d640) selecting CU-UP ID 3585 based on exact NSSAI match (1:0x000000)
+[0m[RRC]   UE 2 associating to CU-UP assoc_id -1 out of 1 CU-UPs
+[0m[GTPU]   [95] Created tunnel for UE ID 2, teid for incoming: ba6c26e4, teid for outgoing 111e to remote IPv4: 10.128.1.107, IPv6 ::
+[0m[PDCP]   added drb 1 to UE ID 2
+[0m[SDAP]   Default DRB for the created SDAP entity: 1 
+[0m[RRC]   activate SRB 2 of UE 2
+[0m[RLC]   Added srb 2 to UE 54848
+[0m[RLC]   Added drb 1 to UE 54848
+[0m[RLC]   Added DRB to UE 54848
+[0m[RRC]   UE 2 trigger UE context setup request with 1 DRBs
+[0m[RRC]   UE d640 replacing existing CellGroupConfig with new one received from DU
+[0m[E1AP]   UE 2: updating PDU session ID 1 (1 bearers)
+[0m[PDCP]   DRB 1 re-established
+[0m[32m[NR_RRC]   [DL] (cellID bc614e, UE ID 2 RNTI d640) Generate RRCReconfiguration (bytes 326, xid 3)
+[0m[RRC]   UE 2: PDU session ID 1 modified 1 bearers
+[0m[32m[NR_RRC]   [UL] (cellID bc614e, UE ID 2 RNTI d640) Received RRCReconfigurationComplete
+[0m[NR_RRC]   msg index 0, pdu_sessions index 0, status 2, xid 3): nb_of_pdusessions 1,  pdusession_id 1, teid: 3127650020 
+ [0m[NR_RRC]   NGAP_PDUSESSION_SETUP_RESP: sending the message
+[0m[NR_MAC]   Frame.Slot 768.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 50 dB PCMAX 21 dBm, average RSRP -85 (6 meas)
+UE d640: dlsch_rounds 11/1/0/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.09000 MCS (1) 9
+UE d640: ulsch_rounds 177/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.05905 MCS (1) 9 (Qm 4 deltaMCS 0 dB) NPRB 5  SNR 30.0 dB
+UE d640: MAC:    TX           1573 RX          22811 bytes
+UE d640: LCID 1: TX            404 RX           1340 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX              0 RX              0 bytes
+
+[0m[NR_MAC]   Frame.Slot 896.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (15 meas)
+UE d640: dlsch_rounds 13/1/0/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.11433 MCS (1) 9
+UE d640: ulsch_rounds 561/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.01501 MCS (1) 21 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 33.0 dB
+UE d640: MAC:    TX           2007 RX          82203 bytes
+UE d640: LCID 1: TX            407 RX           1362 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX              0 RX              0 bytes
+
+[0m[NR_MAC]   Frame.Slot 0.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 20/1/0/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.06076 MCS (1) 9
+UE d640: ulsch_rounds 948/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00382 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 33.0 dB
+UE d640: MAC:    TX           3393 RX         141733 bytes
+UE d640: LCID 1: TX            410 RX           1384 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX             15 RX            868 bytes
+
+[0m[NR_MAC]   Frame.Slot 128.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 50 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 28/1/0/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.03588 MCS (1) 9
+UE d640: ulsch_rounds 1334/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00097 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 29.5 dB
+UE d640: MAC:    TX           5129 RX         201217 bytes
+UE d640: LCID 1: TX            416 RX           1428 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX             27 RX           1454 bytes
+
+[0m[NR_MAC]   Frame.Slot 256.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 737/1/0/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.01544 MCS (1) 16
+UE d640: ulsch_rounds 1753/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00025 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 31.5 dB
+UE d640: MAC:    TX        5860755 RX         262173 bytes
+UE d640: LCID 1: TX            419 RX           1450 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX        5838668 RX           2692 bytes
+
+[0m[NR_MAC]   Frame.Slot 384.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 50 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 1507/97/0/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.17599 MCS (1) 24
+UE d640: ulsch_rounds 2170/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00007 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 30.0 dB
+UE d640: MAC:    TX       17242387 RX         323129 bytes
+UE d640: LCID 1: TX            422 RX           1472 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX       17191000 RX           3084 bytes
+
+[0m[NR_MAC]   Frame.Slot 512.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 50 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 2227/97/0/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.04970 MCS (1) 24
+UE d640: ulsch_rounds 2585/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00002 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 31.0 dB
+UE d640: MAC:    TX       28340129 RX         383947 bytes
+UE d640: LCID 1: TX            425 RX           1494 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX       28259267 RX           3231 bytes
+
+[0m[NR_MAC]   Frame.Slot 640.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 2958/191/0/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.08356 MCS (1) 22
+UE d640: ulsch_rounds 3009/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 31.5 dB
+UE d640: MAC:    TX       39829465 RX         445133 bytes
+UE d640: LCID 1: TX            431 RX           1538 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX       39718762 RX           3390 bytes
+
+[0m[NR_MAC]   Frame.Slot 768.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 3682/278/0/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.15033 MCS (1) 22
+UE d640: ulsch_rounds 3433/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 32.5 dB
+UE d640: MAC:    TX       51294799 RX         506365 bytes
+UE d640: LCID 1: TX            434 RX           1560 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX       51153876 RX           3630 bytes
+
+[0m[NR_MAC]   Frame.Slot 896.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 4437/279/0/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.03821 MCS (1) 25
+UE d640: ulsch_rounds 3855/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 31.0 dB
+UE d640: MAC:    TX       62622518 RX         567505 bytes
+UE d640: LCID 1: TX            437 RX           1582 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX       62452372 RX           3783 bytes
+
+[0m[NR_MAC]   Frame.Slot 0.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 50 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 5150/374/0/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.07608 MCS (1) 22
+UE d640: ulsch_rounds 4278/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 30.5 dB
+UE d640: MAC:    TX       73793705 RX         628691 bytes
+UE d640: LCID 1: TX            440 RX           1604 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX       73593763 RX           3942 bytes
+
+[0m[NR_MAC]   Frame.Slot 128.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 50 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 5848/464/0/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.15453 MCS (1) 22
+UE d640: ulsch_rounds 4702/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 30.0 dB
+UE d640: MAC:    TX       84885594 RX         689969 bytes
+UE d640: LCID 1: TX            446 RX           1648 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX       84657274 RX           4101 bytes
+
+[0m[NR_MAC]   Frame.Slot 256.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 50 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 6603/465/0/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.03928 MCS (1) 25
+UE d640: ulsch_rounds 5124/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 31.5 dB
+UE d640: MAC:    TX       96281901 RX         751063 bytes
+UE d640: LCID 1: TX            449 RX           1670 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX       96025241 RX           4257 bytes
+
+[0m[NR_MAC]   Frame.Slot 384.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 7333/548/0/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.07246 MCS (1) 22
+UE d640: ulsch_rounds 5545/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 30.5 dB
+UE d640: MAC:    TX      107701447 RX         812157 bytes
+UE d640: LCID 1: TX            452 RX           1692 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      107414548 RX           4413 bytes
+
+[0m[NR_MAC]   Frame.Slot 512.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 50 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 8035/646/0/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.15116 MCS (1) 21
+UE d640: ulsch_rounds 5966/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 32.0 dB
+UE d640: MAC:    TX      118897852 RX         873251 bytes
+UE d640: LCID 1: TX            455 RX           1714 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      118580998 RX           4651 bytes
+
+[0m[NR_MAC]   Frame.Slot 640.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 8817/646/0/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.03842 MCS (1) 24
+UE d640: ulsch_rounds 6387/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 32.0 dB
+UE d640: MAC:    TX      129817395 RX         934345 bytes
+UE d640: LCID 1: TX            461 RX           1758 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      129471865 RX           4804 bytes
+
+[0m[NR_MAC]   Frame.Slot 768.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 9513/738/0/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.09230 MCS (1) 22
+UE d640: ulsch_rounds 6811/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 32.5 dB
+UE d640: MAC:    TX      140805831 RX         995623 bytes
+UE d640: LCID 1: TX            464 RX           1780 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      140431139 RX           4963 bytes
+
+[0m[NR_MAC]   Frame.Slot 896.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 10244/830/0/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.17058 MCS (1) 23
+UE d640: ulsch_rounds 7235/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 33.0 dB
+UE d640: MAC:    TX      152383500 RX        1056809 bytes
+UE d640: LCID 1: TX            467 RX           1802 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      151977996 RX           5125 bytes
+
+[0m[NR_MAC]   Frame.Slot 0.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 50 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 11020/830/0/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.04336 MCS (1) 24
+UE d640: ulsch_rounds 7658/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 30.5 dB
+UE d640: MAC:    TX      163877914 RX        1117995 bytes
+UE d640: LCID 1: TX            470 RX           1824 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      163442002 RX           5278 bytes
+
+[0m[NR_MAC]   Frame.Slot 128.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 11715/918/0/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.08317 MCS (1) 22
+UE d640: ulsch_rounds 8081/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 31.5 dB
+UE d640: MAC:    TX      174741884 RX        1179181 bytes
+UE d640: LCID 1: TX            476 RX           1868 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      174276440 RX           5437 bytes
+
+[0m[NR_MAC]   Frame.Slot 256.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 12402/1010/0/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.15753 MCS (1) 22
+UE d640: ulsch_rounds 8504/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 31.0 dB
+UE d640: MAC:    TX      185612284 RX        1240367 bytes
+UE d640: LCID 1: TX            479 RX           1890 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      185117551 RX           5593 bytes
+
+[0m[NR_MAC]   Frame.Slot 384.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 50 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 13157/1010/0/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.04449 MCS (1) 24
+UE d640: ulsch_rounds 8926/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 30.5 dB
+UE d640: MAC:    TX      196843227 RX        1301553 bytes
+UE d640: LCID 1: TX            482 RX           1912 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      196319396 RX           5746 bytes
+
+[0m[NR_MAC]   Frame.Slot 512.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 13880/1099/0/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.08156 MCS (1) 22
+UE d640: ulsch_rounds 9351/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 31.5 dB
+UE d640: MAC:    TX      208167103 RX        1362785 bytes
+UE d640: LCID 1: TX            485 RX           1934 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      207612714 RX           5908 bytes
+
+[0m[NR_MAC]   Frame.Slot 640.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 14588/1187/0/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.15720 MCS (1) 22
+UE d640: ulsch_rounds 9767/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 31.0 dB
+UE d640: MAC:    TX      219610909 RX        1423649 bytes
+UE d640: LCID 1: TX            491 RX           1978 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      219026315 RX           6061 bytes
+
+[0m[NR_MAC]   Frame.Slot 768.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 50 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 15342/1187/0/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.03996 MCS (1) 25
+UE d640: ulsch_rounds 10181/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 30.5 dB
+UE d640: MAC:    TX      231081920 RX        1484421 bytes
+UE d640: LCID 1: TX            494 RX           2000 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      230467364 RX           6214 bytes
+
+[0m[NR_MAC]   Frame.Slot 896.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 16034/1277/0/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.07558 MCS (1) 22
+UE d640: ulsch_rounds 10602/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 30.0 dB
+UE d640: MAC:    TX      242076262 RX        1545561 bytes
+UE d640: LCID 1: TX            497 RX           2022 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      241433614 RX           6367 bytes
+
+[0m[NR_MAC]   Frame.Slot 0.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 16722/1369/0/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.16111 MCS (1) 22
+UE d640: ulsch_rounds 11020/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 32.0 dB
+UE d640: MAC:    TX      253150726 RX        1606517 bytes
+UE d640: LCID 1: TX            500 RX           2044 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      252479561 RX           6607 bytes
+
+[0m[NR_MAC]   Frame.Slot 128.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 17479/1369/0/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.04095 MCS (1) 24
+UE d640: ulsch_rounds 11436/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 32.5 dB
+UE d640: MAC:    TX      264525748 RX        1667335 bytes
+UE d640: LCID 1: TX            506 RX           2088 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      263824646 RX           6763 bytes
+
+[0minitializing tx write thread
+end of tx write thread
+trx_usrp_write_thread started on cpu 10
+sleep...
+sleep...
+sleep...
+sleep...
+sleep...
+sleep...
+sleep...
+sleep...
+sleep...
+[NR_MAC]   Frame.Slot 256.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 50 dB PCMAX 21 dBm, average RSRP -88 (16 meas)
+UE d640: dlsch_rounds 18188/1457/1/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.08316 MCS (1) 22
+UE d640: ulsch_rounds 11856/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 31.0 dB
+UE d640: MAC:    TX      275876849 RX        1728383 bytes
+UE d640: LCID 1: TX            509 RX           2110 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      275145141 RX           6927 bytes
+
+[0m[NR_MAC]   Frame.Slot 384.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 18873/1546/1/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.15423 MCS (1) 22
+UE d640: ulsch_rounds 12273/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 32.5 dB
+UE d640: MAC:    TX      286923437 RX        1789293 bytes
+UE d640: LCID 1: TX            512 RX           2132 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      286164515 RX           7083 bytes
+
+[0m[NR_MAC]   Frame.Slot 512.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 19602/1556/10/0, dlsch_errors 0, pucch0_DTX 9, BLER 0.05078 MCS (1) 22
+UE d640: ulsch_rounds 12695/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 31.0 dB
+UE d640: MAC:    TX      297764599 RX        1850433 bytes
+UE d640: LCID 1: TX            515 RX           2154 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      296977814 RX           7252 bytes
+
+[0m[NR_MAC]   Frame.Slot 640.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -86 (16 meas)
+UE d640: dlsch_rounds 20309/1649/10/0, dlsch_errors 0, pucch0_DTX 9, BLER 0.11727 MCS (1) 22
+UE d640: ulsch_rounds 13118/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 31.5 dB
+UE d640: MAC:    TX      309018483 RX        1911665 bytes
+UE d640: LCID 1: TX            521 RX           2198 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      308201968 RX           7411 bytes
+
+[0m[NR_MAC]   Frame.Slot 768.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 21051/1732/10/0, dlsch_errors 0, pucch0_DTX 9, BLER 0.11805 MCS (1) 26
+UE d640: ulsch_rounds 13542/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 31.5 dB
+UE d640: MAC:    TX      320556144 RX        1972851 bytes
+UE d640: LCID 1: TX            524 RX           2220 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      319710191 RX           7570 bytes
+
+[0m[NR_MAC]   Frame.Slot 896.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 50 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 21797/1747/10/0, dlsch_errors 0, pucch0_DTX 9, BLER 0.06266 MCS (1) 22
+UE d640: ulsch_rounds 13959/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 29.5 dB
+UE d640: MAC:    TX      331915920 RX        2033761 bytes
+UE d640: LCID 1: TX            527 RX           2242 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      331039499 RX           7726 bytes
+
+[0m[NR_MAC]   Frame.Slot 0.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 50 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 22485/1836/10/0, dlsch_errors 0, pucch0_DTX 9, BLER 0.12560 MCS (1) 22
+UE d640: ulsch_rounds 14382/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 30.5 dB
+UE d640: MAC:    TX      342917804 RX        2094947 bytes
+UE d640: LCID 1: TX            530 RX           2264 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      342013229 RX           7882 bytes
+
+[0m[NR_MAC]   Frame.Slot 128.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 50 dB PCMAX 21 dBm, average RSRP -86 (16 meas)
+UE d640: dlsch_rounds 23209/1842/13/0, dlsch_errors 0, pucch0_DTX 11, BLER 0.03857 MCS (1) 26
+UE d640: ulsch_rounds 14801/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 31.0 dB
+UE d640: MAC:    TX      353958817 RX        2155949 bytes
+UE d640: LCID 1: TX            536 RX           2308 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      353025862 RX           8035 bytes
+
+[0m[NR_MAC]   Frame.Slot 256.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 23898/1922/13/0, dlsch_errors 0, pucch0_DTX 11, BLER 0.07073 MCS (1) 23
+UE d640: ulsch_rounds 15222/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 31.0 dB
+UE d640: MAC:    TX      364894549 RX        2217089 bytes
+UE d640: LCID 1: TX            539 RX           2330 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      363934052 RX           8191 bytes
+
+[0m[NR_MAC]   Frame.Slot 384.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 24586/2008/13/0, dlsch_errors 0, pucch0_DTX 11, BLER 0.12759 MCS (1) 22
+UE d640: ulsch_rounds 15640/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 32.0 dB
+UE d640: MAC:    TX      376084668 RX        2277999 bytes
+UE d640: LCID 1: TX            542 RX           2352 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      375095511 RX           8341 bytes
+
+[0m[NR_MAC]   Frame.Slot 512.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -86 (16 meas)
+UE d640: dlsch_rounds 25304/2039/15/0, dlsch_errors 0, pucch0_DTX 11, BLER 0.04237 MCS (1) 26
+UE d640: ulsch_rounds 16057/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 28.0 dB
+UE d640: MAC:    TX      387165757 RX        2338909 bytes
+UE d640: LCID 1: TX            545 RX           2374 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      386148920 RX           8488 bytes
+
+[0m[NR_MAC]   Frame.Slot 640.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 50 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 25988/2095/15/0, dlsch_errors 0, pucch0_DTX 11, BLER 0.06453 MCS (1) 23
+UE d640: ulsch_rounds 16479/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 31.0 dB
+UE d640: MAC:    TX      397835157 RX        2400049 bytes
+UE d640: LCID 1: TX            551 RX           2418 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      396787944 RX           8641 bytes
+
+[0m[NR_MAC]   Frame.Slot 768.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 26648/2178/15/0, dlsch_errors 0, pucch0_DTX 11, BLER 0.11213 MCS (1) 22
+UE d640: ulsch_rounds 16902/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 31.5 dB
+UE d640: MAC:    TX      408371867 RX        2461281 bytes
+UE d640: LCID 1: TX            554 RX           2440 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      407296224 RX           8791 bytes
+
+[0m[NR_MAC]   Frame.Slot 896.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 27343/2261/15/0, dlsch_errors 0, pucch0_DTX 11, BLER 0.12290 MCS (1) 26
+UE d640: ulsch_rounds 17317/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 32.0 dB
+UE d640: MAC:    TX      419376059 RX        2522099 bytes
+UE d640: LCID 1: TX            557 RX           2462 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      418272070 RX           8944 bytes
+
+[0m[NR_MAC]   Frame.Slot 0.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 50 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 28101/2265/15/0, dlsch_errors 0, pucch0_DTX 11, BLER 0.05887 MCS (1) 22
+UE d640: ulsch_rounds 17737/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 29.0 dB
+UE d640: MAC:    TX      430891946 RX        2583101 bytes
+UE d640: LCID 1: TX            560 RX           2484 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      429757491 RX           9100 bytes
+
+[0m[NR_MAC]   Frame.Slot 128.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 28824/2351/15/0, dlsch_errors 0, pucch0_DTX 11, BLER 0.10939 MCS (1) 22
+UE d640: ulsch_rounds 18158/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 32.0 dB
+UE d640: MAC:    TX      442424799 RX        2644241 bytes
+UE d640: LCID 1: TX            566 RX           2528 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      441259905 RX           9263 bytes
+
+[0m[NR_MAC]   Frame.Slot 256.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 50 dB PCMAX 21 dBm, average RSRP -86 (16 meas)
+UE d640: dlsch_rounds 29536/2433/15/0, dlsch_errors 0, pucch0_DTX 11, BLER 0.18500 MCS (1) 25
+UE d640: ulsch_rounds 18575/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 31.0 dB
+UE d640: MAC:    TX      453743282 RX        2705105 bytes
+UE d640: LCID 1: TX            569 RX           2550 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      452550646 RX           9416 bytes
+
+[0m[NR_MAC]   Frame.Slot 384.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -86 (16 meas)
+UE d640: dlsch_rounds 30259/2433/15/0, dlsch_errors 0, pucch0_DTX 11, BLER 0.04974 MCS (1) 24
+UE d640: ulsch_rounds 18992/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 32.5 dB
+UE d640: MAC:    TX      464963862 RX        2766015 bytes
+UE d640: LCID 1: TX            572 RX           2572 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      463742302 RX           9566 bytes
+
+[0m[NR_MAC]   Frame.Slot 512.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -86 (16 meas)
+UE d640: dlsch_rounds 30952/2515/15/0, dlsch_errors 0, pucch0_DTX 11, BLER 0.08803 MCS (1) 23
+UE d640: ulsch_rounds 19415/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 32.5 dB
+UE d640: MAC:    TX      476108492 RX        2827247 bytes
+UE d640: LCID 1: TX            578 RX           2616 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      474856283 RX           9725 bytes
+
+[0m[NR_MAC]   Frame.Slot 640.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 50 dB PCMAX 21 dBm, average RSRP -86 (16 meas)
+UE d640: dlsch_rounds 31663/2603/15/0, dlsch_errors 0, pucch0_DTX 11, BLER 0.15437 MCS (1) 22
+UE d640: ulsch_rounds 19840/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 31.5 dB
+UE d640: MAC:    TX      487459859 RX        2888479 bytes
+UE d640: LCID 1: TX            581 RX           2638 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      486178211 RX           9887 bytes
+
+[0m[NR_MAC]   Frame.Slot 768.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 32429/2607/18/0, dlsch_errors 0, pucch0_DTX 13, BLER 0.04126 MCS (1) 24
+UE d640: ulsch_rounds 20263/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 33.0 dB
+UE d640: MAC:    TX      498833624 RX        2949665 bytes
+UE d640: LCID 1: TX            584 RX           2660 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      497523316 RX          10040 bytes
+
+[0m[NR_MAC]   Frame.Slot 896.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -86 (16 meas)
+UE d640: dlsch_rounds 33133/2664/18/0, dlsch_errors 0, pucch0_DTX 13, BLER 0.07287 MCS (1) 23
+UE d640: ulsch_rounds 20684/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 31.5 dB
+UE d640: MAC:    TX      509968593 RX        3010759 bytes
+UE d640: LCID 1: TX            587 RX           2682 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      508628512 RX          10196 bytes
+
+[0m[NR_MAC]   Frame.Slot 0.0
+UE RNTI d640 CU-UE-ID 2 in-sync PH 48 dB PCMAX 21 dBm, average RSRP -85 (16 meas)
+UE d640: dlsch_rounds 33805/2744/18/0, dlsch_errors 0, pucch0_DTX 13, BLER 0.11752 MCS (1) 23
+UE d640: ulsch_rounds 21104/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8 deltaMCS 0 dB) NPRB 5  SNR 32.0 dB
+UE d640: MAC:    TX      520761028 RX        3071807 bytes
+UE d640: LCID 1: TX            593 RX           2726 bytes
+UE d640: LCID 2: TX              0 RX              0 bytes
+UE d640: LCID 4: TX      519391450 RX          10346 bytes
+
+[0m

@@ -1,0 +1,1705 @@
+[ENB_APP]   nfapi (0) running mode: MONOLITHIC
+[0m[GNB_APP]   Getting GNBSParams
+[0m[OPT]   OPT disabled
+[0m[HW]   Version: Branch: HEAD Abrev. Hash: 469d58f Date: Wed Sep 11 11:14:20 2024 +0000
+[0m[NR_PHY]   RC.gNB = 0x562b14374d90
+[0m[NR_PHY]   PRB blacklist 
+[0m[NR_PHY]   Copying 0 blacklisted PRB to L1 context
+[0m[PHY]   L1_RX_THREAD_CORE -1 (15)
+[0m[PHY]   TX_AMP = 519 (-36 dBFS)
+[0m[PHY]   l1_north_init_gNB() RC.nb_nr_L1_inst:1
+[0m[PHY]   Installing callbacks for IF_Module - UL_indication
+[0m[MAC]   Allocating shared L1/L2 interface structure for instance 0 @ 0x562b1437d5d0
+[0m[PHY]   l1_north_init_gNB() RC.gNB[0] installing callbacks
+[0m[PHY]   create_gNB_tasks() Task ready initialize structures
+[0m[PHY]   No prs_config configuration found..!!
+[0m[GNB_APP]   pdsch_AntennaPorts N1 1 N2 1 XP 1 pusch_AntennaPorts 1
+[0m[GNB_APP]   minTXRXTIME 6
+[0m[GNB_APP]   SIB1 TDA 1
+[0m[GNB_APP]   CSI-RS 0, SRS 0, 256 QAM may be on, delta_MCS off, maxMIMO_Layers -1, HARQ feedback enabled, num DLHARQ:16, num ULHARQ:16
+[0m[GNB_APP]   sr_ProhibitTimer 0, sr_TransMax 64, sr_ProhibitTimer_v1700 0, t300 400, t301 400, t310 2000, n310 10, t311 3000, n311 1, t319 400
+[0m[RRC]   Read in ServingCellConfigCommon (PhysCellId 0, ABSFREQSSB 641280, DLBand 78, ABSFREQPOINTA 640008, DLBW 162,RACH_TargetReceivedPower -96
+[0m[RRC]   absoluteFrequencySSB 641280 corresponds to 3619200000 Hz
+[0m[MAC]   [MAIN] Init function start:nb_nr_macrlc_inst=1
+[0m[UTIL]   threadCreate() for MAC_STATS: creating thread with affinity ffffffff, priority 2
+[0m[PHY]   Installing callbacks for IF_Module - UL_indication
+[0m[NR_MAC]   Configuring common parameters from NR ServingCellConfig
+[0m[NR_MAC]   DL_Bandwidth:60
+[0m[NR_MAC]   DL_Bandwidth:60
+[0m[NR_MAC]   ssb_OffsetPointA 86, ssb_SubcarrierOffset 0
+[0m[NR_MAC]   Set RX antenna number to 1, Set TX antenna number to 1 (num ssb 1: 80000000,0)
+[0m[NR_MAC]   Setting TDD configuration period to 6
+[0m[PHY]   DL frequency 3629280000 Hz, UL frequency 3629280000 Hz: band 48, uldl offset 0 Hz
+[0m[32m[PHY]   Configuring MIB for instance 0, : (Nid_cell 0,DL freq 3629280000, UL freq 3629280000)
+[0m[PHY]   Initializing frame parms for mu 1, N_RB 162, Ncp 0
+[0m[PHY]   Init: N_RB_DL 162, first_carrier_offset 1076, nb_prefix_samples 144,nb_prefix_samples0 176, ofdm_symbol_size 2048
+[0m[PHY]   Doing symbol rotation calculation for TX/RX, f0 3629280000.000000 Hz, Nsymb 28
+[0m[PHY]   Doing symbol rotation calculation for TX/RX, f0 3629280000.000000 Hz, Nsymb 28
+[0m[PHY]   gNB 0 configured
+[0m[NR_MAC]   PUSCH Target 300, PUCCH Target 200, PUCCH Failure 10, PUSCH Failure 1000
+[0m[NR_RRC]   SIB1 freq: offsetToPointA 86
+[0m[GNB_APP]   F1AP: gNB idx 0 gNB_DU_id 3585, gNB_DU_name gNB-OAI, TAC 1 MCC/MNC/length 1/1/2 cellID 12345678
+[0m[GNB_APP]   ngran_DU: Configuring Cell 0 for TDD
+[0mCMDLINE: "/root/radio_code/openairinterface5g/cmake_targets/ran_build/build/nr-softmodem" "-O" "/root/radio_code/openshift-oai-configurations/./config/config-x410-162prb-cbrs-running.conf" "--sa" "--usrp-tx-thread-config" "1" 
+[LIBCONFIG] Path for include directive set to: /root/radio_code/openshift-oai-configurations/./config
+[CONFIG] function config_libconfig_init returned 0
+[CONFIG] config module libconfig loaded
+[CONFIG] debug flags: 0x00000000
+log init done
+Reading in command-line options
+Configuration: nb_rrc_inst 1, nb_nr_L1_inst 1, nb_ru 1
+configuring for RAU/RRU
+Initializing northbound interface for L1
+DL frequency 3629280000: band 48, UL frequency 3629280000
+<MeasurementTimingConfiguration>
+    <criticalExtensions>
+        <c1>
+            <measTimingConf>
+                <measTiming>
+                    <MeasTiming>
+                        <frequencyAndTiming>
+                            <carrierFreq>641280</carrierFreq>
+                            <ssbSubcarrierSpacing><kHz30/></ssbSubcarrierSpacing>
+                            <ssb-MeasurementTimingConfiguration>
+                                <periodicityAndOffset>
+                                    <sf20>0</sf20>
+                                </periodicityAndOffset>
+                                <duration><sf1/></duration>
+                            </ssb-MeasurementTimingConfiguration>
+                        </frequencyAndTiming>
+                    </MeasTiming>
+                </measTiming>
+            </measTimingConf>
+        </c1>
+    </criticalExtensions>
+</MeasurementTimingConfiguration>
+[PHY]   create_gNB_tasks() RC.nb_nr_L1_inst:1
+[0m[PHY]   l1_north_init_gNB() RC.nb_nr_L1_inst:1
+[0m[PHY]   Installing callbacks for IF_Module - UL_indication
+[0m[PHY]   l1_north_init_gNB() RC.gNB[0] installing callbacks
+[0m[GNB_APP]   Allocating gNB_RRC_INST for 1 instances
+[0m[GNB_APP]   SDAP layer is disabled
+[0m[GNB_APP]   Data Radio Bearer count 1
+[0m[NR_RRC]   do_SIB23_NR, size 9 
+ [0m[GNB_APP]   default drx 0
+[0m[GNB_APP]   [gNB 0] gNB_app_register for instance 0
+[0m[UTIL]   threadCreate() for TASK_SCTP: creating thread with affinity ffffffff, priority 50
+[0m[X2AP]   X2AP is disabled.
+[0m[UTIL]   threadCreate() for TASK_NGAP: creating thread with affinity ffffffff, priority 50
+[0m[UTIL]   threadCreate() for TASK_GNB_APP: creating thread with affinity ffffffff, priority 50
+[0m[NGAP]   Registered new gNB[0] and macro gNB id 3585
+[0m[NGAP]   [gNB 0] check the amf registration state
+[0m[UTIL]   threadCreate() for TASK_RRC_GNB: creating thread with affinity ffffffff, priority 50
+[0m[NR_RRC]   Entering main loop of NR_RRC message task
+[0m[NR_RRC]   Received F1 Setup Request from gNB_DU 3585 (gNB-OAI) on assoc_id -1
+[0m[GTPU]   Configuring GTPu
+[0m[RRC]   Accepting DU 3585 (gNB-OAI), sending F1 Setup Response
+[0m[RRC]   DU uses RRC version 17.3.0
+[0m[GTPU]   SA mode 
+[0m[GTPU]   Configuring GTPu address : 10.130.3.41, port : 2152
+[0m[GTPU]   Initializing UDP for local address 10.130.3.41 with port 2152
+[0m[MAC]   received F1 Setup Response from CU (null)
+[0m[MAC]   CU uses RRC version 17.3.0
+[0m[MAC]   Clearing the DU's UE states before, if any.
+[0m[GTPU]   Created gtpu instance id: 99
+[0m[UTIL]   threadCreate() for TASK_GTPV1_U: creating thread with affinity ffffffff, priority 50
+[0m[NR_RRC]   Accepting new CU-UP ID 3585 name gNB-OAI (assoc_id -1)
+[0m[NGAP]   3585 -> 0000e010
+[0m[GNB_APP]   [gNB 0] Received NGAP_REGISTER_GNB_CNF: associated AMF 1
+[0m[PHY]   Initializing gNB 0
+[0m[PHY]   Initializing gNB 0
+[0m[PHY]   Registering with MAC interface module (before 0x562b1437d5d0)
+[0m[PHY]   Installing callbacks for IF_Module - UL_indication
+[0m[PHY]   Registering with MAC interface module (after 0x562b1437d5d0)
+[0m[PHY]   Setting indication lists
+[0m[PHY]   [nr-gnb.c] gNB structure allocated
+[0m[PHY]   RU GPIO control set as 'generic'
+[0m[PHY]   Setting clock source to internal
+[0m[PHY]   Setting time source to internal
+[0m[PHY]   number of L1 instances 1, number of RU 1, number of CPU cores 32
+[0m[PHY]   Copying frame parms from gNB in RC to gNB 0 in ru 0 and frame_parms in ru
+[0m[PHY]   Initialized RU proc 0 (,synch_to_ext_device),
+[0m[PHY]   RU Thread pool size 2
+[0m[PHY]   RU thread-pool core string -1,-1
+[0m[UTIL]   threadCreate() for Tpool0_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool1_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for ru_thread: creating thread with affinity ffffffff, priority 97
+[0m[PHY]   Starting RU 0 (,synch_to_ext_device) on cpu 30
+[0m[PHY]   Waiting for RUs to be configured ... RC.ru_mask:01
+[0m[PHY]   Initializing frame parms for mu 1, N_RB 162, Ncp 0
+[0m[PHY]   Init: N_RB_DL 162, first_carrier_offset 1076, nb_prefix_samples 144,nb_prefix_samples0 176, ofdm_symbol_size 2048
+[0m[PHY]   fp->scs=30000
+[0m[PHY]   fp->ofdm_symbol_size=2048
+[0m[PHY]   fp->nb_prefix_samples0=176
+[0m[PHY]   fp->nb_prefix_samples=144
+[0m[PHY]   fp->slots_per_subframe=2
+[0m[PHY]   fp->samples_per_subframe_wCP=57344
+[0m[PHY]   fp->samples_per_frame_wCP=573440
+[0m[PHY]   fp->samples_per_subframe=61440
+[0m[PHY]   fp->samples_per_frame=614400
+[0m[PHY]   fp->dl_CarrierFreq=3629280000
+[0m[PHY]   fp->ul_CarrierFreq=3629280000
+[0m[PHY]   fp->Nid_cell=0
+[0m[PHY]   fp->first_carrier_offset=1076
+[0m[PHY]   fp->ssb_start_subcarrier=0
+[0m[PHY]   fp->Ncp=0
+[0m[PHY]   fp->N_RB_DL=162
+[0m[PHY]   fp->numerology_index=1
+[0m[PHY]   fp->nr_band=48
+[0m[PHY]   fp->ofdm_offset_divisor=8
+[0m[PHY]   fp->threequarter_fs=0
+[0m[PHY]   fp->sl_CarrierFreq=0
+[0m[PHY]   fp->N_RB_SL=0
+[0m[PHY]   Initializing RU signal buffers (if_south local RF) nb_tx 1, nb_rx 1
+[0m[PHY]   [INIT] common.txdata[0] = 0x7f61c044f040 (2458880 bytes,sf_extension 320)
+[0m[PHY]   [INIT] common.txdata[0] = 0x7f61c044f540 
+[0m[PHY]   nb_tx 1
+[0m[PHY]   rxdata_7_5kHz[0] 0x7f61c0105040 for RU 0
+[0m[PHY]   [INIT] common.txdata_BF= 0x7f61a8000ac0 (8 bytes)
+[0m[PHY]   txdataF_BF[0] 0x7f61c8030040 for RU 0
+[0m[PHY]   rxdataF[0] 0x7f61c0094040 for RU 0
+[0m[PHY]   [INIT] nr_phy_init_RU() ru->num_gNB:1 
+[0m[PHY]   Setting RF config for N_RB 162, NB_RX 1, NB_TX 1
+[0m[PHY]   tune_offset 0 Hz, sample_rate 61440000 Hz
+[0m[PHY]   Channel 0: setting tx_gain offset 0, tx_freq 3629280000 Hz
+[0m[PHY]   Channel 0: setting rx_gain offset 75, rx_freq 3629280000 Hz
+[0m[HW]   openair0_cfg[0].sdr_addrs == 'addr=192.168.40.20'
+[0m[HW]   openair0_cfg[0].clock_source == '0' (internal = 0, external = 1)
+[0m[HW]   UHD version 4.3.0.HEAD-0-g1f8fd345 (4.3.0)
+[0m[HW]   Checking for USRP with args addr=192.168.40.20
+[0m[HW]   Found USRP x4xx
+[0m[93m[HW]   Can't set kernel parameters for X4x0
+[0m[HW]   Setting clock source to internal
+[0m[HW]   Setting time source to internal
+[0mNRRRC 0: Southbound Transport local_mac
+START MAIN THREADS
+RC.nb_nr_L1_inst:1
+Initializing gNB threads wait_for_sync:0
+wait_gNBs()
+Waiting for gNB L1 instances to all get configured ... sleeping 50ms (nb_nr_sL1_inst 1)
+gNB L1 are configured
+About to Init RU threads RC.nb_RU:1
+Initializing RU threads
+configuring RU from file
+Set RU mask to 1
+Creating RC.ru[0]:0x562b143cf4c0
+Setting function for RU 0 to gNodeB_3GPP
+[RU 0] Setting nr_flag 0, nr_band 78, nr_scs_for_raster 1
+[RU 0] Setting half-slot parallelization to 1
+configuring ru_id 0 (start_rf 0x562b10787e10)
+wait RUs
+shlib_path liboai_device.so
+[LOADER] library liboai_device.so successfully loaded
+Found USRP x400
+[HW]   device_init() sample_rate:61440000
+[0m[HW]   cal 0: freq 3500000000.000000, offset 0.000000, diff 129280000.000000
+[0m[HW]   cal 1: freq 2660000000.000000, offset 0.000000, diff 969280000.000000
+[0m[HW]   cal 2: freq 2300000000.000000, offset 0.000000, diff 1329280000.000000
+[0m[HW]   cal 3: freq 1880000000.000000, offset 0.000000, diff 1749280000.000000
+[0m[HW]   cal 4: freq 816000000.000000, offset 0.000000, diff 2813280000.000000
+[0m[1;31m[HW]   RX Gain too high, lower by 15.000000 dB
+[0m[HW]   RX Gain 0 75.000000 (0.000000) => 75.000000 (max 60.000000)
+[0m[HW]   USRP TX_GAIN:60.00 gain_range:60.00 tx_gain:0.00
+[0m[HW]   Actual master clock: 245.760000MHz...
+[0m[HW]   Actual clock source internal...
+[0m[HW]   Actual time source internal...
+[0m[HW]   setting rx channel 0
+[0m[HW]   RF board max packet size 360, size for 100µs jitter 6144 
+[0m[HW]   rx_max_num_samps 360
+[0m[HW]   RX Channel 0
+[0m[HW]     Actual RX sample rate: 61.440000MSps...
+[0m[HW]     Actual RX frequency: 3.629280GHz...
+[0m[HW]     Actual RX gain: 60.000000...
+[0m[HW]     Actual RX bandwidth: 400.000000M...
+[0m[HW]     Actual RX antenna: RX1...
+[0m[HW]   TX Channel 0
+[0m[HW]     Actual TX sample rate: 61.440000MSps...
+[0m[HW]     Actual TX frequency: 3.629280GHz...
+[0m[HW]     Actual TX gain: 60.000000...
+[0m[HW]     Actual TX bandwidth: 400.000000M...
+[0m[HW]     Actual TX antenna: TX/RX0...
+[0m[HW]     Actual TX packet size: 360
+[0mUsing Device: Single USRP:
+  Device: X400-Series Device
+  Mboard 0: x410
+  RX Channel: 0
+    RX DSP: 0
+    RX Dboard: A
+    RX Subdev: 0
+  RX Channel: 1
+    RX DSP: 1
+    RX Dboard: A
+    RX Subdev: 1
+  RX Channel: 2
+    RX DSP: 2
+    RX Dboard: B
+    RX Subdev: 0
+  RX Channel: 3
+    RX DSP: 3
+    RX Dboard: B
+    RX Subdev: 1
+  TX Channel: 0
+    TX DSP: 0
+    TX Dboard: A
+    TX Subdev: 0
+  TX Channel: 1
+    TX DSP: 1
+    TX Dboard: A
+    TX Subdev: 1
+  TX Channel: 2
+    TX DSP: 2
+    TX Dboard: B
+    TX Subdev: 0
+  TX Channel: 3
+    TX DSP: 3
+    TX Dboard: B
+    TX Subdev: 1
+
+[HW]   Device timestamp: 0.041661...
+[0m[HW]   [RAU] has loaded USRP X400 device.
+[0m[PHY]   RU 0 Setting N_TA_offset to 800 samples (factor 2.000000, UL Freq 3600120, N_RB 162, mu 1)
+[0m[PHY]   Signaling main thread that RU 0 is ready, sl_ahead 6
+[0m[PHY]   RUs configured
+[0m[PHY]   init_eNB_afterRU() RC.nb_nr_inst:1
+[0m[PHY]   RC.nb_nr_CC[inst:0]:0x7f61ca238010
+[0m[PHY]   [gNB 0] phy_init_nr_gNB() About to wait for gNB to be configured
+[0m[PHY]   Initialise nr transport
+[0m[PHY]   Mapping RX ports from 1 RUs to gNB 0
+[0m[PHY]   gNB->num_RU:1
+[0m[PHY]   Attaching RU 0 antenna 0 to gNB antenna 0
+[0m[UTIL]   threadCreate() for Tpool0_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool1_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool2_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool3_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool4_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool5_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool6_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool7_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for L1_rx_thread: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for L1_tx_thread: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for L1_stats: creating thread with affinity ffffffff, priority 1
+[0msetup_RU_buffers: frame_parms = 0x7f61c16aa010
+waiting for sync (ru_thread,-1/0x562b113730a8,0x562b11c04920,0x562b11c048e0)
+RC.ru_mask:00
+ALL RUs READY!
+RC.nb_RU:1
+ALL RUs ready - init gNBs
+Not NFAPI mode - call init_eNB_afterRU()
+shlib_path libdfts.so
+[LOADER] library libdfts.so successfully loaded
+shlib_path libldpc.so
+[LOADER] library libldpc.so successfully loaded
+shlib_path libldpc.so
+[LOADER] library libldpc.so has been loaded previously, reloading function pointers
+[LOADER] library libldpc.so successfully loaded
+waiting for sync (L1_stats_thread,-1/0x562b113730a8,0x562b11c04920,0x562b11c048e0)
+ALL RUs ready - ALL gNBs ready
+Sending sync to all threads
+Entering ITTI signals handler
+TYPE <CTRL-C> TO TERMINATE
+got sync (L1_stats_thread)
+got sync (ru_thread)
+[HW]   current pps at 0.000000, starting streaming at 1.000000
+[0m[PHY]   RU 0 rf device ready
+[0m[PHY]   RU 0 RF started opp_enabled 0
+[0m[UTIL]   threadCreate() for trx_usrp_write_thread: creating thread with affinity ffffffff, priority 97
+[0m[PHY]   tx write thread ready
+[0minitializing tx write thread
+end of tx write thread
+trx_usrp_write_thread started on cpu 29
+sleep...
+sleep...
+sleep...
+sleep...
+sleep...
+sleep...
+sleep...
+sleep...
+sleep...
+sleep...
+[32m[PHY]   Command line parameters for OAI UE: -C 3629280000 -r 162 --numerology 1 --ssb 516 
+[0m[NR_MAC]   Frame.Slot 128.0
+
+[0m[NR_MAC]   Frame.Slot 256.0
+
+[0m[NR_MAC]   Frame.Slot 384.0
+
+[0m[NR_MAC]   Frame.Slot 512.0
+
+[0m[NR_MAC]   Frame.Slot 640.0
+
+[0m[NR_MAC]   Frame.Slot 768.0
+
+[0m[NR_MAC]   Frame.Slot 896.0
+
+[0m[NR_MAC]   Frame.Slot 0.0
+
+[0m[NR_MAC]   Frame.Slot 128.0
+
+[0m[NR_MAC]   Frame.Slot 256.0
+
+[0m[NR_MAC]   Frame.Slot 384.0
+
+[0m[NR_MAC]   Frame.Slot 512.0
+
+[0m[NR_PHY]   [RAPROC] 605.19 Initiating RA procedure with preamble 25, energy 51.0 dB (I0 209, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   605.19 UE RA-RNTI 010b TC-RNTI b0d8: Activating RA process index 0
+[0m[32m[NR_MAC]   UE b0d8: 606.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 25
+[0m[NR_MAC]   UE b0d8: Msg3 scheduled at 606.17 (606.7 TDA 3)
+[0m[NR_MAC]   Adding new UE context with RNTI 0xb0d8
+[0m[32m[NR_MAC]    606.17 PUSCH with TC_RNTI 0xb0d8 received correctly
+[0m[RLC]   Activated srb0 for UE 45272
+[0m[RLC]   Added srb 1 to UE 45272
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0xb0d8 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0xb0d8 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI b0d8, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 45272 (rnti: b0d8, random ue id 463cbc8253000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI b0d8
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI b0d8, adding CU UE ID 1
+[0m[NR_MAC]   UE b0d8 Generate msg4: feedback at  607.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0xb0d8) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NGAP]   [gNB 0] Build NGAP_NAS_FIRST_REQ adding in s_TMSI: GUAMI amf_set_id 1 amf_region_id 2 ue b0d8
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 17) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[93m[NGAP]   could not find NGAP_ProtocolIE_ID_id_UEAggregateMaximumBitRate
+[0m[NR_RRC]   [gNB 0][UE 1] Selected security algorithms (0x7f61bc00442c): ciphering 0, integrity 2 (algorithms changed)
+[0m[NR_RRC]   [gNB 0][UE b0d8] Saved security key E77BA3825FF799D2AC11C623A2B735E1E49F6A4E12A084EEBE77D80895DF5515
+[0m[NR_RRC]   UE 1 Logical Channel DL-DCCH, Generate SecurityModeCommand (bytes 3)
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] received securityModeComplete on UL-DCCH 1 from UE
+[0m[NR_RRC]   UE 1: Logical Channel DL-DCCH, Generate NR UECapabilityEnquiry (bytes 8, xid 3)
+[0m[NR_RRC]   UE 1: received UE capabilities (xid 3)
+[0m[NR_RRC]   Send message to ngap: NGAP_UE_CAPABILITIES_IND
+[0m[NR_RRC]   Send message to sctp: NGAP_InitialContextSetupResponse
+[0m[NR_MAC]   Frame.Slot 640.0
+UE RNTI b0d8 CU-UE-ID 1 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (3 meas)
+UE b0d8: dlsch_rounds 9/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.09000 MCS (0) 9
+UE b0d8: ulsch_rounds 97/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.07290 MCS (0) 9 (Qm 2  dB) NPRB 5  SNR 30.5 dB
+UE b0d8: MAC:    TX            905 RX           9100 bytes
+UE b0d8: LCID 1: TX            146 RX           1320 bytes
+
+[0m[NR_MAC]   Frame.Slot 768.0
+UE RNTI b0d8 CU-UE-ID 1 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE b0d8: dlsch_rounds 10/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.08100 MCS (0) 9
+UE b0d8: ulsch_rounds 481/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.02059 MCS (0) 18 (Qm 6  dB) NPRB 5  SNR 31.0 dB
+UE b0d8: MAC:    TX           1028 RX          41868 bytes
+UE b0d8: LCID 1: TX            146 RX           1320 bytes
+
+[0m[NR_MAC]   Frame.Slot 896.0
+UE RNTI b0d8 CU-UE-ID 1 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE b0d8: dlsch_rounds 11/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.07290 MCS (0) 9
+UE b0d8: ulsch_rounds 865/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00523 MCS (0) 28 (Qm 6  dB) NPRB 5  SNR 30.0 dB
+UE b0d8: MAC:    TX           1151 RX          74636 bytes
+UE b0d8: LCID 1: TX            146 RX           1320 bytes
+
+[0m[NR_MAC]   Frame.Slot 0.0
+UE RNTI b0d8 CU-UE-ID 1 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE b0d8: dlsch_rounds 13/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.05905 MCS (0) 9
+UE b0d8: ulsch_rounds 1249/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00133 MCS (0) 28 (Qm 6  dB) NPRB 5  SNR 31.0 dB
+UE b0d8: MAC:    TX           1397 RX         107404 bytes
+UE b0d8: LCID 1: TX            146 RX           1320 bytes
+
+[0m[NR_PHY]   [RAPROC] 115.19 Initiating RA procedure with preamble 45, energy 54.9 dB (I0 252, thres 120), delay 24 start symbol 0 freq index 0
+[0m[NR_MAC]   115.19 UE RA-RNTI 010b TC-RNTI 0c10: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 0c10: 116.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 45
+[0m[NR_MAC]   UE 0c10: Msg3 scheduled at 116.17 (116.7 TDA 3)
+[0m[NR_MAC]    11710: RA RNTI 0c10 CC_id 0 Scheduling retransmission of Msg3 in (117,17)
+[0m[NR_PHY]   [RAPROC] 117.19 Initiating RA procedure with preamble 56, energy 55.7 dB (I0 275, thres 120), delay 9 start symbol 0 freq index 0
+[0m[NR_MAC]   117.19 UE RA-RNTI 010b TC-RNTI 39a0: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 39a0: 118.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 56
+[0m[NR_MAC]   UE 39a0: Msg3 scheduled at 118.17 (118.7 TDA 3)
+[0m[NR_MAC]    11810: RA RNTI 0c10 CC_id 0 Scheduling retransmission of Msg3 in (118,17)
+[0m[NR_MAC]    11910: RA RNTI 0c10 CC_id 0 Scheduling retransmission of Msg3 in (119,17)
+[0m[NR_MAC]    11910: RA RNTI 39a0 CC_id 0 Scheduling retransmission of Msg3 in (119,17)
+[0m[1;31m[NR_MAC]   UE 39a0 cannot find free CCE!
+[0m[NR_MAC]    11911: RA RNTI 39a0 CC_id 0 Scheduling retransmission of Msg3 in (119,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x0c10 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 119.19 Initiating RA procedure with preamble 54, energy 55.7 dB (I0 291, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   119.19 UE RA-RNTI 010b TC-RNTI 04cf: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 04cf: 120.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 54
+[0m[NR_MAC]   UE 04cf: Msg3 scheduled at 120.17 (120.7 TDA 3)
+[0m[NR_MAC]    12010: RA RNTI 39a0 CC_id 0 Scheduling retransmission of Msg3 in (120,17)
+[0m[NR_MAC]    12110: RA RNTI 04cf CC_id 0 Scheduling retransmission of Msg3 in (121,17)
+[0m[NR_MAC]    12110: RA RNTI 39a0 CC_id 0 Scheduling retransmission of Msg3 in (121,17)
+[0m[1;31m[NR_MAC]   UE 39a0 cannot find free CCE!
+[0m[NR_MAC]    12111: RA RNTI 39a0 CC_id 0 Scheduling retransmission of Msg3 in (121,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x39a0 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 121.19 Initiating RA procedure with preamble 53, energy 55.7 dB (I0 303, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   121.19 UE RA-RNTI 010b TC-RNTI 55d7: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 55d7: 122.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 53
+[0m[NR_MAC]   UE 55d7: Msg3 scheduled at 122.17 (122.7 TDA 3)
+[0m[NR_MAC]    12210: RA RNTI 04cf CC_id 0 Scheduling retransmission of Msg3 in (122,17)
+[0m[NR_MAC]    12310: RA RNTI 04cf CC_id 0 Scheduling retransmission of Msg3 in (123,17)
+[0m[NR_MAC]    12310: RA RNTI 55d7 CC_id 0 Scheduling retransmission of Msg3 in (123,17)
+[0m[1;31m[NR_MAC]   UE 55d7 cannot find free CCE!
+[0m[NR_MAC]    12311: RA RNTI 55d7 CC_id 0 Scheduling retransmission of Msg3 in (123,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x04cf in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 123.19 Initiating RA procedure with preamble 4, energy 55.7 dB (I0 308, thres 120), delay 4 start symbol 0 freq index 0
+[0m[NR_MAC]   123.19 UE RA-RNTI 010b TC-RNTI 95c9: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 95c9: 124.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 4
+[0m[NR_MAC]   UE 95c9: Msg3 scheduled at 124.17 (124.7 TDA 3)
+[0m[NR_MAC]    12410: RA RNTI 55d7 CC_id 0 Scheduling retransmission of Msg3 in (124,17)
+[0m[NR_MAC]    12510: RA RNTI 95c9 CC_id 0 Scheduling retransmission of Msg3 in (125,17)
+[0m[NR_MAC]    12510: RA RNTI 55d7 CC_id 0 Scheduling retransmission of Msg3 in (125,17)
+[0m[1;31m[NR_MAC]   UE 55d7 cannot find free CCE!
+[0m[NR_MAC]    12511: RA RNTI 55d7 CC_id 0 Scheduling retransmission of Msg3 in (125,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x55d7 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 125.19 Initiating RA procedure with preamble 37, energy 55.7 dB (I0 314, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   125.19 UE RA-RNTI 010b TC-RNTI 8b55: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 8b55: 126.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 37
+[0m[NR_MAC]   UE 8b55: Msg3 scheduled at 126.17 (126.7 TDA 3)
+[0m[NR_MAC]    12610: RA RNTI 95c9 CC_id 0 Scheduling retransmission of Msg3 in (126,17)
+[0m[NR_MAC]    12710: RA RNTI 95c9 CC_id 0 Scheduling retransmission of Msg3 in (127,17)
+[0m[NR_MAC]    12710: RA RNTI 8b55 CC_id 0 Scheduling retransmission of Msg3 in (127,17)
+[0m[1;31m[NR_MAC]   UE 8b55 cannot find free CCE!
+[0m[NR_MAC]    12711: RA RNTI 8b55 CC_id 0 Scheduling retransmission of Msg3 in (127,18)
+[0m[NR_MAC]   Frame.Slot 128.0
+UE RNTI b0d8 CU-UE-ID 1 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE b0d8: dlsch_rounds 14/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.05314 MCS (0) 9
+UE b0d8: ulsch_rounds 1633/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00034 MCS (0) 28 (Qm 6  dB) NPRB 5  SNR 31.5 dB
+UE b0d8: MAC:    TX           1520 RX         140172 bytes
+UE b0d8: LCID 1: TX            146 RX           1320 bytes
+
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x95c9 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 127.19 Initiating RA procedure with preamble 14, energy 55.7 dB (I0 317, thres 120), delay 5 start symbol 0 freq index 0
+[0m[NR_MAC]   127.19 UE RA-RNTI 010b TC-RNTI f2cc: Activating RA process index 0
+[0m[32m[NR_MAC]   UE f2cc: 128.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 14
+[0m[NR_MAC]   UE f2cc: Msg3 scheduled at 128.17 (128.7 TDA 3)
+[0m[NR_MAC]    12810: RA RNTI 8b55 CC_id 0 Scheduling retransmission of Msg3 in (128,17)
+[0m[NR_MAC]    12910: RA RNTI f2cc CC_id 0 Scheduling retransmission of Msg3 in (129,17)
+[0m[NR_MAC]    12910: RA RNTI 8b55 CC_id 0 Scheduling retransmission of Msg3 in (129,17)
+[0m[1;31m[NR_MAC]   UE 8b55 cannot find free CCE!
+[0m[NR_MAC]    12911: RA RNTI 8b55 CC_id 0 Scheduling retransmission of Msg3 in (129,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x8b55 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 129.19 Initiating RA procedure with preamble 31, energy 55.7 dB (I0 320, thres 120), delay 11 start symbol 0 freq index 0
+[0m[NR_MAC]   129.19 UE RA-RNTI 010b TC-RNTI b015: Activating RA process index 1
+[0m[32m[NR_MAC]   UE b015: 130.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 31
+[0m[NR_MAC]   UE b015: Msg3 scheduled at 130.17 (130.7 TDA 3)
+[0m[NR_MAC]    13010: RA RNTI f2cc CC_id 0 Scheduling retransmission of Msg3 in (130,17)
+[0m[NR_MAC]    13110: RA RNTI f2cc CC_id 0 Scheduling retransmission of Msg3 in (131,17)
+[0m[NR_MAC]    13110: RA RNTI b015 CC_id 0 Scheduling retransmission of Msg3 in (131,17)
+[0m[1;31m[NR_MAC]   UE b015 cannot find free CCE!
+[0m[NR_MAC]    13111: RA RNTI b015 CC_id 0 Scheduling retransmission of Msg3 in (131,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xf2cc in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 131.19 Initiating RA procedure with preamble 45, energy 55.7 dB (I0 322, thres 120), delay 24 start symbol 0 freq index 0
+[0m[NR_MAC]   131.19 UE RA-RNTI 010b TC-RNTI 9f2a: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 9f2a: 132.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 45
+[0m[NR_MAC]   UE 9f2a: Msg3 scheduled at 132.17 (132.7 TDA 3)
+[0m[NR_MAC]    13210: RA RNTI b015 CC_id 0 Scheduling retransmission of Msg3 in (132,17)
+[0m[NR_MAC]    13310: RA RNTI 9f2a CC_id 0 Scheduling retransmission of Msg3 in (133,17)
+[0m[NR_MAC]    13310: RA RNTI b015 CC_id 0 Scheduling retransmission of Msg3 in (133,17)
+[0m[1;31m[NR_MAC]   UE b015 cannot find free CCE!
+[0m[NR_MAC]    13311: RA RNTI b015 CC_id 0 Scheduling retransmission of Msg3 in (133,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xb015 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 133.19 Initiating RA procedure with preamble 31, energy 55.7 dB (I0 326, thres 120), delay 11 start symbol 0 freq index 0
+[0m[NR_MAC]   133.19 UE RA-RNTI 010b TC-RNTI 9558: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 9558: 134.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 31
+[0m[NR_MAC]   UE 9558: Msg3 scheduled at 134.17 (134.7 TDA 3)
+[0m[NR_MAC]    13410: RA RNTI 9f2a CC_id 0 Scheduling retransmission of Msg3 in (134,17)
+[0m[NR_MAC]    13510: RA RNTI 9f2a CC_id 0 Scheduling retransmission of Msg3 in (135,17)
+[0m[NR_MAC]    13510: RA RNTI 9558 CC_id 0 Scheduling retransmission of Msg3 in (135,17)
+[0m[1;31m[NR_MAC]   UE 9558 cannot find free CCE!
+[0m[NR_MAC]    13511: RA RNTI 9558 CC_id 0 Scheduling retransmission of Msg3 in (135,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x9f2a in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 135.19 Initiating RA procedure with preamble 19, energy 55.7 dB (I0 326, thres 120), delay 9 start symbol 0 freq index 0
+[0m[NR_MAC]   135.19 UE RA-RNTI 010b TC-RNTI 181d: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 181d: 136.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 19
+[0m[NR_MAC]   UE 181d: Msg3 scheduled at 136.17 (136.7 TDA 3)
+[0m[NR_MAC]    13610: RA RNTI 9558 CC_id 0 Scheduling retransmission of Msg3 in (136,17)
+[0m[NR_MAC]    13710: RA RNTI 181d CC_id 0 Scheduling retransmission of Msg3 in (137,17)
+[0m[NR_MAC]    13710: RA RNTI 9558 CC_id 0 Scheduling retransmission of Msg3 in (137,17)
+[0m[1;31m[NR_MAC]   UE 9558 cannot find free CCE!
+[0m[NR_MAC]    13711: RA RNTI 9558 CC_id 0 Scheduling retransmission of Msg3 in (137,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x9558 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 137.19 Initiating RA procedure with preamble 31, energy 55.7 dB (I0 326, thres 120), delay 12 start symbol 0 freq index 0
+[0m[NR_MAC]   137.19 UE RA-RNTI 010b TC-RNTI 8f8d: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 8f8d: 138.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 31
+[0m[NR_MAC]   UE 8f8d: Msg3 scheduled at 138.17 (138.7 TDA 3)
+[0m[NR_MAC]    13810: RA RNTI 181d CC_id 0 Scheduling retransmission of Msg3 in (138,17)
+[0m[NR_MAC]    13910: RA RNTI 181d CC_id 0 Scheduling retransmission of Msg3 in (139,17)
+[0m[NR_MAC]    13910: RA RNTI 8f8d CC_id 0 Scheduling retransmission of Msg3 in (139,17)
+[0m[1;31m[NR_MAC]   UE 8f8d cannot find free CCE!
+[0m[NR_MAC]    13911: RA RNTI 8f8d CC_id 0 Scheduling retransmission of Msg3 in (139,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x181d in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 139.19 Initiating RA procedure with preamble 29, energy 56.4 dB (I0 329, thres 120), delay 12 start symbol 0 freq index 0
+[0m[NR_MAC]   139.19 UE RA-RNTI 010b TC-RNTI 5d55: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 5d55: 140.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 29
+[0m[NR_MAC]   UE 5d55: Msg3 scheduled at 140.17 (140.7 TDA 3)
+[0m[NR_MAC]    14010: RA RNTI 8f8d CC_id 0 Scheduling retransmission of Msg3 in (140,17)
+[0m[NR_MAC]    14110: RA RNTI 5d55 CC_id 0 Scheduling retransmission of Msg3 in (141,17)
+[0m[NR_MAC]    14110: RA RNTI 8f8d CC_id 0 Scheduling retransmission of Msg3 in (141,17)
+[0m[1;31m[NR_MAC]   UE 8f8d cannot find free CCE!
+[0m[NR_MAC]    14111: RA RNTI 8f8d CC_id 0 Scheduling retransmission of Msg3 in (141,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x8f8d in Msg3/PUSCH
+[0m[NR_MAC]    14210: RA RNTI 5d55 CC_id 0 Scheduling retransmission of Msg3 in (142,17)
+[0m[NR_MAC]    14310: RA RNTI 5d55 CC_id 0 Scheduling retransmission of Msg3 in (143,17)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x5d55 in Msg3/PUSCH
+[0m[NR_MAC]   Frame.Slot 256.0
+UE RNTI b0d8 CU-UE-ID 1 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE b0d8: dlsch_rounds 15/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.04783 MCS (0) 9
+UE b0d8: ulsch_rounds 2017/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00009 MCS (0) 28 (Qm 6  dB) NPRB 5  SNR 31.5 dB
+UE b0d8: MAC:    TX           1643 RX         172940 bytes
+UE b0d8: LCID 1: TX            146 RX           1320 bytes
+
+[0m[NR_MAC]   Frame.Slot 384.0
+UE RNTI b0d8 CU-UE-ID 1 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE b0d8: dlsch_rounds 17/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.03874 MCS (0) 9
+UE b0d8: ulsch_rounds 2401/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00002 MCS (0) 28 (Qm 6  dB) NPRB 5  SNR 30.5 dB
+UE b0d8: MAC:    TX           1889 RX         205708 bytes
+UE b0d8: LCID 1: TX            146 RX           1320 bytes
+
+[0m[NR_MAC]   Frame.Slot 512.0
+UE RNTI b0d8 CU-UE-ID 1 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE b0d8: dlsch_rounds 18/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.03487 MCS (0) 9
+UE b0d8: ulsch_rounds 2785/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00001 MCS (0) 28 (Qm 6  dB) NPRB 5  SNR 30.5 dB
+UE b0d8: MAC:    TX           2012 RX         238476 bytes
+UE b0d8: LCID 1: TX            146 RX           1320 bytes
+
+[0m[1;31m[NR_MAC]   UE b0d8: reported RSRP index 8 invalid
+[0m[1;31m[NR_MAC]   UE b0d8: reported RSRP index 8 invalid
+[0m[NR_PHY]   [RAPROC] 607.19 Initiating RA procedure with preamble 9, energy 48.0 dB (I0 205, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   607.19 UE RA-RNTI 010b TC-RNTI 4f2d: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 4f2d: 608.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 9
+[0m[NR_MAC]   UE 4f2d: Msg3 scheduled at 608.17 (608.7 TDA 3)
+[0m[NR_MAC]   Adding new UE context with RNTI 0x4f2d
+[0m[32m[NR_MAC]    608.17 PUSCH with TC_RNTI 0x4f2d received correctly
+[0m[RLC]   Activated srb0 for UE 20269
+[0m[RLC]   Added srb 1 to UE 20269
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x4f2d (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x4f2d (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 4f2d, payload_size 6
+[0m[NR_RRC]   Received UE 5G-S-TMSI-Part1 278719950466
+[0m[NR_RRC]   Created new UE context: CU UE ID 2 DU UE ID 20269 (rnti: 4f2d, random ue id 40e500ee82)
+[0m[RRC]   activate SRB 1 of UE 2
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 4f2d
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 4f2d, adding CU UE ID 2
+[0m[NR_MAC]   UE 4f2d Generate msg4: feedback at  609.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x4f2d) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[RRC]   s_tmsi part2 0 (00 00)
+[0m[NR_RRC]   5g_s_TMSI: 0x40E500EE82, amf_set_id: 0x1 (1), amf_pointer: 0x0 (0), 5g TMSI: 0xE500EE82 
+[0m[32m[NR_RRC]   UE 2 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 2] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 2: Chose AMF 'a5gblu-amf' (assoc_id 17) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[NGAP]   could not find NGAP_ProtocolIE_ID_id_UEAggregateMaximumBitRate
+[0m[NR_RRC]   [gNB 0][UE 2] Selected security algorithms (0x7f61bc006f9c): ciphering 0, integrity 2 (algorithms changed)
+[0m[NR_RRC]   [gNB 0][UE 4f2d] Saved security key C7AC8425171233F5EB613B18F0EE15001603E1730C853C32F68C50B00D74FB00
+[0m[NR_RRC]   UE 2 Logical Channel DL-DCCH, Generate SecurityModeCommand (bytes 3)
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 2] received securityModeComplete on UL-DCCH 1 from UE
+[0m[NR_RRC]   UE 2: Logical Channel DL-DCCH, Generate NR UECapabilityEnquiry (bytes 8, xid 1)
+[0m[NR_RRC]   UE 2: received UE capabilities (xid 1)
+[0m[NR_RRC]   Send message to ngap: NGAP_UE_CAPABILITIES_IND
+[0m[NR_RRC]   Send message to sctp: NGAP_InitialContextSetupResponse
+[0m[93m[RLC]   Remove UE 45272
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI b0d8 
+[0m[NR_MAC]   Remove NR rnti 0xb0d8
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xb0d8 in Msg3/PUSCH
+[0m[NGAP]   PDUSESSIONSetup initiating message
+[0m[NR_RRC]   UE 2: received PDU session setup request
+[0m[NR_RRC]   Adding pdusession 1, total nb of sessions 1
+[0m[NR_RRC]   UE 2: configure DRB ID 1 for PDU session ID 1
+[0m[32m[RRC]   selecting CU-UP ID 3585 based on exact NSSAI match (1:0x000000)
+[0m[RRC]   UE 2 associating to CU-UP assoc_id -1 out of 1 CU-UPs
+[0m[GTPU]   [99] Created tunnel for UE ID 2, teid for incoming: 7b9252ea, teid for outgoing 6 to remote IPv4: 10.128.0.129, IPv6 ::
+[0m[PDCP]   added drb 1 to UE ID 2
+[0m[SDAP]   Default DRB for the created SDAP entity: 1 
+[0m[RRC]   activate SRB 2 of UE 2
+[0m[RLC]   Added srb 2 to UE 20269
+[0m[RLC]   Added drb 1 to UE 20269
+[0m[RLC]   Added DRB to UE 20269
+[0m[RRC]   UE 2 trigger UE context setup request with 1 DRBs
+[0m[E1AP]   UE 2: updating PDU session ID 1 (1 bearers)
+[0m[NR_RRC]   UE 2: Generate RRCReconfiguration (bytes 326, xid 3)
+[0m[RRC]   UE 2: PDU session ID 1 modified 1 bearers
+[0m[NR_RRC]   UE 2: Receive RRC Reconfiguration Complete message (xid 3)
+[0m[NR_RRC]   msg index 0, pdu_sessions index 0, status 2, xid 3): nb_of_pdusessions 1,  pdusession_id 1, teid: 2073187050 
+ [0m[NR_RRC]   NGAP_PDUSESSION_SETUP_RESP: sending the message
+[0m[NR_MAC]   Frame.Slot 640.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (3 meas)
+UE 4f2d: dlsch_rounds 10/1/1/0, dlsch_errors 0, pucch0_DTX 1, BLER 0.09000 MCS (1) 9
+UE 4f2d: ulsch_rounds 90/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.08100 MCS (1) 9 (Qm 4  dB) NPRB 5  SNR 22.0 dB
+UE 4f2d: MAC:    TX           1356 RX           9147 bytes
+UE 4f2d: LCID 1: TX            401 RX           1353 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX              0 RX              0 bytes
+
+[0m[NR_MAC]   Frame.Slot 768.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 13/1/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.11433 MCS (1) 9
+UE 4f2d: ulsch_rounds 474/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.02059 MCS (1) 18 (Qm 6  dB) NPRB 5  SNR 29.5 dB
+UE 4f2d: MAC:    TX           2007 RX          68585 bytes
+UE 4f2d: LCID 1: TX            407 RX           1397 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX              0 RX              0 bytes
+
+[0m[NR_MAC]   Frame.Slot 896.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 18/1/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.08335 MCS (1) 9
+UE 4f2d: ulsch_rounds 859/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00523 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.5 dB
+UE 4f2d: MAC:    TX           2959 RX         128023 bytes
+UE 4f2d: LCID 1: TX            410 RX           1419 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX              9 RX            379 bytes
+
+[0m[NR_MAC]   Frame.Slot 0.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 25/1/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.04922 MCS (1) 9
+UE 4f2d: ulsch_rounds 1245/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00133 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.0 dB
+UE 4f2d: MAC:    TX           4345 RX         187507 bytes
+UE 4f2d: LCID 1: TX            413 RX           1441 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX             24 RX           1243 bytes
+
+[0m[NR_MAC]   Frame.Slot 128.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 104/1/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.02616 MCS (1) 12
+UE 4f2d: ulsch_rounds 1638/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00034 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 28.5 dB
+UE 4f2d: MAC:    TX         395726 RX         247408 bytes
+UE 4f2d: LCID 1: TX            419 RX           1485 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX         386507 RX           2558 bytes
+
+[0m[NR_PHY]   [RAPROC] 131.19 Initiating RA procedure with preamble 55, energy 55.7 dB (I0 249, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   131.19 UE RA-RNTI 010b TC-RNTI b38d: Activating RA process index 0
+[0m[32m[NR_MAC]   UE b38d: 132.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 55
+[0m[NR_MAC]   UE b38d: Msg3 scheduled at 132.17 (132.7 TDA 3)
+[0m[NR_MAC]    13310: RA RNTI b38d CC_id 0 Scheduling retransmission of Msg3 in (133,17)
+[0m[NR_PHY]   [RAPROC] 133.19 Initiating RA procedure with preamble 6, energy 55.7 dB (I0 274, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   133.19 UE RA-RNTI 010b TC-RNTI 2983: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 2983: 134.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 6
+[0m[NR_MAC]   UE 2983: Msg3 scheduled at 134.17 (134.7 TDA 3)
+[0m[NR_MAC]    13410: RA RNTI b38d CC_id 0 Scheduling retransmission of Msg3 in (134,17)
+[0m[NR_MAC]    13510: RA RNTI b38d CC_id 0 Scheduling retransmission of Msg3 in (135,17)
+[0m[NR_MAC]    13510: RA RNTI 2983 CC_id 0 Scheduling retransmission of Msg3 in (135,17)
+[0m[1;31m[NR_MAC]   UE 2983 cannot find free CCE!
+[0m[NR_MAC]    13511: RA RNTI 2983 CC_id 0 Scheduling retransmission of Msg3 in (135,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xb38d in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 135.19 Initiating RA procedure with preamble 9, energy 55.7 dB (I0 289, thres 120), delay 13 start symbol 0 freq index 0
+[0m[NR_MAC]   135.19 UE RA-RNTI 010b TC-RNTI 7477: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 7477: 136.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 9
+[0m[NR_MAC]   UE 7477: Msg3 scheduled at 136.17 (136.7 TDA 3)
+[0m[NR_MAC]    13610: RA RNTI 2983 CC_id 0 Scheduling retransmission of Msg3 in (136,17)
+[0m[NR_MAC]    13710: RA RNTI 7477 CC_id 0 Scheduling retransmission of Msg3 in (137,17)
+[0m[NR_MAC]    13710: RA RNTI 2983 CC_id 0 Scheduling retransmission of Msg3 in (137,17)
+[0m[1;31m[NR_MAC]   UE 2983 cannot find free CCE!
+[0m[NR_MAC]    13711: RA RNTI 2983 CC_id 0 Scheduling retransmission of Msg3 in (137,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x2983 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 137.19 Initiating RA procedure with preamble 14, energy 55.7 dB (I0 301, thres 120), delay 9 start symbol 0 freq index 0
+[0m[NR_MAC]   137.19 UE RA-RNTI 010b TC-RNTI bdb5: Activating RA process index 1
+[0m[32m[NR_MAC]   UE bdb5: 138.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 14
+[0m[NR_MAC]   UE bdb5: Msg3 scheduled at 138.17 (138.7 TDA 3)
+[0m[NR_MAC]    13810: RA RNTI 7477 CC_id 0 Scheduling retransmission of Msg3 in (138,17)
+[0m[NR_MAC]    13910: RA RNTI 7477 CC_id 0 Scheduling retransmission of Msg3 in (139,17)
+[0m[NR_MAC]    13910: RA RNTI bdb5 CC_id 0 Scheduling retransmission of Msg3 in (139,17)
+[0m[1;31m[NR_MAC]   UE bdb5 cannot find free CCE!
+[0m[NR_MAC]    13911: RA RNTI bdb5 CC_id 0 Scheduling retransmission of Msg3 in (139,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x7477 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 139.19 Initiating RA procedure with preamble 0, energy 55.7 dB (I0 309, thres 120), delay 15 start symbol 0 freq index 0
+[0m[NR_MAC]   139.19 UE RA-RNTI 010b TC-RNTI b3a7: Activating RA process index 0
+[0m[32m[NR_MAC]   UE b3a7: 140.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 0
+[0m[NR_MAC]   UE b3a7: Msg3 scheduled at 140.17 (140.7 TDA 3)
+[0m[NR_MAC]    14010: RA RNTI bdb5 CC_id 0 Scheduling retransmission of Msg3 in (140,17)
+[0m[NR_MAC]    14110: RA RNTI b3a7 CC_id 0 Scheduling retransmission of Msg3 in (141,17)
+[0m[NR_MAC]    14110: RA RNTI bdb5 CC_id 0 Scheduling retransmission of Msg3 in (141,17)
+[0m[1;31m[NR_MAC]   UE bdb5 cannot find free CCE!
+[0m[NR_MAC]    14111: RA RNTI bdb5 CC_id 0 Scheduling retransmission of Msg3 in (141,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xbdb5 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 141.19 Initiating RA procedure with preamble 54, energy 55.7 dB (I0 312, thres 120), delay 11 start symbol 0 freq index 0
+[0m[NR_MAC]   141.19 UE RA-RNTI 010b TC-RNTI 0ec3: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 0ec3: 142.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 54
+[0m[NR_MAC]   UE 0ec3: Msg3 scheduled at 142.17 (142.7 TDA 3)
+[0m[NR_MAC]    14210: RA RNTI b3a7 CC_id 0 Scheduling retransmission of Msg3 in (142,17)
+[0m[NR_MAC]    14310: RA RNTI b3a7 CC_id 0 Scheduling retransmission of Msg3 in (143,17)
+[0m[NR_MAC]    14310: RA RNTI 0ec3 CC_id 0 Scheduling retransmission of Msg3 in (143,17)
+[0m[1;31m[NR_MAC]   UE 0ec3 cannot find free CCE!
+[0m[NR_MAC]    14311: RA RNTI 0ec3 CC_id 0 Scheduling retransmission of Msg3 in (143,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xb3a7 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 143.19 Initiating RA procedure with preamble 38, energy 55.7 dB (I0 316, thres 120), delay 9 start symbol 0 freq index 0
+[0m[NR_MAC]   143.19 UE RA-RNTI 010b TC-RNTI c271: Activating RA process index 0
+[0m[32m[NR_MAC]   UE c271: 144.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 38
+[0m[NR_MAC]   UE c271: Msg3 scheduled at 144.17 (144.7 TDA 3)
+[0m[NR_MAC]    14410: RA RNTI 0ec3 CC_id 0 Scheduling retransmission of Msg3 in (144,17)
+[0m[NR_MAC]    14510: RA RNTI c271 CC_id 0 Scheduling retransmission of Msg3 in (145,17)
+[0m[NR_MAC]    14510: RA RNTI 0ec3 CC_id 0 Scheduling retransmission of Msg3 in (145,17)
+[0m[1;31m[NR_MAC]   UE 0ec3 cannot find free CCE!
+[0m[NR_MAC]    14511: RA RNTI 0ec3 CC_id 0 Scheduling retransmission of Msg3 in (145,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x0ec3 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 145.19 Initiating RA procedure with preamble 1, energy 55.7 dB (I0 317, thres 120), delay 16 start symbol 0 freq index 0
+[0m[NR_MAC]   145.19 UE RA-RNTI 010b TC-RNTI 9273: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 9273: 146.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 1
+[0m[NR_MAC]   UE 9273: Msg3 scheduled at 146.17 (146.7 TDA 3)
+[0m[NR_MAC]    14610: RA RNTI c271 CC_id 0 Scheduling retransmission of Msg3 in (146,17)
+[0m[NR_MAC]    14710: RA RNTI c271 CC_id 0 Scheduling retransmission of Msg3 in (147,17)
+[0m[NR_MAC]    14710: RA RNTI 9273 CC_id 0 Scheduling retransmission of Msg3 in (147,17)
+[0m[1;31m[NR_MAC]   UE 9273 cannot find free CCE!
+[0m[NR_MAC]    14711: RA RNTI 9273 CC_id 0 Scheduling retransmission of Msg3 in (147,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xc271 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 147.19 Initiating RA procedure with preamble 34, energy 55.7 dB (I0 320, thres 120), delay 5 start symbol 0 freq index 0
+[0m[NR_MAC]   147.19 UE RA-RNTI 010b TC-RNTI 904f: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 904f: 148.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 34
+[0m[NR_MAC]   UE 904f: Msg3 scheduled at 148.17 (148.7 TDA 3)
+[0m[NR_MAC]    14810: RA RNTI 9273 CC_id 0 Scheduling retransmission of Msg3 in (148,17)
+[0m[NR_MAC]    14910: RA RNTI 904f CC_id 0 Scheduling retransmission of Msg3 in (149,17)
+[0m[NR_MAC]    14910: RA RNTI 9273 CC_id 0 Scheduling retransmission of Msg3 in (149,17)
+[0m[1;31m[NR_MAC]   UE 9273 cannot find free CCE!
+[0m[NR_MAC]    14911: RA RNTI 9273 CC_id 0 Scheduling retransmission of Msg3 in (149,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x9273 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 149.19 Initiating RA procedure with preamble 50, energy 56.4 dB (I0 322, thres 120), delay 24 start symbol 0 freq index 0
+[0m[NR_MAC]   149.19 UE RA-RNTI 010b TC-RNTI 86c7: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 86c7: 150.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 50
+[0m[NR_MAC]   UE 86c7: Msg3 scheduled at 150.17 (150.7 TDA 3)
+[0m[NR_MAC]    15010: RA RNTI 904f CC_id 0 Scheduling retransmission of Msg3 in (150,17)
+[0m[NR_MAC]    15110: RA RNTI 904f CC_id 0 Scheduling retransmission of Msg3 in (151,17)
+[0m[NR_MAC]    15110: RA RNTI 86c7 CC_id 0 Scheduling retransmission of Msg3 in (151,17)
+[0m[1;31m[NR_MAC]   UE 86c7 cannot find free CCE!
+[0m[NR_MAC]    15111: RA RNTI 86c7 CC_id 0 Scheduling retransmission of Msg3 in (151,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x904f in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 151.19 Initiating RA procedure with preamble 50, energy 55.7 dB (I0 323, thres 120), delay 24 start symbol 0 freq index 0
+[0m[NR_MAC]   151.19 UE RA-RNTI 010b TC-RNTI 9c91: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 9c91: 152.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 50
+[0m[NR_MAC]   UE 9c91: Msg3 scheduled at 152.17 (152.7 TDA 3)
+[0m[NR_MAC]    15210: RA RNTI 86c7 CC_id 0 Scheduling retransmission of Msg3 in (152,17)
+[0m[NR_MAC]    15310: RA RNTI 9c91 CC_id 0 Scheduling retransmission of Msg3 in (153,17)
+[0m[NR_MAC]    15310: RA RNTI 86c7 CC_id 0 Scheduling retransmission of Msg3 in (153,17)
+[0m[1;31m[NR_MAC]   UE 86c7 cannot find free CCE!
+[0m[NR_MAC]    15311: RA RNTI 86c7 CC_id 0 Scheduling retransmission of Msg3 in (153,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x86c7 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 153.19 Initiating RA procedure with preamble 35, energy 56.4 dB (I0 324, thres 120), delay 2 start symbol 0 freq index 0
+[0m[NR_MAC]   153.19 UE RA-RNTI 010b TC-RNTI 7012: Activating RA process index 1
+[0m[NR_MAC]    15410: RA RNTI 9c91 CC_id 0 Scheduling retransmission of Msg3 in (154,17)
+[0m[93m[NR_MAC]   exceeded RA window: preamble at 153.19 now 154.10 (diff 11), ra_ResponseWindow 4/10 slots
+[0m[1;31m[NR_MAC]   UE RA-RNTI 010b TC-RNTI 7012: exceeded RA window, cannot schedule Msg2
+[0m[NR_MAC]    15510: RA RNTI 9c91 CC_id 0 Scheduling retransmission of Msg3 in (155,17)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x9c91 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 155.19 Initiating RA procedure with preamble 40, energy 55.7 dB (I0 325, thres 120), delay 8 start symbol 0 freq index 0
+[0m[NR_MAC]   155.19 UE RA-RNTI 010b TC-RNTI 0903: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 0903: 156.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 40
+[0m[NR_MAC]   UE 0903: Msg3 scheduled at 156.17 (156.7 TDA 3)
+[0m[NR_MAC]    15710: RA RNTI 0903 CC_id 0 Scheduling retransmission of Msg3 in (157,17)
+[0m[NR_PHY]   [RAPROC] 157.19 Initiating RA procedure with preamble 36, energy 55.7 dB (I0 326, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   157.19 UE RA-RNTI 010b TC-RNTI 5b51: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 5b51: 158.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 36
+[0m[NR_MAC]   UE 5b51: Msg3 scheduled at 158.17 (158.7 TDA 3)
+[0m[NR_MAC]    15810: RA RNTI 0903 CC_id 0 Scheduling retransmission of Msg3 in (158,17)
+[0m[NR_MAC]    15910: RA RNTI 0903 CC_id 0 Scheduling retransmission of Msg3 in (159,17)
+[0m[NR_MAC]    15910: RA RNTI 5b51 CC_id 0 Scheduling retransmission of Msg3 in (159,17)
+[0m[1;31m[NR_MAC]   UE 5b51 cannot find free CCE!
+[0m[NR_MAC]    15911: RA RNTI 5b51 CC_id 0 Scheduling retransmission of Msg3 in (159,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x0903 in Msg3/PUSCH
+[0m[NR_MAC]    16010: RA RNTI 5b51 CC_id 0 Scheduling retransmission of Msg3 in (160,17)
+[0m[NR_MAC]    16110: RA RNTI 5b51 CC_id 0 Scheduling retransmission of Msg3 in (161,17)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x5b51 in Msg3/PUSCH
+[0m[NR_MAC]   Frame.Slot 256.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 269/1/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.00665 MCS (1) 25
+UE 4f2d: ulsch_rounds 2037/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00010 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.0 dB
+UE 4f2d: MAC:    TX        2068459 RX         307490 bytes
+UE 4f2d: LCID 1: TX            422 RX           1507 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX        2052609 RX           2943 bytes
+
+[0m[NR_MAC]   Frame.Slot 384.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 399/21/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.09301 MCS (1) 23
+UE 4f2d: ulsch_rounds 2433/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00002 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.5 dB
+UE 4f2d: MAC:    TX        3742053 RX         367434 bytes
+UE 4f2d: LCID 1: TX            425 RX           1529 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX        3717083 RX           3021 bytes
+
+[0m[NR_MAC]   Frame.Slot 512.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 529/35/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.15312 MCS (1) 24
+UE 4f2d: ulsch_rounds 2828/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00001 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.0 dB
+UE 4f2d: MAC:    TX        5415441 RX         427332 bytes
+UE 4f2d: LCID 1: TX            428 RX           1551 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX        5381542 RX           3096 bytes
+
+[0m[NR_MAC]   Frame.Slot 640.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 654/35/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.04324 MCS (1) 26
+UE 4f2d: ulsch_rounds 3225/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.0 dB
+UE 4f2d: MAC:    TX        6968446 RX         487322 bytes
+UE 4f2d: LCID 1: TX            434 RX           1595 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX        6925711 RX           3250 bytes
+
+[0m[NR_MAC]   Frame.Slot 768.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 787/51/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.07375 MCS (1) 23
+UE 4f2d: ulsch_rounds 3622/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.0 dB
+UE 4f2d: MAC:    TX        8635907 RX         547312 bytes
+UE 4f2d: LCID 1: TX            437 RX           1617 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX        8584467 RX           3328 bytes
+
+[0m[NR_MAC]   Frame.Slot 896.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 911/67/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.13618 MCS (1) 23
+UE 4f2d: ulsch_rounds 4020/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.0 dB
+UE 4f2d: MAC:    TX       10308128 RX         607348 bytes
+UE 4f2d: LCID 1: TX            440 RX           1639 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX       10248931 RX           3400 bytes
+
+[0m[NR_MAC]   Frame.Slot 0.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 1046/73/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.03462 MCS (1) 27
+UE 4f2d: ulsch_rounds 4417/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.5 dB
+UE 4f2d: MAC:    TX       11982411 RX         667338 bytes
+UE 4f2d: LCID 1: TX            443 RX           1661 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX       11914871 RX           3479 bytes
+
+[0m[NR_MAC]   Frame.Slot 128.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 1157/81/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.07285 MCS (1) 24
+UE 4f2d: ulsch_rounds 4821/9/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.02127 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.5 dB
+UE 4f2d: MAC:    TX       12967896 RX         814745 bytes
+UE 4f2d: LCID 1: TX            449 RX           1705 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX       12878388 RX          81121 bytes
+
+[0m[NR_PHY]   [RAPROC] 149.19 Initiating RA procedure with preamble 3, energy 36.3 dB (I0 235, thres 120), delay 16 start symbol 0 freq index 0
+[0m[NR_MAC]   149.19 UE RA-RNTI 010b TC-RNTI 9ae7: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 9ae7: 150.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 3
+[0m[NR_MAC]   UE 9ae7: Msg3 scheduled at 150.17 (150.7 TDA 3)
+[0m[NR_MAC]    15110: RA RNTI 9ae7 CC_id 0 Scheduling retransmission of Msg3 in (151,17)
+[0m[NR_PHY]   [RAPROC] 151.19 Initiating RA procedure with preamble 10, energy 39.3 dB (I0 244, thres 120), delay 14 start symbol 0 freq index 0
+[0m[NR_MAC]   151.19 UE RA-RNTI 010b TC-RNTI 6ecd: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 6ecd: 152.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 10
+[0m[NR_MAC]   UE 6ecd: Msg3 scheduled at 152.17 (152.7 TDA 3)
+[0m[NR_MAC]    15210: RA RNTI 9ae7 CC_id 0 Scheduling retransmission of Msg3 in (152,17)
+[0m[NR_MAC]    15310: RA RNTI 9ae7 CC_id 0 Scheduling retransmission of Msg3 in (153,17)
+[0m[NR_MAC]    15310: RA RNTI 6ecd CC_id 0 Scheduling retransmission of Msg3 in (153,17)
+[0m[1;31m[NR_MAC]   UE 6ecd cannot find free CCE!
+[0m[NR_MAC]    15311: RA RNTI 6ecd CC_id 0 Scheduling retransmission of Msg3 in (153,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x9ae7 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 153.19 Initiating RA procedure with preamble 15, energy 55.7 dB (I0 253, thres 120), delay 8 start symbol 0 freq index 0
+[0m[NR_MAC]   153.19 UE RA-RNTI 010b TC-RNTI 5df5: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 5df5: 154.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 15
+[0m[NR_MAC]   UE 5df5: Msg3 scheduled at 154.17 (154.7 TDA 3)
+[0m[NR_MAC]    15410: RA RNTI 6ecd CC_id 0 Scheduling retransmission of Msg3 in (154,17)
+[0m[NR_MAC]    15510: RA RNTI 5df5 CC_id 0 Scheduling retransmission of Msg3 in (155,17)
+[0m[NR_MAC]    15510: RA RNTI 6ecd CC_id 0 Scheduling retransmission of Msg3 in (155,17)
+[0m[1;31m[NR_MAC]   UE 6ecd cannot find free CCE!
+[0m[NR_MAC]    15511: RA RNTI 6ecd CC_id 0 Scheduling retransmission of Msg3 in (155,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x6ecd in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 155.19 Initiating RA procedure with preamble 3, energy 55.7 dB (I0 277, thres 120), delay 16 start symbol 0 freq index 0
+[0m[NR_MAC]   155.19 UE RA-RNTI 010b TC-RNTI 0e62: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 0e62: 156.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 3
+[0m[NR_MAC]   UE 0e62: Msg3 scheduled at 156.17 (156.7 TDA 3)
+[0m[NR_MAC]    15610: RA RNTI 5df5 CC_id 0 Scheduling retransmission of Msg3 in (156,17)
+[0m[NR_MAC]    15710: RA RNTI 5df5 CC_id 0 Scheduling retransmission of Msg3 in (157,17)
+[0m[NR_MAC]    15710: RA RNTI 0e62 CC_id 0 Scheduling retransmission of Msg3 in (157,17)
+[0m[1;31m[NR_MAC]   UE 0e62 cannot find free CCE!
+[0m[NR_MAC]    15711: RA RNTI 0e62 CC_id 0 Scheduling retransmission of Msg3 in (157,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x5df5 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 157.19 Initiating RA procedure with preamble 40, energy 55.7 dB (I0 293, thres 120), delay 11 start symbol 0 freq index 0
+[0m[NR_MAC]   157.19 UE RA-RNTI 010b TC-RNTI 2de1: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 2de1: 158.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 40
+[0m[NR_MAC]   UE 2de1: Msg3 scheduled at 158.17 (158.7 TDA 3)
+[0m[NR_MAC]    15810: RA RNTI 0e62 CC_id 0 Scheduling retransmission of Msg3 in (158,17)
+[0m[NR_MAC]    15910: RA RNTI 2de1 CC_id 0 Scheduling retransmission of Msg3 in (159,17)
+[0m[NR_MAC]    15910: RA RNTI 0e62 CC_id 0 Scheduling retransmission of Msg3 in (159,17)
+[0m[1;31m[NR_MAC]   UE 0e62 cannot find free CCE!
+[0m[NR_MAC]    15911: RA RNTI 0e62 CC_id 0 Scheduling retransmission of Msg3 in (159,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x0e62 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 159.19 Initiating RA procedure with preamble 41, energy 55.7 dB (I0 304, thres 120), delay 11 start symbol 0 freq index 0
+[0m[NR_MAC]   159.19 UE RA-RNTI 010b TC-RNTI 680b: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 680b: 160.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 41
+[0m[NR_MAC]   UE 680b: Msg3 scheduled at 160.17 (160.7 TDA 3)
+[0m[NR_MAC]    16010: RA RNTI 2de1 CC_id 0 Scheduling retransmission of Msg3 in (160,17)
+[0m[NR_MAC]    16110: RA RNTI 2de1 CC_id 0 Scheduling retransmission of Msg3 in (161,17)
+[0m[NR_MAC]    16110: RA RNTI 680b CC_id 0 Scheduling retransmission of Msg3 in (161,17)
+[0m[1;31m[NR_MAC]   UE 680b cannot find free CCE!
+[0m[NR_MAC]    16111: RA RNTI 680b CC_id 0 Scheduling retransmission of Msg3 in (161,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x2de1 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 161.19 Initiating RA procedure with preamble 6, energy 55.7 dB (I0 312, thres 120), delay 9 start symbol 0 freq index 0
+[0m[NR_MAC]   161.19 UE RA-RNTI 010b TC-RNTI 0375: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 0375: 162.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 6
+[0m[NR_MAC]   UE 0375: Msg3 scheduled at 162.17 (162.7 TDA 3)
+[0m[NR_MAC]    16210: RA RNTI 680b CC_id 0 Scheduling retransmission of Msg3 in (162,17)
+[0m[NR_MAC]    16310: RA RNTI 0375 CC_id 0 Scheduling retransmission of Msg3 in (163,17)
+[0m[NR_MAC]    16310: RA RNTI 680b CC_id 0 Scheduling retransmission of Msg3 in (163,17)
+[0m[1;31m[NR_MAC]   UE 680b cannot find free CCE!
+[0m[NR_MAC]    16311: RA RNTI 680b CC_id 0 Scheduling retransmission of Msg3 in (163,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x680b in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 163.19 Initiating RA procedure with preamble 18, energy 55.7 dB (I0 315, thres 120), delay 12 start symbol 0 freq index 0
+[0m[NR_MAC]   163.19 UE RA-RNTI 010b TC-RNTI c31f: Activating RA process index 1
+[0m[32m[NR_MAC]   UE c31f: 164.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 18
+[0m[NR_MAC]   UE c31f: Msg3 scheduled at 164.17 (164.7 TDA 3)
+[0m[NR_MAC]    16410: RA RNTI 0375 CC_id 0 Scheduling retransmission of Msg3 in (164,17)
+[0m[NR_MAC]    16510: RA RNTI 0375 CC_id 0 Scheduling retransmission of Msg3 in (165,17)
+[0m[NR_MAC]    16510: RA RNTI c31f CC_id 0 Scheduling retransmission of Msg3 in (165,17)
+[0m[1;31m[NR_MAC]   UE c31f cannot find free CCE!
+[0m[NR_MAC]    16511: RA RNTI c31f CC_id 0 Scheduling retransmission of Msg3 in (165,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x0375 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 165.19 Initiating RA procedure with preamble 7, energy 55.7 dB (I0 317, thres 120), delay 8 start symbol 0 freq index 0
+[0m[NR_MAC]   165.19 UE RA-RNTI 010b TC-RNTI 14f2: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 14f2: 166.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 7
+[0m[NR_MAC]   UE 14f2: Msg3 scheduled at 166.17 (166.7 TDA 3)
+[0m[NR_MAC]    16610: RA RNTI c31f CC_id 0 Scheduling retransmission of Msg3 in (166,17)
+[0m[NR_MAC]    16710: RA RNTI 14f2 CC_id 0 Scheduling retransmission of Msg3 in (167,17)
+[0m[NR_MAC]    16710: RA RNTI c31f CC_id 0 Scheduling retransmission of Msg3 in (167,17)
+[0m[1;31m[NR_MAC]   UE c31f cannot find free CCE!
+[0m[NR_MAC]    16711: RA RNTI c31f CC_id 0 Scheduling retransmission of Msg3 in (167,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xc31f in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 167.19 Initiating RA procedure with preamble 54, energy 55.7 dB (I0 320, thres 120), delay 11 start symbol 0 freq index 0
+[0m[NR_MAC]   167.19 UE RA-RNTI 010b TC-RNTI 87c7: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 87c7: 168.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 54
+[0m[NR_MAC]   UE 87c7: Msg3 scheduled at 168.17 (168.7 TDA 3)
+[0m[NR_MAC]    16810: RA RNTI 14f2 CC_id 0 Scheduling retransmission of Msg3 in (168,17)
+[0m[NR_MAC]    16910: RA RNTI 14f2 CC_id 0 Scheduling retransmission of Msg3 in (169,17)
+[0m[NR_MAC]    16910: RA RNTI 87c7 CC_id 0 Scheduling retransmission of Msg3 in (169,17)
+[0m[1;31m[NR_MAC]   UE 87c7 cannot find free CCE!
+[0m[NR_MAC]    16911: RA RNTI 87c7 CC_id 0 Scheduling retransmission of Msg3 in (169,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x14f2 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 169.19 Initiating RA procedure with preamble 30, energy 55.7 dB (I0 318, thres 120), delay 16 start symbol 0 freq index 0
+[0m[NR_MAC]   169.19 UE RA-RNTI 010b TC-RNTI b8f9: Activating RA process index 0
+[0m[32m[NR_MAC]   UE b8f9: 170.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 30
+[0m[NR_MAC]   UE b8f9: Msg3 scheduled at 170.17 (170.7 TDA 3)
+[0m[NR_MAC]    17010: RA RNTI 87c7 CC_id 0 Scheduling retransmission of Msg3 in (170,17)
+[0m[NR_MAC]    17110: RA RNTI b8f9 CC_id 0 Scheduling retransmission of Msg3 in (171,17)
+[0m[NR_MAC]    17110: RA RNTI 87c7 CC_id 0 Scheduling retransmission of Msg3 in (171,17)
+[0m[1;31m[NR_MAC]   UE 87c7 cannot find free CCE!
+[0m[NR_MAC]    17111: RA RNTI 87c7 CC_id 0 Scheduling retransmission of Msg3 in (171,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x87c7 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 171.19 Initiating RA procedure with preamble 14, energy 55.7 dB (I0 319, thres 120), delay 5 start symbol 0 freq index 0
+[0m[NR_MAC]   171.19 UE RA-RNTI 010b TC-RNTI 546c: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 546c: 172.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 14
+[0m[NR_MAC]   UE 546c: Msg3 scheduled at 172.17 (172.7 TDA 3)
+[0m[NR_MAC]    17210: RA RNTI b8f9 CC_id 0 Scheduling retransmission of Msg3 in (172,17)
+[0m[NR_MAC]    17310: RA RNTI b8f9 CC_id 0 Scheduling retransmission of Msg3 in (173,17)
+[0m[NR_MAC]    17310: RA RNTI 546c CC_id 0 Scheduling retransmission of Msg3 in (173,17)
+[0m[1;31m[NR_MAC]   UE 546c cannot find free CCE!
+[0m[NR_MAC]    17311: RA RNTI 546c CC_id 0 Scheduling retransmission of Msg3 in (173,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xb8f9 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 173.19 Initiating RA procedure with preamble 6, energy 55.7 dB (I0 321, thres 120), delay 5 start symbol 0 freq index 0
+[0m[NR_MAC]   173.19 UE RA-RNTI 010b TC-RNTI bbbc: Activating RA process index 0
+[0m[32m[NR_MAC]   UE bbbc: 174.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 6
+[0m[NR_MAC]   UE bbbc: Msg3 scheduled at 174.17 (174.7 TDA 3)
+[0m[NR_MAC]    17410: RA RNTI 546c CC_id 0 Scheduling retransmission of Msg3 in (174,17)
+[0m[NR_MAC]    17510: RA RNTI bbbc CC_id 0 Scheduling retransmission of Msg3 in (175,17)
+[0m[NR_MAC]    17510: RA RNTI 546c CC_id 0 Scheduling retransmission of Msg3 in (175,17)
+[0m[1;31m[NR_MAC]   UE 546c cannot find free CCE!
+[0m[NR_MAC]    17511: RA RNTI 546c CC_id 0 Scheduling retransmission of Msg3 in (175,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x546c in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 175.19 Initiating RA procedure with preamble 8, energy 55.7 dB (I0 322, thres 120), delay 10 start symbol 0 freq index 0
+[0m[NR_MAC]   175.19 UE RA-RNTI 010b TC-RNTI 1c76: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 1c76: 176.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 8
+[0m[NR_MAC]   UE 1c76: Msg3 scheduled at 176.17 (176.7 TDA 3)
+[0m[NR_MAC]    17610: RA RNTI bbbc CC_id 0 Scheduling retransmission of Msg3 in (176,17)
+[0m[NR_MAC]    17710: RA RNTI bbbc CC_id 0 Scheduling retransmission of Msg3 in (177,17)
+[0m[NR_MAC]    17710: RA RNTI 1c76 CC_id 0 Scheduling retransmission of Msg3 in (177,17)
+[0m[1;31m[NR_MAC]   UE 1c76 cannot find free CCE!
+[0m[NR_MAC]    17711: RA RNTI 1c76 CC_id 0 Scheduling retransmission of Msg3 in (177,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xbbbc in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 177.19 Initiating RA procedure with preamble 36, energy 55.7 dB (I0 323, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   177.19 UE RA-RNTI 010b TC-RNTI 13a5: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 13a5: 178.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 36
+[0m[NR_MAC]   UE 13a5: Msg3 scheduled at 178.17 (178.7 TDA 3)
+[0m[NR_MAC]    17810: RA RNTI 1c76 CC_id 0 Scheduling retransmission of Msg3 in (178,17)
+[0m[NR_MAC]    17910: RA RNTI 13a5 CC_id 0 Scheduling retransmission of Msg3 in (179,17)
+[0m[NR_MAC]    17910: RA RNTI 1c76 CC_id 0 Scheduling retransmission of Msg3 in (179,17)
+[0m[1;31m[NR_MAC]   UE 1c76 cannot find free CCE!
+[0m[NR_MAC]    17911: RA RNTI 1c76 CC_id 0 Scheduling retransmission of Msg3 in (179,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x1c76 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 179.19 Initiating RA procedure with preamble 38, energy 55.7 dB (I0 323, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   179.19 UE RA-RNTI 010b TC-RNTI 5aa7: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 5aa7: 180.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 38
+[0m[NR_MAC]   UE 5aa7: Msg3 scheduled at 180.17 (180.7 TDA 3)
+[0m[NR_MAC]    18010: RA RNTI 13a5 CC_id 0 Scheduling retransmission of Msg3 in (180,17)
+[0m[NR_MAC]    18110: RA RNTI 13a5 CC_id 0 Scheduling retransmission of Msg3 in (181,17)
+[0m[NR_MAC]    18110: RA RNTI 5aa7 CC_id 0 Scheduling retransmission of Msg3 in (181,17)
+[0m[1;31m[NR_MAC]   UE 5aa7 cannot find free CCE!
+[0m[NR_MAC]    18111: RA RNTI 5aa7 CC_id 0 Scheduling retransmission of Msg3 in (181,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x13a5 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 181.19 Initiating RA procedure with preamble 20, energy 55.7 dB (I0 322, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   181.19 UE RA-RNTI 010b TC-RNTI 40d7: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 40d7: 182.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 20
+[0m[NR_MAC]   UE 40d7: Msg3 scheduled at 182.17 (182.7 TDA 3)
+[0m[NR_MAC]    18210: RA RNTI 5aa7 CC_id 0 Scheduling retransmission of Msg3 in (182,17)
+[0m[NR_MAC]    18310: RA RNTI 40d7 CC_id 0 Scheduling retransmission of Msg3 in (183,17)
+[0m[NR_MAC]    18310: RA RNTI 5aa7 CC_id 0 Scheduling retransmission of Msg3 in (183,17)
+[0m[1;31m[NR_MAC]   UE 5aa7 cannot find free CCE!
+[0m[NR_MAC]    18311: RA RNTI 5aa7 CC_id 0 Scheduling retransmission of Msg3 in (183,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x5aa7 in Msg3/PUSCH
+[0m[NR_MAC]    18410: RA RNTI 40d7 CC_id 0 Scheduling retransmission of Msg3 in (184,17)
+[0m[NR_MAC]    18510: RA RNTI 40d7 CC_id 0 Scheduling retransmission of Msg3 in (185,17)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x40d7 in Msg3/PUSCH
+[0m[NR_MAC]   Frame.Slot 256.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 1159/81/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.05901 MCS (1) 22
+UE 4f2d: ulsch_rounds 5205/9/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00541 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.5 dB
+UE 4f2d: MAC:    TX       12968984 RX         874137 bytes
+UE 4f2d: LCID 1: TX            452 RX           1727 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX       12878388 RX          81121 bytes
+
+[0m[NR_MAC]   Frame.Slot 384.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 1162/81/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.04780 MCS (1) 20
+UE 4f2d: ulsch_rounds 5589/9/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00137 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.0 dB
+UE 4f2d: MAC:    TX       12970440 RX         933529 bytes
+UE 4f2d: LCID 1: TX            455 RX           1749 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX       12878391 RX          81205 bytes
+
+[0m[NR_MAC]   Frame.Slot 512.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 1165/81/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.03484 MCS (1) 17
+UE 4f2d: ulsch_rounds 5973/9/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00039 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.5 dB
+UE 4f2d: MAC:    TX       12971751 RX         992921 bytes
+UE 4f2d: LCID 1: TX            458 RX           1771 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX       12878391 RX          81205 bytes
+
+[0m[NR_MAC]   Frame.Slot 640.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 1168/81/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.02540 MCS (1) 14
+UE 4f2d: ulsch_rounds 6357/9/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00010 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.5 dB
+UE 4f2d: MAC:    TX       12972813 RX        1052313 bytes
+UE 4f2d: LCID 1: TX            464 RX           1815 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX       12878391 RX          81205 bytes
+
+[0m[NR_MAC]   Frame.Slot 768.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 1170/81/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.02058 MCS (1) 12
+UE 4f2d: ulsch_rounds 6741/9/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00003 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.5 dB
+UE 4f2d: MAC:    TX       12973391 RX        1111705 bytes
+UE 4f2d: LCID 1: TX            467 RX           1837 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX       12878391 RX          81205 bytes
+
+[0m[NR_MAC]   Frame.Slot 896.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 1173/81/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.01500 MCS (1) 9
+UE 4f2d: ulsch_rounds 7125/9/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00001 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.0 dB
+UE 4f2d: MAC:    TX       12974094 RX        1171097 bytes
+UE 4f2d: LCID 1: TX            470 RX           1859 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX       12878391 RX          81205 bytes
+
+[0m[NR_MAC]   Frame.Slot 0.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 1175/81/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.01215 MCS (1) 9
+UE 4f2d: ulsch_rounds 7509/9/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.0 dB
+UE 4f2d: MAC:    TX       12974528 RX        1230489 bytes
+UE 4f2d: LCID 1: TX            473 RX           1881 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX       12878391 RX          81205 bytes
+
+[0m[NR_MAC]   Frame.Slot 128.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 1178/81/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.00886 MCS (1) 9
+UE 4f2d: ulsch_rounds 7891/11/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00455 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 31.0 dB
+UE 4f2d: MAC:    TX       12975179 RX        1289789 bytes
+UE 4f2d: LCID 1: TX            479 RX           1925 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX       12878391 RX          81205 bytes
+
+[0m[NR_PHY]   [RAPROC] 167.19 Initiating RA procedure with preamble 38, energy 36.0 dB (I0 230, thres 120), delay 9 start symbol 0 freq index 0
+[0m[NR_MAC]   167.19 UE RA-RNTI 010b TC-RNTI 98f9: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 98f9: 168.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 38
+[0m[NR_MAC]   UE 98f9: Msg3 scheduled at 168.17 (168.7 TDA 3)
+[0m[NR_MAC]    16910: RA RNTI 98f9 CC_id 0 Scheduling retransmission of Msg3 in (169,17)
+[0m[NR_PHY]   [RAPROC] 169.19 Initiating RA procedure with preamble 34, energy 38.6 dB (I0 241, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   169.19 UE RA-RNTI 010b TC-RNTI 446a: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 446a: 170.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 34
+[0m[NR_MAC]   UE 446a: Msg3 scheduled at 170.17 (170.7 TDA 3)
+[0m[NR_MAC]    17010: RA RNTI 98f9 CC_id 0 Scheduling retransmission of Msg3 in (170,17)
+[0m[NR_MAC]    17110: RA RNTI 98f9 CC_id 0 Scheduling retransmission of Msg3 in (171,17)
+[0m[NR_MAC]    17110: RA RNTI 446a CC_id 0 Scheduling retransmission of Msg3 in (171,17)
+[0m[1;31m[NR_MAC]   UE 446a cannot find free CCE!
+[0m[NR_MAC]    17111: RA RNTI 446a CC_id 0 Scheduling retransmission of Msg3 in (171,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x98f9 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 171.19 Initiating RA procedure with preamble 24, energy 55.7 dB (I0 250, thres 120), delay 10 start symbol 0 freq index 0
+[0m[NR_MAC]   171.19 UE RA-RNTI 010b TC-RNTI 000b: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 000b: 172.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 24
+[0m[NR_MAC]   UE 000b: Msg3 scheduled at 172.17 (172.7 TDA 3)
+[0m[NR_MAC]    17210: RA RNTI 446a CC_id 0 Scheduling retransmission of Msg3 in (172,17)
+[0m[NR_MAC]    17310: RA RNTI 000b CC_id 0 Scheduling retransmission of Msg3 in (173,17)
+[0m[NR_MAC]    17310: RA RNTI 446a CC_id 0 Scheduling retransmission of Msg3 in (173,17)
+[0m[1;31m[NR_MAC]   UE 446a cannot find free CCE!
+[0m[NR_MAC]    17311: RA RNTI 446a CC_id 0 Scheduling retransmission of Msg3 in (173,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x446a in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 173.19 Initiating RA procedure with preamble 6, energy 56.4 dB (I0 275, thres 120), delay 5 start symbol 0 freq index 0
+[0m[NR_MAC]   173.19 UE RA-RNTI 010b TC-RNTI 4cb7: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 4cb7: 174.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 6
+[0m[NR_MAC]   UE 4cb7: Msg3 scheduled at 174.17 (174.7 TDA 3)
+[0m[NR_MAC]    17410: RA RNTI 000b CC_id 0 Scheduling retransmission of Msg3 in (174,17)
+[0m[NR_MAC]    17510: RA RNTI 000b CC_id 0 Scheduling retransmission of Msg3 in (175,17)
+[0m[NR_MAC]    17510: RA RNTI 4cb7 CC_id 0 Scheduling retransmission of Msg3 in (175,17)
+[0m[1;31m[NR_MAC]   UE 4cb7 cannot find free CCE!
+[0m[NR_MAC]    17511: RA RNTI 4cb7 CC_id 0 Scheduling retransmission of Msg3 in (175,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x000b in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 175.19 Initiating RA procedure with preamble 7, energy 55.7 dB (I0 291, thres 120), delay 3 start symbol 0 freq index 0
+[0m[NR_MAC]   175.19 UE RA-RNTI 010b TC-RNTI 1016: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 1016: 176.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 7
+[0m[NR_MAC]   UE 1016: Msg3 scheduled at 176.17 (176.7 TDA 3)
+[0m[NR_MAC]    17610: RA RNTI 4cb7 CC_id 0 Scheduling retransmission of Msg3 in (176,17)
+[0m[NR_MAC]    17710: RA RNTI 1016 CC_id 0 Scheduling retransmission of Msg3 in (177,17)
+[0m[NR_MAC]    17710: RA RNTI 4cb7 CC_id 0 Scheduling retransmission of Msg3 in (177,17)
+[0m[1;31m[NR_MAC]   UE 4cb7 cannot find free CCE!
+[0m[NR_MAC]    17711: RA RNTI 4cb7 CC_id 0 Scheduling retransmission of Msg3 in (177,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x4cb7 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 177.19 Initiating RA procedure with preamble 5, energy 55.7 dB (I0 302, thres 120), delay 4 start symbol 0 freq index 0
+[0m[NR_MAC]   177.19 UE RA-RNTI 010b TC-RNTI 2ef6: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 2ef6: 178.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 5
+[0m[NR_MAC]   UE 2ef6: Msg3 scheduled at 178.17 (178.7 TDA 3)
+[0m[NR_MAC]    17810: RA RNTI 1016 CC_id 0 Scheduling retransmission of Msg3 in (178,17)
+[0m[NR_MAC]    17910: RA RNTI 1016 CC_id 0 Scheduling retransmission of Msg3 in (179,17)
+[0m[NR_MAC]    17910: RA RNTI 2ef6 CC_id 0 Scheduling retransmission of Msg3 in (179,17)
+[0m[1;31m[NR_MAC]   UE 2ef6 cannot find free CCE!
+[0m[NR_MAC]    17911: RA RNTI 2ef6 CC_id 0 Scheduling retransmission of Msg3 in (179,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x1016 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 179.19 Initiating RA procedure with preamble 53, energy 55.7 dB (I0 308, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   179.19 UE RA-RNTI 010b TC-RNTI 874b: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 874b: 180.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 53
+[0m[NR_MAC]   UE 874b: Msg3 scheduled at 180.17 (180.7 TDA 3)
+[0m[NR_MAC]    18010: RA RNTI 2ef6 CC_id 0 Scheduling retransmission of Msg3 in (180,17)
+[0m[NR_MAC]    18110: RA RNTI 874b CC_id 0 Scheduling retransmission of Msg3 in (181,17)
+[0m[NR_MAC]    18110: RA RNTI 2ef6 CC_id 0 Scheduling retransmission of Msg3 in (181,17)
+[0m[1;31m[NR_MAC]   UE 2ef6 cannot find free CCE!
+[0m[NR_MAC]    18111: RA RNTI 2ef6 CC_id 0 Scheduling retransmission of Msg3 in (181,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x2ef6 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 181.19 Initiating RA procedure with preamble 45, energy 56.4 dB (I0 313, thres 120), delay 27 start symbol 0 freq index 0
+[0m[NR_MAC]   181.19 UE RA-RNTI 010b TC-RNTI 4ad8: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 4ad8: 182.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 45
+[0m[NR_MAC]   UE 4ad8: Msg3 scheduled at 182.17 (182.7 TDA 3)
+[0m[NR_MAC]    18210: RA RNTI 874b CC_id 0 Scheduling retransmission of Msg3 in (182,17)
+[0m[NR_MAC]    18310: RA RNTI 874b CC_id 0 Scheduling retransmission of Msg3 in (183,17)
+[0m[NR_MAC]    18310: RA RNTI 4ad8 CC_id 0 Scheduling retransmission of Msg3 in (183,17)
+[0m[1;31m[NR_MAC]   UE 4ad8 cannot find free CCE!
+[0m[NR_MAC]    18311: RA RNTI 4ad8 CC_id 0 Scheduling retransmission of Msg3 in (183,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x874b in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 183.19 Initiating RA procedure with preamble 3, energy 55.7 dB (I0 318, thres 120), delay 13 start symbol 0 freq index 0
+[0m[NR_MAC]   183.19 UE RA-RNTI 010b TC-RNTI 9d67: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 9d67: 184.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 3
+[0m[NR_MAC]   UE 9d67: Msg3 scheduled at 184.17 (184.7 TDA 3)
+[0m[NR_MAC]    18410: RA RNTI 4ad8 CC_id 0 Scheduling retransmission of Msg3 in (184,17)
+[0m[NR_MAC]    18510: RA RNTI 9d67 CC_id 0 Scheduling retransmission of Msg3 in (185,17)
+[0m[NR_MAC]    18510: RA RNTI 4ad8 CC_id 0 Scheduling retransmission of Msg3 in (185,17)
+[0m[1;31m[NR_MAC]   UE 4ad8 cannot find free CCE!
+[0m[NR_MAC]    18511: RA RNTI 4ad8 CC_id 0 Scheduling retransmission of Msg3 in (185,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x4ad8 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 185.19 Initiating RA procedure with preamble 3, energy 55.7 dB (I0 320, thres 120), delay 13 start symbol 0 freq index 0
+[0m[NR_MAC]   185.19 UE RA-RNTI 010b TC-RNTI c7ee: Activating RA process index 1
+[0m[32m[NR_MAC]   UE c7ee: 186.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 3
+[0m[NR_MAC]   UE c7ee: Msg3 scheduled at 186.17 (186.7 TDA 3)
+[0m[NR_MAC]    18610: RA RNTI 9d67 CC_id 0 Scheduling retransmission of Msg3 in (186,17)
+[0m[NR_MAC]    18710: RA RNTI 9d67 CC_id 0 Scheduling retransmission of Msg3 in (187,17)
+[0m[NR_MAC]    18710: RA RNTI c7ee CC_id 0 Scheduling retransmission of Msg3 in (187,17)
+[0m[1;31m[NR_MAC]   UE c7ee cannot find free CCE!
+[0m[NR_MAC]    18711: RA RNTI c7ee CC_id 0 Scheduling retransmission of Msg3 in (187,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x9d67 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 187.19 Initiating RA procedure with preamble 38, energy 55.7 dB (I0 322, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   187.19 UE RA-RNTI 010b TC-RNTI a2f1: Activating RA process index 0
+[0m[32m[NR_MAC]   UE a2f1: 188.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 38
+[0m[NR_MAC]   UE a2f1: Msg3 scheduled at 188.17 (188.7 TDA 3)
+[0m[NR_MAC]    18810: RA RNTI c7ee CC_id 0 Scheduling retransmission of Msg3 in (188,17)
+[0m[NR_MAC]    18910: RA RNTI a2f1 CC_id 0 Scheduling retransmission of Msg3 in (189,17)
+[0m[NR_MAC]    18910: RA RNTI c7ee CC_id 0 Scheduling retransmission of Msg3 in (189,17)
+[0m[1;31m[NR_MAC]   UE c7ee cannot find free CCE!
+[0m[NR_MAC]    18911: RA RNTI c7ee CC_id 0 Scheduling retransmission of Msg3 in (189,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xc7ee in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 189.19 Initiating RA procedure with preamble 13, energy 55.7 dB (I0 322, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   189.19 UE RA-RNTI 010b TC-RNTI 1fbd: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 1fbd: 190.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 13
+[0m[NR_MAC]   UE 1fbd: Msg3 scheduled at 190.17 (190.7 TDA 3)
+[0m[NR_MAC]    19010: RA RNTI a2f1 CC_id 0 Scheduling retransmission of Msg3 in (190,17)
+[0m[NR_MAC]    19110: RA RNTI a2f1 CC_id 0 Scheduling retransmission of Msg3 in (191,17)
+[0m[NR_MAC]    19110: RA RNTI 1fbd CC_id 0 Scheduling retransmission of Msg3 in (191,17)
+[0m[1;31m[NR_MAC]   UE 1fbd cannot find free CCE!
+[0m[NR_MAC]    19111: RA RNTI 1fbd CC_id 0 Scheduling retransmission of Msg3 in (191,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xa2f1 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 191.19 Initiating RA procedure with preamble 13, energy 55.7 dB (I0 323, thres 120), delay 5 start symbol 0 freq index 0
+[0m[NR_MAC]   191.19 UE RA-RNTI 010b TC-RNTI f436: Activating RA process index 0
+[0m[32m[NR_MAC]   UE f436: 192.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 13
+[0m[NR_MAC]   UE f436: Msg3 scheduled at 192.17 (192.7 TDA 3)
+[0m[NR_MAC]    19210: RA RNTI 1fbd CC_id 0 Scheduling retransmission of Msg3 in (192,17)
+[0m[NR_MAC]    19310: RA RNTI f436 CC_id 0 Scheduling retransmission of Msg3 in (193,17)
+[0m[NR_MAC]    19310: RA RNTI 1fbd CC_id 0 Scheduling retransmission of Msg3 in (193,17)
+[0m[1;31m[NR_MAC]   UE 1fbd cannot find free CCE!
+[0m[NR_MAC]    19311: RA RNTI 1fbd CC_id 0 Scheduling retransmission of Msg3 in (193,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x1fbd in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 193.19 Initiating RA procedure with preamble 47, energy 56.4 dB (I0 323, thres 120), delay 25 start symbol 0 freq index 0
+[0m[NR_MAC]   193.19 UE RA-RNTI 010b TC-RNTI 7f9c: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 7f9c: 194.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 47
+[0m[NR_MAC]   UE 7f9c: Msg3 scheduled at 194.17 (194.7 TDA 3)
+[0m[NR_MAC]    19410: RA RNTI f436 CC_id 0 Scheduling retransmission of Msg3 in (194,17)
+[0m[NR_MAC]    19510: RA RNTI f436 CC_id 0 Scheduling retransmission of Msg3 in (195,17)
+[0m[NR_MAC]    19510: RA RNTI 7f9c CC_id 0 Scheduling retransmission of Msg3 in (195,17)
+[0m[1;31m[NR_MAC]   UE 7f9c cannot find free CCE!
+[0m[NR_MAC]    19511: RA RNTI 7f9c CC_id 0 Scheduling retransmission of Msg3 in (195,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xf436 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 195.19 Initiating RA procedure with preamble 33, energy 56.4 dB (I0 328, thres 120), delay 3 start symbol 0 freq index 0
+[0m[NR_MAC]   195.19 UE RA-RNTI 010b TC-RNTI e022: Activating RA process index 0
+[0m[32m[NR_MAC]   UE e022: 196.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 33
+[0m[NR_MAC]   UE e022: Msg3 scheduled at 196.17 (196.7 TDA 3)
+[0m[NR_MAC]    19610: RA RNTI 7f9c CC_id 0 Scheduling retransmission of Msg3 in (196,17)
+[0m[NR_MAC]    19710: RA RNTI e022 CC_id 0 Scheduling retransmission of Msg3 in (197,17)
+[0m[NR_MAC]    19710: RA RNTI 7f9c CC_id 0 Scheduling retransmission of Msg3 in (197,17)
+[0m[1;31m[NR_MAC]   UE 7f9c cannot find free CCE!
+[0m[NR_MAC]    19711: RA RNTI 7f9c CC_id 0 Scheduling retransmission of Msg3 in (197,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x7f9c in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 197.19 Initiating RA procedure with preamble 27, energy 55.7 dB (I0 327, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   197.19 UE RA-RNTI 010b TC-RNTI fd38: Activating RA process index 1
+[0m[32m[NR_MAC]   UE fd38: 198.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 27
+[0m[NR_MAC]   UE fd38: Msg3 scheduled at 198.17 (198.7 TDA 3)
+[0m[NR_MAC]    19810: RA RNTI e022 CC_id 0 Scheduling retransmission of Msg3 in (198,17)
+[0m[NR_MAC]    19910: RA RNTI e022 CC_id 0 Scheduling retransmission of Msg3 in (199,17)
+[0m[NR_MAC]    19910: RA RNTI fd38 CC_id 0 Scheduling retransmission of Msg3 in (199,17)
+[0m[1;31m[NR_MAC]   UE fd38 cannot find free CCE!
+[0m[NR_MAC]    19911: RA RNTI fd38 CC_id 0 Scheduling retransmission of Msg3 in (199,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xe022 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 199.19 Initiating RA procedure with preamble 28, energy 55.7 dB (I0 327, thres 120), delay 15 start symbol 0 freq index 0
+[0m[NR_MAC]   199.19 UE RA-RNTI 010b TC-RNTI dab3: Activating RA process index 0
+[0m[32m[NR_MAC]   UE dab3: 200.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 28
+[0m[NR_MAC]   UE dab3: Msg3 scheduled at 200.17 (200.7 TDA 3)
+[0m[NR_MAC]    20010: RA RNTI fd38 CC_id 0 Scheduling retransmission of Msg3 in (200,17)
+[0m[NR_MAC]    20110: RA RNTI dab3 CC_id 0 Scheduling retransmission of Msg3 in (201,17)
+[0m[NR_MAC]    20110: RA RNTI fd38 CC_id 0 Scheduling retransmission of Msg3 in (201,17)
+[0m[1;31m[NR_MAC]   UE fd38 cannot find free CCE!
+[0m[NR_MAC]    20111: RA RNTI fd38 CC_id 0 Scheduling retransmission of Msg3 in (201,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xfd38 in Msg3/PUSCH
+[0m[NR_MAC]    20210: RA RNTI dab3 CC_id 0 Scheduling retransmission of Msg3 in (202,17)
+[0m[NR_MAC]    20310: RA RNTI dab3 CC_id 0 Scheduling retransmission of Msg3 in (203,17)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xdab3 in Msg3/PUSCH
+[0m[NR_MAC]   Frame.Slot 256.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 1180/81/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.00717 MCS (1) 9
+UE 4f2d: ulsch_rounds 8275/11/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00116 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 31.5 dB
+UE 4f2d: MAC:    TX       12975613 RX        1349181 bytes
+UE 4f2d: LCID 1: TX            482 RX           1947 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX       12878391 RX          81205 bytes
+
+[0m[NR_PHY]   [RAPROC] 345.19 Initiating RA procedure with preamble 37, energy 38.3 dB (I0 239, thres 120), delay 0 start symbol 8 freq index 0
+[0m[NR_MAC]   345.19 UE RA-RNTI 0113 TC-RNTI b5cc: Activating RA process index 0
+[0m[32m[NR_MAC]   UE b5cc: 346.7 Generating RA-Msg2 DCI, RA RNTI 0x113, state 1, CoreSetType 0, RAPID 37
+[0m[NR_MAC]   UE b5cc: Msg3 scheduled at 346.17 (346.7 TDA 3)
+[0m[NR_MAC]    34710: RA RNTI b5cc CC_id 0 Scheduling retransmission of Msg3 in (347,17)
+[0m[NR_MAC]    34810: RA RNTI b5cc CC_id 0 Scheduling retransmission of Msg3 in (348,17)
+[0m[NR_MAC]    34910: RA RNTI b5cc CC_id 0 Scheduling retransmission of Msg3 in (349,17)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xb5cc in Msg3/PUSCH
+[0m[NR_MAC]   Frame.Slot 384.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 1183/81/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.00523 MCS (1) 9
+UE 4f2d: ulsch_rounds 8656/14/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00795 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.5 dB
+UE 4f2d: MAC:    TX       12976264 RX        1408435 bytes
+UE 4f2d: LCID 1: TX            485 RX           1969 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX       12878391 RX          81205 bytes
+
+[0m[NR_PHY]   [RAPROC] 389.19 Initiating RA procedure with preamble 50, energy 36.0 dB (I0 232, thres 120), delay 29 start symbol 0 freq index 0
+[0m[NR_PHY]   [RAPROC] 389.19 Initiating RA procedure with preamble 18, energy 38.9 dB (I0 257, thres 120), delay 24 start symbol 8 freq index 0
+[0m[NR_MAC]   389.19 UE RA-RNTI 010b TC-RNTI e8d4: Activating RA process index 0
+[0m[NR_MAC]   389.19 UE RA-RNTI 0113 TC-RNTI daf9: Activating RA process index 1
+[0m[32m[NR_MAC]   UE e8d4: 390.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 50
+[0m[NR_MAC]   UE e8d4: Msg3 scheduled at 390.17 (390.7 TDA 3)
+[0m[93m[NR_MAC]   UE daf9: 390.7 cannot find free CCE for Msg2!
+[0m[93m[NR_MAC]   exceeded RA window: preamble at 389.19 now 390.10 (diff 11), ra_ResponseWindow 4/10 slots
+[0m[1;31m[NR_MAC]   UE RA-RNTI 0113 TC-RNTI daf9: exceeded RA window, cannot schedule Msg2
+[0m[NR_MAC]    39110: RA RNTI e8d4 CC_id 0 Scheduling retransmission of Msg3 in (391,17)
+[0m[NR_MAC]    39210: RA RNTI e8d4 CC_id 0 Scheduling retransmission of Msg3 in (392,17)
+[0m[NR_MAC]    39310: RA RNTI e8d4 CC_id 0 Scheduling retransmission of Msg3 in (393,17)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xe8d4 in Msg3/PUSCH
+[0m[NR_MAC]   Frame.Slot 512.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -73 (16 meas)
+UE 4f2d: dlsch_rounds 1185/81/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.00424 MCS (1) 9
+UE 4f2d: ulsch_rounds 9037/18/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00890 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 11.0 dB
+UE 4f2d: MAC:    TX       12976698 RX        1467643 bytes
+UE 4f2d: LCID 1: TX            488 RX           1991 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX       12878391 RX          81205 bytes
+
+[0m[NR_MAC]   Frame.Slot 640.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 1188/81/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.00309 MCS (1) 9
+UE 4f2d: ulsch_rounds 9420/19/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00324 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.5 dB
+UE 4f2d: MAC:    TX       12977349 RX        1527035 bytes
+UE 4f2d: LCID 1: TX            494 RX           2035 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX       12878391 RX          81205 bytes
+
+[0m[NR_MAC]   Frame.Slot 768.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 1191/81/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.00225 MCS (1) 9
+UE 4f2d: ulsch_rounds 9804/19/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00091 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 31.5 dB
+UE 4f2d: MAC:    TX       12978000 RX        1586427 bytes
+UE 4f2d: LCID 1: TX            497 RX           2057 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX       12878391 RX          81205 bytes
+
+[0m[NR_MAC]   Frame.Slot 896.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 1193/81/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.00182 MCS (1) 9
+UE 4f2d: ulsch_rounds 10188/19/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00023 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.5 dB
+UE 4f2d: MAC:    TX       12978434 RX        1645819 bytes
+UE 4f2d: LCID 1: TX            500 RX           2079 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX       12878391 RX          81247 bytes
+
+[0m[NR_MAC]   Frame.Slot 0.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 1196/81/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.00133 MCS (1) 9
+UE 4f2d: ulsch_rounds 10572/19/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00006 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 32.0 dB
+UE 4f2d: MAC:    TX       12979085 RX        1705211 bytes
+UE 4f2d: LCID 1: TX            503 RX           2101 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX       12878394 RX          81289 bytes
+
+[0m[NR_MAC]   Frame.Slot 128.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 1199/81/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.00097 MCS (1) 9
+UE 4f2d: ulsch_rounds 10956/19/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00002 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 31.0 dB
+UE 4f2d: MAC:    TX       12979736 RX        1764603 bytes
+UE 4f2d: LCID 1: TX            509 RX           2145 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX       12878394 RX          81289 bytes
+
+[0m[NR_PHY]   [RAPROC] 189.19 Initiating RA procedure with preamble 57, energy 35.7 dB (I0 230, thres 120), delay 8 start symbol 0 freq index 0
+[0m[NR_MAC]   189.19 UE RA-RNTI 010b TC-RNTI ba2e: Activating RA process index 0
+[0m[32m[NR_MAC]   UE ba2e: 190.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 57
+[0m[NR_MAC]   UE ba2e: Msg3 scheduled at 190.17 (190.7 TDA 3)
+[0m[NR_MAC]    19110: RA RNTI ba2e CC_id 0 Scheduling retransmission of Msg3 in (191,17)
+[0m[NR_PHY]   [RAPROC] 191.19 Initiating RA procedure with preamble 41, energy 37.9 dB (I0 243, thres 120), delay 8 start symbol 0 freq index 0
+[0m[NR_MAC]   191.19 UE RA-RNTI 010b TC-RNTI b146: Activating RA process index 1
+[0m[32m[NR_MAC]   UE b146: 192.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 41
+[0m[NR_MAC]   UE b146: Msg3 scheduled at 192.17 (192.7 TDA 3)
+[0m[NR_MAC]    19210: RA RNTI ba2e CC_id 0 Scheduling retransmission of Msg3 in (192,17)
+[0m[NR_MAC]    19310: RA RNTI ba2e CC_id 0 Scheduling retransmission of Msg3 in (193,17)
+[0m[NR_MAC]    19310: RA RNTI b146 CC_id 0 Scheduling retransmission of Msg3 in (193,17)
+[0m[1;31m[NR_MAC]   UE b146 cannot find free CCE!
+[0m[NR_MAC]    19311: RA RNTI b146 CC_id 0 Scheduling retransmission of Msg3 in (193,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xba2e in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 193.19 Initiating RA procedure with preamble 54, energy 55.7 dB (I0 253, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   193.19 UE RA-RNTI 010b TC-RNTI 87bb: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 87bb: 194.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 54
+[0m[NR_MAC]   UE 87bb: Msg3 scheduled at 194.17 (194.7 TDA 3)
+[0m[NR_MAC]    19410: RA RNTI b146 CC_id 0 Scheduling retransmission of Msg3 in (194,17)
+[0m[NR_MAC]    19510: RA RNTI 87bb CC_id 0 Scheduling retransmission of Msg3 in (195,17)
+[0m[NR_MAC]    19510: RA RNTI b146 CC_id 0 Scheduling retransmission of Msg3 in (195,17)
+[0m[1;31m[NR_MAC]   UE b146 cannot find free CCE!
+[0m[NR_MAC]    19511: RA RNTI b146 CC_id 0 Scheduling retransmission of Msg3 in (195,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xb146 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 195.19 Initiating RA procedure with preamble 55, energy 55.7 dB (I0 276, thres 120), delay 4 start symbol 0 freq index 0
+[0m[NR_MAC]   195.19 UE RA-RNTI 010b TC-RNTI dc39: Activating RA process index 1
+[0m[32m[NR_MAC]   UE dc39: 196.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 55
+[0m[NR_MAC]   UE dc39: Msg3 scheduled at 196.17 (196.7 TDA 3)
+[0m[NR_MAC]    19610: RA RNTI 87bb CC_id 0 Scheduling retransmission of Msg3 in (196,17)
+[0m[NR_MAC]    19710: RA RNTI 87bb CC_id 0 Scheduling retransmission of Msg3 in (197,17)
+[0m[NR_MAC]    19710: RA RNTI dc39 CC_id 0 Scheduling retransmission of Msg3 in (197,17)
+[0m[1;31m[NR_MAC]   UE dc39 cannot find free CCE!
+[0m[NR_MAC]    19711: RA RNTI dc39 CC_id 0 Scheduling retransmission of Msg3 in (197,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x87bb in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 197.19 Initiating RA procedure with preamble 43, energy 55.7 dB (I0 291, thres 120), delay 8 start symbol 0 freq index 0
+[0m[NR_MAC]   197.19 UE RA-RNTI 010b TC-RNTI 2429: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 2429: 198.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 43
+[0m[NR_MAC]   UE 2429: Msg3 scheduled at 198.17 (198.7 TDA 3)
+[0m[NR_MAC]    19810: RA RNTI dc39 CC_id 0 Scheduling retransmission of Msg3 in (198,17)
+[0m[NR_MAC]    19910: RA RNTI 2429 CC_id 0 Scheduling retransmission of Msg3 in (199,17)
+[0m[NR_MAC]    19910: RA RNTI dc39 CC_id 0 Scheduling retransmission of Msg3 in (199,17)
+[0m[1;31m[NR_MAC]   UE dc39 cannot find free CCE!
+[0m[NR_MAC]    19911: RA RNTI dc39 CC_id 0 Scheduling retransmission of Msg3 in (199,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xdc39 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 199.19 Initiating RA procedure with preamble 55, energy 55.7 dB (I0 303, thres 120), delay 4 start symbol 0 freq index 0
+[0m[NR_MAC]   199.19 UE RA-RNTI 010b TC-RNTI c50a: Activating RA process index 1
+[0m[32m[NR_MAC]   UE c50a: 200.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 55
+[0m[NR_MAC]   UE c50a: Msg3 scheduled at 200.17 (200.7 TDA 3)
+[0m[NR_MAC]    20010: RA RNTI 2429 CC_id 0 Scheduling retransmission of Msg3 in (200,17)
+[0m[NR_MAC]    20110: RA RNTI 2429 CC_id 0 Scheduling retransmission of Msg3 in (201,17)
+[0m[NR_MAC]    20110: RA RNTI c50a CC_id 0 Scheduling retransmission of Msg3 in (201,17)
+[0m[1;31m[NR_MAC]   UE c50a cannot find free CCE!
+[0m[NR_MAC]    20111: RA RNTI c50a CC_id 0 Scheduling retransmission of Msg3 in (201,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x2429 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 201.19 Initiating RA procedure with preamble 53, energy 55.7 dB (I0 311, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   201.19 UE RA-RNTI 010b TC-RNTI 4c65: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 4c65: 202.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 53
+[0m[NR_MAC]   UE 4c65: Msg3 scheduled at 202.17 (202.7 TDA 3)
+[0m[NR_MAC]    20210: RA RNTI c50a CC_id 0 Scheduling retransmission of Msg3 in (202,17)
+[0m[NR_MAC]    20310: RA RNTI 4c65 CC_id 0 Scheduling retransmission of Msg3 in (203,17)
+[0m[NR_MAC]    20310: RA RNTI c50a CC_id 0 Scheduling retransmission of Msg3 in (203,17)
+[0m[1;31m[NR_MAC]   UE c50a cannot find free CCE!
+[0m[NR_MAC]    20311: RA RNTI c50a CC_id 0 Scheduling retransmission of Msg3 in (203,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xc50a in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 203.19 Initiating RA procedure with preamble 57, energy 55.7 dB (I0 316, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   203.19 UE RA-RNTI 010b TC-RNTI df4d: Activating RA process index 1
+[0m[32m[NR_MAC]   UE df4d: 204.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 57
+[0m[NR_MAC]   UE df4d: Msg3 scheduled at 204.17 (204.7 TDA 3)
+[0m[NR_MAC]    20410: RA RNTI 4c65 CC_id 0 Scheduling retransmission of Msg3 in (204,17)
+[0m[NR_MAC]    20510: RA RNTI 4c65 CC_id 0 Scheduling retransmission of Msg3 in (205,17)
+[0m[NR_MAC]    20510: RA RNTI df4d CC_id 0 Scheduling retransmission of Msg3 in (205,17)
+[0m[1;31m[NR_MAC]   UE df4d cannot find free CCE!
+[0m[NR_MAC]    20511: RA RNTI df4d CC_id 0 Scheduling retransmission of Msg3 in (205,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x4c65 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 205.19 Initiating RA procedure with preamble 56, energy 55.7 dB (I0 318, thres 120), delay 9 start symbol 0 freq index 0
+[0m[NR_MAC]   205.19 UE RA-RNTI 010b TC-RNTI dfec: Activating RA process index 0
+[0m[93m[NR_MAC]   exceeded RA window: preamble at 205.19 now 206.10 (diff 11), ra_ResponseWindow 4/10 slots
+[0m[1;31m[NR_MAC]   UE RA-RNTI 010b TC-RNTI dfec: exceeded RA window, cannot schedule Msg2
+[0m[NR_MAC]    20610: RA RNTI df4d CC_id 0 Scheduling retransmission of Msg3 in (206,17)
+[0m[NR_MAC]    20710: RA RNTI df4d CC_id 0 Scheduling retransmission of Msg3 in (207,17)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xdf4d in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 207.19 Initiating RA procedure with preamble 37, energy 55.7 dB (I0 320, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   207.19 UE RA-RNTI 010b TC-RNTI aeb4: Activating RA process index 0
+[0m[32m[NR_MAC]   UE aeb4: 208.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 37
+[0m[NR_MAC]   UE aeb4: Msg3 scheduled at 208.17 (208.7 TDA 3)
+[0m[NR_MAC]    20910: RA RNTI aeb4 CC_id 0 Scheduling retransmission of Msg3 in (209,17)
+[0m[NR_PHY]   [RAPROC] 209.19 Initiating RA procedure with preamble 40, energy 55.7 dB (I0 320, thres 120), delay 7 start symbol 0 freq index 0
+[0m[NR_MAC]   209.19 UE RA-RNTI 010b TC-RNTI 7614: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 7614: 210.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 40
+[0m[NR_MAC]   UE 7614: Msg3 scheduled at 210.17 (210.7 TDA 3)
+[0m[NR_MAC]    21010: RA RNTI aeb4 CC_id 0 Scheduling retransmission of Msg3 in (210,17)
+[0m[NR_MAC]    21110: RA RNTI aeb4 CC_id 0 Scheduling retransmission of Msg3 in (211,17)
+[0m[NR_MAC]    21110: RA RNTI 7614 CC_id 0 Scheduling retransmission of Msg3 in (211,17)
+[0m[1;31m[NR_MAC]   UE 7614 cannot find free CCE!
+[0m[NR_MAC]    21111: RA RNTI 7614 CC_id 0 Scheduling retransmission of Msg3 in (211,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xaeb4 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 211.19 Initiating RA procedure with preamble 15, energy 55.7 dB (I0 322, thres 120), delay 5 start symbol 0 freq index 0
+[0m[NR_MAC]   211.19 UE RA-RNTI 010b TC-RNTI 4752: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 4752: 212.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 15
+[0m[NR_MAC]   UE 4752: Msg3 scheduled at 212.17 (212.7 TDA 3)
+[0m[NR_MAC]    21210: RA RNTI 7614 CC_id 0 Scheduling retransmission of Msg3 in (212,17)
+[0m[NR_MAC]    21310: RA RNTI 4752 CC_id 0 Scheduling retransmission of Msg3 in (213,17)
+[0m[NR_MAC]    21310: RA RNTI 7614 CC_id 0 Scheduling retransmission of Msg3 in (213,17)
+[0m[1;31m[NR_MAC]   UE 7614 cannot find free CCE!
+[0m[NR_MAC]    21311: RA RNTI 7614 CC_id 0 Scheduling retransmission of Msg3 in (213,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x7614 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 213.19 Initiating RA procedure with preamble 8, energy 55.7 dB (I0 327, thres 120), delay 9 start symbol 0 freq index 0
+[0m[NR_MAC]   213.19 UE RA-RNTI 010b TC-RNTI 39cf: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 39cf: 214.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 8
+[0m[NR_MAC]   UE 39cf: Msg3 scheduled at 214.17 (214.7 TDA 3)
+[0m[NR_MAC]    21410: RA RNTI 4752 CC_id 0 Scheduling retransmission of Msg3 in (214,17)
+[0m[NR_MAC]    21510: RA RNTI 4752 CC_id 0 Scheduling retransmission of Msg3 in (215,17)
+[0m[NR_MAC]    21510: RA RNTI 39cf CC_id 0 Scheduling retransmission of Msg3 in (215,17)
+[0m[1;31m[NR_MAC]   UE 39cf cannot find free CCE!
+[0m[NR_MAC]    21511: RA RNTI 39cf CC_id 0 Scheduling retransmission of Msg3 in (215,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x4752 in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 215.19 Initiating RA procedure with preamble 11, energy 56.4 dB (I0 325, thres 120), delay 10 start symbol 0 freq index 0
+[0m[NR_MAC]   215.19 UE RA-RNTI 010b TC-RNTI 3e3f: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 3e3f: 216.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 11
+[0m[NR_MAC]   UE 3e3f: Msg3 scheduled at 216.17 (216.7 TDA 3)
+[0m[NR_MAC]    21610: RA RNTI 39cf CC_id 0 Scheduling retransmission of Msg3 in (216,17)
+[0m[NR_MAC]    21710: RA RNTI 3e3f CC_id 0 Scheduling retransmission of Msg3 in (217,17)
+[0m[NR_MAC]    21710: RA RNTI 39cf CC_id 0 Scheduling retransmission of Msg3 in (217,17)
+[0m[1;31m[NR_MAC]   UE 39cf cannot find free CCE!
+[0m[NR_MAC]    21711: RA RNTI 39cf CC_id 0 Scheduling retransmission of Msg3 in (217,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x39cf in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 217.19 Initiating RA procedure with preamble 29, energy 55.7 dB (I0 326, thres 120), delay 12 start symbol 0 freq index 0
+[0m[NR_MAC]   217.19 UE RA-RNTI 010b TC-RNTI 63ac: Activating RA process index 1
+[0m[32m[NR_MAC]   UE 63ac: 218.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 29
+[0m[NR_MAC]   UE 63ac: Msg3 scheduled at 218.17 (218.7 TDA 3)
+[0m[NR_MAC]    21810: RA RNTI 3e3f CC_id 0 Scheduling retransmission of Msg3 in (218,17)
+[0m[NR_MAC]    21910: RA RNTI 3e3f CC_id 0 Scheduling retransmission of Msg3 in (219,17)
+[0m[NR_MAC]    21910: RA RNTI 63ac CC_id 0 Scheduling retransmission of Msg3 in (219,17)
+[0m[1;31m[NR_MAC]   UE 63ac cannot find free CCE!
+[0m[NR_MAC]    21911: RA RNTI 63ac CC_id 0 Scheduling retransmission of Msg3 in (219,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x3e3f in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 219.19 Initiating RA procedure with preamble 59, energy 55.7 dB (I0 326, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   219.19 UE RA-RNTI 010b TC-RNTI 3365: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 3365: 220.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 59
+[0m[NR_MAC]   UE 3365: Msg3 scheduled at 220.17 (220.7 TDA 3)
+[0m[NR_MAC]    22010: RA RNTI 63ac CC_id 0 Scheduling retransmission of Msg3 in (220,17)
+[0m[NR_MAC]    22110: RA RNTI 3365 CC_id 0 Scheduling retransmission of Msg3 in (221,17)
+[0m[NR_MAC]    22110: RA RNTI 63ac CC_id 0 Scheduling retransmission of Msg3 in (221,17)
+[0m[1;31m[NR_MAC]   UE 63ac cannot find free CCE!
+[0m[NR_MAC]    22111: RA RNTI 63ac CC_id 0 Scheduling retransmission of Msg3 in (221,18)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x63ac in Msg3/PUSCH
+[0m[NR_PHY]   [RAPROC] 221.19 Initiating RA procedure with preamble 48, energy 55.7 dB (I0 326, thres 120), delay 23 start symbol 0 freq index 0
+[0m[NR_MAC]   221.19 UE RA-RNTI 010b TC-RNTI c856: Activating RA process index 1
+[0m[32m[NR_MAC]   UE c856: 222.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 48
+[0m[NR_MAC]   UE c856: Msg3 scheduled at 222.17 (222.7 TDA 3)
+[0m[NR_MAC]    22210: RA RNTI 3365 CC_id 0 Scheduling retransmission of Msg3 in (222,17)
+[0m[NR_MAC]    22310: RA RNTI 3365 CC_id 0 Scheduling retransmission of Msg3 in (223,17)
+[0m[NR_MAC]    22310: RA RNTI c856 CC_id 0 Scheduling retransmission of Msg3 in (223,17)
+[0m[1;31m[NR_MAC]   UE c856 cannot find free CCE!
+[0m[NR_MAC]    22311: RA RNTI c856 CC_id 0 Scheduling retransmission of Msg3 in (223,18)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x3365 in Msg3/PUSCH
+[0m[NR_MAC]    22410: RA RNTI c856 CC_id 0 Scheduling retransmission of Msg3 in (224,17)
+[0m[NR_MAC]    22510: RA RNTI c856 CC_id 0 Scheduling retransmission of Msg3 in (225,17)
+[0m[93m[NR_MAC]   Random Access 1 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xc856 in Msg3/PUSCH
+[0m[NR_MAC]   Frame.Slot 256.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 1202/81/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.00071 MCS (1) 9
+UE 4f2d: ulsch_rounds 11340/19/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.5 dB
+UE 4f2d: MAC:    TX       12980387 RX        1823995 bytes
+UE 4f2d: LCID 1: TX            512 RX           2167 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX       12878394 RX          81289 bytes
+
+[0m[NR_MAC]   Frame.Slot 384.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 1262/81/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.00038 MCS (1) 12
+UE 4f2d: ulsch_rounds 11729/20/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00273 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.5 dB
+UE 4f2d: MAC:    TX       13246082 RX        1883712 bytes
+UE 4f2d: LCID 1: TX            515 RX           2189 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX       13140526 RX          82554 bytes
+
+[0m[NR_MAC]   Frame.Slot 512.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 1568/81/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.00011 MCS (1) 24
+UE 4f2d: ulsch_rounds 12130/20/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00069 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.0 dB
+UE 4f2d: MAC:    TX       16584790 RX        1943886 bytes
+UE 4f2d: LCID 1: TX            518 RX           2211 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX       16469934 RX          82638 bytes
+
+[0m[NR_PHY]   [RAPROC] 553.19 Initiating RA procedure with preamble 4, energy 36.3 dB (I0 242, thres 120), delay 26 start symbol 0 freq index 0
+[0m[NR_MAC]   553.19 UE RA-RNTI 010b TC-RNTI e828: Activating RA process index 0
+[0m[32m[NR_MAC]   UE e828: 554.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 4
+[0m[NR_MAC]   UE e828: Msg3 scheduled at 554.17 (554.7 TDA 3)
+[0m[NR_MAC]    55510: RA RNTI e828 CC_id 0 Scheduling retransmission of Msg3 in (555,17)
+[0m[NR_MAC]    55610: RA RNTI e828 CC_id 0 Scheduling retransmission of Msg3 in (556,17)
+[0m[NR_MAC]    55710: RA RNTI e828 CC_id 0 Scheduling retransmission of Msg3 in (557,17)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xe828 in Msg3/PUSCH
+[0m[NR_MAC]   Frame.Slot 640.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 1788/115/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.09014 MCS (1) 23
+UE 4f2d: ulsch_rounds 12522/22/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00315 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.0 dB
+UE 4f2d: MAC:    TX       19925057 RX        2003646 bytes
+UE 4f2d: LCID 1: TX            524 RX           2255 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX       19798877 RX          82719 bytes
+
+[0m[NR_MAC]   Frame.Slot 768.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 2006/145/1/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.16685 MCS (1) 24
+UE 4f2d: ulsch_rounds 12912/28/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.01241 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 33.0 dB
+UE 4f2d: MAC:    TX       23266241 RX        2063268 bytes
+UE 4f2d: LCID 1: TX            527 RX           2277 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX       23129247 RX          82800 bytes
+
+[0m[NR_PHY]   [RAPROC] 861.19 Initiating RA procedure with preamble 24, energy 35.7 dB (I0 231, thres 120), delay 22 start symbol 0 freq index 0
+[0m[NR_MAC]   861.19 UE RA-RNTI 010b TC-RNTI a315: Activating RA process index 0
+[0m[32m[NR_MAC]   UE a315: 862.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 24
+[0m[NR_MAC]   UE a315: Msg3 scheduled at 862.17 (862.7 TDA 3)
+[0m[NR_MAC]    86310: RA RNTI a315 CC_id 0 Scheduling retransmission of Msg3 in (863,17)
+[0m[NR_MAC]    86410: RA RNTI a315 CC_id 0 Scheduling retransmission of Msg3 in (864,17)
+[0m[NR_MAC]    86510: RA RNTI a315 CC_id 0 Scheduling retransmission of Msg3 in (865,17)
+[0m[93m[NR_MAC]   Random Access 0 failed at state WAIT_Msg3 (Reached msg3 max harq rounds)
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0xa315 in Msg3/PUSCH
+[0m[NR_MAC]   Frame.Slot 896.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 2242/146/2/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.04480 MCS (1) 25
+UE 4f2d: ulsch_rounds 13299/35/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.01320 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 32.5 dB
+UE 4f2d: MAC:    TX       26615205 RX        2122635 bytes
+UE 4f2d: LCID 1: TX            530 RX           2299 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX       26467911 RX          82883 bytes
+
+[0m[NR_MAC]   Frame.Slot 0.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 2441/174/2/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.08682 MCS (1) 24
+UE 4f2d: ulsch_rounds 13686/36/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00498 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.5 dB
+UE 4f2d: MAC:    TX       29706302 RX        2182211 bytes
+UE 4f2d: LCID 1: TX            533 RX           2321 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX       29549005 RX          82964 bytes
+
+[0m[NR_MAC]   Frame.Slot 128.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 2658/204/2/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.16216 MCS (1) 23
+UE 4f2d: ulsch_rounds 14078/36/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00127 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.5 dB
+UE 4f2d: MAC:    TX       33040934 RX        2241971 bytes
+UE 4f2d: LCID 1: TX            539 RX           2365 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX       32872193 RX          83048 bytes
+
+[0m[NR_MAC]   Frame.Slot 256.0
+UE RNTI 4f2d CU-UE-ID 2 in-sync PH 52 dB PCMAX 21 dBm, average RSRP -72 (16 meas)
+UE 4f2d: dlsch_rounds 2890/204/2/1, dlsch_errors 1, pucch0_DTX 1, BLER 0.04122 MCS (1) 25
+UE 4f2d: ulsch_rounds 14465/36/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00032 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 31.0 dB
+UE 4f2d: MAC:    TX       36379855 RX        2301501 bytes
+UE 4f2d: LCID 1: TX            542 RX           2387 bytes
+UE 4f2d: LCID 2: TX              0 RX              0 bytes
+UE 4f2d: LCID 4: TX       36201196 RX          83126 bytes
+
+[0m

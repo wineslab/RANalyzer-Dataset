@@ -1,0 +1,1929 @@
+[ENB_APP]   nfapi (0) running mode: MONOLITHIC
+[0m[GNB_APP]   Getting GNBSParams
+[0m[OPT]   OPT disabled
+[0m[HW]   Version: Branch: HEAD Abrev. Hash: 707aab3 Date: Tue Jun 25 10:02:24 2024 +0000
+[0m[NR_PHY]   RC.gNB = 0x558faf2254f0
+[0m[NR_PHY]   PRB blacklist 
+[0m[NR_PHY]   Copying 0 blacklisted PRB to L1 context
+[0m[PHY]   L1_RX_THREAD_CORE -1 (15)
+[0m[PHY]   TX_AMP = 519 (-36 dBFS)
+[0m[PHY]   l1_north_init_gNB() RC.nb_nr_L1_inst:1
+[0m[PHY]   Installing callbacks for IF_Module - UL_indication
+[0m[MAC]   Allocating shared L1/L2 interface structure for instance 0 @ 0x558faf22d5a0
+[0m[PHY]   l1_north_init_gNB() RC.gNB[0] installing callbacks
+[0m[PHY]   create_gNB_tasks() Task ready initialize structures
+[0m[PHY]   No prs_config configuration found..!!
+[0m[GNB_APP]   pdsch_AntennaPorts N1 1 N2 1 XP 1 pusch_AntennaPorts 1
+[0m[GNB_APP]   minTXRXTIME 6
+[0m[GNB_APP]   SIB1 TDA 1
+[0m[GNB_APP]   CSI-RS 0, SRS 0, 256 QAM may be on, delta_MCS off, maxMIMO_Layers -1
+[0m[GNB_APP]   sr_ProhibitTimer 0, sr_TransMax 64, sr_ProhibitTimer_v1700 0, t300 400, t301 400, t310 2000, n310 10, t311 3000, n311 1, t319 400
+[0m[RRC]   Read in ServingCellConfigCommon (PhysCellId 0, ABSFREQSSB 641280, DLBand 78, ABSFREQPOINTA 640008, DLBW 162,RACH_TargetReceivedPower -96
+[0m[NR_MAC]   NR band duplex spacing is 0 KHz (nr_bandtable[40].band = 78)
+[0m[RRC]   absoluteFrequencySSB 641280 corresponds to 3619200000 Hz
+[0m[NR_MAC]   NR band duplex spacing is 0 KHz (nr_bandtable[40].band = 78)
+[0m[NR_MAC]   NR band 78, duplex mode TDD, duplex spacing = 0 KHz
+[0m[NR_MAC]   NR band duplex spacing is 0 KHz (nr_bandtable[40].band = 78)
+[0m[NR_MAC]   NR band 78, duplex mode TDD, duplex spacing = 0 KHz
+[0m[MAC]   [MAIN] Init function start:nb_nr_macrlc_inst=1
+[0m[UTIL]   threadCreate() for MAC_STATS: creating thread with affinity ffffffff, priority 2
+[0m[PHY]   Installing callbacks for IF_Module - UL_indication
+[0m[NR_MAC]   Configuring common parameters from NR ServingCellConfig
+[0m[NR_MAC]   DL_Bandwidth:60
+[0m[NR_MAC]   NR band duplex spacing is 0 KHz (nr_bandtable[40].band = 78)
+[0m[NR_MAC]   DL_Bandwidth:60
+[0m[NR_MAC]   NR band duplex spacing is 0 KHz (nr_bandtable[40].band = 78)
+[0m[NR_MAC]   NR band duplex spacing is 0 KHz (nr_bandtable[40].band = 78)
+[0m[NR_MAC]   NR band 78, duplex mode TDD, duplex spacing = 0 KHz
+[0m[NR_MAC]   ssb_OffsetPointA 86, ssb_SubcarrierOffset 0
+[0m[NR_MAC]   Set RX antenna number to 1, Set TX antenna number to 1 (num ssb 1: 80000000,0)
+[0m[NR_MAC]   Setting TDD configuration period to 6
+[0m[PHY]   DL frequency 3629280000 Hz, UL frequency 3629280000 Hz: band 48, uldl offset 0 Hz
+[0m[32m[PHY]   Configuring MIB for instance 0, : (Nid_cell 0,DL freq 3629280000, UL freq 3629280000)
+[0m[PHY]   Initializing frame parms for mu 1, N_RB 162, Ncp 0
+[0m[PHY]   Init: N_RB_DL 162, first_carrier_offset 1076, nb_prefix_samples 144,nb_prefix_samples0 176, ofdm_symbol_size 2048
+[0m[PHY]   Doing symbol rotation calculation for TX/RX, f0 3629280000.000000 Hz, Nsymb 28
+[0m[PHY]   Doing symbol rotation calculation for TX/RX, f0 3629280000.000000 Hz, Nsymb 28
+[0m[PHY]   gNB 0 configured
+[0m[NR_MAC]   PUSCH Target 300, PUCCH Target 200, PUCCH Failure 10, PUSCH Failure 1000
+[0m[NR_RRC]   SIB1 freq: offsetToPointA 86
+[0m[NR_MAC]   NR band duplex spacing is 0 KHz (nr_bandtable[40].band = 78)
+[0m[NR_MAC]   NR band 78, duplex mode TDD, duplex spacing = 0 KHz
+[0m[GNB_APP]   F1AP: gNB idx 0 gNB_DU_id 3585, gNB_DU_name gNB-OAI, TAC 1 MCC/MNC/length 1/1/2 cellID 12345678
+[0m[GNB_APP]   ngran_DU: Configuring Cell 0 for TDD
+[0mCMDLINE: "/root/radio_code/openairinterface5g/cmake_targets/ran_build/build/nr-softmodem" "-O" "/root/radio_code/openshift-oai-configurations/./config/config-x410-162prb-cbrs-running.conf" "--sa" "--usrp-tx-thread-config" "1" 
+[LIBCONFIG] Path for include directive set to: /root/radio_code/openshift-oai-configurations/./config
+[CONFIG] function config_libconfig_init returned 0
+[CONFIG] config module libconfig loaded
+[CONFIG] debug flags: 0x00000000
+log init done
+Reading in command-line options
+[CONFIG] parallel_conf is set to 0
+[CONFIG] worker_conf is set to 1
+Configuration: nb_rrc_inst 1, nb_nr_L1_inst 1, nb_ru 1
+configuring for RAU/RRU
+Initializing northbound interface for L1
+DL frequency 3629280000: band 48, UL frequency 3629280000
+<MeasurementTimingConfiguration>
+    <criticalExtensions>
+        <c1>
+            <measTimingConf>
+                <measTiming>
+                    <MeasTiming>
+                        <frequencyAndTiming>
+                            <carrierFreq>641280</carrierFreq>
+                            <ssbSubcarrierSpacing><kHz30/></ssbSubcarrierSpacing>
+                            <ssb-MeasurementTimingConfiguration>
+                                <periodicityAndOffset>
+                                    <sf20>0</sf20>
+                                </periodicityAndOffset>
+                                <duration><sf1/></duration>
+                            </ssb-MeasurementTimingConfiguration>
+                        </frequencyAndTiming>
+                    </MeasTiming>
+                </measTiming>
+            </measTimingConf>
+        </c1>
+    </criticalExtensions>
+</MeasurementTimingConfiguration>
+[PHY]   create_gNB_tasks() RC.nb_nr_L1_inst:1
+[0m[PHY]   l1_north_init_gNB() RC.nb_nr_L1_inst:1
+[0m[PHY]   Installing callbacks for IF_Module - UL_indication
+[0m[PHY]   l1_north_init_gNB() RC.gNB[0] installing callbacks
+[0m[GNB_APP]   Allocating gNB_RRC_INST for 1 instances
+[0m[GNB_APP]   SDAP layer is disabled
+[0m[GNB_APP]   Data Radio Bearer count 1
+[0m[NR_RRC]   do_SIB23_NR, size 9 
+ [0m[PDCP]   pdcp init,usegtp 
+[0m[GNB_APP]   default drx 0
+[0m[GNB_APP]   [gNB 0] gNB_app_register for instance 0
+[0m[UTIL]   threadCreate() for TASK_SCTP: creating thread with affinity ffffffff, priority 50
+[0m[ITTI]   Created Posix thread TASK_SCTP
+[0m[X2AP]   X2AP is disabled.
+[0m[UTIL]   threadCreate() for TASK_NGAP: creating thread with affinity ffffffff, priority 50
+[0m[ITTI]   Created Posix thread TASK_NGAP
+[0m[UTIL]   threadCreate() for TASK_GNB_APP: creating thread with affinity ffffffff, priority 50
+[0m[NGAP]   Registered new gNB[0] and macro gNB id 3585
+[0m[NGAP]   [gNB 0] check the amf registration state
+[0m[ITTI]   Created Posix thread TASK_GNB_APP
+[0m[UTIL]   threadCreate() for TASK_RRC_GNB: creating thread with affinity ffffffff, priority 50
+[0m[ITTI]   Created Posix thread TASK_RRC_GNB
+[0m[NR_RRC]   Entering main loop of NR_RRC message task
+[0m[NR_RRC]   Received F1 Setup Request from gNB_DU 3585 (gNB-OAI) on assoc_id -1
+[0m[GTPU]   Configuring GTPu
+[0m[GTPU]   SA mode 
+[0m[GTPU]   Configuring GTPu address : 10.130.3.234, port : 2152
+[0m[GTPU]   Initializing UDP for local address 10.130.3.234 with port 2152
+[0m[RRC]   Accepting DU 3585 (gNB-OAI), sending F1 Setup Response
+[0m[RRC]   DU uses RRC version 17.3.0
+[0m[MAC]   received F1 Setup Response from CU (null)
+[0m[MAC]   CU uses RRC version 17.3.0
+[0m[GTPU]   Created gtpu instance id: 98
+[0m[UTIL]   threadCreate() for TASK_GTPV1_U: creating thread with affinity ffffffff, priority 50
+[0m[NR_RRC]   Accepting new CU-UP ID 3585 name gNB-OAI (assoc_id -1)
+[0m[NGAP]   3585 -> 0000e010
+[0m[GNB_APP]   [gNB 0] Received NGAP_REGISTER_GNB_CNF: associated AMF 1
+[0m[ITTI]   Created Posix thread TASK_GTPV1_U
+[0m[PHY]   Initializing gNB 0 single_thread_flag:1
+[0m[PHY]   Initializing gNB 0
+[0m[PHY]   Registering with MAC interface module (before 0x558faf22d5a0)
+[0m[PHY]   Installing callbacks for IF_Module - UL_indication
+[0m[PHY]   Registering with MAC interface module (after 0x558faf22d5a0)
+[0m[PHY]   Setting indication lists
+[0m[PHY]   [nr-gnb.c] gNB structure allocated
+[0m[PHY]   RU GPIO control set as 'generic'
+[0m[PHY]   Setting clock source to internal
+[0m[PHY]   Setting time source to internal
+[0m[PHY]   number of L1 instances 1, number of RU 1, number of CPU cores 32
+[0m[PHY]   Copying frame parms from gNB in RC to gNB 0 in ru 0 and frame_parms in ru
+[0m[PHY]   Initialized RU proc 0 (,synch_to_ext_device),
+[0m[PHY]   RU Thread pool size 2
+[0m[PHY]   RU thread-pool core string -1,-1
+[0m[UTIL]   threadCreate() for Tpool0_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool1_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for ru_thread: creating thread with affinity ffffffff, priority 97
+[0m[PHY]   Starting RU 0 (,synch_to_ext_device) on cpu 27
+[0m[PHY]   Waiting for RUs to be configured ... RC.ru_mask:01
+[0m[PHY]   Initializing frame parms for mu 1, N_RB 162, Ncp 0
+[0m[PHY]   Init: N_RB_DL 162, first_carrier_offset 1076, nb_prefix_samples 144,nb_prefix_samples0 176, ofdm_symbol_size 2048
+[0m[PHY]   fp->scs=30000
+[0m[PHY]   fp->ofdm_symbol_size=2048
+[0m[PHY]   fp->nb_prefix_samples0=176
+[0m[PHY]   fp->nb_prefix_samples=144
+[0m[PHY]   fp->slots_per_subframe=2
+[0m[PHY]   fp->samples_per_subframe_wCP=57344
+[0m[PHY]   fp->samples_per_frame_wCP=573440
+[0m[PHY]   fp->samples_per_subframe=61440
+[0m[PHY]   fp->samples_per_frame=614400
+[0m[PHY]   fp->dl_CarrierFreq=3629280000
+[0m[PHY]   fp->ul_CarrierFreq=3629280000
+[0m[PHY]   fp->Nid_cell=0
+[0m[PHY]   fp->first_carrier_offset=1076
+[0m[PHY]   fp->ssb_start_subcarrier=0
+[0m[PHY]   fp->Ncp=0
+[0m[PHY]   fp->N_RB_DL=162
+[0m[PHY]   fp->numerology_index=1
+[0m[PHY]   fp->nr_band=48
+[0m[PHY]   fp->ofdm_offset_divisor=8
+[0m[PHY]   fp->threequarter_fs=0
+[0m[PHY]   fp->sl_CarrierFreq=0
+[0m[PHY]   fp->N_RB_SL=0
+[0m[PHY]   Initializing RU signal buffers (if_south local RF) nb_tx 1, nb_rx 1
+[0m[PHY]   [INIT] common.txdata[0] = 0x7fc74d451040 (2458880 bytes,sf_extension 320)
+[0m[PHY]   [INIT] common.txdata[0] = 0x7fc74d451540 
+[0m[PHY]   nb_tx 1
+[0m[PHY]   rxdata_7_5kHz[0] 0x7fc74d107040 for RU 0
+[0m[PHY]   [INIT] common.txdata_BF= 0x7fc748000ac0 (8 bytes)
+[0m[PHY]   txdataF_BF[0] 0x7fc76408b040 for RU 0
+[0m[PHY]   rxdataF[0] 0x7fc76401a040 for RU 0
+[0m[PHY]   [INIT] nr_phy_init_RU() ru->num_gNB:1 
+[0m[PHY]   Setting RF config for N_RB 162, NB_RX 1, NB_TX 1
+[0m[PHY]   tune_offset 0 Hz, sample_rate 61440000 Hz
+[0m[PHY]   Channel 0: setting tx_gain offset 0, tx_freq 3629280000 Hz
+[0m[PHY]   Channel 0: setting rx_gain offset 75, rx_freq 3629280000 Hz
+[0m[HW]   openair0_cfg[0].sdr_addrs == 'addr=192.168.40.24'
+[0m[HW]   openair0_cfg[0].clock_source == '0' (internal = 0, external = 1)
+[0m[HW]   UHD version 4.3.0.HEAD-0-g1f8fd345 (4.3.0)
+[0m[HW]   Checking for USRP with args addr=192.168.40.24
+[0m[HW]   Found USRP x4xx
+[0m[93m[HW]   Can't set kernel parameters for X4x0
+[0m[HW]   Setting clock source to internal
+[0m[HW]   Setting time source to internal
+[0mNRRRC 0: Southbound Transport local_mac
+START MAIN THREADS
+RC.nb_nr_L1_inst:1
+Initializing gNB threads single_thread_flag:1 wait_for_sync:0
+wait_gNBs()
+Waiting for gNB L1 instances to all get configured ... sleeping 50ms (nb_nr_sL1_inst 1)
+gNB L1 are configured
+About to Init RU threads RC.nb_RU:1
+Initializing RU threads
+configuring RU from file
+Set RU mask to 1
+Creating RC.ru[0]:0x558faf27b990
+Setting function for RU 0 to gNodeB_3GPP
+[RU 0] Setting nr_flag 0, nr_band 78, nr_scs_for_raster 1
+[RU 0] Setting half-slot parallelization to 1
+configuring ru_id 0 (start_rf 0x558fabac0ec0)
+wait RUs
+shlib_path liboai_device.so
+[LOADER] library liboai_device.so successfully loaded
+Found USRP x400
+[HW]   device_init() sample_rate:61440000
+[0m[HW]   cal 0: freq 3500000000.000000, offset 0.000000, diff 129280000.000000
+[0m[HW]   cal 1: freq 2660000000.000000, offset 0.000000, diff 969280000.000000
+[0m[HW]   cal 2: freq 2300000000.000000, offset 0.000000, diff 1329280000.000000
+[0m[HW]   cal 3: freq 1880000000.000000, offset 0.000000, diff 1749280000.000000
+[0m[HW]   cal 4: freq 816000000.000000, offset 0.000000, diff 2813280000.000000
+[0m[1;31m[HW]   RX Gain too high, lower by 15.000000 dB
+[0m[HW]   RX Gain 0 75.000000 (0.000000) => 75.000000 (max 60.000000)
+[0m[HW]   USRP TX_GAIN:60.00 gain_range:60.00 tx_gain:0.00
+[0m[HW]   Actual master clock: 245.760000MHz...
+[0m[HW]   Actual clock source internal...
+[0m[HW]   Actual time source internal...
+[0m[HW]   setting rx channel 0
+[0m[HW]   RF board max packet size 1992, size for 100µs jitter 6144 
+[0m[HW]   rx_max_num_samps 1992
+[0m[HW]   RX Channel 0
+[0m[HW]     Actual RX sample rate: 61.440000MSps...
+[0m[HW]     Actual RX frequency: 3.629280GHz...
+[0m[HW]     Actual RX gain: 60.000000...
+[0m[HW]     Actual RX bandwidth: 400.000000M...
+[0m[HW]     Actual RX antenna: RX1...
+[0m[HW]   TX Channel 0
+[0m[HW]     Actual TX sample rate: 61.440000MSps...
+[0m[HW]     Actual TX frequency: 3.629280GHz...
+[0m[HW]     Actual TX gain: 60.000000...
+[0m[HW]     Actual TX bandwidth: 400.000000M...
+[0m[HW]     Actual TX antenna: TX/RX0...
+[0m[HW]     Actual TX packet size: 1992
+[0mUsing Device: Single USRP:
+  Device: X400-Series Device
+  Mboard 0: x410
+  RX Channel: 0
+    RX DSP: 0
+    RX Dboard: A
+    RX Subdev: 0
+  RX Channel: 1
+    RX DSP: 1
+    RX Dboard: A
+    RX Subdev: 1
+  RX Channel: 2
+    RX DSP: 2
+    RX Dboard: B
+    RX Subdev: 0
+  RX Channel: 3
+    RX DSP: 3
+    RX Dboard: B
+    RX Subdev: 1
+  TX Channel: 0
+    TX DSP: 0
+    TX Dboard: A
+    TX Subdev: 0
+  TX Channel: 1
+    TX DSP: 1
+    TX Dboard: A
+    TX Subdev: 1
+  TX Channel: 2
+    TX DSP: 2
+    TX Dboard: B
+    TX Subdev: 0
+  TX Channel: 3
+    TX DSP: 3
+    TX Dboard: B
+    TX Subdev: 1
+
+[HW]   Device timestamp: 0.041985...
+[0m[HW]   [RAU] has loaded USRP X400 device.
+[0m[PHY]   RU 0 Setting N_TA_offset to 800 samples (factor 2.000000, UL Freq 3600120, N_RB 162, mu 1)
+[0m[PHY]   Signaling main thread that RU 0 is ready, sl_ahead 6
+[0m[PHY]   RUs configured
+[0m[PHY]   init_eNB_afterRU() RC.nb_nr_inst:1
+[0m[PHY]   RC.nb_nr_CC[inst:0]:0x7fc767a96010
+[0m[PHY]   [gNB 0] phy_init_nr_gNB() About to wait for gNB to be configured
+[0m[PHY]   Initialise nr transport
+[0m[PHY]   Mapping RX ports from 1 RUs to gNB 0
+[0m[PHY]   gNB->num_RU:1
+[0m[PHY]   Attaching RU 0 antenna 0 to gNB antenna 0
+[0m[UTIL]   threadCreate() for Tpool0_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool1_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool2_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool3_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool4_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool5_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool6_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool7_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for L1_rx_thread: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for L1_tx_thread: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for L1_stats: creating thread with affinity ffffffff, priority 1
+[0msetup_RU_buffers: frame_parms = 0x7fc74eead010
+waiting for sync (ru_thread,-1/0x558fac6a70ac,0x558facf388c0,0x558facf38880)
+RC.ru_mask:00
+ALL RUs READY!
+RC.nb_RU:1
+ALL RUs ready - init gNBs
+Not NFAPI mode - call init_eNB_afterRU()
+shlib_path libdfts.so
+[LOADER] library libdfts.so successfully loaded
+shlib_path libldpc.so
+[LOADER] library libldpc.so successfully loaded
+waiting for sync (L1_stats_thread,-1/0x558fac6a70ac,0x558facf388c0,0x558facf38880)
+ALL RUs ready - ALL gNBs ready
+Sending sync to all threads
+Entering ITTI signals handler
+TYPE <CTRL-C> TO TERMINATE
+got sync (L1_stats_thread)
+got sync (ru_thread)
+[HW]   current pps at 0.000000, starting streaming at 1.000000
+[0m[PHY]   RU 0 rf device ready
+[0m[PHY]   RU 0 RF started opp_enabled 0
+[0m[UTIL]   threadCreate() for trx_usrp_write_thread: creating thread with affinity ffffffff, priority 97
+[0m[PHY]   tx write thread ready
+[0m[32m[PHY]   Command line parameters for the UE: -C 3629280000 -r 162 --numerology 1 --ssb 516
+[0m[NR_MAC]   Frame.Slot 128.0
+
+[0m[NR_MAC]   Frame.Slot 256.0
+
+[0m[NR_MAC]   Frame.Slot 384.0
+
+[0m[NR_MAC]   Frame.Slot 512.0
+
+[0m[NR_MAC]   Frame.Slot 640.0
+
+[0m[NR_MAC]   Frame.Slot 768.0
+
+[0m[NR_MAC]   Frame.Slot 896.0
+
+[0m[NR_MAC]   Frame.Slot 0.0
+
+[0m[NR_MAC]   Frame.Slot 128.0
+
+[0m[NR_MAC]   Frame.Slot 256.0
+
+[0m[NR_MAC]   Frame.Slot 384.0
+
+[0m[NR_MAC]   Frame.Slot 512.0
+
+[0m[NR_MAC]   Frame.Slot 640.0
+
+[0m[NR_PHY]   [RAPROC] 683.19 Initiating RA procedure with preamble 37, energy 54.0 dB (I0 206, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   683.19 UE RA-RNTI 010b TC-RNTI 881a: Activating RA process index 0
+[0m[32m[NR_MAC]   UE 881a: 684.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 37
+[0m[NR_MAC]   UE 881a: Msg3 scheduled at 684.17 (684.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0x881a
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0x881a received correctly, adding UE MAC Context RNTI 0x881a
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 34842
+[0m[RLC]   Added srb 1 to UE 34842
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0x881a (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0x881a (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI 881a, payload_size 6
+[0m[NR_RRC]   Created new UE context: CU UE ID 1 DU UE ID 34842 (rnti: 881a, random ue id 4a928f2d8c000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI 881a
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI 881a, adding CU UE ID 1
+[0m[93m[NR_MAC]   DL  685. 6, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  685. 7, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   UE 881a Generate msg4: feedback at  685.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0x881a) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[32m[NR_RRC]   UE 1 Processing NR_RRCSetupComplete from UE
+[0m[NGAP]   [gNB 0] Build NGAP_NAS_FIRST_REQ adding in s_TMSI: GUAMI amf_set_id 0 amf_region_id 2 ue 881a
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 1: Chose AMF 'a5gblu-amf' (assoc_id 57) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[93m[NGAP]   could not find NGAP_ProtocolIE_ID_id_UEAggregateMaximumBitRate
+[0m[NR_RRC]   [gNB 0][UE 1] Selected security algorithms (0x7fc75800442c): ciphering 0, integrity 2 (algorithms changed)
+[0m[NR_RRC]   [gNB 0][UE 881a] Saved security key 1DE457500B9FC7A70EDE0C12FF30FB3D311BE016D392F8ECB8E21142AF389DB8
+[0m[NR_RRC]   UE 1 Logical Channel DL-DCCH, Generate SecurityModeCommand (bytes 3)
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] received securityModeComplete on UL-DCCH 1 from UE
+[0m[NR_RRC]   UE 1: Logical Channel DL-DCCH, Generate NR UECapabilityEnquiry (bytes 8, xid 3)
+[0m[NR_RRC]   UE 1: received UE capabilities (xid 3)
+[0m[NR_RRC]   Send message to ngap: NGAP_UE_CAPABILITIES_IND
+[0m[NR_RRC]   Send message to sctp: NGAP_InitialContextSetupResponse
+[0m[NR_MAC]   Frame.Slot 768.0
+UE RNTI 881a CU-UE-ID 1 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (10 meas)
+UE 881a: dlsch_rounds 9/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.09000 MCS (0) 9
+UE 881a: ulsch_rounds 247/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.04305 MCS (0) 11 (Qm 4  dB) NPRB 5  SNR 28.5 dB
+UE 881a: MAC:    TX            984 RX          22477 bytes
+UE 881a: LCID 1: TX            142 RX           1322 bytes
+
+[0m[NR_MAC]   Frame.Slot 896.0
+UE RNTI 881a CU-UE-ID 1 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE 881a: dlsch_rounds 11/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.07290 MCS (0) 9
+UE 881a: ulsch_rounds 631/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.01216 MCS (0) 23 (Qm 6  dB) NPRB 5  SNR 30.5 dB
+UE 881a: MAC:    TX           1230 RX          55245 bytes
+UE 881a: LCID 1: TX            142 RX           1322 bytes
+
+[0m[NR_MAC]   Frame.Slot 0.0
+UE RNTI 881a CU-UE-ID 1 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE 881a: dlsch_rounds 12/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.06561 MCS (0) 9
+UE 881a: ulsch_rounds 1015/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00309 MCS (0) 28 (Qm 6  dB) NPRB 5  SNR 29.5 dB
+UE 881a: MAC:    TX           1353 RX          88013 bytes
+UE 881a: LCID 1: TX            142 RX           1322 bytes
+
+[0m[NR_MAC]   Frame.Slot 128.0
+UE RNTI 881a CU-UE-ID 1 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE 881a: dlsch_rounds 13/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.05905 MCS (0) 9
+UE 881a: ulsch_rounds 1399/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00079 MCS (0) 28 (Qm 6  dB) NPRB 5  SNR 29.5 dB
+UE 881a: MAC:    TX           1476 RX         120781 bytes
+UE 881a: LCID 1: TX            142 RX           1322 bytes
+
+[0m[NR_MAC]   Frame.Slot 256.0
+UE RNTI 881a CU-UE-ID 1 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE 881a: dlsch_rounds 14/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.05314 MCS (0) 9
+UE 881a: ulsch_rounds 1783/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00020 MCS (0) 28 (Qm 6  dB) NPRB 5  SNR 29.5 dB
+UE 881a: MAC:    TX           1599 RX         153549 bytes
+UE 881a: LCID 1: TX            142 RX           1322 bytes
+
+[0m[NR_MAC]   Frame.Slot 384.0
+UE RNTI 881a CU-UE-ID 1 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE 881a: dlsch_rounds 16/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.04305 MCS (0) 9
+UE 881a: ulsch_rounds 2167/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00005 MCS (0) 28 (Qm 6  dB) NPRB 5  SNR 29.0 dB
+UE 881a: MAC:    TX           1845 RX         186317 bytes
+UE 881a: LCID 1: TX            142 RX           1322 bytes
+
+[0m[NR_MAC]   Frame.Slot 512.0
+UE RNTI 881a CU-UE-ID 1 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE 881a: dlsch_rounds 17/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.03874 MCS (0) 9
+UE 881a: ulsch_rounds 2551/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00001 MCS (0) 28 (Qm 6  dB) NPRB 5  SNR 28.5 dB
+UE 881a: MAC:    TX           1968 RX         219085 bytes
+UE 881a: LCID 1: TX            142 RX           1322 bytes
+
+[0m[NR_MAC]   Frame.Slot 640.0
+UE RNTI 881a CU-UE-ID 1 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE 881a: dlsch_rounds 18/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.03487 MCS (0) 9
+UE 881a: ulsch_rounds 2935/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 28 (Qm 6  dB) NPRB 5  SNR 29.5 dB
+UE 881a: MAC:    TX           2091 RX         251853 bytes
+UE 881a: LCID 1: TX            142 RX           1322 bytes
+
+[0m[NR_PHY]   [RAPROC] 685.19 Initiating RA procedure with preamble 8, energy 52.7 dB (I0 205, thres 120), delay 6 start symbol 0 freq index 0
+[0m[NR_MAC]   685.19 UE RA-RNTI 010b TC-RNTI e5d1: Activating RA process index 0
+[0m[32m[NR_MAC]   UE e5d1: 686.7 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, CoreSetType 0, RAPID 8
+[0m[NR_MAC]   UE e5d1: Msg3 scheduled at 686.17 (686.7 k2 7 TDA 3)
+[0m[NR_MAC]   Starting RA Contention Resolution timer with 64 ms + 2 * 7 K2 (142 slots) duration
+[0m[NR_MAC]   Adding new UE context with RNTI 0xe5d1
+[0m[NR_MAC]   [gNB 0][RAPROC] PUSCH with TC_RNTI 0xe5d1 received correctly, adding UE MAC Context RNTI 0xe5d1
+[0m[32m[NR_MAC]   [RAPROC] RA-Msg3 received (sdu_lenP 7)
+[0m[RLC]   Activated srb0 for UE 58833
+[0m[RLC]   Added srb 1 to UE 58833
+[0m[NR_MAC]   Activating scheduling RA-Msg4 for TC_RNTI 0xe5d1 (state WAIT_Msg3)
+[0m[93m[NR_MAC]   Unexpected ULSCH HARQ PID 0 (have -1) for RNTI 0xe5d1 (ignore this warning for RA)
+[0m[NR_RRC]   Decoding CCCH: RNTI e5d1, payload_size 6
+[0m[NR_RRC]   Received UE 5G-S-TMSI-Part1 278686363642
+[0m[NR_RRC]   Created new UE context: CU UE ID 2 DU UE ID 58833 (rnti: e5d1, random ue id 40e3006ffa)
+[0m[RRC]   activate SRB 1 of UE 2
+[0m[NR_RRC]   rrc_gNB_generate_RRCSetup for RNTI e5d1
+[0m[NR_MAC]   No CU UE ID stored for UE RNTI e5d1, adding CU UE ID 2
+[0m[NR_MAC]   UE e5d1 Generate msg4: feedback at  687.17, payload 149 bytes, next state WAIT_Msg4_ACK
+[0m[32m[NR_MAC]   (UE RNTI 0xe5d1) Received Ack of RA-Msg4. CBRA procedure succeeded!
+[0m[1;31m[NR_MAC]   UE 881a: reported RSRP index 119 invalid
+[0m[1;31m[NR_MAC]   UE 881a: reported RSRP index 119 invalid
+[0m[RRC]   s_tmsi part2 0 (00 00)
+[0m[NR_RRC]   5g_s_TMSI: 0x40E3006FFA, amf_set_id: 0x1 (1), amf_pointer: 0x0 (0), 5g TMSI: 0xE3006FFA 
+[0m[32m[NR_RRC]   UE 2 Processing NR_RRCSetupComplete from UE
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 2] UE State = NR_RRC_CONNECTED 
+[0m[NGAP]   UE 2: Chose AMF 'a5gblu-amf' (assoc_id 57) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 1] Logical Channel DL-DCCH, Generate RRCRelease (bytes 3)
+[0m[93m[NGAP]   could not find NGAP_ProtocolIE_ID_id_UEAggregateMaximumBitRate
+[0m[NR_RRC]   [gNB 0][UE 2] Selected security algorithms (0x7fc758006f9c): ciphering 0, integrity 2 (algorithms changed)
+[0m[NR_RRC]   [gNB 0][UE e5d1] Saved security key CCC26C0E020E6893F01A7980C5F0AEA7B6989F2D360C5E1D882475A9944B5732
+[0m[NR_RRC]   UE 2 Logical Channel DL-DCCH, Generate SecurityModeCommand (bytes 3)
+[0m[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 2] received securityModeComplete on UL-DCCH 1 from UE
+[0m[NR_RRC]   UE 2: Logical Channel DL-DCCH, Generate NR UECapabilityEnquiry (bytes 8, xid 1)
+[0m[NR_RRC]   UE 2: received UE capabilities (xid 1)
+[0m[NR_RRC]   Send message to ngap: NGAP_UE_CAPABILITIES_IND
+[0m[NR_RRC]   Send message to sctp: NGAP_InitialContextSetupResponse
+[0m[93m[RLC]   Remove UE 34842
+[0m[NR_MAC]   Remove NR rnti 0x881a
+[0m[93m[RRC]   trigger release with 0 pdu
+[0m[NR_RRC]   removed UE CU UE ID 1/RNTI 881a 
+[0m[NR_RRC]   Removed UE context
+[0m[1;31m[NR_MAC]   handle_nr_uci_pucch_0_1(): unknown RNTI 881a in PUCCH UCI
+[0m[1;31m[NR_MAC]   no RA proc for RNTI 0x881a in Msg3/PUSCH
+[0m[NGAP]   PDUSESSIONSetup initiating message
+[0m[NR_RRC]   [gNB 0] gNB_ue_ngap_id 2 
+[0m[NR_RRC]   Adding pdusession 1, total nb of sessions 1
+[0m[NR_RRC]   UE 2: configure DRB ID 1 for PDU session ID 1
+[0m[32m[RRC]   selecting CU-UP ID 3585 based on exact NSSAI match (1:0x000000)
+[0m[RRC]   UE 2 associating to CU-UP assoc_id -1 out of 1 CU-UPs
+[0m[GTPU]   [98] Created tunnel for UE ID 2, teid for incoming: a978b1e5, teid for outgoing 1ba to remote IPv4: 10.128.0.97, IPv6 ::
+[0m[PDCP]   added drb 1 to UE ID 2
+[0m[SDAP]   Default DRB for the created SDAP entity: 1 
+[0m[RRC]   activate SRB 2 of UE 2
+[0m[RLC]   Added srb 2 to UE 58833
+[0m[RLC]   Added drb 1 to UE 58833
+[0m[RLC]   Added DRB to UE 58833
+[0m[RRC]   UE 2 trigger UE context setup request with 1 DRBs
+[0m[E1AP]   UE 2: updating PDU session ID 1 (1 bearers)
+[0m[NR_RRC]   UE 2: Generate RRCReconfiguration (bytes 324, xid 3)
+[0m[RRC]   UE 2: PDU session ID 1 modified 1 bearers
+[0m[NR_RRC]   UE 2: Receive RRC Reconfiguration Complete message (xid 3)
+[0m[NR_RRC]   msg index 0, pdu_sessions index 0, status 2, xid 3): nb_of_pdusessions 1,  pdusession_id 1, teid: 2843259365 
+ [0m[NR_RRC]   NGAP_PDUSESSION_SETUP_RESP: sending the message
+[0m[NR_MAC]   Frame.Slot 768.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (9 meas)
+UE e5d1: dlsch_rounds 11/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.09000 MCS (1) 9
+UE e5d1: ulsch_rounds 237/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.04783 MCS (1) 10 (Qm 4  dB) NPRB 5  SNR 29.5 dB
+UE e5d1: MAC:    TX           1652 RX          31929 bytes
+UE e5d1: LCID 1: TX            402 RX           1375 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX              0 RX              0 bytes
+
+[0m[NR_MAC]   Frame.Slot 896.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 13/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.08100 MCS (1) 9
+UE e5d1: ulsch_rounds 621/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.01216 MCS (1) 23 (Qm 8  dB) NPRB 5  SNR 29.5 dB
+UE e5d1: MAC:    TX           2086 RX          91321 bytes
+UE e5d1: LCID 1: TX            405 RX           1397 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX              0 RX              0 bytes
+
+[0m[NR_MAC]   Frame.Slot 0.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 22/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.04305 MCS (1) 9
+UE e5d1: ulsch_rounds 1007/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00309 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.0 dB
+UE e5d1: MAC:    TX           3906 RX         150805 bytes
+UE e5d1: LCID 1: TX            408 RX           1419 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX             18 RX            933 bytes
+
+[0m[NR_MAC]   Frame.Slot 128.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 28/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.02542 MCS (1) 9
+UE e5d1: ulsch_rounds 1392/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00079 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.0 dB
+UE e5d1: MAC:    TX           5208 RX         210243 bytes
+UE e5d1: LCID 1: TX            414 RX           1463 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX             27 RX           1479 bytes
+
+[0m[93m[NR_MAC]   DL  209. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  209. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  209.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  209.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  219. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  219. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  219.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  219.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  229. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  229. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  239. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  239. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  249. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  249. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   Frame.Slot 256.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 128/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.01351 MCS (1) 14
+UE e5d1: ulsch_rounds 1786/1/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00204 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.0 dB
+UE e5d1: MAC:    TX         652857 RX         270190 bytes
+UE e5d1: LCID 1: TX            417 RX           1485 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX         642943 RX           2644 bytes
+
+[0m[93m[NR_MAC]   DL  259. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  259. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  269. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  269. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  279. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  279. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   Frame.Slot 384.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 249/9/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.06058 MCS (1) 26
+UE e5d1: ulsch_rounds 2181/1/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00058 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.0 dB
+UE e5d1: MAC:    TX        2323469 RX         330088 bytes
+UE e5d1: LCID 1: TX            420 RX           1507 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX        2307455 RX           3026 bytes
+
+[0m[NR_MAC]   Frame.Slot 512.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 345/13/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.05126 MCS (1) 25
+UE e5d1: ulsch_rounds 2576/1/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00015 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.0 dB
+UE e5d1: MAC:    TX        3997161 RX         389940 bytes
+UE e5d1: LCID 1: TX            426 RX           1551 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX        3973261 RX           3104 bytes
+
+[0m[NR_MAC]   Frame.Slot 640.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 448/23/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.06035 MCS (1) 24
+UE e5d1: ulsch_rounds 2973/1/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00004 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.0 dB
+UE e5d1: MAC:    TX        5668025 RX         449976 bytes
+UE e5d1: LCID 1: TX            429 RX           1573 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX        5637658 RX           3263 bytes
+
+[0m[NR_MAC]   Frame.Slot 768.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 535/32/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.07512 MCS (1) 25
+UE e5d1: ulsch_rounds 3368/1/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00001 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 28.5 dB
+UE e5d1: MAC:    TX        7211190 RX         509874 bytes
+UE e5d1: LCID 1: TX            432 RX           1595 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX        7174554 RX           3338 bytes
+
+[0m[NR_MAC]   Frame.Slot 896.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 638/44/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.10103 MCS (1) 23
+UE e5d1: ulsch_rounds 3765/1/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.0 dB
+UE e5d1: MAC:    TX        8882243 RX         569864 bytes
+UE e5d1: LCID 1: TX            435 RX           1617 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX        8838958 RX           3413 bytes
+
+[0m[NR_MAC]   Frame.Slot 0.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 744/58/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.18225 MCS (1) 24
+UE e5d1: ulsch_rounds 4165/1/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.0 dB
+UE e5d1: MAC:    TX       10554854 RX         629992 bytes
+UE e5d1: LCID 1: TX            441 RX           1661 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       10504789 RX           3491 bytes
+
+[0m[NR_MAC]   Frame.Slot 128.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 857/58/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.04633 MCS (1) 24
+UE e5d1: ulsch_rounds 4566/1/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.5 dB
+UE e5d1: MAC:    TX       12225653 RX         690120 bytes
+UE e5d1: LCID 1: TX            444 RX           1683 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       12169223 RX           3569 bytes
+
+[0m[NR_MAC]   Frame.Slot 256.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 938/72/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.13261 MCS (1) 25
+UE e5d1: ulsch_rounds 4961/11/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.02074 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.0 dB
+UE e5d1: MAC:    TX       12928643 RX         813133 bytes
+UE e5d1: LCID 1: TX            447 RX           1705 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       12852463 RX          55284 bytes
+
+[0m[NR_MAC]   Frame.Slot 384.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 941/72/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.09667 MCS (1) 23
+UE e5d1: ulsch_rounds 5345/11/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00527 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.5 dB
+UE e5d1: MAC:    TX       12930419 RX         872525 bytes
+UE e5d1: LCID 1: TX            450 RX           1727 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       12852463 RX          55284 bytes
+
+[0m[NR_MAC]   Frame.Slot 512.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 945/72/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.07048 MCS (1) 20
+UE e5d1: ulsch_rounds 5729/11/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00134 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.0 dB
+UE e5d1: MAC:    TX       12932451 RX         931917 bytes
+UE e5d1: LCID 1: TX            456 RX           1771 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       12852466 RX          55368 bytes
+
+[0m[NR_MAC]   Frame.Slot 640.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 947/72/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.05709 MCS (1) 18
+UE e5d1: ulsch_rounds 6113/11/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00038 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.0 dB
+UE e5d1: MAC:    TX       12933357 RX         991309 bytes
+UE e5d1: LCID 1: TX            459 RX           1793 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       12852466 RX          55368 bytes
+
+[0m[NR_MAC]   Frame.Slot 768.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 950/72/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.04162 MCS (1) 15
+UE e5d1: ulsch_rounds 6497/11/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00010 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.5 dB
+UE e5d1: MAC:    TX       12934499 RX        1050701 bytes
+UE e5d1: LCID 1: TX            462 RX           1815 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       12852466 RX          55368 bytes
+
+[0m[NR_MAC]   Frame.Slot 896.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 952/72/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.03371 MCS (1) 13
+UE e5d1: ulsch_rounds 6881/11/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00002 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.0 dB
+UE e5d1: MAC:    TX       12935125 RX        1110093 bytes
+UE e5d1: LCID 1: TX            465 RX           1837 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       12852466 RX          55368 bytes
+
+[0m[NR_MAC]   Frame.Slot 0.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 955/72/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.02457 MCS (1) 10
+UE e5d1: ulsch_rounds 7265/11/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00001 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.0 dB
+UE e5d1: MAC:    TX       12935888 RX        1169485 bytes
+UE e5d1: LCID 1: TX            471 RX           1881 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       12852466 RX          55368 bytes
+
+[0m[NR_MAC]   Frame.Slot 128.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 957/72/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.01990 MCS (1) 9
+UE e5d1: ulsch_rounds 7649/11/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.5 dB
+UE e5d1: MAC:    TX       12936322 RX        1228877 bytes
+UE e5d1: LCID 1: TX            474 RX           1903 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       12852466 RX          55368 bytes
+
+[0m[NR_MAC]   Frame.Slot 256.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 960/72/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.01451 MCS (1) 9
+UE e5d1: ulsch_rounds 8033/11/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.0 dB
+UE e5d1: MAC:    TX       12936973 RX        1288269 bytes
+UE e5d1: LCID 1: TX            477 RX           1925 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       12852466 RX          55368 bytes
+
+[0m[NR_MAC]   Frame.Slot 384.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 962/72/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.01175 MCS (1) 9
+UE e5d1: ulsch_rounds 8417/11/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.0 dB
+UE e5d1: MAC:    TX       12937407 RX        1347661 bytes
+UE e5d1: LCID 1: TX            480 RX           1947 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       12852466 RX          55368 bytes
+
+[0m[NR_MAC]   Frame.Slot 512.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 965/72/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.00857 MCS (1) 9
+UE e5d1: ulsch_rounds 8801/11/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.5 dB
+UE e5d1: MAC:    TX       12938058 RX        1407053 bytes
+UE e5d1: LCID 1: TX            486 RX           1991 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       12852466 RX          55368 bytes
+
+[0m[NR_MAC]   Frame.Slot 640.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 967/72/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.00694 MCS (1) 9
+UE e5d1: ulsch_rounds 9185/11/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.5 dB
+UE e5d1: MAC:    TX       12938492 RX        1466445 bytes
+UE e5d1: LCID 1: TX            489 RX           2013 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       12852466 RX          55368 bytes
+
+[0m[NR_MAC]   Frame.Slot 768.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 970/72/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.00506 MCS (1) 9
+UE e5d1: ulsch_rounds 9569/11/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.0 dB
+UE e5d1: MAC:    TX       12939143 RX        1525837 bytes
+UE e5d1: LCID 1: TX            492 RX           2035 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       12852466 RX          55368 bytes
+
+[0m[NR_MAC]   Frame.Slot 896.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 972/72/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.00410 MCS (1) 9
+UE e5d1: ulsch_rounds 9953/11/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.0 dB
+UE e5d1: MAC:    TX       12939577 RX        1585229 bytes
+UE e5d1: LCID 1: TX            495 RX           2057 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       12852466 RX          55368 bytes
+
+[0m[NR_MAC]   Frame.Slot 0.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 976/72/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.00269 MCS (1) 9
+UE e5d1: ulsch_rounds 10338/11/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.5 dB
+UE e5d1: MAC:    TX       12940445 RX        1644667 bytes
+UE e5d1: LCID 1: TX            501 RX           2101 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       12852469 RX          55447 bytes
+
+[0m[93m[NR_MAC]   DL   28.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   28.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   29. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   29. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   29.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   29.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   30. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   30. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   30.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   30.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   38.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   38.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   39. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   39. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   39.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   39.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   40. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   40. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   48.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   49. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   49. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   49.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   49.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   50. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   50. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   58.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   58.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   59. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   59. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   59.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   59.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   60. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   60. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   68.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   68.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   69. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   69. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   69.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   69.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   78.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   78.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   79. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   79. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   79.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   79.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   88.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   89. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   89. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   98.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   98.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   99. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   99. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  108.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  108.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  109. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  109. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  118.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  118.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  119. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  119. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   Frame.Slot 128.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 1265/72/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.00076 MCS (1) 20
+UE e5d1: ulsch_rounds 10740/12/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00109 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.5 dB
+UE e5d1: MAC:    TX       15518212 RX        1704982 bytes
+UE e5d1: LCID 1: TX            504 RX           2123 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       15419782 RX          56756 bytes
+
+[0m[93m[NR_MAC]   DL  128.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  129. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  129. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  138.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  138.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  139. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  139. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  148.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  148.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  149. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  149. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  158.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  158.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  168.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  178.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  178.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  179. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  179. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  179.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  179.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  188.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  188.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  189. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  189. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  198.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  198.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  199. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  199. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  199.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  199.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  208.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  218.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  218.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  228.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  228.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  229. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  229. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  238.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  238.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  239. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  239. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  248.13, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   Frame.Slot 256.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 1476/108/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.14065 MCS (1) 22
+UE e5d1: ulsch_rounds 11144/12/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00028 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.5 dB
+UE e5d1: MAC:    TX       18856000 RX        1765294 bytes
+UE e5d1: LCID 1: TX            507 RX           2145 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       18748730 RX          56834 bytes
+
+[0m[93m[NR_MAC]   DL  258.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  258.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  259. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  259. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  268.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  268.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  269. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  269. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  278.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  278.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  279. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  279. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  288.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  298.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  298.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  299. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  299. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  308.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  308.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  309. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  309. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  318.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  318.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  319. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  319. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  328.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  338.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  338.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  339. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  339. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  348.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  348.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  349. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  349. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  358.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  358.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  368.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  378.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  378.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  379. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  379. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  379.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  379.13, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   Frame.Slot 384.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 1694/119/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.03575 MCS (1) 26
+UE e5d1: ulsch_rounds 11548/12/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00007 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.0 dB
+UE e5d1: MAC:    TX       22195699 RX        1825606 bytes
+UE e5d1: LCID 1: TX            510 RX           2167 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       22079150 RX          56912 bytes
+
+[0m[93m[NR_MAC]   DL  388.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  388.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  389. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  389. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  389.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  389.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  398.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  398.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  408.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  418.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  418.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  428.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  428.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  438.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  438.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  448.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  458.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  458.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  468.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  468.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  478.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  478.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  488.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  498.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  498.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  508.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  508.13, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   Frame.Slot 512.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 1902/132/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.05566 MCS (1) 24
+UE e5d1: ulsch_rounds 11952/12/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00002 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.0 dB
+UE e5d1: MAC:    TX       25535848 RX        1885872 bytes
+UE e5d1: LCID 1: TX            516 RX           2211 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       25409515 RX          56990 bytes
+
+[0m[93m[NR_MAC]   DL  518.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  518.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  528.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  538.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  538.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  539. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  539. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  539.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  539.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  548.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  548.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  549. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  549. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  549.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  558.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  558.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  568.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  578.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  578.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  588.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  588.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  598.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  598.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  608.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  618.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  618.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  628.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  628.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  638.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  638.13, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   Frame.Slot 640.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 2107/156/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.07932 MCS (1) 24
+UE e5d1: ulsch_rounds 12355/12/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00001 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.0 dB
+UE e5d1: MAC:    TX       28875194 RX        1946138 bytes
+UE e5d1: LCID 1: TX            519 RX           2233 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       28739870 RX          57065 bytes
+
+[0m[93m[NR_MAC]   DL  648.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  658.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  658.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  668.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  668.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  678.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  678.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  688.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  698.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  698.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  699. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  699. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  699.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  699.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  708.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  708.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  709. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  709. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  718.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  718.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  728.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  738.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  738.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  748.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  748.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  758.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  758.13, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   Frame.Slot 768.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 2297/179/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.11424 MCS (1) 24
+UE e5d1: ulsch_rounds 12755/12/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.0 dB
+UE e5d1: MAC:    TX       31956689 RX        2006312 bytes
+UE e5d1: LCID 1: TX            522 RX           2255 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       31812389 RX          57147 bytes
+
+[0m[93m[NR_MAC]   DL  768.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  778.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  778.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  788.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  788.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  798.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  798.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  808.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  818.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  818.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  828.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  828.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  838.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  838.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  848.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  849. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  849. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  849.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  849.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  858.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  858.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  859. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  859. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  868.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  868.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  878.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  878.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  888.13, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   Frame.Slot 896.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 2504/202/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.14622 MCS (1) 24
+UE e5d1: ulsch_rounds 13158/12/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.0 dB
+UE e5d1: MAC:    TX       35296604 RX        2066578 bytes
+UE e5d1: LCID 1: TX            525 RX           2277 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       35142749 RX          57225 bytes
+
+[0m[93m[NR_MAC]   DL  898.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  898.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  908.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  908.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  918.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  918.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  928.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  938.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  938.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  948.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  948.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  958.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  958.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  968.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  978.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  978.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  988.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  988.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  998.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  998.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL 1008.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL 1018.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL 1018.13, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   Frame.Slot 0.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 2715/215/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.04917 MCS (1) 26
+UE e5d1: ulsch_rounds 13559/12/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 11  SNR 30.5 dB
+UE e5d1: MAC:    TX       38639550 RX        2127015 bytes
+UE e5d1: LCID 1: TX            531 RX           2321 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       38473284 RX          57881 bytes
+
+[0m[NR_MAC]   Frame.Slot 128.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 2760/221/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.10995 MCS (1) 26
+UE e5d1: ulsch_rounds 13948/25/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.01776 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 28.5 dB
+UE e5d1: MAC:    TX       38741548 RX        2281845 bytes
+UE e5d1: LCID 1: TX            534 RX           2343 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       38559654 RX         152756 bytes
+
+[0m[NR_MAC]   Frame.Slot 256.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 2762/221/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.09895 MCS (1) 25
+UE e5d1: ulsch_rounds 14332/25/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00451 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 31.5 dB
+UE e5d1: MAC:    TX       38742796 RX        2341237 bytes
+UE e5d1: LCID 1: TX            537 RX           2365 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       38559654 RX         152756 bytes
+
+[0m[NR_MAC]   Frame.Slot 384.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 2764/221/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.08906 MCS (1) 24
+UE e5d1: ulsch_rounds 14716/25/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00115 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.0 dB
+UE e5d1: MAC:    TX       38743980 RX        2400629 bytes
+UE e5d1: LCID 1: TX            540 RX           2387 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       38559654 RX         152756 bytes
+
+[0m[NR_MAC]   Frame.Slot 512.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 2768/221/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.07214 MCS (1) 22
+UE e5d1: ulsch_rounds 15100/25/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00029 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.5 dB
+UE e5d1: MAC:    TX       38746156 RX        2460021 bytes
+UE e5d1: LCID 1: TX            546 RX           2431 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       38559654 RX         152756 bytes
+
+[0m[NR_MAC]   Frame.Slot 640.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 2770/221/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.06492 MCS (1) 21
+UE e5d1: ulsch_rounds 15484/25/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00007 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.5 dB
+UE e5d1: MAC:    TX       38747148 RX        2519413 bytes
+UE e5d1: LCID 1: TX            549 RX           2453 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       38559654 RX         152756 bytes
+
+[0m[NR_MAC]   Frame.Slot 768.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 2772/221/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.05843 MCS (1) 20
+UE e5d1: ulsch_rounds 15868/25/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00002 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.0 dB
+UE e5d1: MAC:    TX       38748108 RX        2578805 bytes
+UE e5d1: LCID 1: TX            552 RX           2475 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       38559654 RX         152756 bytes
+
+[0m[NR_MAC]   Frame.Slot 896.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 2775/221/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.04733 MCS (1) 18
+UE e5d1: ulsch_rounds 16252/25/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00001 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.5 dB
+UE e5d1: MAC:    TX       38749483 RX        2638197 bytes
+UE e5d1: LCID 1: TX            555 RX           2497 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       38559654 RX         152756 bytes
+
+[0m[NR_MAC]   Frame.Slot 0.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 2778/221/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.03834 MCS (1) 16
+UE e5d1: ulsch_rounds 16636/25/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.5 dB
+UE e5d1: MAC:    TX       38750713 RX        2697589 bytes
+UE e5d1: LCID 1: TX            561 RX           2541 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       38559654 RX         152756 bytes
+
+[0m[NR_MAC]   Frame.Slot 128.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 2780/221/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.03105 MCS (1) 14
+UE e5d1: ulsch_rounds 17020/25/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.5 dB
+UE e5d1: MAC:    TX       38751387 RX        2756981 bytes
+UE e5d1: LCID 1: TX            564 RX           2563 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       38559654 RX         152756 bytes
+
+[0m[NR_MAC]   Frame.Slot 256.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 2782/221/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.02515 MCS (1) 12
+UE e5d1: ulsch_rounds 17404/25/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 28.5 dB
+UE e5d1: MAC:    TX       38751965 RX        2816373 bytes
+UE e5d1: LCID 1: TX            567 RX           2585 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       38559654 RX         152756 bytes
+
+[0m[NR_MAC]   Frame.Slot 384.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 2785/221/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.01834 MCS (1) 9
+UE e5d1: ulsch_rounds 17788/25/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 28.5 dB
+UE e5d1: MAC:    TX       38752668 RX        2875765 bytes
+UE e5d1: LCID 1: TX            570 RX           2607 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       38559654 RX         152756 bytes
+
+[0m[NR_MAC]   Frame.Slot 512.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 2788/221/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.01337 MCS (1) 9
+UE e5d1: ulsch_rounds 18172/25/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.0 dB
+UE e5d1: MAC:    TX       38753319 RX        2935157 bytes
+UE e5d1: LCID 1: TX            576 RX           2651 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       38559654 RX         152756 bytes
+
+[0m[NR_MAC]   Frame.Slot 640.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 2790/221/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.01083 MCS (1) 9
+UE e5d1: ulsch_rounds 18556/25/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.0 dB
+UE e5d1: MAC:    TX       38753753 RX        2994549 bytes
+UE e5d1: LCID 1: TX            579 RX           2673 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       38559654 RX         152756 bytes
+
+[0m[NR_MAC]   Frame.Slot 768.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 2792/221/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.00877 MCS (1) 9
+UE e5d1: ulsch_rounds 18940/25/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.5 dB
+UE e5d1: MAC:    TX       38754187 RX        3053941 bytes
+UE e5d1: LCID 1: TX            582 RX           2695 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       38559654 RX         152756 bytes
+
+[0m[NR_MAC]   Frame.Slot 896.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 2795/221/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.00639 MCS (1) 9
+UE e5d1: ulsch_rounds 19324/25/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.0 dB
+UE e5d1: MAC:    TX       38754838 RX        3113333 bytes
+UE e5d1: LCID 1: TX            585 RX           2717 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       38559654 RX         152756 bytes
+
+[0m[93m[NR_MAC]   DL  968.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  969. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  969. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  969.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  969.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  970. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  970. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  970.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  970.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  971. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  971. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  971.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  971.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  972. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  972. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  978.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  978.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  979. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  979. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  979.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  979.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  980. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  980. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  980.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  980.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  981. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  981. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  981.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  981.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  988.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  988.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  989. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  989. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  989.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  989.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  990. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  990. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  990.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  990.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  991. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  991. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  998.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  998.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  999. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  999. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  999.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  999.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL 1000. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL 1000. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL 1000.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL 1001. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL 1001. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL 1008.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL 1009. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL 1009. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL 1009.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL 1009.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL 1010. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL 1010. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL 1010.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL 1010.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL 1018.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL 1018.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL 1019. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL 1019. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL 1019.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL 1019.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL 1020. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL 1020. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL 1020.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL 1020.13, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   Frame.Slot 0.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 3096/221/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.00248 MCS (1) 16
+UE e5d1: ulsch_rounds 19727/25/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.0 dB
+UE e5d1: MAC:    TX       41076734 RX        3173648 bytes
+UE e5d1: LCID 1: TX            591 RX           2761 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       40872200 RX         154136 bytes
+
+[0m[93m[NR_MAC]   DL    4.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL    4.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL    5. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL    5. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL    5.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL    5.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL    6. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL    6. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   14.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   14.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   15. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   15. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   15.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   15.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   16. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   16. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   24.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   25. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   25. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   25.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   25.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   26. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   26. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   34.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   34.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   35. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   35. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   35.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   35.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   36. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   36. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   44.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   44.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   45. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   45. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   45.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   45.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   54.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   54.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   55. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   55. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   55.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   55.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   64.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   65. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   65. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   65.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   65.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   74.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   74.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   75. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   75. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   75.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   75.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   84.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   84.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   85. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   85. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   94.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   94.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   95. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   95. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   95.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL   95.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  104.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  105. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  105.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  105.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  106. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  106. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  114.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  114.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  115. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  115. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  115.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  115.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  124.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  124.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  125. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  125. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  125.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  125.13, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   Frame.Slot 128.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 3444/272/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.19946 MCS (1) 25
+UE e5d1: ulsch_rounds 20132/25/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.0 dB
+UE e5d1: MAC:    TX       46087350 RX        3234006 bytes
+UE e5d1: LCID 1: TX            594 RX           2783 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       45868659 RX         154299 bytes
+
+[0m[93m[NR_MAC]   DL  134.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  134.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  135. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  135. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  135.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  135.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  144.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  145. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  145. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  145.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  145.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  154.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  154.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  155. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  155. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  155.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  155.13, Couldn't find scheduling occasion for this HARQ process
+[0minitializing tx write thread
+end of tx write thread
+trx_usrp_write_thread started on cpu 11
+sleep...
+sleep...
+sleep...
+sleep...
+sleep...
+sleep...
+sleep...
+sleep...
+sleep...
+[93m[NR_MAC]   DL  164.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  164.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  165. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  165. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  165.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  165.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  174.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  174.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  175. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  175. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  175.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  175.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  184.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  185. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  185. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  185.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  185.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  194.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  194.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  195. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  195. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  195.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  195.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  204.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  204.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  205. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  205. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  205.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  205.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  214.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  214.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  215. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  215. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  215.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  215.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  224.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  225. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  225. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  225.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  225.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  234.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  234.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  235. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  235. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  235.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  235.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  244.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  244.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  245. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  245. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  245.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  245.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  254.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  254.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  255. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  255. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  255.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  255.13, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   Frame.Slot 256.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 3783/276/3/0, dlsch_errors 0, pucch0_DTX 3, BLER 0.05771 MCS (1) 22
+UE e5d1: ulsch_rounds 20531/25/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.0 dB
+UE e5d1: MAC:    TX       51097135 RX        3294088 bytes
+UE e5d1: LCID 1: TX            597 RX           2805 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       50863528 RX         154398 bytes
+
+[0m[93m[NR_MAC]   DL  264.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  265. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  265. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  265.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  265.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  274.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  274.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  275. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  275. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  275.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  275.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  284.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  284.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  285. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  285. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  285.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  285.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  294.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  294.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  295. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  295. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  304.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  305. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  305. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  305.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  305.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  314.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  314.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  315. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  315. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  315.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  315.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  324.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  324.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  325. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  325. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  325.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  325.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  334.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  334.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  335. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  335. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  335.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  335.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  344.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  345. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  345. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  354.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  354.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  355. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  355. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  355.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  355.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  364.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  364.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  365. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  365. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  365.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  365.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  374.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  374.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  375. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  375. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  375.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  375.13, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   Frame.Slot 384.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 4070/310/3/0, dlsch_errors 0, pucch0_DTX 3, BLER 0.10145 MCS (1) 24
+UE e5d1: ulsch_rounds 20933/25/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 28.5 dB
+UE e5d1: MAC:    TX       55726912 RX        3354354 bytes
+UE e5d1: LCID 1: TX            600 RX           2827 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       55480221 RX         154473 bytes
+
+[0m[93m[NR_MAC]   DL  384.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  385. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  385. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  394.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  394.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  395. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  395. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  395.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  395.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  404.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  404.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  405. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  405. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  405.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  405.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  414.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  414.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  415. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  415. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  415.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  415.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  424.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  425. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  425. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  434.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  434.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  435. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  435. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  435.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  435.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  444.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  444.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  445. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  445. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  454.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  454.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  455. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  455.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  455.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  456. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  456. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  464.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  465. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  465.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  465.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  474.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  474.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  479.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  484.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  484.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  485. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  485. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  485.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  485.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  494.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  494.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  495. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  495. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  495.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  495.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  504.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  505. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  505. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  505.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  505.13, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   Frame.Slot 512.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 4382/349/3/0, dlsch_errors 0, pucch0_DTX 3, BLER 0.14722 MCS (1) 23
+UE e5d1: ulsch_rounds 21335/25/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 28.5 dB
+UE e5d1: MAC:    TX       60731591 RX        3414574 bytes
+UE e5d1: LCID 1: TX            606 RX           2871 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       60469325 RX         154566 bytes
+
+[0m[93m[NR_MAC]   DL  514.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  514.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  515. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  515. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  515.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  515.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  524.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  524.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  525. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  525. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  525.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  525.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  534.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  534.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  535. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  535. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  535.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  535.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  544.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  545. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  545. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  545.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  545.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  554.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  554.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  555. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  555. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  555.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  555.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  564.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  564.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  565. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  565. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  565.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  565.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  574.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  574.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  575. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  575. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  575.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  575.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  584.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  585. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  585. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  585.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  585.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  594.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  594.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  595. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  595. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  595.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  595.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  604.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  604.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  605. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  605. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  605.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  605.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  614.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  614.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  615. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  615. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  615.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  615.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  624.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  625. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  625. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  634.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  634.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  635. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  635.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  635.13, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   Frame.Slot 640.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 4706/367/3/0, dlsch_errors 0, pucch0_DTX 3, BLER 0.03742 MCS (1) 26
+UE e5d1: ulsch_rounds 21736/25/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 29.5 dB
+UE e5d1: MAC:    TX       65741407 RX        3474748 bytes
+UE e5d1: LCID 1: TX            609 RX           2893 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       65464234 RX         154656 bytes
+
+[0m[93m[NR_MAC]   DL  644.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  644.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  645. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  645.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  646. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  646. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  654.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  654.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  655. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  655. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  655.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  655.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  664.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  665. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  665. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  674.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  674.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  675. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  675. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  675.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  675.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  685. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  685. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  685.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  685.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  686. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  686. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  694.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  694.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  695. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  695. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  695.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  695.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  704.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  705. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  705. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  714.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  714.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  715. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  715. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  715.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  715.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  724.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  724.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  725. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  725. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  725.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  725.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  734.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  734.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  735. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  735. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  735.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  735.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  744.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  745. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  745. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  754.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  754.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  755. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  755. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  755.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  755.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  764.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  764.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  765. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  765. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  765.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  765.13, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   Frame.Slot 768.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 5020/385/3/0, dlsch_errors 0, pucch0_DTX 3, BLER 0.05748 MCS (1) 24
+UE e5d1: ulsch_rounds 22132/25/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 31.0 dB
+UE e5d1: MAC:    TX       70751146 RX        3534692 bytes
+UE e5d1: LCID 1: TX            612 RX           2915 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       70459048 RX         154752 bytes
+
+[0m[93m[NR_MAC]   DL  774.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  774.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  775. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  775. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  775.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  775.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  784.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  785. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  785. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  794.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  794.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  795. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  795.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  795.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  804.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  804.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  805. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  805. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  805.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  805.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  814.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  814.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  815. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  815. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  815.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  815.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  824.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  825. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  825. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  834.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  834.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  835. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  835. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  835.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  835.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  844.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  844.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  845. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  845. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  845.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  845.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  854.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  854.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  855. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  855. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  855.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  855.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  864.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  865. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  865. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  865.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  865.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  874.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  874.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  875. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  875. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  875.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  875.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  884.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  884.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  885. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  885. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  885.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  885.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  894.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  894.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  895. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  895. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  895.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  895.13, Couldn't find scheduling occasion for this HARQ process
+[0m[NR_MAC]   Frame.Slot 896.0
+UE RNTI e5d1 CU-UE-ID 2 in-sync PH 44 dB PCMAX 21 dBm, average RSRP -89 (16 meas)
+UE e5d1: dlsch_rounds 5340/422/3/0, dlsch_errors 0, pucch0_DTX 3, BLER 0.08385 MCS (1) 23
+UE e5d1: ulsch_rounds 22528/25/1/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (1) 27 (Qm 8  dB) NPRB 5  SNR 30.5 dB
+UE e5d1: MAC:    TX       75762852 RX        3594636 bytes
+UE e5d1: LCID 1: TX            618 RX           2959 bytes
+UE e5d1: LCID 2: TX              0 RX              0 bytes
+UE e5d1: LCID 4: TX       75453902 RX         154851 bytes
+
+[0m[93m[NR_MAC]   DL  904.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  905. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  905. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  905.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  905.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  914.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  914.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  915. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  915. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  915.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  915.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  924.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  924.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  925. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  925. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  925.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  925.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  934.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  934.13, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  935. 2, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  935. 3, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  935.12, Couldn't find scheduling occasion for this HARQ process
+[0m[93m[NR_MAC]   DL  935.13, Couldn't find scheduling occasion for this HARQ process
+[0m

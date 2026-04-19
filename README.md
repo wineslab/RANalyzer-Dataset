@@ -11,7 +11,7 @@ This dataset accompanies the following paper:
 If you use this dataset, please cite:
 
 ```bibtex
-@inproceedings{shirkhani2026ranalyzer,
+@inproceedings{ranalyzer2026,
   author    = {Shirkhani, Ravis and Prasad, Reshma and Bonati, Leonardo and Melodia, Tommaso and Polese, Michele},
   title     = {{RANalyzer}: Automated Continuous {RAN} Software Evaluation and Regression Analysis},
   booktitle = {Proc. of IEEE International Conference on Network Softwarization (NetSoft)},

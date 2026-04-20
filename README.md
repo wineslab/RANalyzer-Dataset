@@ -101,4 +101,4 @@ Full OAI gNB log for the test run. Contains multiple layer events including Rand
 
 ## Dataset CSV
 
-A processed, feature-extracted version of this dataset is provided in `.csv` (in the parent directory). Each row corresponds to one test run identified by `log_id` (format: `YYYYMMDD_HHMMSS`), and includes aggregated iPerf3 metrics, gNB signal quality and protocol event features, and git commit code features derived from the OAI repository history.
+A processed, feature-extracted version of this dataset is provided in `processed-dataset.csv` (in the parent directory). Each row corresponds to one test run identified by `log_id` (format: `YYYYMMDD_HHMMSS`), and includes aggregated iPerf3 metrics, gNB signal quality and protocol event features.
